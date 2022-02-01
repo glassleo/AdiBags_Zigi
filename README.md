@@ -2,6 +2,8 @@
 
 My personal extension/plugin for [AdiBags](https://github.com/glassleo/AdiBags)
 
+Includes smart sorting that requires my modified version of AdiBags to function properly.
+
 ## Filters
 
 - Stuff
