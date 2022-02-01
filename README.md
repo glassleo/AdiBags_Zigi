@@ -36,7 +36,7 @@ My personal extension/plugin for [AdiBags](https://github.com/glassleo/AdiBags)
   - Includes all gems in the game, including 9.2 Cyphers, split up by type and sorted by expansion/type
   - Legion relics are "smart" and are filtered as junk if your character can't use them or if they are below item level 50
 - Sanctum
-  - Shadowlands Covenant
+  - Covenant
   - Azerite Essences
   - Battle for Azeroth
   - Order Hall
