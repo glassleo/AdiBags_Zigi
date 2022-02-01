@@ -5043,8 +5043,33 @@ local ZigiItems = {
 	[90407] = "Pieces", -- Sparkling Shard
 
 	--! Openable (99)
+	-- -- Class Specific
 	[77952] = "Openable|ROGUE", -- Elementium Gem Cluster
 	[74748] = "Openable|ROGUE", -- Charged Decoder Ring
+	-- -- Grants XP
+	[140179] = "Openable|XP", -- Faded Star Chart
+	[140465] = "Openable|XP", -- Duskpelt Hide
+	[140360] = "Openable|XP", -- Rockwurm Barb
+	[140356] = "Openable|XP", -- Demonic Scribblings
+	[140376] = "Openable|XP", -- Mardum-Calibrated Balancer
+	[140526] = "Openable|XP", -- Eredar Signet
+	[140375] = "Openable|XP", -- Used Felblades
+	[140483] = "Openable|XP", -- Jade Fragment
+	[140501] = "Openable|XP", -- Outdated Intelligence
+	[140502] = "Openable|XP", -- Tattered Eye Patch
+	[140514] = "Openable|XP", -- Vial of Air
+	[140362] = "Openable|XP", -- Dust from the Shadowlands
+	[140499] = "Openable|XP", -- Off-Colored Fel Stone
+	[140458] = "Openable|XP", -- Lasher Seed
+	[140464] = "Openable|XP", -- Miniature Totem
+	[140527] = "Openable|XP", -- Wrathguard's Medallion
+	[120205] = "Openable|XP", -- Player Experience
+	[140584] = "Openable|XP", -- Player Experience
+	[143786] = "Openable|XP", -- Player Experience
+	[147434] = "Openable|XP", -- Player Experience
+	[165606] = "Openable|XP", -- Player Experience
+	[166231] = "Openable|XP", -- Player Experience
+	-- -- General
 	[187561] = "Openable", --Winter Veil Gift (2021)
 	[187520] = "Openable", --Gently Shaken Gift (2021)
 	[149503] = "Openable", --Stolen Gift
@@ -5809,6 +5834,8 @@ function Zigi:CheckItem(id, bag, slot)
 					match = "class"
 				elseif v == profession then
 					match = "profession"
+				elseif v == "XP" and (UnitLevel("player") <= 49) then
+					match = "level" -- XP items can only be used until level 49
 				end
 
 				if (tonumber(v) or 0) > 0 then
