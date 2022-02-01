@@ -1,6 +1,6 @@
 # AdiBags_Zigi
 
-My personal extension/plugin for [AdiBags](https://github.com/glassleo/AdiBags)
+My personal extension/plugin for [AdiBags](https://github.com/glassleo/AdiBags) adding a lot of filters.
 
 Includes smart sorting that requires my forked version of AdiBags to function properly. It also requires [Media_Newsom](https://github.com/glassleo/Media_Newsom).
 
