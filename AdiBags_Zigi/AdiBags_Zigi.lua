@@ -5502,6 +5502,11 @@ local ZigiItems = {
 	[183291] = "Openable", -- Memory of Yu'lon
 	[140601] = "Openable", -- Sixtrigger Resource Crate
 	[140930] = "Openable", -- Acolyte's Vows
+	[154759] = "Openable", -- Broken Isles Survival Kit
+	[171987] = "Openable", -- Champions of Azeroth Survival Kit
+	[183822] = "Openable", -- Icecrown Survival Kit
+	[141410] = "Openable", -- Invasion Survival Kit
+	[185940] = "Openable", -- Pristine Survival Kit
 	---ooo
 
 
