@@ -4134,6 +4134,7 @@ local ZigiItems = {
 	[143850] = "93. Order Hall#Sanctum", -- Summon Grimtotem Warrior
 	[138410] = "93. Order Hall#Sanctum", -- Summoning Portal
 	[141332] = "93. Order Hall#Sanctum", -- The Annals of Light and Shadow
+	[140924] = "93. Order Hall#Sanctum", -- Ashtongue Beacon
 	[165749] = "93. Order Hall#Sanctum",
 	[147569] = "93. Order Hall#Sanctum",
 	[139844] = "93. Order Hall#Sanctum",
@@ -4772,6 +4773,8 @@ local ZigiItems = {
 	[163604] = "Toy#Miscellaneous", -- Net-o-Matic 5000
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	-- Consumable
+	[124640] = "Toy#Miscellaneous", -- Inky Black Potion
+	[170379] = "Toy#Miscellaneous", -- Sunwarmed Sand
 	[104316] = "Toy#Miscellaneous", -- Spectral Grog
 	[8529] = "Toy#Miscellaneous", -- Noggenfogger Elixir
 	[104111] = "Toy#Miscellaneous", -- Elixir of Wandering Spirits
