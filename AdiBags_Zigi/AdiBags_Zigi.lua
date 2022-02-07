@@ -4135,6 +4135,7 @@ local ZigiItems = {
 	[138410] = "93. Order Hall#Sanctum", -- Summoning Portal
 	[141332] = "93. Order Hall#Sanctum", -- The Annals of Light and Shadow
 	[140924] = "93. Order Hall#Sanctum", -- Ashtongue Beacon
+	[140923] = "93. Order Hall#Sanctum", -- Ghoul Tombstone
 	[165749] = "93. Order Hall#Sanctum",
 	[147569] = "93. Order Hall#Sanctum",
 	[139844] = "93. Order Hall#Sanctum",
@@ -5510,6 +5511,16 @@ local ZigiItems = {
 	[183822] = "Openable", -- Icecrown Survival Kit
 	[141410] = "Openable", -- Invasion Survival Kit
 	[185940] = "Openable", -- Pristine Survival Kit
+	[187659] = "Openable", -- Adventurer's Footlocker
+	[171988] = "Openable", -- Adventurer's Footlocker
+	[160439] = "Openable", -- Adventurer's Footlocker
+	[142023] = "Openable", -- Adventurer's Footlocker
+	[147446] = "Openable", -- Brawler's Footlocker
+	[154992] = "Openable", -- Brawler's Footlocker
+	[154991] = "Openable", -- Brawler's Footlocker
+	[152923] = "Openable", -- Gleaming Footlocker
+	[9276] = "Openable", -- Pirate's Footlocker
+	[143607] = "Openable", -- Soldier's Footlocker
 	---ooo
 
 
