@@ -4536,6 +4536,7 @@ local ZigiItems = {
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
 	[128658] = "Currency#Miscellaneous", -- Spooky Supplies
+	[49927] = "Currency#Miscellaneous", -- Love Token
 
 	--! Reputation (02)
 	[71088] = "02. Reputation#Miscellaneous", -- Bilgewater Writ of Commendation
@@ -4773,6 +4774,7 @@ local ZigiItems = {
 	[128453] = "Toy#Miscellaneous", -- Saberstalkers Battle Standard
 	[163604] = "Toy#Miscellaneous", -- Net-o-Matic 5000
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
+	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	-- Consumable
 	[124640] = "Toy#Miscellaneous", -- Inky Black Potion
 	[170379] = "Toy#Miscellaneous", -- Sunwarmed Sand
@@ -5048,24 +5050,24 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Class Specific
-	[77952] = "Openable|ROGUE", -- Elementium Gem Cluster
 	[74748] = "Openable|ROGUE", -- Charged Decoder Ring
+	[77952] = "Openable|ROGUE", -- Elementium Gem Cluster
 	-- -- Grants XP
 	[140179] = "Openable|XP", -- Faded Star Chart
-	[140465] = "Openable|XP", -- Duskpelt Hide
-	[140360] = "Openable|XP", -- Rockwurm Barb
 	[140356] = "Openable|XP", -- Demonic Scribblings
-	[140376] = "Openable|XP", -- Mardum-Calibrated Balancer
-	[140526] = "Openable|XP", -- Eredar Signet
+	[140360] = "Openable|XP", -- Rockwurm Barb
+	[140362] = "Openable|XP", -- Dust from the Shadowlands
 	[140375] = "Openable|XP", -- Used Felblades
+	[140376] = "Openable|XP", -- Mardum-Calibrated Balancer
+	[140458] = "Openable|XP", -- Lasher Seed
+	[140464] = "Openable|XP", -- Miniature Totem
+	[140465] = "Openable|XP", -- Duskpelt Hide
 	[140483] = "Openable|XP", -- Jade Fragment
+	[140499] = "Openable|XP", -- Off-Colored Fel Stone
 	[140501] = "Openable|XP", -- Outdated Intelligence
 	[140502] = "Openable|XP", -- Tattered Eye Patch
 	[140514] = "Openable|XP", -- Vial of Air
-	[140362] = "Openable|XP", -- Dust from the Shadowlands
-	[140499] = "Openable|XP", -- Off-Colored Fel Stone
-	[140458] = "Openable|XP", -- Lasher Seed
-	[140464] = "Openable|XP", -- Miniature Totem
+	[140526] = "Openable|XP", -- Eredar Signet
 	[140527] = "Openable|XP", -- Wrathguard's Medallion
 	[120205] = "Openable|XP", -- Player Experience
 	[140584] = "Openable|XP", -- Player Experience
@@ -5074,6 +5076,15 @@ local ZigiItems = {
 	[165606] = "Openable|XP", -- Player Experience
 	[166231] = "Openable|XP", -- Player Experience
 	-- -- General
+	[187254] = "Openable", -- Arrangement of Anima
+	[187503] = "Openable", -- Bundle of Archived Research
+	[187817] = "Openable", -- Korthite Crystal Geode
+	[185832] = "Openable", -- Shipment of Elethium Ore
+	[185765] = "Openable", -- Shipment of Heavy Callous Hide
+	[185833] = "Openable", -- Shipment of Lightless Silk
+	[187221] = "Openable", -- Soul Ash Cache
+	[187222] = "Openable", -- Stygic Singularity
+	[191030] = "Openable", -- Cosmic Flux Parcel
 	[187561] = "Openable", --Winter Veil Gift (2021)
 	[187520] = "Openable", --Gently Shaken Gift (2021)
 	[149503] = "Openable", --Stolen Gift
@@ -5521,6 +5532,7 @@ local ZigiItems = {
 	[152923] = "Openable", -- Gleaming Footlocker
 	[9276] = "Openable", -- Pirate's Footlocker
 	[143607] = "Openable", -- Soldier's Footlocker
+	[54537] = "Openable", -- Heart-Shaped Box
 	---ooo
 
 
