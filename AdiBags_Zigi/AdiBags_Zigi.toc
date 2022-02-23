@@ -1,7 +1,8 @@
-## Interface: 90105
-## Title: AdiBags - Zigi
+## Interface: 90200
+## Title: AdiBags |c00ff00Zigi|r
 ## Notes: Adds filters to AdiBags.
-## Author: Leo
-## Version: 9.1.5
+## Author: Leo (Newsom)
+## Version: 9.2.0
 ## Dependencies: AdiBags
+
 AdiBags_Zigi.lua
