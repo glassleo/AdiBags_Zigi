@@ -347,6 +347,11 @@ local ZigiItems = {
 	-- -- Stormsong Valley (94)
 	[169109] = "9294. Stormsong Valley#Zone", -- Beeholder's Goggles
 	-- -- Drustvar (95)
+	[163710] = "9295. Drustvar#Zone", -- Merchant's Key
+	[163789] = "9295. Drustvar#Zone", -- Bundle of Wicker Sticks
+	[163790] = "9295. Drustvar#Zone", -- Spooky Incantation
+	[163791] = "9295. Drustvar#Zone", -- Miniature Stag Skull
+	[163796] = "9295. Drustvar#Zone", -- Wolf Pup Spine
 	-- -- Tiragarde Sound (96)
 
 	-- Broken Isles and Argus (93)
@@ -1777,6 +1782,15 @@ local ZigiItems = {
 
 	--! Optional Reagents (12)
 	-- -- Shadowlands (91)
+	[187829] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Aealic Harmonizing Stone
+	[187825] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Cosmic Protoweave
+	[187849] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Devourer Essence Stone
+	[187836] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Erratic Genesis Matrix
+	[187827] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Infusion: Corpse Purification
+	[187823] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Magically Regulated Automa Core
+	[187831] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Pure-Air Sail Extensions
+	[187850] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Sustaining Armor Polish
+	[187784] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Vestige of the Eternal
 	[185960] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Vestige of Origins
 	[187742] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Crafter's Mark of the First Ones
 	[173384] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Crafter's Mark of the Chained Isle
@@ -4180,6 +4194,9 @@ local ZigiItems = {
 	[141332] = "93. Order Hall#Sanctum", -- The Annals of Light and Shadow
 	[140924] = "93. Order Hall#Sanctum", -- Ashtongue Beacon
 	[140923] = "93. Order Hall#Sanctum", -- Ghoul Tombstone
+	[140928] = "93. Order Hall#Sanctum", -- Ox Initiate's Pledge
+	[140922] = "93. Order Hall#Sanctum", -- Imp Pact
+	[140927] = "93. Order Hall#Sanctum", -- Water Globe
 	[165749] = "93. Order Hall#Sanctum",
 	[147569] = "93. Order Hall#Sanctum",
 	[139844] = "93. Order Hall#Sanctum",
