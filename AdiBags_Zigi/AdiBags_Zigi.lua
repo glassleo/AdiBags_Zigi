@@ -221,6 +221,13 @@ local ZigiItems = {
 	[189178] = "9187. Zereth Mortis#Zone", -- Tools of Incomprehensible Experimentation
 	[189179] = "9187. Zereth Mortis#Zone", -- Unalloyed Bronze Ingot
 	[189180] = "9187. Zereth Mortis#Zone", -- Wind's Infinite Call
+	[188949] = "9187. Zereth Mortis#Zone", -- Mysterious Object (1)
+	[188950] = "9187. Zereth Mortis#Zone", -- Mysterious Object (2)
+	[190198] = "9187. Zereth Mortis#Zone", -- Sandworn Chest Key Fragment
+	[190197] = "9187. Zereth Mortis#Zone", -- Sandworn Chest Key
+	[190189] = "9187. Zereth Mortis#Zone", -- Sandworn Relic
+	[190727] = "9187. Zereth Mortis#Zone", -- Security Override Orb
+	[189863] = "9187. Zereth Mortis#Zone", -- Spatial Opener
 	-- -- Korthia (88)
 	[186685] = "9188. Korthia#Zone", -- Relic Fragment
 	[187322] = "9188. Korthia#Zone", -- Crumbling Stone Tablet
@@ -1927,6 +1934,37 @@ local ZigiItems = {
 
 
 	--[[ ! Equipment ! ]]--
+
+	--! BoA Token (98)
+	-- -- Shadowlands (91)
+	-- -- -- Zereth Mortis (87)
+	[191036] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Accessory
+	[190763] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Belt
+	[190762] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Boots
+	[190761] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Bracers
+	[191037] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Braid
+	[190760] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Chestpiece
+	[190759] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Cloak
+	[190758] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Gloves
+	[190757] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Helm
+	[190756] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Legguards
+	[190764] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Ring
+	[190755] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Shoulders
+	[190741] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Weaponry
+	-- -- -- Korthia (88)
+	[188156] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Accessory
+	[187187] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Armaments
+	[187187] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Armaments
+	[188161] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Belt
+	[188155] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Boots
+	[188163] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Bracers
+	[188154] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Chestpiece
+	[188153] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Cloak
+	[188157] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Gloves
+	[188158] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Helm
+	[188159] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Legguards
+	[188160] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Shoulders
+	[188162] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Weaponry
 
 	--! Legacy Equipment (99)
 	-- -- Artifact (01)
@@ -4570,6 +4608,7 @@ local ZigiItems = {
 	[49084]  = "0112. Glyph [c69b6d]Warrior]#Consumable", -- Glyph of Thunder Strike
 
 	-- Contracts
+	[187796] = "Consumable#Consumable", -- Contract: The Enlightened
 	[165016] = "Consumable#Consumable", -- Contract: 7th Legion
 	[153668] = "Consumable#Consumable", -- Contract: Champions of Azeroth
 	[153662] = "Consumable#Consumable", -- Contract: Order of Embers
@@ -4599,6 +4638,8 @@ local ZigiItems = {
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
 	[128658] = "Currency#Miscellaneous", -- Spooky Supplies
 	[49927] = "Currency#Miscellaneous", -- Love Token
+	[187077] = "Currency#Miscellaneous", -- Packaged Soul Ash
+	[191031] = "Currency#Miscellaneous", -- Packaged Soul Cinders
 
 	--! Reputation (02)
 	[71088] = "02. Reputation#Miscellaneous", -- Bilgewater Writ of Commendation
@@ -4830,6 +4871,7 @@ local ZigiItems = {
 	[174501] = "03. Unbound Reputation#Miscellaneous", -- Ornate Voldunai Jewelry
 	[174518] = "03. Unbound Reputation#Miscellaneous", -- Jani Figurine
 	[174522] = "03. Unbound Reputation#Miscellaneous", -- Waveswept Abyssal Conch
+	[191022] = "03. Unbound Reputation#Miscellaneous", -- Eternal Curio
 
 	--! Toy
 	[86591] = "Toy#Miscellaneous", -- Magic Banana
@@ -4973,6 +5015,7 @@ local ZigiItems = {
 	[180522] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Phaedrum Lockbox
 	[179311] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Sinvyr Lockbox
 	[186161] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Stygian Lockbox
+	[188787] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Locked Broker Luggage
 
 	--! Pieces (98)
 	[171839] = "Pieces", -- Elethium Nugget
@@ -5137,7 +5180,20 @@ local ZigiItems = {
 	[147434] = "Openable|XP", -- Player Experience
 	[165606] = "Openable|XP", -- Player Experience
 	[166231] = "Openable|XP", -- Player Experience
-	-- -- General
+	-- -- Openable
+	[187709] = "Openable", -- Celebration Package (18th)
+	[190656] = "Openable", -- Cache of Sepulcher Treasures (Heroic)
+	[191041] = "Openable", -- Cache of Sepulcher Treasures (Heroic)
+	[191040] = "Openable", -- Cache of Sepulcher Treasures
+	[190655] = "Openable", -- Cache of Sepulcher Treasures
+	[191030] = "Openable", -- Cosmic Flux Parcel
+	[187780] = "Openable", -- Enlightened Broker Supplies
+	[190823] = "Openable", -- Firim's Mysterious Cache
+	[187781] = "Openable", -- Olea Cache
+	[190178] = "Openable", -- Pouch of Protogenic Provisions
+	[190610] = "Openable", -- Tribute of the Enlightened Elders
+	[190644] = "Openable", -- Vessel of Profound Possibilities
+	[187710] = "Openable", -- Anniversary Gift (18th)
 	[190383] = "Openable", -- Progenitor Essentia Lattice
 	[114052] = "Openable", -- Gleaming Ring
 	[114053] = "Openable", -- Shimmering Gauntlets
