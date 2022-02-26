@@ -4237,6 +4237,8 @@ local ZigiItems = {
 	[140927] = "93. Order Hall#Sanctum", -- Water Globe
 	[140933] = "93. Order Hall#Sanctum", -- Runed Aspirant's Band
 	[140931] = "93. Order Hall#Sanctum", -- Bandit Wanted Poster
+	[140929] = "93. Order Hall#Sanctum", -- Squire's Oath
+	[140932] = "93. Order Hall#Sanctum", -- Earthen Mark
 	[165749] = "93. Order Hall#Sanctum",
 	[147569] = "93. Order Hall#Sanctum",
 	[139844] = "93. Order Hall#Sanctum",
@@ -4640,6 +4642,8 @@ local ZigiItems = {
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
 	[128658] = "Currency#Miscellaneous", -- Spooky Supplies
 	[49927] = "Currency#Miscellaneous", -- Love Token
+	[142156] = "Currency#Miscellaneous", -- Order Resources Cache
+	[150737] = "Currency#Miscellaneous", -- Abundant Order Resources Cache
 	[187077] = "Currency#Miscellaneous", -- Packaged Soul Ash
 	[191031] = "Currency#Miscellaneous", -- Packaged Soul Cinders
 
@@ -5183,6 +5187,7 @@ local ZigiItems = {
 	[165606] = "Openable|XP", -- Player Experience
 	[166231] = "Openable|XP", -- Player Experience
 	-- -- Openable
+	[139879] = "Openable", -- Crate of Champion Equipment
 	[187709] = "Openable", -- Celebration Package (18th)
 	[190656] = "Openable", -- Cache of Sepulcher Treasures (Heroic)
 	[191041] = "Openable", -- Cache of Sepulcher Treasures (Heroic)
