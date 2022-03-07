@@ -176,6 +176,21 @@ local ZigiItems = {
 	-- Sort by Expansion descending, Level descending
 
 	-- Shadowlands (91)
+	-- -- Sepulcher of the First Ones (57)
+	-- -- Sanctum of Domination (58)
+	-- -- Castle Nathria (59)
+	-- -- Tazavesh, the Veiled Market (71)
+	[187552] = "9171. Tazavesh, the Veiled Market#Zone", -- Perfectly-Forged Credentials
+	[185954] = "9171. Tazavesh, the Veiled Market#Zone", -- Passably-Forged Credentials
+	[185953] = "9171. Tazavesh, the Veiled Market#Zone", -- Fraudulent Credentials
+	-- -- Sanguine Depths (72)
+	-- -- De Other Side (73)
+	-- -- Theater of Pain (74)
+	-- -- Spires of Ascension (75)
+	-- -- Halls of Atonement (76)
+	-- -- Mists of Tirna Scithe (77)
+	-- -- Plaguefall (78)
+	-- -- The Necrotic Wake (79)
 	-- -- Zereth Mortis (87)
 	[188957] = "9187. Zereth Mortis#Zone", -- Genesis Mote
 	[187634] = "9187. Zereth Mortis#Zone", -- Ambystan Lattice
@@ -5211,6 +5226,9 @@ local ZigiItems = {
 	[147434] = "Openable|XP", -- Player Experience
 	[165606] = "Openable|XP", -- Player Experience
 	[166231] = "Openable|XP", -- Player Experience
+	-- -- Grants Reputation (BoP)
+	[190339] = "Openable", -- Enlightened Offering
+	[190941] = "Openable", -- Teachings of the Elders
 	-- -- Openable
 	[183701] = "Openable", -- Cleansing Rite Materials
 	[139879] = "Openable", -- Crate of Champion Equipment
