@@ -531,6 +531,8 @@ local ZigiItems = {
 	-- -- Dire Maul (71)
 	[18258] = "9971. Dire Maul#Zone", -- Gordok Ogre Suit
 	[18240] = "9971. Dire Maul#Zone", -- Ogre Tannin
+	-- -- Gnomeregan (79)
+	[9308] = "9979. Gnomeregan#Zone", -- Grime-Encrusted Object
 
 	-- -- Trial of Style (89)
 	[151134] = "9989. Trial of Style", -- Trial of Style Token
@@ -4221,24 +4223,26 @@ local ZigiItems = {
 	[136412] = "93. Order Hall#Sanctum", -- Heavy Armor Set
 	[137207] = "93. Order Hall#Sanctum", -- Fortified Armor Set
 	[137208] = "93. Order Hall#Sanctum", -- Indestructible Armor Set
-	[143605] = "93. Order Hall#Sanctum", -- Strange Ball of Energy
-	[140760] = "93. Order Hall#Sanctum", -- Libram of Truth
-	[143852] = "93. Order Hall#Sanctum", -- Lucky Rabbit's Foot
+	[138410] = "93. Order Hall#Sanctum", -- Summoning Portal
 	[139428] = "93. Order Hall#Sanctum", -- A Master Plan
 	[139781] = "93. Order Hall#Sanctum", -- Marin Noggenfogger's Lucky Coin
-	[142209] = "93. Order Hall#Sanctum", -- Dinner Invitation
-	[143850] = "93. Order Hall#Sanctum", -- Summon Grimtotem Warrior
-	[138410] = "93. Order Hall#Sanctum", -- Summoning Portal
-	[141332] = "93. Order Hall#Sanctum", -- The Annals of Light and Shadow
-	[140924] = "93. Order Hall#Sanctum", -- Ashtongue Beacon
-	[140923] = "93. Order Hall#Sanctum", -- Ghoul Tombstone
-	[140928] = "93. Order Hall#Sanctum", -- Ox Initiate's Pledge
+	[140760] = "93. Order Hall#Sanctum", -- Libram of Truth
 	[140922] = "93. Order Hall#Sanctum", -- Imp Pact
+	[140923] = "93. Order Hall#Sanctum", -- Ghoul Tombstone
+	[140924] = "93. Order Hall#Sanctum", -- Ashtongue Beacon
+	[140925] = "93. Order Hall#Sanctum", -- Enchanted Bark
+	[140926] = "93. Order Hall#Sanctum", -- Bowmen's Orders
 	[140927] = "93. Order Hall#Sanctum", -- Water Globe
-	[140933] = "93. Order Hall#Sanctum", -- Runed Aspirant's Band
-	[140931] = "93. Order Hall#Sanctum", -- Bandit Wanted Poster
+	[140928] = "93. Order Hall#Sanctum", -- Ox Initiate's Pledge
 	[140929] = "93. Order Hall#Sanctum", -- Squire's Oath
+	[140931] = "93. Order Hall#Sanctum", -- Bandit Wanted Poster
 	[140932] = "93. Order Hall#Sanctum", -- Earthen Mark
+	[140933] = "93. Order Hall#Sanctum", -- Runed Aspirant's Band
+	[141332] = "93. Order Hall#Sanctum", -- The Annals of Light and Shadow
+	[142209] = "93. Order Hall#Sanctum", -- Dinner Invitation
+	[143605] = "93. Order Hall#Sanctum", -- Strange Ball of Energy
+	[143850] = "93. Order Hall#Sanctum", -- Summon Grimtotem Warrior
+	[143852] = "93. Order Hall#Sanctum", -- Lucky Rabbit's Foot
 	[141028] = "93. Order Hall#Sanctum", -- Grimoire of Knowledge
 	[188654] = "93. Order Hall#Sanctum", -- Grimoire of Knowledge
 	[184688] = "93. Order Hall#Sanctum", -- Grimoire of Knowledge
@@ -4645,6 +4649,15 @@ local ZigiItems = {
 	[173051] = "Consumable#Consumable", -- Contract: The Ascended
 	[175924] = "Consumable#Consumable", -- Contract: The Undying Army
 	[173053] = "Consumable#Consumable", -- Contract: The Wild Hunt
+
+
+	--[[ ! Key ! ]]--
+
+	--! Mythic Keystone
+	[138019] = "Mythic Keystone#Key", -- Mythic Keystone
+	[158923] = "Mythic Keystone#Key", -- Mythic Keystone
+	[180653] = "Mythic Keystone#Key", -- Mythic Keystone
+	[151086] = "Mythic Keystone#Key", -- Mythic Invitational Keystone
 
 
 	--[[ ! Miscellaneous ! ]]--
@@ -5199,6 +5212,7 @@ local ZigiItems = {
 	[165606] = "Openable|XP", -- Player Experience
 	[166231] = "Openable|XP", -- Player Experience
 	-- -- Openable
+	[183701] = "Openable", -- Cleansing Rite Materials
 	[139879] = "Openable", -- Crate of Champion Equipment
 	[187709] = "Openable", -- Celebration Package (18th)
 	[190656] = "Openable", -- Cache of Sepulcher Treasures (Heroic)
