@@ -4671,6 +4671,14 @@ local ZigiItems = {
 	[175924] = "Consumable#Consumable", -- Contract: The Undying Army
 	[173053] = "Consumable#Consumable", -- Contract: The Wild Hunt
 
+	-- Torghast (99)
+	[168207] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Plundered Anima Cell
+	[184662] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Requisitioned Anima Cell
+	[170540] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Ravenous Anima Cell
+	[176409] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Rejuvenating Siphoned Essence
+	[176443] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Fleeting Frenzy Potion
+	[1119938] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mawrat Harness
+
 
 	--[[ ! Key ! ]]--
 
