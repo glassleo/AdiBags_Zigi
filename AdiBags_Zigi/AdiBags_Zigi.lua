@@ -5216,7 +5216,6 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Class Specific
-	[74748] = "Openable|ROGUE", -- Charged Decoder Ring
 	[77952] = "Openable|ROGUE", -- Elementium Gem Cluster
 	-- -- Grants XP
 	[140179] = "Openable|XP", -- Faded Star Chart
