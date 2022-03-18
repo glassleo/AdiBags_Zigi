@@ -175,6 +175,9 @@ end
 local ZigiItems = {
 	-- Section#Category|CLASS,Profession|AltSection#AltCategory or Junk#Junk
 
+	-- Guild Charter
+	[5863] = "Guild Charter#Container",
+
 	--[[ ! Mythic Keystone ! ]]--
 
 	[138019] = "Mythic Keystone", -- Mythic Keystone
@@ -256,6 +259,12 @@ local ZigiItems = {
 	[189863] = "9187. Zereth Mortis#Zone", -- Spatial Opener
 	[189767] = "9187. Zereth Mortis#Zone", -- Roaming Repair Tool
 	[189768] = "9187. Zereth Mortis#Zone", -- Jiro Hammer
+	[187728] = "9187. Zereth Mortis#Zone", -- Ephemera Strands
+	[190659] = "9187. Zereth Mortis#Zone", -- Resonant Carapace Fluidic Spheroid
+	[190658] = "9187. Zereth Mortis#Zone", -- Resonant Gossamer Fluidic Spheroid
+	[190660] = "9187. Zereth Mortis#Zone", -- Resonant Mucus Fluidic Spheroid
+	[190657] = "9187. Zereth Mortis#Zone", -- Resonant Rage Fluidic Spheroid
+	[190661] = "9187. Zereth Mortis#Zone", -- Resonant Regrowth Fluidic Spheroid
 	-- -- Korthia (88)
 	[186685] = "9188. Korthia#Zone", -- Relic Fragment
 	[187322] = "9188. Korthia#Zone", -- Crumbling Stone Tablet
@@ -2037,6 +2046,41 @@ local ZigiItems = {
 	[128908] = "9901. [e6cc80]Artifact]#Equipment", -- Warswords of the Valarjar
 	[128827] = "9901. [e6cc80]Artifact]#Equipment", -- Xal'atath, Blade of the Black Empire
 	-- -- Legendary (02)
+	[173241] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Robe
+	[173242] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Cape
+	[173243] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Sandals
+	[173244] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Mittens
+	[173245] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Hood
+	[173246] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Pants
+	[173247] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Spaulders
+	[173248] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Belt
+	[173249] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Bracers
+	[172314] = "990201. [ff8000]Legendary]#Equipment", -- Umbrahide Vest
+	[172315] = "990201. [ff8000]Legendary]#Equipment", -- Umbrahide Treads
+	[172316] = "990201. [ff8000]Legendary]#Equipment", -- Umbrahide Gauntlets
+	[172317] = "990201. [ff8000]Legendary]#Equipment", -- Umbrahide Helm
+	[172318] = "990201. [ff8000]Legendary]#Equipment", -- Umbrahide Leggings
+	[172319] = "990201. [ff8000]Legendary]#Equipment", -- Umbrahide Pauldrons
+	[172320] = "990201. [ff8000]Legendary]#Equipment", -- Umbrahide Waistguard
+	[172321] = "990201. [ff8000]Legendary]#Equipment", -- Umbrahide Armguards
+	[172322] = "990201. [ff8000]Legendary]#Equipment", -- Boneshatter Vest
+	[172323] = "990201. [ff8000]Legendary]#Equipment", -- Boneshatter Treads
+	[172324] = "990201. [ff8000]Legendary]#Equipment", -- Boneshatter Gauntlets
+	[172325] = "990201. [ff8000]Legendary]#Equipment", -- Boneshatter Helm
+	[172326] = "990201. [ff8000]Legendary]#Equipment", -- Boneshatter Greaves
+	[172327] = "990201. [ff8000]Legendary]#Equipment", -- Boneshatter Pauldrons
+	[172328] = "990201. [ff8000]Legendary]#Equipment", -- Boneshatter Waistguard
+	[172329] = "990201. [ff8000]Legendary]#Equipment", -- Boneshatter Armguards
+	[171412] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Breastplate
+	[171413] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Sabatons
+	[171414] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Gauntlets
+	[171415] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Helm
+	[171416] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Greaves
+	[171417] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Pauldrons
+	[171418] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Waistguard
+	[171419] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Armguards
+	[178926] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Ring
+	[178927] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Necklace
 	[169223] = "990201. [ff8000]Legendary]#Equipment", -- Ashjra'kamas, Shroud of Resolve
 	[124634] = "990201. [ff8000]Legendary]#Equipment|PALADIN,WARRIOR,DEATHKNIGHT", -- Thorasus, the Stone Heart of Draenor
 	[124635] = "990201. [ff8000]Legendary]#Equipment|MAGE,PALADIN,DRUID,PRIEST,SHAMAN,WARLOCK,MONK", -- Nithramus, the All-Seer
@@ -4823,6 +4867,7 @@ local ZigiItems = {
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	-- Consumable
+	[190739] = "Toy#Miscellaneous", -- Provis Wax
 	[104304] = "Toy#Miscellaneous", -- Blizzard Stone
 	[104306] = "Toy#Miscellaneous", -- Sunset Stone
 	[104305] = "Toy#Miscellaneous", -- Ashen Stone
@@ -5157,6 +5202,32 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[183702] = "Openable", -- Nature's Splendor
+	[184643] = "Openable", -- Champion's Enchanting Cache
+	[184632] = "Openable", -- Champion's Fish Cache
+	[184642] = "Openable", -- Champion's Herbalism Cache
+	[184633] = "Openable", -- Champion's Meat Cache
+	[184641] = "Openable", -- Champion's Mining Cache
+	[184640] = "Openable", -- Champion's Skinning Cache
+	[184639] = "Openable", -- Champion's Tailoring Cache
+	[150924] = "Openable", -- Greater Tribute of the Broken Isles
+	[137561] = "Openable", -- Highmountain Tribute
+	[157823] = "Openable", -- Highmountain Tribute
+	[146748] = "Openable", -- Highmountain Tribute
+	[151465] = "Openable", -- Highmountain Tribute
+	[154904] = "Openable", -- Highmountain Tribute
+	[181732] = "Openable", -- Tribute of the Ambitious
+	[181372] = "Openable", -- Tribute of the Ascended
+	[141344] = "Openable", -- Tribute of the Broken Isles
+	[146948] = "Openable", -- Tribute of the Broken Isles
+	[181556] = "Openable", -- Tribute of the Court
+	[181733] = "Openable", -- Tribute of the Duty-Bound
+	[190610] = "Openable", -- Tribute of the Enlightened Elders
+	[191139] = "Openable", -- Tribute of the Enlightened Elders
+	[181741] = "Openable", -- Tribute of the Paragon
+	[181476] = "Openable", -- Tribute of the Wild Hunt
+	[191299] = "Openable", -- Tribute to the Enlightened
+	[187787] = "Openable", -- Ephemera Orb
 	[77952] = "Openable|ROGUE", -- Elementium Gem Cluster
 	[180355] = "Openable", -- Ornate Pyx
 	[171305] = "Openable", -- Salvaged Cache of Good
@@ -5189,6 +5260,7 @@ local ZigiItems = {
 	[156698] = "Openable", -- Tranquil Satchel of Helpful Goods
 	[190178] = "Openable", -- Pouch of Protogenic Provisions
 	[190610] = "Openable", -- Tribute of the Enlightened Elders
+	[191139] = "Openable", -- Tribute of the Enlightened Elders
 	[190823] = "Openable", -- Firim's Mysterious Cache
 	[171305] = "Openable", -- Salvaged Cache of Goods
 	[190656] = "Openable", -- Cache of Sepulcher Treasures (Heroic)
@@ -5466,7 +5538,7 @@ local ZigiItems = {
 	[79917] = "Openable", -- Worn Monument Ledger
 
 	--! Learnable (98)
-	[187709] = "Learnable", -- Celebration Package (18th)
+	[188167] = "Learnable", -- Broker Mark of Distinction
 	[187560] = "Learnable", -- Rockin' Rollin' Racer Pack
 	[169848] = "Learnable", -- Azeroth Mini Pack: Bondo's Yard
 	[169850] = "Learnable", -- Azeroth Mini Pack: Mechagon
@@ -5487,7 +5559,28 @@ local ZigiItems = {
 	[169876] = "Learnable", -- Azeroth Mini: Sapphronetta
 	[169838] = "Learnable", -- Azeroth Mini: Starter Pack
 	[169797] = "Learnable", -- Azeroth Mini: Wrenchbot
-	[188167] = "Learnable", -- Broker Mark of Distinction
+	[187833] = "Learnable", -- Dapper Pocopoc
+	[189451] = "Learnable", -- Chef Pocopoc
+	[189707] = "Learnable", -- Pocopoc's Bronze and Gold Body
+	[189708] = "Learnable", -- Pocopoc's Beryllium and Silver Body
+	[189709] = "Learnable", -- Pocopoc's Cobalt and Copper Body
+	[189710] = "Learnable", -- Pocopoc's Ruby and Platinum Body
+	[189711] = "Learnable", -- Pocopoc's Gold and Ruby Components
+	[189712] = "Learnable", -- Pocopoc's Silver and Beryllium Components
+	[189713] = "Learnable", -- Pocopoc's Copper and Cobalt Components
+	[189714] = "Learnable", -- Pocopoc's Platinum and Emerald Components
+	[189715] = "Learnable", -- Pocopoc's Diamond Vambraces
+	[189716] = "Learnable", -- Pocopoc's Face Decoration
+	[189717] = "Learnable", -- Pocopoc's Shielded Core
+	[189718] = "Learnable", -- Pocopoc's Upgraded Core
+	[190058] = "Learnable", -- Peaceful Pocopoc
+	[190059] = "Learnable", -- Pirate Pocopoc
+	[190060] = "Learnable", -- Adventurous Pocopoc
+	[190061] = "Learnable", -- Admiral Pocopoc
+	[190062] = "Learnable", -- Wicked Pocopoc
+	[190096] = "Learnable", -- Pocobold
+	[190098] = "Learnable", -- Pepepec
+	[190182] = "Learnable", -- Lovely Regal Pocopoc
 	-- -- Experience
 	[140179] = "Learnable|XP", -- Faded Star Chart
 	[140356] = "Learnable|XP", -- Demonic Scribblings
@@ -5514,8 +5607,19 @@ local ZigiItems = {
 	-- -- Reputation
 	[190339] = "Learnable", -- Enlightened Offering
 	[190941] = "Learnable", -- Teachings of the Elders
-	-- -- Mission
+	-- -- Grants Mission
 	[171986] = "Learnable", -- Resonance Locator
+	[166999] = "Learnable", -- Treasure Map
+	[165904] = "Learnable", -- Treasure Map of Havenswood
+	[165905] = "Learnable", -- Treasure Map of Jorundall
+	[165884] = "Learnable", -- Treasure Map of Molten Cay
+	[165906] = "Learnable", -- Treasure Map of Skittering Hollow
+	[165903] = "Learnable", -- Treasure Map of The Dread Chain
+	[165902] = "Learnable", -- Treasure Map of The Rotting Mire
+	[165901] = "Learnable", -- Treasure Map of Un'gol Ruins
+	[165900] = "Learnable", -- Treasure Map of Verdant Wilds
+	[165899] = "Learnable", -- Treasure Map of Whispering Reef
+	[169693] = "Learnable", -- Zem'lan's Lost Treasure Map
 	-- -- Azerite Essence
 	[168443] = "Learnable", -- Agitated Blood of the Dominated
 	[168814] = "Learnable", -- Animated Blood of the Decimated
@@ -5891,6 +5995,7 @@ local ZigiItems = {
 	[183297] = "Learnable", -- Memory of Xuen
 	[183291] = "Learnable", -- Memory of Yu'lon
 	-- -- Conduit
+	[187148] = "Learnable", -- Death-Bound Shard
 	[190644] = "Learnable", -- Vessel of Profound Possibilities
 	[181848] = "Learnable", -- Accelerated Cold
 	[182460] = "Learnable", -- Accrued Vitality
@@ -6170,6 +6275,49 @@ local ZigiItems = {
 	[182456] = "Learnable", -- Wrench Evil
 	[181465] = "Learnable", -- Xuen's Bond
 
+	--! Buff
+	[187709] = "Buff", -- Celebration Package (18th)
+	[189723] = "Buff", -- Absorptialic Crystallic Spheroid
+	[189736] = "Buff", -- Absorptialic Fluidic Spheroid
+	[189722] = "Buff", -- Alacrialic Crystallic Spheroid
+	[189740] = "Buff", -- Alacrialic Fluidic Spheroid
+	[189732] = "Buff", -- Constialic Crystallic Spheroid
+	[189748] = "Buff", -- Constialic Fluidic Spheroid
+	[189560] = "Buff", -- Deflectialic Crystallic Spheroid
+	[189577] = "Buff", -- Deflectialic Fluidic Spheroid
+	[189763] = "Buff", -- Efficialic Crystallic Spheroid
+	[189757] = "Buff", -- Efficialic Fluidic Spheroid
+	[189724] = "Buff", -- Extractialic Crystallic Spheroid
+	[189739] = "Buff", -- Extractialic Fluidic Spheroid
+	[189725] = "Buff", -- Flexialic Crystallic Spheroid
+	[189749] = "Buff", -- Flexialic Fluidic Spheroid
+	[189726] = "Buff", -- Focialic Crystallic Spheroid
+	[189743] = "Buff", -- Focialic Fluidic Spheroid
+	[189762] = "Buff", -- Fortialic Crystallic Spheroid
+	[189755] = "Buff", -- Fortialic Fluidic Spheroid
+	[189727] = "Buff", -- Healialic Crystallic Spheroid
+	[189742] = "Buff", -- Healialic Fluidic Spheroid
+	[189728] = "Buff", -- Obscurialic Crystallic Spheroid
+	[189737] = "Buff", -- Obscurialic Fluidic Spheroid
+	[189729] = "Buff", -- Osmosialic Crystallic Spheroid
+	[189741] = "Buff", -- Osmosialic Fluidic Spheroid
+	[189730] = "Buff", -- Perceptialic Crystallic Spheroid
+	[189738] = "Buff", -- Perceptialic Fluidic Spheroid
+	[189731] = "Buff", -- Potentialic Crystallic Spheroid
+	[189744] = "Buff", -- Potentialic Fluidic Spheroid
+	[189764] = "Buff", -- Reflectialic Crystallic Spheroid
+	[189758] = "Buff", -- Reflectialic Fluidic Spheroid
+	[189733] = "Buff", -- Relialic Crystallic Spheroid
+	[189745] = "Buff", -- Relialic Fluidic Spheroid
+	[189734] = "Buff", -- Rigialic Crystallic Spheroid
+	[189746] = "Buff", -- Rigialic Fluidic Spheroid
+	[189760] = "Buff", -- Robustialic Crystallic Spheroid
+	[189759] = "Buff", -- Robustialic Fluidic Spheroid
+	[189761] = "Buff", -- Toxicialic Crystallic Spheroid
+	[189756] = "Buff", -- Toxicialic Fluidic Spheroid
+	[189735] = "Buff", -- Velocialic Crystallic Spheroid
+	[189747] = "Buff", -- Velocialic Fluidic Spheroid
+
 
 	--[[ ! Junk ! ]]--
 
@@ -6333,7 +6481,8 @@ function Zigi:FormatName(name, profession)
 	local covenant = C_Covenants and C_Covenants.GetActiveCovenantID() or 0
 
 	-- Shortcuts
-	if name == "Pieces" then name = "97. {vehicle-hammergold} Pieces#Container" end
+	if name == "Pieces" then name = "96. {vehicle-hammergold} Pieces#Container" end
+	if name == "Buff" then name = "97. {ParagonReputation_Checkmark} [00ff00]Buff]#Container" end
 	if name == "Learnable" then name = "98. {ParagonReputation_Checkmark} [00ff00]Learnable]#Container" end
 	if name == "Openable" then name = "99. {ParagonReputation_Bag} [00ff00]Openable]#Container" end
 	if name == "Junk" then name = "Junk#Junk" end
