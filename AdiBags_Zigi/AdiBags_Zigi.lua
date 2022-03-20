@@ -321,6 +321,7 @@ local ZigiItems = {
 	[190660] = "9187. Zereth Mortis#Zone", -- Resonant Mucus Fluidic Spheroid
 	[190657] = "9187. Zereth Mortis#Zone", -- Resonant Rage Fluidic Spheroid
 	[190661] = "9187. Zereth Mortis#Zone", -- Resonant Regrowth Fluidic Spheroid
+	[189704] = "9187. Zereth Mortis#Zone", -- Dominance Key
 	-- -- Korthia (88)
 	[186685] = "9188. Korthia#Zone", -- Relic Fragment
 	[187322] = "9188. Korthia#Zone", -- Crumbling Stone Tablet
@@ -390,6 +391,7 @@ local ZigiItems = {
 	[183401] = "9193. Maldraxxus#Zone", -- Amethystine Dye
 	-- -- Bastion (94)
 	[184759] = "9194. Bastion#Zone", -- Tasty Purian
+	[180536] = "9194. Bastion#Zone", -- Broken Kyrian Flute
 	-- -- Oribos (99)
 
 	-- Kul Tiras and Zandalar (92)
