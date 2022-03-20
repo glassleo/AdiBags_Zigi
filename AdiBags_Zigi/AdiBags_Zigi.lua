@@ -1,5 +1,61 @@
 local AdiBags = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
 
+-- https://wow.tools/dbc/?dbc=mapchallengemode
+local ChallengeMap = {
+	[2] = "Temple of the Jade Serpent",
+	[56] = "Stormstout Brewery",
+	[57] = "Gate of the Setting Sun",
+	[58] = "Shado-Pan Monastery",
+	[59] = "Siege of Niuzao Temple",
+	[60] = "Mogu'shan Palace",
+	[76] = "Scholomance",
+	[77] = "Scarlet Halls",
+	[78] = "Scarlet Monastery",
+	[161] = "Skyreach",
+	[163] = "Bloodmaul Slag Mines",
+	[164] = "Auchindoun",
+	[165] = "Shadowmoon Burial Grounds",
+	[166] = "Grimrail Depot",
+	[167] = "Upper Blackrock Spire",
+	[168] = "The Everbloom",
+	[169] = "Iron Docks",
+	[197] = "Eye of Azshara",
+	[198] = "Darkheart Thicket",
+	[199] = "Black Rook Hold",
+	[200] = "Halls of Valor",
+	[206] = "Neltharion's Lair",
+	[207] = "Vault of the Wardens",
+	[208] = "Maw of Souls",
+	[209] = "The Arcway",
+	[210] = "Court of Stars",
+	[227] = "Return to Karazhan: Lower",
+	[233] = "Cathedral of Eternal Night",
+	[234] = "Return to Karazhan: Upper",
+	[239] = "Seat of the Triumvirate",
+	[244] = "Atal'Dazar",
+	[245] = "Freehold",
+	[246] = "Tol Dagor",
+	[247] = "The MOTHERLODE!!",
+	[248] = "Waycrest Manor",
+	[249] = "Kings' Rest",
+	[250] = "Temple of Sethraliss",
+	[251] = "The Underrot",
+	[252] = "Shrine of the Storm",
+	[353] = "Siege of Boralus",
+	[369] = "Operation: Mechagon - Junkyard",
+	[370] = "Operation: Mechagon - Workshop",
+	[375] = "Mists of Tirna Scithe",
+	[376] = "The Necrotic Wake",
+	[377] = "De Other Side",
+	[378] = "Halls of Atonement",
+	[379] = "Plaguefall",
+	[380] = "Sanguine Depths",
+	[381] = "Spires of Ascension",
+	[382] = "Theater of Pain",
+	[391] = "Tazavesh: Streets of Wonder",
+	[392] = "Tazavesh: So'leah's Gambit",
+}
+
 local StuffItems = {
 	--[[ ! Bank Stuff ! ]]--
 
@@ -4736,129 +4792,129 @@ local ZigiItems = {
 	[163620] = "02. Reputation#Miscellaneous", -- Island Flotsam
 
 	-- Unbound Reputation (03)
-	[20404] = "03. Unbound Reputation#Miscellaneous", -- Encrypted Twilight Text
-	[18945] = "03. Unbound Reputation#Miscellaneous", -- Dark Iron Residue
-	[24401] = "03. Unbound Reputation#Miscellaneous", -- Unidentified Plant Parts
-	[129949] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Cenarion Expedition
-	[129948] = "03. Unbound Reputation#Miscellaneous", -- Commendation of Honor Hold
-	[129950] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Keepers of Time
-	[24449] = "03. Unbound Reputation#Miscellaneous", -- Fertile Spores
-	[24291] = "03. Unbound Reputation#Miscellaneous", -- Bog Lord Tendril
-	[24246] = "03. Unbound Reputation#Miscellaneous", -- Sanguine Hibiscus
-	[129945] = "03. Unbound Reputation#Miscellaneous", -- Commendation of The Consortium
-	[129947] = "03. Unbound Reputation#Miscellaneous", -- Commendation of Thrallmar
-	[129951] = "03. Unbound Reputation#Miscellaneous", -- Commendation of Lower City
-	[29740] = "03. Unbound Reputation#Miscellaneous", -- Fel Armament
-	[30809] = "03. Unbound Reputation#Miscellaneous", -- Mark of Sargeras
-	[29425] = "03. Unbound Reputation#Miscellaneous", -- Mark of Kil'jaeden
-	[29739] = "03. Unbound Reputation#Miscellaneous", -- Arcane Tome
-	[30810] = "03. Unbound Reputation#Miscellaneous", -- Sunfury Signet
-	[29426] = "03. Unbound Reputation#Miscellaneous", -- Firewing Signet
-	[129946] = "03. Unbound Reputation#Miscellaneous", -- Commendation of The Sha'tar
-	[129942] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Argent Crusade
-	[129940] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Kirin Tor
-	[129941] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Ebon Blade
-	[129943] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Sons of Hodir
-	[42780] = "03. Unbound Reputation#Miscellaneous", -- Relic of Ulduar
-	[129944] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Wyrmrest Accord
-	[129954] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Horde Expedition
-	[129955] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Alliance Vanguard
-	[63517] = "03. Unbound Reputation#Miscellaneous", -- Baradin's Wardens Commendation
-	[133150] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Dragonmaw Clan
-	[133152] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Guardians of Hyjal
-	[63518] = "03. Unbound Reputation#Miscellaneous", -- Hellscream's Reach Commendation
-	[133154] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Ramkahen
-	[133159] = "03. Unbound Reputation#Miscellaneous", -- Commendation of The Earthen Ring
-	[133160] = "03. Unbound Reputation#Miscellaneous", -- Commendation of Therazane
-	[133151] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Wildhammer Clan
-	[143943] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Dominance Offensive
-	[143947] = "03. Unbound Reputation#Miscellaneous", -- Commendation of Emperor Shaohao
-	[94227] = "03. Unbound Reputation#Miscellaneous", -- Stolen Golden Lotus Insignia
-	[143937] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Golden Lotus
-	[90816] = "03. Unbound Reputation#Miscellaneous", -- Relic of the Thunder King
-	[90815] = "03. Unbound Reputation#Miscellaneous", -- Relic of Guo-Lai
-	[143940] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Kirin Tor Offensive
-	[143944] = "03. Unbound Reputation#Miscellaneous", -- Commendation of Operation: Shieldwall
-	[143942] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Order of the Cloud Serpent
-	[104286] = "03. Unbound Reputation#Miscellaneous", -- Quivering Firestorm Egg
-	[94223] = "03. Unbound Reputation#Miscellaneous", -- Stolen Shado-Pan Insignia
-	[143936] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Shado-Pan
-	[143945] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Shado-Pan Assault
-	[95496] = "03. Unbound Reputation#Miscellaneous", -- Shado-Pan Assault Insignia
-	[143939] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Sunreaver Onslaught
-	[94225] = "03. Unbound Reputation#Miscellaneous", -- Stolen Celestial Insignia
-	[143938] = "03. Unbound Reputation#Miscellaneous", -- Commendation of The August Celestials
-	[94226] = "03. Unbound Reputation#Miscellaneous", -- Stolen Klaxxi Insignia
-	[143935] = "03. Unbound Reputation#Miscellaneous", -- Commendation of The Klaxxi
-	[143946] = "03. Unbound Reputation#Miscellaneous", -- Commendation of The Anglers
-	[143941] = "03. Unbound Reputation#Miscellaneous", -- Commendation of The Tillers
-	[128315] = "03. Unbound Reputation#Miscellaneous", -- Medallion of the Legion
-	[167924] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Arakkoa Outcasts
-	[117492] = "03. Unbound Reputation#Miscellaneous", -- Relic of Rukhmar
-	[167929] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Council of Exarchs
-	[167928] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Frostwolf Orcs
-	[168018] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Hand of the Prophet
-	[167930] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Laughing Skull Orcs
-	[167925] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Order of the Awakened
-	[167932] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Sha'tari Defense
-	[167926] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Steamwheedle Preservation Society
-	[118100] = "03. Unbound Reputation#Miscellaneous", -- Highmaul Relic
-	[118654] = "03. Unbound Reputation#Miscellaneous", -- Aogexon's Fang
-	[118655] = "03. Unbound Reputation#Miscellaneous", -- Bergruu's Horn
-	[118656] = "03. Unbound Reputation#Miscellaneous", -- Dekorhan's Tusk
-	[118657] = "03. Unbound Reputation#Miscellaneous", -- Direhoof's Hide
-	[118658] = "03. Unbound Reputation#Miscellaneous", -- Gagrog's Skull
-	[118659] = "03. Unbound Reputation#Miscellaneous", -- Mu'gra's Head
-	[118660] = "03. Unbound Reputation#Miscellaneous", -- Thek'talon's Talon
-	[118661] = "03. Unbound Reputation#Miscellaneous", -- Xelganak's Stinger
-	[120172] = "03. Unbound Reputation#Miscellaneous", -- Vileclaw's Claw
-	[167927] = "03. Unbound Reputation#Miscellaneous", -- Commendation of the Saberstalkers
-	[168017] = "03. Unbound Reputation#Miscellaneous", -- Commendation of Vol'jin's Headhunters
-	[153113] = "03. Unbound Reputation#Miscellaneous", -- Demon's Soulstone
-	[152954] = "03. Unbound Reputation#Miscellaneous", -- Greater Argussian Reach Insignia
-	[152960] = "03. Unbound Reputation#Miscellaneous", -- Argussian Reach Insignia
-	[152464] = "03. Unbound Reputation#Miscellaneous", -- Greater Legionfall Insignia
-	[146950] = "03. Unbound Reputation#Miscellaneous", -- Legionfall Insignia
-	[152955] = "03. Unbound Reputation#Miscellaneous", -- Greater Army of the Light Insignia
-	[152957] = "03. Unbound Reputation#Miscellaneous", -- Army of the Light Insignia
-	[150927] = "03. Unbound Reputation#Miscellaneous", -- Greater Court of Farondis Insignia
-	[146943] = "03. Unbound Reputation#Miscellaneous", -- Court of Farondis Insignia
-	[141340] = "03. Unbound Reputation#Miscellaneous", -- Court of Farondis Insignia
-	[150926] = "03. Unbound Reputation#Miscellaneous", -- Greater Dreamweaer Insignia
-	[141339] = "03. Unbound Reputation#Miscellaneous", -- Dreamweaver Insignia
-	[146942] = "03. Unbound Reputation#Miscellaneous", -- Dreamweaver Insignia
-	[150928] = "03. Unbound Reputation#Miscellaneous", -- Greater Highmountain Tribe Insignia
-	[141341] = "03. Unbound Reputation#Miscellaneous", -- Highmountain Tribe Insignia
-	[146944] = "03. Unbound Reputation#Miscellaneous", -- Highmountain Tribe Insignia
-	[150930] = "03. Unbound Reputation#Miscellaneous", -- Greater Nightfallen Insignia
-	[141343] = "03. Unbound Reputation#Miscellaneous", -- Nightfallen Insignia
-	[146946] = "03. Unbound Reputation#Miscellaneous", -- Nightfallen Insignia
-	[150929] = "03. Unbound Reputation#Miscellaneous", -- Greater Wardens Insignia
-	[141342] = "03. Unbound Reputation#Miscellaneous", -- Wardens Insignia
-	[146945] = "03. Unbound Reputation#Miscellaneous", -- Wardens Insignia
-	[150925] = "03. Unbound Reputation#Miscellaneous", -- Greater Valarjar Insignia
-	[141338] = "03. Unbound Reputation#Miscellaneous", -- Valarjar Insignia
-	[146941] = "03. Unbound Reputation#Miscellaneous", -- Valarjar Insignia
-	[174507] = "03. Unbound Reputation#Miscellaneous", -- Fallen Soldier's Insignia
-	[174502] = "03. Unbound Reputation#Miscellaneous", -- Tear of Azeroth
-	[168822] = "03. Unbound Reputation#Miscellaneous", -- Thin Jelly
-	[168825] = "03. Unbound Reputation#Miscellaneous", -- Rich Jelly
-	[168828] = "03. Unbound Reputation#Miscellaneous", -- Royal Jelly
-	[174503] = "03. Unbound Reputation#Miscellaneous", -- Exotically Spiced Carrot
-	[174504] = "03. Unbound Reputation#Miscellaneous", -- Proudmoore War Copper
-	[173374] = "03. Unbound Reputation#Miscellaneous", -- Rajani Insignia
-	[168497] = "03. Unbound Reputation#Miscellaneous", -- Rustbolt Resistance Insignia
-	[174521] = "03. Unbound Reputation#Miscellaneous", -- Transferable Kernel of E-steam
-	[174505] = "03. Unbound Reputation#Miscellaneous", -- Tide-Speaker's Tome
-	[174506] = "03. Unbound Reputation#Miscellaneous", -- Golden Insect Wings
-	[174508] = "03. Unbound Reputation#Miscellaneous", -- Fallen Soldier's Insignia
-	[174523] = "03. Unbound Reputation#Miscellaneous", -- Waveswept Abyssal Conch
-	[174519] = "03. Unbound Reputation#Miscellaneous", -- Verdant Hills of Chokingvine - Page 17
-	[173376] = "03. Unbound Reputation#Miscellaneous", -- Uldum Accord Insignia
-	[174501] = "03. Unbound Reputation#Miscellaneous", -- Ornate Voldunai Jewelry
-	[174518] = "03. Unbound Reputation#Miscellaneous", -- Jani Figurine
-	[174522] = "03. Unbound Reputation#Miscellaneous", -- Waveswept Abyssal Conch
-	[191022] = "03. Unbound Reputation#Miscellaneous", -- Eternal Curio
+	[20404] = "02. Reputation#Miscellaneous", -- Encrypted Twilight Text
+	[18945] = "02. Reputation#Miscellaneous", -- Dark Iron Residue
+	[24401] = "02. Reputation#Miscellaneous", -- Unidentified Plant Parts
+	[129949] = "02. Reputation#Miscellaneous", -- Commendation of the Cenarion Expedition
+	[129948] = "02. Reputation#Miscellaneous", -- Commendation of Honor Hold
+	[129950] = "02. Reputation#Miscellaneous", -- Commendation of the Keepers of Time
+	[24449] = "02. Reputation#Miscellaneous", -- Fertile Spores
+	[24291] = "02. Reputation#Miscellaneous", -- Bog Lord Tendril
+	[24246] = "02. Reputation#Miscellaneous", -- Sanguine Hibiscus
+	[129945] = "02. Reputation#Miscellaneous", -- Commendation of The Consortium
+	[129947] = "02. Reputation#Miscellaneous", -- Commendation of Thrallmar
+	[129951] = "02. Reputation#Miscellaneous", -- Commendation of Lower City
+	[29740] = "02. Reputation#Miscellaneous", -- Fel Armament
+	[30809] = "02. Reputation#Miscellaneous", -- Mark of Sargeras
+	[29425] = "02. Reputation#Miscellaneous", -- Mark of Kil'jaeden
+	[29739] = "02. Reputation#Miscellaneous", -- Arcane Tome
+	[30810] = "02. Reputation#Miscellaneous", -- Sunfury Signet
+	[29426] = "02. Reputation#Miscellaneous", -- Firewing Signet
+	[129946] = "02. Reputation#Miscellaneous", -- Commendation of The Sha'tar
+	[129942] = "02. Reputation#Miscellaneous", -- Commendation of the Argent Crusade
+	[129940] = "02. Reputation#Miscellaneous", -- Commendation of the Kirin Tor
+	[129941] = "02. Reputation#Miscellaneous", -- Commendation of the Ebon Blade
+	[129943] = "02. Reputation#Miscellaneous", -- Commendation of the Sons of Hodir
+	[42780] = "02. Reputation#Miscellaneous", -- Relic of Ulduar
+	[129944] = "02. Reputation#Miscellaneous", -- Commendation of the Wyrmrest Accord
+	[129954] = "02. Reputation#Miscellaneous", -- Commendation of the Horde Expedition
+	[129955] = "02. Reputation#Miscellaneous", -- Commendation of the Alliance Vanguard
+	[63517] = "02. Reputation#Miscellaneous", -- Baradin's Wardens Commendation
+	[133150] = "02. Reputation#Miscellaneous", -- Commendation of the Dragonmaw Clan
+	[133152] = "02. Reputation#Miscellaneous", -- Commendation of the Guardians of Hyjal
+	[63518] = "02. Reputation#Miscellaneous", -- Hellscream's Reach Commendation
+	[133154] = "02. Reputation#Miscellaneous", -- Commendation of the Ramkahen
+	[133159] = "02. Reputation#Miscellaneous", -- Commendation of The Earthen Ring
+	[133160] = "02. Reputation#Miscellaneous", -- Commendation of Therazane
+	[133151] = "02. Reputation#Miscellaneous", -- Commendation of the Wildhammer Clan
+	[143943] = "02. Reputation#Miscellaneous", -- Commendation of the Dominance Offensive
+	[143947] = "02. Reputation#Miscellaneous", -- Commendation of Emperor Shaohao
+	[94227] = "02. Reputation#Miscellaneous", -- Stolen Golden Lotus Insignia
+	[143937] = "02. Reputation#Miscellaneous", -- Commendation of the Golden Lotus
+	[90816] = "02. Reputation#Miscellaneous", -- Relic of the Thunder King
+	[90815] = "02. Reputation#Miscellaneous", -- Relic of Guo-Lai
+	[143940] = "02. Reputation#Miscellaneous", -- Commendation of the Kirin Tor Offensive
+	[143944] = "02. Reputation#Miscellaneous", -- Commendation of Operation: Shieldwall
+	[143942] = "02. Reputation#Miscellaneous", -- Commendation of the Order of the Cloud Serpent
+	[104286] = "02. Reputation#Miscellaneous", -- Quivering Firestorm Egg
+	[94223] = "02. Reputation#Miscellaneous", -- Stolen Shado-Pan Insignia
+	[143936] = "02. Reputation#Miscellaneous", -- Commendation of the Shado-Pan
+	[143945] = "02. Reputation#Miscellaneous", -- Commendation of the Shado-Pan Assault
+	[95496] = "02. Reputation#Miscellaneous", -- Shado-Pan Assault Insignia
+	[143939] = "02. Reputation#Miscellaneous", -- Commendation of the Sunreaver Onslaught
+	[94225] = "02. Reputation#Miscellaneous", -- Stolen Celestial Insignia
+	[143938] = "02. Reputation#Miscellaneous", -- Commendation of The August Celestials
+	[94226] = "02. Reputation#Miscellaneous", -- Stolen Klaxxi Insignia
+	[143935] = "02. Reputation#Miscellaneous", -- Commendation of The Klaxxi
+	[143946] = "02. Reputation#Miscellaneous", -- Commendation of The Anglers
+	[143941] = "02. Reputation#Miscellaneous", -- Commendation of The Tillers
+	[128315] = "02. Reputation#Miscellaneous", -- Medallion of the Legion
+	[167924] = "02. Reputation#Miscellaneous", -- Commendation of the Arakkoa Outcasts
+	[117492] = "02. Reputation#Miscellaneous", -- Relic of Rukhmar
+	[167929] = "02. Reputation#Miscellaneous", -- Commendation of the Council of Exarchs
+	[167928] = "02. Reputation#Miscellaneous", -- Commendation of the Frostwolf Orcs
+	[168018] = "02. Reputation#Miscellaneous", -- Commendation of the Hand of the Prophet
+	[167930] = "02. Reputation#Miscellaneous", -- Commendation of the Laughing Skull Orcs
+	[167925] = "02. Reputation#Miscellaneous", -- Commendation of the Order of the Awakened
+	[167932] = "02. Reputation#Miscellaneous", -- Commendation of the Sha'tari Defense
+	[167926] = "02. Reputation#Miscellaneous", -- Commendation of the Steamwheedle Preservation Society
+	[118100] = "02. Reputation#Miscellaneous", -- Highmaul Relic
+	[118654] = "02. Reputation#Miscellaneous", -- Aogexon's Fang
+	[118655] = "02. Reputation#Miscellaneous", -- Bergruu's Horn
+	[118656] = "02. Reputation#Miscellaneous", -- Dekorhan's Tusk
+	[118657] = "02. Reputation#Miscellaneous", -- Direhoof's Hide
+	[118658] = "02. Reputation#Miscellaneous", -- Gagrog's Skull
+	[118659] = "02. Reputation#Miscellaneous", -- Mu'gra's Head
+	[118660] = "02. Reputation#Miscellaneous", -- Thek'talon's Talon
+	[118661] = "02. Reputation#Miscellaneous", -- Xelganak's Stinger
+	[120172] = "02. Reputation#Miscellaneous", -- Vileclaw's Claw
+	[167927] = "02. Reputation#Miscellaneous", -- Commendation of the Saberstalkers
+	[168017] = "02. Reputation#Miscellaneous", -- Commendation of Vol'jin's Headhunters
+	[153113] = "02. Reputation#Miscellaneous", -- Demon's Soulstone
+	[152954] = "02. Reputation#Miscellaneous", -- Greater Argussian Reach Insignia
+	[152960] = "02. Reputation#Miscellaneous", -- Argussian Reach Insignia
+	[152464] = "02. Reputation#Miscellaneous", -- Greater Legionfall Insignia
+	[146950] = "02. Reputation#Miscellaneous", -- Legionfall Insignia
+	[152955] = "02. Reputation#Miscellaneous", -- Greater Army of the Light Insignia
+	[152957] = "02. Reputation#Miscellaneous", -- Army of the Light Insignia
+	[150927] = "02. Reputation#Miscellaneous", -- Greater Court of Farondis Insignia
+	[146943] = "02. Reputation#Miscellaneous", -- Court of Farondis Insignia
+	[141340] = "02. Reputation#Miscellaneous", -- Court of Farondis Insignia
+	[150926] = "02. Reputation#Miscellaneous", -- Greater Dreamweaer Insignia
+	[141339] = "02. Reputation#Miscellaneous", -- Dreamweaver Insignia
+	[146942] = "02. Reputation#Miscellaneous", -- Dreamweaver Insignia
+	[150928] = "02. Reputation#Miscellaneous", -- Greater Highmountain Tribe Insignia
+	[141341] = "02. Reputation#Miscellaneous", -- Highmountain Tribe Insignia
+	[146944] = "02. Reputation#Miscellaneous", -- Highmountain Tribe Insignia
+	[150930] = "02. Reputation#Miscellaneous", -- Greater Nightfallen Insignia
+	[141343] = "02. Reputation#Miscellaneous", -- Nightfallen Insignia
+	[146946] = "02. Reputation#Miscellaneous", -- Nightfallen Insignia
+	[150929] = "02. Reputation#Miscellaneous", -- Greater Wardens Insignia
+	[141342] = "02. Reputation#Miscellaneous", -- Wardens Insignia
+	[146945] = "02. Reputation#Miscellaneous", -- Wardens Insignia
+	[150925] = "02. Reputation#Miscellaneous", -- Greater Valarjar Insignia
+	[141338] = "02. Reputation#Miscellaneous", -- Valarjar Insignia
+	[146941] = "02. Reputation#Miscellaneous", -- Valarjar Insignia
+	[174507] = "02. Reputation#Miscellaneous", -- Fallen Soldier's Insignia
+	[174502] = "02. Reputation#Miscellaneous", -- Tear of Azeroth
+	[168822] = "02. Reputation#Miscellaneous", -- Thin Jelly
+	[168825] = "02. Reputation#Miscellaneous", -- Rich Jelly
+	[168828] = "02. Reputation#Miscellaneous", -- Royal Jelly
+	[174503] = "02. Reputation#Miscellaneous", -- Exotically Spiced Carrot
+	[174504] = "02. Reputation#Miscellaneous", -- Proudmoore War Copper
+	[173374] = "02. Reputation#Miscellaneous", -- Rajani Insignia
+	[168497] = "02. Reputation#Miscellaneous", -- Rustbolt Resistance Insignia
+	[174521] = "02. Reputation#Miscellaneous", -- Transferable Kernel of E-steam
+	[174505] = "02. Reputation#Miscellaneous", -- Tide-Speaker's Tome
+	[174506] = "02. Reputation#Miscellaneous", -- Golden Insect Wings
+	[174508] = "02. Reputation#Miscellaneous", -- Fallen Soldier's Insignia
+	[174523] = "02. Reputation#Miscellaneous", -- Waveswept Abyssal Conch
+	[174519] = "02. Reputation#Miscellaneous", -- Verdant Hills of Chokingvine - Page 17
+	[173376] = "02. Reputation#Miscellaneous", -- Uldum Accord Insignia
+	[174501] = "02. Reputation#Miscellaneous", -- Ornate Voldunai Jewelry
+	[174518] = "02. Reputation#Miscellaneous", -- Jani Figurine
+	[174522] = "02. Reputation#Miscellaneous", -- Waveswept Abyssal Conch
+	[191022] = "02. Reputation#Miscellaneous", -- Eternal Curio
 
 	--! Toy
 	[86591] = "Toy#Miscellaneous", -- Magic Banana
@@ -5581,6 +5637,7 @@ local ZigiItems = {
 	[190096] = "Learnable", -- Pocobold
 	[190098] = "Learnable", -- Pepepec
 	[190182] = "Learnable", -- Lovely Regal Pocopoc
+	[188793] = "Learnable|Quest:65282|Account Bound", -- Improvised Cypher Analysis Tool
 	-- -- Experience
 	[140179] = "Learnable|XP", -- Faded Star Chart
 	[140356] = "Learnable|XP", -- Demonic Scribblings
@@ -5996,6 +6053,7 @@ local ZigiItems = {
 	[183291] = "Learnable", -- Memory of Yu'lon
 	-- -- Conduit
 	[187148] = "Learnable", -- Death-Bound Shard
+	[190640] = "Learnable", -- Font of Ephemeral Power
 	[190644] = "Learnable", -- Vessel of Profound Possibilities
 	[181848] = "Learnable", -- Accelerated Cold
 	[182460] = "Learnable", -- Accrued Vitality
@@ -6484,8 +6542,20 @@ function Zigi:FormatName(name, profession)
 	if name == "Pieces" then name = "96. {vehicle-hammergold} Pieces#Container" end
 	if name == "Buff" then name = "97. {ParagonReputation_Checkmark} [00ff00]Buff]#Container" end
 	if name == "Learnable" then name = "98. {ParagonReputation_Checkmark} [00ff00]Learnable]#Container" end
+	if name == "Learned" then name = "98. [ff0000]Learned]#Container" end
 	if name == "Openable" then name = "99. {ParagonReputation_Bag} [00ff00]Openable]#Container" end
+	if name == "Unbound" then name = "98. Unbound#Unbound" end
+	if name == "Account Bound" then name = "99. [00ccff]Account Bound]#Unbound" end
 	if name == "Junk" then name = "Junk#Junk" end
+	if name == "Mythic Keystone" then
+		name = "[a335ee]Mythic Keystone]#Mythic Keystone"
+		local map = C_MythicPlus.GetOwnedKeystoneChallengeMapID()
+		local level = C_MythicPlus.GetOwnedKeystoneLevel()
+
+		if map and level then
+			name = "[a335ee]Keystone: " .. (ChallengeMap[map] or map) .. " (" .. level .. ")]#Mythic Keystone"
+		end
+	end
 
 	-- Sanctum
 	if name == "94. Garrison#Sanctum" then
@@ -6655,6 +6725,10 @@ function Zigi:CheckItem(id, bag, slot)
 					match = "profession"
 				elseif v == "XP" and (UnitLevel("player") <= 49) then
 					match = "level" -- XP items can only be used until level 49
+				elseif string.match(v, "Quest:(%d)") then
+					if not C_QuestLog.IsQuestFlaggedCompleted(tonumber(string.gsub(v, "Quest:(%d)", "%1") or 0)) then
+						match = "quest"
+					end
 				end
 
 				if (tonumber(v) or 0) > 0 then
