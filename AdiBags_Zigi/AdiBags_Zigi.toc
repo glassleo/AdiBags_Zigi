@@ -1,5 +1,5 @@
 ## Interface: 90200
-## Title: AdiBags |c00ff00Zigi|r
+## Title: AdiBags |cff00ccffZigi|r
 ## Notes: Adds filters to AdiBags.
 ## Author: Leo (Newsom)
 ## Version: 9.2.0
