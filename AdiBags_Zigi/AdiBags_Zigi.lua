@@ -4677,14 +4677,17 @@ local ZigiItems = {
 	--[[ ! Miscellaneous ! ]]--
 	-- Sort by priority
 
+	--! Account Bound
+	[142156] = "Account Bound", -- Order Resources Cache
+	[150737] = "Account Bound", -- Abundant Order Resources Cache
+	[187077] = "Account Bound", -- Packaged Soul Ash
+	[191031] = "Account Bound", -- Packaged Soul Cinders
+
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
 	[128658] = "Currency#Miscellaneous", -- Spooky Supplies
 	[49927] = "Currency#Miscellaneous", -- Love Token
-	[142156] = "Currency#Miscellaneous", -- Order Resources Cache
-	[150737] = "Currency#Miscellaneous", -- Abundant Order Resources Cache
-	[187077] = "Currency#Miscellaneous", -- Packaged Soul Ash
-	[191031] = "Currency#Miscellaneous", -- Packaged Soul Cinders
+	[187219] = "Currency#Miscellaneous", -- Attendant's Token of Merit
 
 	--! Reputation (02)
 	[71088] = "02. Reputation#Miscellaneous", -- Bilgewater Writ of Commendation
@@ -5260,6 +5263,12 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[184631] = "Openable", -- Adventurer's Enchanting Cache
+	[184634] = "Openable", -- Adventurer's Herbalism Cache
+	[184635] = "Openable", -- Adventurer's Mining Cache
+	[184636] = "Openable", -- Adventurer's Skinning Cache
+	[184630] = "Openable", -- Adventurer's Tailoring Cache
+	[184395] = "Openable", -- Fallen Adventurer's Cache
 	[183702] = "Openable", -- Nature's Splendor
 	[184643] = "Openable", -- Champion's Enchanting Cache
 	[184632] = "Openable", -- Champion's Fish Cache
@@ -6388,6 +6397,7 @@ local ZigiItems = {
 	[39505] = "Junk", -- Virtuoso Inking Set
 
 	-- Trash
+	[187893] = "Junk", -- Volatile Precursor
 	[118225] = "Junk", -- Highmaul Hops
 	[127991] = "Junk", -- Felmouth Frenzy
 	[136654] = "Junk", -- Field Pack
