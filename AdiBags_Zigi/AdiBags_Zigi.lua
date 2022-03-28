@@ -4682,6 +4682,7 @@ local ZigiItems = {
 	[150737] = "Account Bound", -- Abundant Order Resources Cache
 	[187077] = "Account Bound", -- Packaged Soul Ash
 	[191031] = "Account Bound", -- Packaged Soul Cinders
+	[188198] = "Account Bound", -- Traveler's Anima Cache
 
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
@@ -5263,6 +5264,10 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[187575] = "Openable", -- Korthian Fishing Cache
+	[187577] = "Openable", -- Korthian Meat Cache
+	[187576] = "Openable", -- Korthian Skinning Cache
+	[191701] = "Openable", -- Bag of Explored Souls
 	[184631] = "Openable", -- Adventurer's Enchanting Cache
 	[184634] = "Openable", -- Adventurer's Herbalism Cache
 	[184635] = "Openable", -- Adventurer's Mining Cache
@@ -5388,6 +5393,7 @@ local ZigiItems = {
 	[44700] = "Openable", -- Brooding Darkwater Clam
 	[65513] = "Openable", -- Crate of Tasty Meat
 	[108738] = "Openable", -- Giant Draenor Clam
+	[7973] = "Openable", -- Big-Mouth Clam
 	[137608] = "Openable", -- Growling Sac
 	[186694] = "Openable", -- Shaded Bag of Ore
 	[137600] = "Openable", -- Pile of Pants
@@ -5648,7 +5654,10 @@ local ZigiItems = {
 	[190096] = "Learnable", -- Pocobold
 	[190098] = "Learnable", -- Pepepec
 	[190182] = "Learnable", -- Lovely Regal Pocopoc
+	[190184] = "Learnable|Quest:65623|Account Bound", -- Incense of Infinity
 	[188793] = "Learnable|Quest:65282|Account Bound", -- Improvised Cypher Analysis Tool
+	[190640] = "Learnable", -- Font of Ephemeral Power
+	[190956] = "Learnable", -- Decanter of Untapped Potential
 	-- -- Experience
 	[140179] = "Learnable|XP", -- Faded Star Chart
 	[140356] = "Learnable|XP", -- Demonic Scribblings
