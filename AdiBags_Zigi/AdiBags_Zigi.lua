@@ -375,13 +375,30 @@ local ZigiItems = {
 	[182327] = "9189. The Maw#Zone", -- Dominion Etching: Loss
 	[182328] = "9189. The Maw#Zone", -- Dominion Etching: Grief
 	-- -- Revendreth (91)
-	[182744] = "9191. Revendreth#Zone", -- Ornate Belt Buckle
-	[182746] = "9191. Revendreth#Zone", -- All-In-One Belt Repair Kit
-	[182705] = "9191. Revendreth#Zone", -- Vial of Blue Muck Dye
-	[182704] = "9191. Revendreth#Zone", -- Green Muck Dye
-	[182703] = "9191. Revendreth#Zone", -- Bubbling Red Muck Dye
-	[184446] = "9191. Revendreth#Zone", -- Vial of Blue Muck Dye
-	[182702] = "9191. Revendreth#Zone", -- Phial of Black Muck Dye
+	-- -- -- The Avowed (98)
+	[180451] = "919198. The Avowed#Zone", -- Grand Inquisitor's Sinstone Fragment
+	[173795] = "919198. The Avowed#Zone", -- Grand Inquisitor's Sinstone
+	[172998] = "919198. The Avowed#Zone", -- Inquisitor Otilia's Sinstone
+	[172997] = "919198. The Avowed#Zone", -- Inquisitor Petre's Sinstone
+	[172996] = "919198. The Avowed#Zone", -- Inquisitor Sorin's Sinstone
+	[172999] = "919198. The Avowed#Zone", -- Inquisitor Traian's Sinstone
+	[173006] = "919198. The Avowed#Zone", -- High Inquisitor Dacian's Sinstone
+	[173000] = "919198. The Avowed#Zone", -- High Inquisitor Gabi's Sinstone
+	[173005] = "919198. The Avowed#Zone", -- High Inquisitor Magda's Sinstone
+	[173001] = "919198. The Avowed#Zone", -- High Inquisitor Radu's Sinstone
+	[173008] = "919198. The Avowed#Zone", -- Grand Inquisitor Aurica's Sinstone
+	[173007] = "919198. The Avowed#Zone", -- Grand Inquisitor Nicu's Sinstone
+	[173794] = "919198. The Avowed#Zone", -- High Inquisitor Sinstone
+	[173793] = "919198. The Avowed#Zone", -- Inquisitor Sinstone
+	[172957] = "919198. The Avowed#Zone", -- Atonement Crypt Key
+	-- -- -- Revendreth (99)
+	[182744] = "919199. Revendreth#Zone", -- Ornate Belt Buckle
+	[182746] = "919199. Revendreth#Zone", -- All-In-One Belt Repair Kit
+	[182705] = "919199. Revendreth#Zone", -- Vial of Blue Muck Dye
+	[182704] = "919199. Revendreth#Zone", -- Green Muck Dye
+	[182703] = "919199. Revendreth#Zone", -- Bubbling Red Muck Dye
+	[184446] = "919199. Revendreth#Zone", -- Vial of Blue Muck Dye
+	[182702] = "919199. Revendreth#Zone", -- Phial of Black Muck Dye
 	-- -- Ardenweald (92)
 	[180655] = "9192. Ardenweald#Zone", -- Raw Dream Fibers
 	[180656] = "9192. Ardenweald#Zone", -- Enchanted Bough
@@ -515,6 +532,10 @@ local ZigiItems = {
 	[140234] = "9393. Suramar#Zone", -- Selentia's Mana-Infused Brooch
 	-- -- Stormheim (94)
 	-- -- Highmountain (95)
+	[131809] = "9395. Highmountain#Zone", -- Gleaming Roc Feather
+	[131810] = "9395. Highmountain#Zone", -- Derelict Skyhorn Kite
+	[131926] = "9395. Highmountain#Zone", -- Delicate Roc Feather
+	[131927] = "9395. Highmountain#Zone", -- Shimmering Roc Feather
 	-- -- Val'sharah (96)
 	-- -- Eye of Azshara (97)
 	-- -- Azsuna (98)
@@ -535,6 +556,20 @@ local ZigiItems = {
 	-- -- Shadowmoon Valley (99)
 
 	-- Pandaria (95)
+	-- -- Timeless Isle (90)
+	-- -- Isle of Thunder (91)
+	-- -- Isle of Giants (92)
+	[94288] = "9592. Isle of Giants#Zone", -- Giant Dinosaur Bone
+	-- -- Vale of Eternal Blossoms (93)
+	[87779] = "9593. Vale of Eternal Blossoms#Zone", -- Ancient Guo-Lai Cache Key
+	[86547] = "9593. Vale of Eternal Blossoms#Zone", -- Skyshard
+	[86546] = "9593. Vale of Eternal Blossoms#Zone", -- Sky Crystal
+	-- -- Dread Wastes (94)
+	-- -- Townlong Steppes (95)
+	-- -- Kun-Lai Summit (96)
+	-- -- Krasarang Wilds (97)
+	-- -- Valley of the Four Winds (98)
+	-- -- The Jade Forest (99)
 
 	-- Cataclysm (96)
 
@@ -4161,7 +4196,8 @@ local ZigiItems = {
 	-- Shadowlands (91)
 	-- -- Venthyr (01)
 	-- -- -- Ember Court (98)
-	[176850] = "910198. {sanctumupgrades-venthyr-32x32} Ember Court#Sanctum", -- Blank Invitation
+	[181248] = "910198. Ember Court#Sanctum", -- Ancient Sinstone
+	[176850] = "910198. Ember Court#Sanctum", -- Blank Invitation
 	-- -- -- Sinfall (99)
 	-- -- Night Fae (02)
 	-- -- -- Queen's Conservatory (98)
@@ -4205,6 +4241,8 @@ local ZigiItems = {
 	-- -- -- Elysian Hold (99)
 	-- -- Covenant (01-04)
 	[186472] = "91. Covenant#Sanctum", -- Wisps of Memory
+	[187415] = "91. Covenant#Sanctum", -- Mind-Expanding Prism
+	[188657] = "91. Covenant#Sanctum", -- Mind-Expanding Prism
 	-- -- Anima (99)
 
 	-- Battle for Azeroth (92)
@@ -4661,6 +4699,7 @@ local ZigiItems = {
 	[173053] = "Consumable#Consumable", -- Contract: The Wild Hunt
 
 	-- Misc
+	[60680] = "Consumable#Consumable", -- S.A.F.E. "Parachute"
 	[122128] = "Consumable#Consumable", -- Checkered Flag
 
 	-- Ashran (99)
@@ -4929,6 +4968,8 @@ local ZigiItems = {
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	-- Consumable
+	[13508] = "Toy#Miscellaneous", -- Eye of Arachnida
+	[118414] = "Toy#Miscellaneous", -- Awesomefish
 	[127837] = "Toy#Miscellaneous", -- Draught of Raw Magic
 	[187244] = "Toy#Miscellaneous", -- Questionable Mawshrooms
 	[190739] = "Toy#Miscellaneous", -- Provis Wax
@@ -5024,6 +5065,7 @@ local ZigiItems = {
 	[43626] = "Toy [Battle Pets]#Miscellaneous", -- Happy Pet Snack
 	[139036] = "Toy [Battle Pets]#Miscellaneous", -- Ominous Pet Treat
 	[169944] = "Toy [Battle Pets]#Miscellaneous", -- Minuscule Fez
+	[180405] = "Toy [Battle Pets]#Miscellaneous", -- Rusty Gargon Chain
 
 	-- Battle Pets
 	[116415] = "Battle Pets#Miscellaneous", -- Shiny Pet Charm
@@ -5667,6 +5709,7 @@ local ZigiItems = {
 	[166502] = "Learnable|Quest:54753|Already Learned", -- Blood-Soaked Tome of Dark Whispers
 	[183124] = "Learnable|Quest:62255|Already Learned", -- Simple Tome of Bone-Binding
 	[180705] = "Learnable|Quest:61160|Already Learned", -- Gargon Training Manual
+	[184219] = "Learnable|Quest:62821|Already Learned", -- Treatise on Sinstone Fragment Acquisition
 	-- -- Experience
 	[140179] = "Learnable|XP", -- Faded Star Chart
 	[140356] = "Learnable|XP", -- Demonic Scribblings
