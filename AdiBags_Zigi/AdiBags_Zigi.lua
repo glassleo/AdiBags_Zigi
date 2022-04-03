@@ -5713,6 +5713,8 @@ local ZigiItems = {
 	[183124] = "Learnable|Quest:62255|Already Learned", -- Simple Tome of Bone-Binding
 	[180705] = "Learnable|Quest:61160|Already Learned", -- Gargon Training Manual
 	[184219] = "Learnable|Quest:62821|Already Learned", -- Treatise on Sinstone Fragment Acquisition
+	[189719] = "Learnable", -- Barbed Collar of the Incubus
+	[189720] = "Learnable", -- Barbed Collar of the Succubus
 	-- -- Experience
 	[140179] = "Learnable|XP", -- Faded Star Chart
 	[140356] = "Learnable|XP", -- Demonic Scribblings
