@@ -4713,6 +4713,7 @@ local ZigiItems = {
 	[176409] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Rejuvenating Siphoned Essence
 	[176443] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Fleeting Frenzy Potion
 	[1119938] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mawrat Harness
+	[186615] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mirror of the Conjured Twin
 
 
 	--[[ ! Miscellaneous ! ]]--
@@ -4970,6 +4971,8 @@ local ZigiItems = {
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	-- Consumable
+	[49884] = "Toy#Miscellaneous", -- Kaja'Cola
+	[133545] = "Toy#Miscellaneous", -- "New!" Kaja'Cola
 	[187418] = "Toy#Miscellaneous", -- Evolving Mawshroom
 	[13508] = "Toy#Miscellaneous", -- Eye of Arachnida
 	[118414] = "Toy#Miscellaneous", -- Awesomefish
@@ -5658,8 +5661,14 @@ local ZigiItems = {
 	[79917] = "Openable", -- Worn Monument Ledger
 
 	--! Learnable (98)
-	[188167] = "Learnable", -- Broker Mark of Distinction
+	-- -- Rockin' Rollin' Racer
 	[187560] = "Learnable", -- Rockin' Rollin' Racer Pack
+	-- -- Currency Increase
+	[184219] = "Learnable|Quest:62821|Already Learned", -- Treatise on Sinstone Fragment Acquisition
+	[188793] = "Learnable|Quest:65282|Account Bound", -- Improvised Cypher Analysis Tool
+	-- -- Renown
+	[188167] = "Learnable", -- Broker Mark of Distinction
+	-- -- Azeroth Mini
 	[169848] = "Learnable", -- Azeroth Mini Pack: Bondo's Yard
 	[169850] = "Learnable", -- Azeroth Mini Pack: Mechagon
 	[169895] = "Learnable", -- Azeroth Mini: Beastbot
@@ -5679,6 +5688,7 @@ local ZigiItems = {
 	[169876] = "Learnable", -- Azeroth Mini: Sapphronetta
 	[169838] = "Learnable", -- Azeroth Mini: Starter Pack
 	[169797] = "Learnable", -- Azeroth Mini: Wrenchbot
+	-- -- Pocopoc
 	[187833] = "Learnable", -- Dapper Pocopoc
 	[189451] = "Learnable", -- Chef Pocopoc
 	[189707] = "Learnable", -- Pocopoc's Bronze and Gold Body
@@ -5701,10 +5711,7 @@ local ZigiItems = {
 	[190096] = "Learnable", -- Pocobold
 	[190098] = "Learnable", -- Pepepec
 	[190182] = "Learnable", -- Lovely Regal Pocopoc
-	[190184] = "Learnable|Quest:65623|Account Bound", -- Incense of Infinity
-	[190184] = "Learnable|Quest:65623|Account Bound", -- Incense of Infinity
-	[190640] = "Learnable", -- Font of Ephemeral Power
-	[190956] = "Learnable", -- Decanter of Untapped Potential
+	-- -- Hunter Taming
 	[94232] = "Learnable|HUNTER&Spell:138430", -- Ancient Tome of Dinomancy
 	[134125] = "Learnable|HUNTER&Spell:205154|Unbound", -- Mecha-Bond Imprint Matrix
 	[147580] = "Learnable|HUNTER&Spell:242155|Account Bound", -- Tome of the Hybrid Beast
@@ -5712,9 +5719,18 @@ local ZigiItems = {
 	[166502] = "Learnable|Quest:54753|Already Learned", -- Blood-Soaked Tome of Dark Whispers
 	[183124] = "Learnable|Quest:62255|Already Learned", -- Simple Tome of Bone-Binding
 	[180705] = "Learnable|Quest:61160|Already Learned", -- Gargon Training Manual
-	[184219] = "Learnable|Quest:62821|Already Learned", -- Treatise on Sinstone Fragment Acquisition
+	-- -- Warlock Demon
 	[189719] = "Learnable", -- Barbed Collar of the Incubus
 	[189720] = "Learnable", -- Barbed Collar of the Succubus
+	-- -- Crypt Couture
+	[183691] = "Learnable", -- Mucosal Pigment
+	[183394] = "Learnable", -- Discarded Grimoire
+	[183397] = "Learnable", -- Sorcerer's Blade
+	[183401] = "Learnable", -- Amethystine Dye
+	[183399] = "Learnable", -- Ritualist's Mantle
+	[183692] = "Learnable", -- Jagged Bonesaw
+	[183690] = "Learnable", -- Ashen Ink
+	[183693] = "Learnable", -- Plague Doctor's Mask
 	-- -- Experience
 	[140179] = "Learnable|XP", -- Faded Star Chart
 	[140356] = "Learnable|XP", -- Demonic Scribblings
@@ -6129,6 +6145,9 @@ local ZigiItems = {
 	[183297] = "Learnable", -- Memory of Xuen
 	[183291] = "Learnable", -- Memory of Yu'lon
 	-- -- Conduit
+	[190184] = "Learnable|Quest:65623|Account Bound", -- Incense of Infinity
+	[190640] = "Learnable", -- Font of Ephemeral Power
+	[190956] = "Learnable", -- Decanter of Untapped Potential
 	[187148] = "Learnable", -- Death-Bound Shard
 	[190640] = "Learnable", -- Font of Ephemeral Power
 	[190644] = "Learnable", -- Vessel of Profound Possibilities
