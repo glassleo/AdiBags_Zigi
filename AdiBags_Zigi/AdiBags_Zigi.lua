@@ -262,66 +262,68 @@ local ZigiItems = {
 	-- -- Plaguefall (78)
 	-- -- The Necrotic Wake (79)
 	-- -- Zereth Mortis (87)
-	[188957] = "9187. Zereth Mortis#Zone", -- Genesis Mote
-	[187634] = "9187. Zereth Mortis#Zone", -- Ambystan Lattice
-	[187636] = "9187. Zereth Mortis#Zone", -- Aurelid Lattice
-	[187633] = "9187. Zereth Mortis#Zone", -- Bufonid Lattice
-	[187635] = "9187. Zereth Mortis#Zone", -- Cervid Lattice
-	[189500] = "9187. Zereth Mortis#Zone", -- Cervid Lattice
-	[189146] = "9187. Zereth Mortis#Zone", -- Geomental Lattice
-	[189145] = "9187. Zereth Mortis#Zone", -- Helicid Lattice
-	[187885] = "9187. Zereth Mortis#Zone", -- Honeycombed Lattice
-	[189147] = "9187. Zereth Mortis#Zone", -- Leporid Lattice
-	[190388] = "9187. Zereth Mortis#Zone", -- Lupine Lattice
-	[189148] = "9187. Zereth Mortis#Zone", -- Poultrid Lattice
-	[189149] = "9187. Zereth Mortis#Zone", -- Proto Avian Lattice
-	[189150] = "9187. Zereth Mortis#Zone", -- Raptora Lattice
-	[189151] = "9187. Zereth Mortis#Zone", -- Scarabid Lattice
-	[189152] = "9187. Zereth Mortis#Zone", -- Tarachnid Lattice
-	[189153] = "9187. Zereth Mortis#Zone", -- Unformed Lattice
-	[189154] = "9187. Zereth Mortis#Zone", -- Vespoid Lattice
-	[189155] = "9187. Zereth Mortis#Zone", -- Viperid Lattice
-	[189156] = "9187. Zereth Mortis#Zone", -- Vombata Lattice
-	[189157] = "9187. Zereth Mortis#Zone", -- Glimmer of Animation
-	[189158] = "9187. Zereth Mortis#Zone", -- Glimmer of Cunning
-	[189159] = "9187. Zereth Mortis#Zone", -- Glimmer of Discovery
-	[189160] = "9187. Zereth Mortis#Zone", -- Glimmer of Focus
-	[189161] = "9187. Zereth Mortis#Zone", -- Glimmer of Malice
-	[189162] = "9187. Zereth Mortis#Zone", -- Glimmer of Metamorphosis
-	[189163] = "9187. Zereth Mortis#Zone", -- Glimmer of Motion
-	[189164] = "9187. Zereth Mortis#Zone", -- Glimmer of Multiplicity
-	[189165] = "9187. Zereth Mortis#Zone", -- Glimmer of Predation
-	[189166] = "9187. Zereth Mortis#Zone", -- Glimmer of Renewal
-	[189167] = "9187. Zereth Mortis#Zone", -- Glimmer of Satisfaction
-	[189168] = "9187. Zereth Mortis#Zone", -- Glimmer of Serenity
-	[189169] = "9187. Zereth Mortis#Zone", -- Glimmer of Survival
-	[189170] = "9187. Zereth Mortis#Zone", -- Glimmer of Vigilance
-	[189171] = "9187. Zereth Mortis#Zone", -- Bauble of Pure Innovation
-	[189172] = "9187. Zereth Mortis#Zone", -- Crystallized Echo of the First Song
-	[189173] = "9187. Zereth Mortis#Zone", -- Eternal Ragepearl
-	[189174] = "9187. Zereth Mortis#Zone", -- Lens of Focused Intention
-	[189175] = "9187. Zereth Mortis#Zone", -- Mawforged Bridle
-	[189176] = "9187. Zereth Mortis#Zone", -- Protoform Sentience Crown
-	[189177] = "9187. Zereth Mortis#Zone", -- Revelation Key
-	[189178] = "9187. Zereth Mortis#Zone", -- Tools of Incomprehensible Experimentation
-	[189179] = "9187. Zereth Mortis#Zone", -- Unalloyed Bronze Ingot
-	[189180] = "9187. Zereth Mortis#Zone", -- Wind's Infinite Call
-	[188949] = "9187. Zereth Mortis#Zone", -- Mysterious Object (1)
-	[188950] = "9187. Zereth Mortis#Zone", -- Mysterious Object (2)
-	[190198] = "9187. Zereth Mortis#Zone", -- Sandworn Chest Key Fragment
-	[190197] = "9187. Zereth Mortis#Zone", -- Sandworn Chest Key
-	[190189] = "9187. Zereth Mortis#Zone", -- Sandworn Relic
-	[190727] = "9187. Zereth Mortis#Zone", -- Security Override Orb
-	[189863] = "9187. Zereth Mortis#Zone", -- Spatial Opener
-	[189767] = "9187. Zereth Mortis#Zone", -- Roaming Repair Tool
-	[189768] = "9187. Zereth Mortis#Zone", -- Jiro Hammer
-	[187728] = "9187. Zereth Mortis#Zone", -- Ephemera Strands
-	[190659] = "9187. Zereth Mortis#Zone", -- Resonant Carapace Fluidic Spheroid
-	[190658] = "9187. Zereth Mortis#Zone", -- Resonant Gossamer Fluidic Spheroid
-	[190660] = "9187. Zereth Mortis#Zone", -- Resonant Mucus Fluidic Spheroid
-	[190657] = "9187. Zereth Mortis#Zone", -- Resonant Rage Fluidic Spheroid
-	[190661] = "9187. Zereth Mortis#Zone", -- Resonant Regrowth Fluidic Spheroid
-	[189704] = "9187. Zereth Mortis#Zone", -- Dominance Key
+	-- -- -- Zereth Mortis (01)
+	[187728] = "918701. Zereth Mortis#Zone", -- Ephemera Strands
+	[188949] = "918701. Zereth Mortis#Zone", -- Mysterious Object (1)
+	[188950] = "918701. Zereth Mortis#Zone", -- Mysterious Object (2)
+	[189704] = "918701. Zereth Mortis#Zone", -- Dominance Key
+	[189767] = "918701. Zereth Mortis#Zone", -- Roaming Repair Tool
+	[189768] = "918701. Zereth Mortis#Zone", -- Jiro Hammer
+	[189863] = "918701. Zereth Mortis#Zone", -- Spatial Opener
+	[190189] = "918701. Zereth Mortis#Zone", -- Sandworn Relic
+	[190197] = "918701. Zereth Mortis#Zone", -- Sandworn Chest Key
+	[190198] = "918701. Zereth Mortis#Zone", -- Sandworn Chest Key Fragment
+	[190657] = "918701. Zereth Mortis#Zone", -- Resonant Rage Fluidic Spheroid
+	[190658] = "918701. Zereth Mortis#Zone", -- Resonant Gossamer Fluidic Spheroid
+	[190659] = "918701. Zereth Mortis#Zone", -- Resonant Carapace Fluidic Spheroid
+	[190660] = "918701. Zereth Mortis#Zone", -- Resonant Mucus Fluidic Spheroid
+	[190661] = "918701. Zereth Mortis#Zone", -- Resonant Regrowth Fluidic Spheroid
+	[190727] = "918701. Zereth Mortis#Zone", -- Security Override Orb
+	-- -- -- Protoform Synthesis (02)
+	[187633] = "918702. Protoform Synthesis#Zone", -- Bufonid Lattice
+	[187634] = "918702. Protoform Synthesis#Zone", -- Ambystan Lattice
+	[187635] = "918702. Protoform Synthesis#Zone", -- Cervid Lattice
+	[187636] = "918702. Protoform Synthesis#Zone", -- Aurelid Lattice
+	[187885] = "918702. Protoform Synthesis#Zone", -- Honeycombed Lattice
+	[188957] = "918702. Protoform Synthesis#Zone", -- Genesis Mote
+	[189145] = "918702. Protoform Synthesis#Zone", -- Helicid Lattice
+	[189146] = "918702. Protoform Synthesis#Zone", -- Geomental Lattice
+	[189147] = "918702. Protoform Synthesis#Zone", -- Leporid Lattice
+	[189148] = "918702. Protoform Synthesis#Zone", -- Poultrid Lattice
+	[189149] = "918702. Protoform Synthesis#Zone", -- Proto Avian Lattice
+	[189150] = "918702. Protoform Synthesis#Zone", -- Raptora Lattice
+	[189151] = "918702. Protoform Synthesis#Zone", -- Scarabid Lattice
+	[189152] = "918702. Protoform Synthesis#Zone", -- Tarachnid Lattice
+	[189153] = "918702. Protoform Synthesis#Zone", -- Unformed Lattice
+	[189154] = "918702. Protoform Synthesis#Zone", -- Vespoid Lattice
+	[189155] = "918702. Protoform Synthesis#Zone", -- Viperid Lattice
+	[189156] = "918702. Protoform Synthesis#Zone", -- Vombata Lattice
+	[189157] = "918702. Protoform Synthesis#Zone", -- Glimmer of Animation
+	[189158] = "918702. Protoform Synthesis#Zone", -- Glimmer of Cunning
+	[189159] = "918702. Protoform Synthesis#Zone", -- Glimmer of Discovery
+	[189160] = "918702. Protoform Synthesis#Zone", -- Glimmer of Focus
+	[189161] = "918702. Protoform Synthesis#Zone", -- Glimmer of Malice
+	[189162] = "918702. Protoform Synthesis#Zone", -- Glimmer of Metamorphosis
+	[189163] = "918702. Protoform Synthesis#Zone", -- Glimmer of Motion
+	[189164] = "918702. Protoform Synthesis#Zone", -- Glimmer of Multiplicity
+	[189165] = "918702. Protoform Synthesis#Zone", -- Glimmer of Predation
+	[189166] = "918702. Protoform Synthesis#Zone", -- Glimmer of Renewal
+	[189167] = "918702. Protoform Synthesis#Zone", -- Glimmer of Satisfaction
+	[189168] = "918702. Protoform Synthesis#Zone", -- Glimmer of Serenity
+	[189169] = "918702. Protoform Synthesis#Zone", -- Glimmer of Survival
+	[189170] = "918702. Protoform Synthesis#Zone", -- Glimmer of Vigilance
+	[189171] = "918702. Protoform Synthesis#Zone", -- Bauble of Pure Innovation
+	[189172] = "918702. Protoform Synthesis#Zone", -- Crystallized Echo of the First Song
+	[189173] = "918702. Protoform Synthesis#Zone", -- Eternal Ragepearl
+	[189174] = "918702. Protoform Synthesis#Zone", -- Lens of Focused Intention
+	[189175] = "918702. Protoform Synthesis#Zone", -- Mawforged Bridle
+	[189176] = "918702. Protoform Synthesis#Zone", -- Protoform Sentience Crown
+	[189177] = "918702. Protoform Synthesis#Zone", -- Revelation Key
+	[189178] = "918702. Protoform Synthesis#Zone", -- Tools of Incomprehensible Experimentation
+	[189179] = "918702. Protoform Synthesis#Zone", -- Unalloyed Bronze Ingot
+	[189180] = "918702. Protoform Synthesis#Zone", -- Wind's Infinite Call
+	[189500] = "918702. Protoform Synthesis#Zone", -- Cervid Lattice
+	[190388] = "918702. Protoform Synthesis#Zone", -- Lupine Lattice
 	-- -- Korthia (88)
 	[186685] = "9188. Korthia#Zone", -- Relic Fragment
 	[187322] = "9188. Korthia#Zone", -- Crumbling Stone Tablet
@@ -408,6 +410,9 @@ local ZigiItems = {
 	[175757] = "9193. Maldraxxus#Zone", -- Construct Supply Key
 	[183401] = "9193. Maldraxxus#Zone", -- Amethystine Dye
 	-- -- Bastion (94)
+	[180049] = "9194. Bastion#Zone", -- Steward's Silver Key
+	[180285] = "9194. Bastion#Zone", -- Steward's Golden Key
+	[178915] = "9194. Bastion#Zone", -- Ripe Purian
 	[184759] = "9194. Bastion#Zone", -- Tasty Purian
 	[180536] = "9194. Bastion#Zone", -- Broken Kyrian Flute
 	-- -- Oribos (99)
@@ -665,8 +670,13 @@ local ZigiItems = {
 	-- -- Gnomeregan (79)
 	[9308] = "9979. Gnomeregan#Zone", -- Grime-Encrusted Object
 
-	-- -- Trial of Style (89)
-	[151134] = "9989. Trial of Style", -- Trial of Style Token
+	-- -- Darkmoon Faire (89)
+	[81055] = "9989. Darkmoon Faire#Zone", -- Darkmoon Ride Ticket
+	[71083] = "9989. Darkmoon Faire#Zone", -- Darkmoon Game Token
+	[93730] = "9989. Darkmoon Faire#Zone", -- Darkmoon Top Hat
+	[171364] = "9989. Darkmoon Faire#Zone", -- Darkmoon Top Hat
+	-- -- Trial of Style (90)
+	[151134] = "9990. Trial of Style#Zone", -- Trial of Style Token
 
 
 	--[[ ! Professions ! ]]--
@@ -4245,6 +4255,10 @@ local ZigiItems = {
 	[186472] = "91. Covenant#Sanctum", -- Wisps of Memory
 	[187415] = "91. Covenant#Sanctum", -- Mind-Expanding Prism
 	[188657] = "91. Covenant#Sanctum", -- Mind-Expanding Prism
+	[187414] = "91. Covenant#Sanctum", -- Fractal Thoughtbinder
+	[188656] = "91. Covenant#Sanctum", -- Fractal Thoughtbinder
+	[188655] = "91. Covenant#Sanctum", -- Crystalline Memory Repository
+	[187413] = "91. Covenant#Sanctum", -- Crystalline Memory Repository
 	-- -- Anima (99)
 
 	-- Battle for Azeroth (92)
@@ -5314,6 +5328,37 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[187573] = "Openable", -- Brokers' Enchanting Mote of Potentiation
+	[187572] = "Openable", -- Brokers' Herbalism Mote of Potentiation
+	[187571] = "Openable", -- Brokers' Mining Mote of Potentiation
+	[187570] = "Openable", -- Brokers' Skinning Mote of Potentiation
+	[187569] = "Openable", -- Brokers' Tailoring Mote of Potentiation
+	[78904] = "Openable", -- Pouch o' Tokens
+	[78903] = "Openable", -- Pouch o' Tokens
+	[78901] = "Openable", -- Pouch o' Tokens
+	[78902] = "Openable", -- Pouch o' Tokens
+	[78897] = "Openable", -- Pouch o' Tokens
+	[78900] = "Openable", -- Pouch o' Tokens
+	[78899] = "Openable", -- Pouch o' Tokens
+	[78898] = "Openable", -- Sack o' Tokens
+	[78909] = "Openable", -- Sack o' Tokens
+	[78908] = "Openable", -- Sack o' Tokens
+	[78907] = "Openable", -- Sack o' Tokens
+	[78910] = "Openable", -- Sack o' Tokens
+	[78905] = "Openable", -- Sack o' Tokens
+	[78906] = "Openable", -- Sack o' Tokens
+	[19298] = "Openable", -- Minor Darkmoon Prize
+	[19296] = "Openable", -- Greater Darkmoon Prize
+	[19297] = "Openable", -- Lesser Darkmoon Prize
+	[134143] = "Openable", -- Darkmoon Game Prize
+	[92788] = "Openable", -- Ride Ticket Book
+	[92794] = "Openable", -- Ride Ticket Book
+	[92791] = "Openable", -- Ride Ticket Book
+	[92790] = "Openable", -- Ride Ticket Book
+	[92789] = "Openable", -- Ride Ticket Book
+	[92792] = "Openable", -- Ride Ticket Book
+	[92793] = "Openable", -- Ride Ticket Book
+	[171210] = "Openable", -- Satchel of Nature's Bounty
 	[187575] = "Openable", -- Korthian Fishing Cache
 	[187577] = "Openable", -- Korthian Meat Cache
 	[187576] = "Openable", -- Korthian Skinning Cache
