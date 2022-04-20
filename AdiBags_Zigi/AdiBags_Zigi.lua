@@ -240,6 +240,7 @@ local ZigiItems = {
 	[158923] = "Mythic Keystone", -- Mythic Keystone
 	[180653] = "Mythic Keystone", -- Mythic Keystone
 	[151086] = "Mythic Keystone", -- Mythic Invitational Keystone
+	[187786] = "Mythic Keystone", -- Timeworn Keystone
 
 
 	--[[ ! Zone ! ]]--
@@ -471,6 +472,7 @@ local ZigiItems = {
 	[157794] = "9293. Zuldazar#Zone", -- Feathered Viper Scale
 	-- -- Stormsong Valley (94)
 	[169109] = "9294. Stormsong Valley#Zone", -- Beeholder's Goggles
+	[162000] = "9294. Stormsong Valley#Zone", -- Pig Nose
 	-- -- Drustvar (95)
 	[163710] = "9295. Drustvar#Zone", -- Merchant's Key
 	[163789] = "9295. Drustvar#Zone", -- Bundle of Wicker Sticks
@@ -1422,6 +1424,8 @@ local ZigiItems = {
 	[124442] = "0693. Broken Isles Enchanting#Tradeskill", -- Chaos Crystal
 	[124441] = "0693. Broken Isles Enchanting#Tradeskill", -- Leylight Shard
 	[124440] = "0693. Broken Isles Enchanting#Tradeskill", -- Arkhana
+	[137195] = "0693. Broken Isles Enchanting#Tradeskill", -- Highmountain Armor
+	[137221] = "0693. Broken Isles Enchanting#Tradeskill", -- Enchanted Raven Sigil
 	-- -- Draenor (94)
 	[113588] = "0694. Draenor Enchanting#Tradeskill", -- Temporal Crystal
 	[111245] = "0694. Draenor Enchanting#Tradeskill", -- Luminous Shard
