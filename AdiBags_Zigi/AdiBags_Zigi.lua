@@ -403,6 +403,7 @@ local ZigiItems = {
 	[184446] = "919199. Revendreth#Zone", -- Vial of Blue Muck Dye
 	[182702] = "919199. Revendreth#Zone", -- Phial of Black Muck Dye
 	[173939] = "919199. Revendreth#Zone", -- Enticing Anima
+	[177223] = "919199. Revendreth#Zone", -- Scorched Crypt Key
 	-- -- Ardenweald (92)
 	[180655] = "9192. Ardenweald#Zone", -- Raw Dream Fibers
 	[180656] = "9192. Ardenweald#Zone", -- Enchanted Bough
@@ -566,6 +567,7 @@ local ZigiItems = {
 	-- Pandaria (95)
 	-- -- Timeless Isle (90)
 	-- -- Isle of Thunder (91)
+	[94222] = "9591. Isle of Thunder#Zone", -- Key to the Palace of Lei Shen
 	-- -- Isle of Giants (92)
 	[94288] = "9592. Isle of Giants#Zone", -- Giant Dinosaur Bone
 	-- -- Vale of Eternal Blossoms (93)
@@ -672,6 +674,7 @@ local ZigiItems = {
 	-- -- Gnomeregan (79)
 	[9308] = "9979. Gnomeregan#Zone", -- Grime-Encrusted Object
 
+	-- Holidays
 	-- -- Darkmoon Faire (89)
 	[81055] = "9989. Darkmoon Faire#Zone", -- Darkmoon Ride Ticket
 	[71083] = "9989. Darkmoon Faire#Zone", -- Darkmoon Game Token
@@ -679,6 +682,9 @@ local ZigiItems = {
 	[171364] = "9989. Darkmoon Faire#Zone", -- Darkmoon Top Hat
 	-- -- Trial of Style (90)
 	[151134] = "9990. Trial of Style#Zone", -- Trial of Style Token
+	-- -- Noblegarden (99)
+	[44791] = "9999. Noblegarden#Zone", -- Noblegarden Chocolate
+	[44802] = "9999. Noblegarden#Zone", -- Borrowed Egg Basket
 
 
 	--[[ ! Professions ! ]]--
@@ -867,6 +873,7 @@ local ZigiItems = {
 	[5082] = "0299. Leather#Tradeskill", -- Thin Kodo Leather
 	[5635] = "0299. Leather#Tradeskill", -- Sharp Claw
 	[5637] = "0299. Leather#Tradeskill", -- Large Fang
+	[17056] = "0299. Leather#Tradeskill", -- Light Feather
 
 	--! Metal & Stone (03)
 	-- -- Shadowlands (91)
@@ -1158,7 +1165,6 @@ local ZigiItems = {
 	[62781] = "0496. Cataclysm Cooking#Tradeskill", -- Giant Turtle Tongue
 	[62782] = "0496. Cataclysm Cooking#Tradeskill", -- Dragon Flank
 	[62783] = "0496. Cataclysm Cooking#Tradeskill", -- Basilisk "Liver"
-	[67229] = "0496. Cataclysm Cooking#Tradeskill", -- Stag Flank
 	[53068] = "0496. Cataclysm Cooking#Tradeskill", -- Lavascale Catfish
 	[53072] = "0496. Cataclysm Cooking#Tradeskill", -- Deepsea Sagefish
 	[53070] = "0496. Cataclysm Cooking#Tradeskill", -- Fathom Eel
@@ -1242,6 +1248,7 @@ local ZigiItems = {
 	[3685] = "04990. Cooking#Tradeskill", -- Raptor Egg
 	[5470] = "04990. Cooking#Tradeskill", -- Thunder Lizard Tail
 	[3730] = "04990. Cooking#Tradeskill", -- Big Bear Meat
+	[67229] = "04990. Cooking#Tradeskill", -- Stag Flank
 	[1015] = "04990. Cooking#Tradeskill", -- Lean Wolf Flank
 	[1468] = "04990. Cooking#Tradeskill", -- Murloc Fin
 	[2677] = "04990. Cooking#Tradeskill", -- Boar Ribs
@@ -1286,6 +1293,7 @@ local ZigiItems = {
 	[2678] = "04990. Cooking#Tradeskill", -- Mild Spices
 	[30817] = "04990. Cooking#Tradeskill", -- Simple Flour
 	[159] = "04990. Cooking#Tradeskill", -- Refreshing Spring Water
+	[5051] = "04990. Cooking#Tradeskill", -- Dig Rat
 	-- -- Holiday Cooking (999)
 	[46888] = "04999. Holiday Cooking [Pilgrim's Bounty]#Tradeskill", -- Bountiful Basket
 	[44834] = "04999. Holiday Cooking [Pilgrim's Bounty]#Tradeskill", -- Wild Turkey
@@ -4569,6 +4577,10 @@ local ZigiItems = {
 
 	--[[ ! Consumable ! ]]--
 
+	--! Item Enhancement
+	[172920] = "Item Enhancement", -- Optical Target Embiggener
+	[172921] = "Item Enhancement", -- Infra-green Reflex Sight
+
 	--! Glyph (01)
 	-- -- Death Knight (01)
 	[137274] = "0101. Glyph [c41e3a]Death Knight]#Consumable", -- Glyph of Cracked Ice
@@ -5332,6 +5344,7 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[45072] = "Openable", -- Brightly Colored Egg
 	[108738] = "Openable", -- Giant Draenor Clam
 	[112623] = "Openable", -- Pack of Fishing Supplies
 	[113346] = "Openable", -- Blood Card (5g)
@@ -5776,6 +5789,25 @@ local ZigiItems = {
 	[166502] = "Learnable|Quest:54753|Already Learned", -- Blood-Soaked Tome of Dark Whispers
 	[183124] = "Learnable|Quest:62255|Already Learned", -- Simple Tome of Bone-Binding
 	[180705] = "Learnable|Quest:61160|Already Learned", -- Gargon Training Manual
+	-- -- Mage Polymorph
+	[44709] = "Learnable|MAGE&Spell:61305|Unbound", -- Tome of Polymorph: Black Cat
+	[162626] = "Learnable|MAGE&Spell:277792|Already Learned", -- Tome of Polymorph: Bumblebee
+	[162625] = "Learnable|MAGE&Spell:277787|Already Learned", -- Tome of Polymorph: Direhorn
+	[120138] = "Learnable|MAGE&Spell:161354|Unbound", -- Tome of Polymorph: Monkey
+	[120139] = "Learnable|MAGE&Spell:161355|Already Learned", -- Tome of Polymorph: Penguin
+	[120137] = "Learnable|MAGE&Spell:161353|Unbound", -- Tome of Polymorph: Polar Bear Cub
+	[120140] = "Learnable|MAGE&Spell:126819|Unbound", -- Tome of Polymorph: Porcupine
+	[44793] = "Learnable|MAGE&Spell:61721|Already Learned", -- Tome of Polymorph: Rabbit
+	[22739] = "Learnable|MAGE&Spell:28271|Unbound", -- Tome of Polymorph: Turtle
+	-- -- Shaman Hex
+	[136972] = "Learnable|SHAMAN&Spell:211015|Unbound", -- Tome of Hex: Cockroach
+	[136938] = "Learnable|SHAMAN&Spell:210873|Already Learned", -- Tome of Hex: Compy
+	[172405] = "Learnable|SHAMAN&Spell:309328|Already Learned", -- Tome of Hex: Living Honey
+	[159841] = "Learnable|SHAMAN&Spell:269352|Already Learned", -- Tome of Hex: Skeletal Hatchling
+	[136971] = "Learnable|SHAMAN&Spell:211010|Already Learned", -- Tome of Hex: Snake
+	[136969] = "Learnable|SHAMAN&Spell:211004|Already Learned", -- Tome of Hex: Spider
+	[162624] = "Learnable|SHAMAN&Spell:277784|Already Learned", -- Tome of Hex: Wicker Mongrel
+	[162623] = "Learnable|SHAMAN&Spell:277778|Already Learned", -- Tome of Hex: Zandalari Tendonripper
 	-- -- Warlock Demon
 	[189719] = "Learnable", -- Barbed Collar of the Incubus
 	[189720] = "Learnable", -- Barbed Collar of the Succubus
