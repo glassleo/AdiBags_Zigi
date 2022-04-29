@@ -5132,6 +5132,19 @@ local ZigiItems = {
 	[92742] = "Battle Pets#Miscellaneous", -- Polished Battle-Stone
 	[98112] = "Battle Pets#Miscellaneous", -- Lesser Pet Treat
 	[98114] = "Battle Pets#Miscellaneous", -- Pet Treat
+	[116424] = "Battle Pets#Miscellaneous", -- Aquatic Battle-Training Stone
+	[116374] = "Battle Pets#Miscellaneous", -- Beast Battle-Training Stone
+	[116418] = "Battle Pets#Miscellaneous", -- Critter Battle-Training Stone
+	[116419] = "Battle Pets#Miscellaneous", -- Dragonkin Battle-Training Stone
+	[116420] = "Battle Pets#Miscellaneous", -- Elemental Battle-Training Stone
+	[127755] = "Battle Pets#Miscellaneous", -- Fel-Touched Battle-Training Stone
+	[116429] = "Battle Pets#Miscellaneous", -- Flawless Battle-Training Stone
+	[116421] = "Battle Pets#Miscellaneous", -- Flying Battle-Training Stone
+	[116416] = "Battle Pets#Miscellaneous", -- Humanoid Battle-Training Stone
+	[116422] = "Battle Pets#Miscellaneous", -- Magic Battle-Training Stone
+	[116417] = "Battle Pets#Miscellaneous", -- Mechanical Battle-Training Stone
+	[122457] = "Battle Pets#Miscellaneous", -- Ultimate Battle-Training Stone
+	[116423] = "Battle Pets#Miscellaneous", -- Undead Battle-Training Stone
 
 
 	--[[ ! Container ! ]]--
