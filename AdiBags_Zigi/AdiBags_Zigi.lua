@@ -4744,6 +4744,10 @@ local ZigiItems = {
 	[176443] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Fleeting Frenzy Potion
 	[1119938] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mawrat Harness
 	[186615] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mirror of the Conjured Twin
+	[186614] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Soul Jar
+	[186636] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Cage of Mawrats
+	[186678] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mawforged Weapons Cache
+	[186679] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Scroll of Domination
 
 
 	--[[ ! Miscellaneous ! ]]--
@@ -5001,6 +5005,7 @@ local ZigiItems = {
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	-- Consumable
+	[190740] = "Toy#Miscellaneous", -- Automa Integration
 	[49884] = "Toy#Miscellaneous", -- Kaja'Cola
 	[133545] = "Toy#Miscellaneous", -- "New!" Kaja'Cola
 	[187418] = "Toy#Miscellaneous", -- Evolving Mawshroom
@@ -5357,6 +5362,16 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[171209] = "Openable", -- Blooded Satchel
+	[135540] = "Openable", -- Crate of Battlefield Goods
+	[135539] = "Openable", -- Crate of Battlefield Goods
+	[135541] = "Openable", -- Crusader's Crate of Battlefield Goods
+	[135546] = "Openable", -- Fel-Touched Crate of Battlefield Goods
+	[135542] = "Openable", -- Icy Crate of Battlefield Goods
+	[138098] = "Openable", -- Iron-Bound Crate of Battlefield Goods
+	[135543] = "Openable", -- Rival's Crate of Battlefield Goods
+	[135545] = "Openable", -- Savage Crate of Battlefield Goods
+	[171211] = "Openable", -- Venthyr Coin Purse
 	[45072] = "Openable", -- Brightly Colored Egg
 	[108738] = "Openable", -- Giant Draenor Clam
 	[112623] = "Openable", -- Pack of Fishing Supplies
@@ -5751,6 +5766,21 @@ local ZigiItems = {
 	[188793] = "Learnable|Quest:65282|Account Bound", -- Improvised Cypher Analysis Tool
 	-- -- Renown
 	[188167] = "Learnable", -- Broker Mark of Distinction
+	-- -- Pepe
+	[170151] = "Learnable", -- A Tiny Clockwork Key
+	[161451] = "Learnable", -- A Tiny Diving Helmet
+	[127867] = "Learnable", -- A Tiny Ninja Shroud
+	[139632] = "Learnable", -- A Tiny Pair of Goggles
+	[186593] = "Learnable", -- A Tiny Pair of Wings
+	[127870] = "Learnable", -- A Tiny Pirate Hat
+	[127869] = "Learnable", -- A Tiny Plated Helm
+	[128874] = "Learnable", -- A Tiny Scarecrow Costume
+	[186580] = "Learnable", -- A Tiny Sinstone
+	[186524] = "Learnable", -- A Tiny Vial of Slime
+	[127865] = "Learnable", -- A Tiny Viking Helmet
+	[161443] = "Learnable", -- A Tiny Voodoo Mask
+	[174865] = "Learnable", -- A Tiny Winter Hat
+	[186473] = "Learnable", -- A Tiny Winter Staff
 	-- -- Azeroth Mini
 	[169848] = "Learnable", -- Azeroth Mini Pack: Bondo's Yard
 	[169850] = "Learnable", -- Azeroth Mini Pack: Mechagon
