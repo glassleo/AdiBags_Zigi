@@ -4580,6 +4580,7 @@ local ZigiItems = {
 	--! Item Enhancement
 	[172920] = "Item Enhancement", -- Optical Target Embiggener
 	[172921] = "Item Enhancement", -- Infra-green Reflex Sight
+	[191297] = "Item Enhancement", -- Ephemera-Infused Mesh
 
 	--! Glyph (01)
 	-- -- Death Knight (01)
@@ -5005,6 +5006,7 @@ local ZigiItems = {
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	-- Consumable
+	[190738] = "Toy#Miscellaneous", -- Bouncing Bufonids
 	[190740] = "Toy#Miscellaneous", -- Automa Integration
 	[49884] = "Toy#Miscellaneous", -- Kaja'Cola
 	[133545] = "Toy#Miscellaneous", -- "New!" Kaja'Cola
@@ -5362,6 +5364,7 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[90840] = "Openable", -- Marauder's Gleaming Sack of Gold
 	[171209] = "Openable", -- Blooded Satchel
 	[135540] = "Openable", -- Crate of Battlefield Goods
 	[135539] = "Openable", -- Crate of Battlefield Goods
