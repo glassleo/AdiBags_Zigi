@@ -280,6 +280,14 @@ local ZigiItems = {
 	[190660] = "918701. Zereth Mortis#Zone", -- Resonant Mucus Fluidic Spheroid
 	[190661] = "918701. Zereth Mortis#Zone", -- Resonant Regrowth Fluidic Spheroid
 	[190727] = "918701. Zereth Mortis#Zone", -- Security Override Orb
+	[190239] = "918701. Zereth Mortis#Zone", -- Lost Ovoid
+	[187908] = "918701. Zereth Mortis#Zone", -- Firim's Spare Forge-tap
+	[188523] = "918701. Zereth Mortis#Zone", -- Energizing Leporid
+	[187662] = "918701. Zereth Mortis#Zone", -- Strange Goop
+	[187923] = "918701. Zereth Mortis#Zone", -- Aurelid Lure
+	[187915] = "918701. Zereth Mortis#Zone", -- Pungent Blobfish
+	[187922] = "918701. Zereth Mortis#Zone", -- Flipper Fish
+	[187916] = "918701. Zereth Mortis#Zone", -- Coilclutch Vine
 	-- -- -- Protoform Synthesis (02)
 	[187633] = "918702. Protoform Synthesis#Zone", -- Bufonid Lattice
 	[187634] = "918702. Protoform Synthesis#Zone", -- Ambystan Lattice
@@ -1974,6 +1982,14 @@ local ZigiItems = {
 	[180055] = "1299. Optional Reagents#Tradeskill", -- Relic of the Past I
 
 	--! Fishing (13)
+	-- -- Shadowlands (91)
+	[173043] = "1391. Shadowlands Fishing#Tradeskill", -- Elysian Thade Bait
+	[173039] = "1391. Shadowlands Fishing#Tradeskill", -- Iridescent Amberjack Bait
+	[173038] = "1391. Shadowlands Fishing#Tradeskill", -- Lost Sole Bait
+	[173041] = "1391. Shadowlands Fishing#Tradeskill", -- Pocked Bonefish Bait
+	[187712] = "1391. Shadowlands Fishing#Tradeskill", -- Precursor Placoderm Bait
+	[173040] = "1391. Shadowlands Fishing#Tradeskill", -- Silvergill Pike Bait
+	[173042] = "1391. Shadowlands Fishing#Tradeskill", -- Spinefin Piranha Bait
 	-- -- Broken Isles (93)
 	[146964] = "1393. Broken Isles Fishing#Tradeskill", -- Hatecoil Spearhead
 	[146965] = "1393. Broken Isles Fishing#Tradeskill", -- Disgusting Ooze
@@ -2014,6 +2030,7 @@ local ZigiItems = {
 	[139656] = "1393. Broken Isles Fishing#Tradeskill", -- Thorned Flounder
 	[139663] = "1393. Broken Isles Fishing#Tradeskill", -- Thundering Stormray
 	[139664] = "1393. Broken Isles Fishing#Tradeskill", -- Magic-Eater Frog
+	[133706] = "1393. Broken Isles Fishing#Tradeskill", -- Mossgill Bait
 	-- -- Draenor (94)
 	[116820] = "1394. Draenor Fishing#Tradeskill", -- Blind Lake Lunker
 	[116818] = "1394. Draenor Fishing#Tradeskill", -- Abyssal Gulper Lunker
@@ -2023,6 +2040,16 @@ local ZigiItems = {
 	[122696] = "1394. Draenor Fishing#Tradeskill", -- Sea Scorpion Lunker
 	[116822] = "1394. Draenor Fishing#Tradeskill", -- Jawless Skulker Lunker
 	[116817] = "1394. Draenor Fishing#Tradeskill", -- Blackwater Whiptail Lunker
+	[114628] = "1394. Draenor Fishing#Tradeskill", -- Icespine Stinger Bait
+	[114874] = "1394. Draenor Fishing#Tradeskill", -- Moonshell Claw Bait
+	[110293] = "1394. Draenor Fishing#Tradeskill", -- Abyssal Gulper Eel Bait
+	[110294] = "1394. Draenor Fishing#Tradeskill", -- Blackwater Whiptail Bait
+	[110290] = "1394. Draenor Fishing#Tradeskill", -- Blind Lake Sturgeon Bait
+	[110289] = "1394. Draenor Fishing#Tradeskill", -- Fat Sleeper Bait
+	[128229] = "1394. Draenor Fishing#Tradeskill", -- Felmouth Frenzy Bait
+	[110291] = "1394. Draenor Fishing#Tradeskill", -- Fire Ammonite Bait
+	[110274] = "1394. Draenor Fishing#Tradeskill", -- Jawless Skulker Bait
+	[110292] = "1394. Draenor Fishing#Tradeskill", -- Sea Scorpion Bait
 	-- Fishing Poles
 	[133755] = "1399. Fishing#Tradeskill", -- Underlight Angler
 	[44050] = "1399. Fishing#Tradeskill", -- Mastercraft Kalu'ak Fishing Pole
@@ -4743,7 +4770,7 @@ local ZigiItems = {
 	[170540] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Ravenous Anima Cell
 	[176409] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Rejuvenating Siphoned Essence
 	[176443] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Fleeting Frenzy Potion
-	[1119938] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mawrat Harness
+	[168035] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mawrat Harness
 	[186615] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mirror of the Conjured Twin
 	[186614] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Soul Jar
 	[186636] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Cage of Mawrats
@@ -4760,6 +4787,7 @@ local ZigiItems = {
 	[187077] = "Account Bound", -- Packaged Soul Ash
 	[191031] = "Account Bound", -- Packaged Soul Cinders
 	[188198] = "Account Bound", -- Traveler's Anima Cache
+	[191300] = "Account Bound", -- Certified Vouchsafe
 
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
@@ -4768,6 +4796,7 @@ local ZigiItems = {
 	[187219] = "Currency#Miscellaneous", -- Attendant's Token of Merit
 
 	--! Reputation (02)
+	[191299] = "02. Reputation#Miscellaneous", -- Tribute to the Enlightened
 	[71088] = "02. Reputation#Miscellaneous", -- Bilgewater Writ of Commendation
 	[45720] = "02. Reputation#Miscellaneous", -- Sen'jin Commendation Badge
 	[70150] = "02. Reputation#Miscellaneous", -- Sen'jin Writ of Commendation
@@ -5364,6 +5393,13 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[181475] = "Openable", -- Bounty of the Grove Wardens
+	[180085] = "Openable", -- Kyrian Keepsake
+	[191301] = "Openable", -- Treatise on Patterns in the Purpose
+	[191302] = "Openable", -- Bottled Night Sky
+	[191303] = "Openable", -- Overflowing Chest of Riches
+	[183699] = "Openable", -- Exquisite Ingredients
+	[183703] = "Openable", -- Bonesmith's Satchel
 	[90840] = "Openable", -- Marauder's Gleaming Sack of Gold
 	[171209] = "Openable", -- Blooded Satchel
 	[135540] = "Openable", -- Crate of Battlefield Goods
@@ -5784,6 +5820,8 @@ local ZigiItems = {
 	[161443] = "Learnable", -- A Tiny Voodoo Mask
 	[174865] = "Learnable", -- A Tiny Winter Hat
 	[186473] = "Learnable", -- A Tiny Winter Staff
+	-- -- Nazjatar
+	[169885] = "Learnable|Quest:56766|Already Learned", -- Budding Deepcoral
 	-- -- Azeroth Mini
 	[169848] = "Learnable", -- Azeroth Mini Pack: Bondo's Yard
 	[169850] = "Learnable", -- Azeroth Mini Pack: Mechagon
@@ -6617,6 +6655,7 @@ local ZigiItems = {
 	[39505] = "Junk", -- Virtuoso Inking Set
 
 	-- Trash
+	[152868] = "Junk", -- Anglin' Art's Mudfish Bait
 	[187893] = "Junk", -- Volatile Precursor
 	[118225] = "Junk", -- Highmaul Hops
 	[127991] = "Junk", -- Felmouth Frenzy
@@ -6848,7 +6887,7 @@ function Zigi:FormatName(name, profession)
 		if class == "DRUID" then name = "9304. Fire Relic  {GarrMission_ClassIcon-Druid-Guardian}#Gem" end
 		if class == "MAGE" then name = "9304. Fire Relic  {GarrMission_ClassIcon-Mage-Fire}#Gem" end
 		if class == "PALADIN" then name = "9304. Fire Relic  {GarrMission_ClassIcon-Paladin-Retribution}#Gem" end
-		if class == "SHAMAN" then name = "9304. Fire Relic  {GarrMission_ClassIcon-Shaman-Ehancement}#Gem" end
+		if class == "SHAMAN" then name = "9304. Fire Relic  {GarrMission_ClassIcon-Shaman-Enhancement}#Gem" end
 		if class == "WARLOCK" then name = "9304. Fire Relic  {GarrMission_ClassIcon-Warlock-Demonology} {GarrMission_ClassIcon-Warlock-Destruction}#Gem" end
 		if class == "WARRIOR" then name = "9304. Fire Relic  {GarrMission_ClassIcon-Warrior-Fury} {GarrMission_ClassIcon-Warrior-Protection}#Gem" end
 	elseif name == "9305. Frost Relic#Gem" then
@@ -6870,7 +6909,7 @@ function Zigi:FormatName(name, profession)
 		if class == "MONK" then name = "9307. Iron Relic  {GarrMission_ClassIcon-Monk-Brewmaster} {GarrMission_ClassIcon-Monk-Windwalker}#Gem" end
 		if class == "PALADIN" then name = "9307. Iron Relic  {GarrMission_ClassIcon-Paladin-Holy}#Gem" end
 		if class == "ROGUE" then name = "9307. Iron Relic  {GarrMission_ClassIcon-Rogue-Assassination} {GarrMission_ClassIcon-Rogue-Outlaw}#Gem" end
-		if class == "SHAMAN" then name = "9307. Iron Relic  {GarrMission_ClassIcon-Shaman-Ehancement}#Gem" end
+		if class == "SHAMAN" then name = "9307. Iron Relic  {GarrMission_ClassIcon-Shaman-Enhancement}#Gem" end
 		if class == "WARRIOR" then name = "9307. Iron Relic  {GarrMission_ClassIcon-Warrior-Arms} {GarrMission_ClassIcon-Warrior-Fury} {GarrMission_ClassIcon-Warrior-Protection}#Gem" end
 	elseif name == "9308. Life Relic#Gem" then
 		-- Life
@@ -6893,7 +6932,7 @@ function Zigi:FormatName(name, profession)
 		if class == "HUNTER" then name = "9310. Storm Relic  {GarrMission_ClassIcon-Hunter-BeastMastery} {GarrMission_ClassIcon-Hunter-Marksmanship} {GarrMission_ClassIcon-Hunter-Survival}#Gem" end
 		if class == "MONK" then name = "9310. Storm Relic  {GarrMission_ClassIcon-Monk-Brewmaster} {GarrMission_ClassIcon-Monk-Mistweaver} {GarrMission_ClassIcon-Monk-Windwalker}#Gem" end
 		if class == "ROGUE" then name = "9310. Storm Relic  {GarrMission_ClassIcon-Rogue-Outlaw}#Gem" end
-		if class == "SHAMAN" then name = "9310. Storm Relic  {GarrMission_ClassIcon-Shaman-Elemental} {GarrMission_ClassIcon-Shaman-Ehancement}#Gem" end
+		if class == "SHAMAN" then name = "9310. Storm Relic  {GarrMission_ClassIcon-Shaman-Elemental} {GarrMission_ClassIcon-Shaman-Enhancement}#Gem" end
 		if class == "WARRIOR" then name = "9310. Storm Relic  {GarrMission_ClassIcon-Warrior-Fury}#Gem" end
 	end
 
