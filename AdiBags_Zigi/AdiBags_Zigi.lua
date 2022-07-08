@@ -200,7 +200,11 @@ function Stuff:CheckItem(id)
 			if v == class then
 				return "Stuff", "Junk"
 			elseif v == profession then
-				return "Stuff", "Junk"
+				if id == 87213 and GetItemCount(87213, false) > 1 then
+					return "Mist-Piercing Goggles", "Junk"
+				else
+					return "Stuff", "Junk"
+				end
 			end
 		end
 
@@ -710,6 +714,8 @@ local ZigiItems = {
 	-- -- Noblegarden (99)
 	[44791] = "9999. Noblegarden#Zone", -- Noblegarden Chocolate
 	[44802] = "9999. Noblegarden#Zone", -- Borrowed Egg Basket
+	-- -- Midsummer Fire Festival
+	[23247] = "9999. Midsummer Fire Festival#Zone", -- Burning Blossom
 
 
 	--[[ ! Professions ! ]]--
@@ -2244,6 +2250,7 @@ local ZigiItems = {
 	[178926] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Ring
 	[178927] = "990201. [ff8000]Legendary]#Equipment", -- Shadowghast Necklace
 	[169223] = "990201. [ff8000]Legendary]#Equipment", -- Ashjra'kamas, Shroud of Resolve
+	[154172] = "990201. [ff8000]Legendary]#Equipment", -- Aman'Thul's Vision
 	[124634] = "990201. [ff8000]Legendary]#Equipment|PALADIN,WARRIOR,DEATHKNIGHT", -- Thorasus, the Stone Heart of Draenor
 	[124635] = "990201. [ff8000]Legendary]#Equipment|MAGE,PALADIN,DRUID,PRIEST,SHAMAN,WARLOCK,MONK,EVOKER", -- Nithramus, the All-Seer
 	[124636] = "990201. [ff8000]Legendary]#Equipment|DRUID,HUNTER,ROGUE,SHAMAN,MONK,DEMONHUNTER", -- Maalus, the Blood Drinker
@@ -3241,6 +3248,11 @@ local ZigiItems = {
 	[17204] = "99029999. [ff8000]Sulfuras, Hand of Ragnaros]#Equipment", -- Eye of Sulfuras
 	[17193] = "99029999. [ff8000]Sulfuras, Hand of Ragnaros]#Equipment", -- Sulfuron Hammer
 	-- -- Legacy Equipment (99)
+	[154173] = "9999. Legacy Equipment#Equipment", -- Aggramar's Conviction
+	[154175] = "9999. Legacy Equipment#Equipment", -- Eonar's Compassion
+	[154174] = "9999. Legacy Equipment#Equipment", -- Golganneth's Vitality
+	[154176] = "9999. Legacy Equipment#Equipment", -- Khaz'goroth's Courage
+	[154177] = "9999. Legacy Equipment#Equipment", -- Norgannon's Prowess
 	[139905] = "9999. Legacy Equipment#Equipment", -- Gloves of the Arcane Purge
 	[139934] = "9999. Legacy Equipment#Equipment", -- Handguards of Demonsbane
 	[139965] = "9999. Legacy Equipment#Equipment", -- Grips of the Fel Destroyer
@@ -3354,84 +3366,84 @@ local ZigiItems = {
 	[168632] = "92. Punchcard#Gem", -- Slipstream Generator
 
 	-- Arcane Relic (9301)
-	[133030] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- 'Procured' Kirin Tor Wand Tip
-	[132984] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Abandoned Highborne Mana Crystal
-	[140813] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Arcana Crux
-	[142056] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Arcanum of the Order
-	[142175] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Arcanum of Weightlessness
-	[142176] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Arcing Static Charge
-	[151006] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Augari Manuscript
-	[147076] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Charred Hymnal of the Moon
-	[133093] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Crawliac Charming Draught
-	[150997] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Crystallized Aether
-	[139269] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Crystallized Drop of Eternity
-	[152690] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Darkfall Arcanum
-	[143692] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Earthshaper's Mantra
-	[132305] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Elothir's Sympathy
-	[133070] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Empowered Lifespring Crystal
-	[132282] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Enchanted Pool Garnet
-	[138227] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Entrancing Stone
-	[133104] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Errant Mana
-	[132810] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Erratic Stormforce
-	[133007] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Everlasting Construct Core
-	[151495] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Exhaustive Research
-	[140423] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Exhaustive Research
-	[143806] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Exhaustive Research
-	[152024] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Fallen Magi's Seerstone
-	[132995] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Faronaar Arcane Power-Core
-	[140810] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Farsight Spiritjewel
-	[131731] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Glinting Shard of Sciallax
-	[140077] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Goldleaf Arcwine Phial
-	[152027] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Gravitational Condensate
-	[133768] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Harbaron's Tether
-	[147077] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Inexorable Truth Serum
-	[133052] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Instructor's Crystal Head
-	[133019] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Jewel of Nar'thalas
-	[141515] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Leystone Nugget
-	[132281] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Lunarwing Crystal
-	[132316] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Mana-Fused Seedling
-	[141272] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Mana-Saber Eye
-	[133081] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Manathirster Focus
-	[140827] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Manatoxin Gland
-	[141266] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Manawracked Charm
-	[152344] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Meto's Orb of Entropy
-	[155846] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Miniaturized Cosmic Beacon
-	[147078] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Mote of Astral Suffusion
-	[132845] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Odyn's Veil
-	[151293] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Orb of the Abandoned Magi
-	[137473] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Phase Spider Mandible
-	[152026] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Prototype Titan-Disc
-	[137547] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Pulsing Prism
-	[146930] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Pure Arcane Powder
-	[133041] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Radiating Ley Crystal
-	[142514] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Ravens' Sight
-	[143797] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Reactive Intuition
-	[140412] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Reactive Intuition
-	[153446] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Reactive Intuition
-	[151494] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Reactive Intuition
-	[141259] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Seawitch's Foci
-	[137490] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Self-Forging Credentials
-	[144463] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Shard of Kaldorei Stained Glass
-	[132346] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Small Highborne Figurine
-	[140812] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Soggy Manascrubber Brush
-	[137420] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Split Second
-	[133115] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Stonedark Focus
-	[142305] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Suffused Manapearl
-	[151496] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Taboo Knowledge
-	[143807] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Taboo Knowledge
-	[143523] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Talisman of the Violet Eye
-	[137379] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Tempestbinder's Crystal
-	[143699] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Temporal Blossoming
-	[132799] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Thrymjaris' Grace
-	[152025] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Thu'rayan Lash
-	[140047] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Tincture of Arcwine
-	[147079] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Torn Fabric of Reality
-	[137303] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Touch of Nightfall
-	[132335] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Tower Magi's Eye
-	[132825] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Val'kyra Boon
-	[132787] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Vault Guardian Core
-	[133137] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Wisps of Illusion
-	[132776] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALDIN", -- Yotnar's Pride
+	[133030] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- 'Procured' Kirin Tor Wand Tip
+	[132984] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Abandoned Highborne Mana Crystal
+	[140813] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Arcana Crux
+	[142056] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Arcanum of the Order
+	[142175] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Arcanum of Weightlessness
+	[142176] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Arcing Static Charge
+	[151006] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Augari Manuscript
+	[147076] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Charred Hymnal of the Moon
+	[133093] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Crawliac Charming Draught
+	[150997] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Crystallized Aether
+	[139269] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Crystallized Drop of Eternity
+	[152690] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Darkfall Arcanum
+	[143692] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Earthshaper's Mantra
+	[132305] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Elothir's Sympathy
+	[133070] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Empowered Lifespring Crystal
+	[132282] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Enchanted Pool Garnet
+	[138227] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Entrancing Stone
+	[133104] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Errant Mana
+	[132810] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Erratic Stormforce
+	[133007] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Everlasting Construct Core
+	[151495] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Exhaustive Research
+	[140423] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Exhaustive Research
+	[143806] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Exhaustive Research
+	[152024] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Fallen Magi's Seerstone
+	[132995] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Faronaar Arcane Power-Core
+	[140810] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Farsight Spiritjewel
+	[131731] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Glinting Shard of Sciallax
+	[140077] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Goldleaf Arcwine Phial
+	[152027] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Gravitational Condensate
+	[133768] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Harbaron's Tether
+	[147077] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Inexorable Truth Serum
+	[133052] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Instructor's Crystal Head
+	[133019] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Jewel of Nar'thalas
+	[141515] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Leystone Nugget
+	[132281] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Lunarwing Crystal
+	[132316] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Mana-Fused Seedling
+	[141272] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Mana-Saber Eye
+	[133081] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Manathirster Focus
+	[140827] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Manatoxin Gland
+	[141266] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Manawracked Charm
+	[152344] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Meto's Orb of Entropy
+	[155846] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Miniaturized Cosmic Beacon
+	[147078] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Mote of Astral Suffusion
+	[132845] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Odyn's Veil
+	[151293] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Orb of the Abandoned Magi
+	[137473] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Phase Spider Mandible
+	[152026] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Prototype Titan-Disc
+	[137547] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Pulsing Prism
+	[146930] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Pure Arcane Powder
+	[133041] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Radiating Ley Crystal
+	[142514] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Ravens' Sight
+	[143797] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Reactive Intuition
+	[140412] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Reactive Intuition
+	[153446] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Reactive Intuition
+	[151494] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Reactive Intuition
+	[141259] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Seawitch's Foci
+	[137490] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Self-Forging Credentials
+	[144463] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Shard of Kaldorei Stained Glass
+	[132346] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Small Highborne Figurine
+	[140812] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Soggy Manascrubber Brush
+	[137420] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Split Second
+	[133115] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Stonedark Focus
+	[142305] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Suffused Manapearl
+	[151496] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Taboo Knowledge
+	[143807] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Taboo Knowledge
+	[143523] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Talisman of the Violet Eye
+	[137379] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Tempestbinder's Crystal
+	[143699] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Temporal Blossoming
+	[132799] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Thrymjaris' Grace
+	[152025] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Thu'rayan Lash
+	[140047] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Tincture of Arcwine
+	[147079] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Torn Fabric of Reality
+	[137303] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Touch of Nightfall
+	[132335] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Tower Magi's Eye
+	[132825] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Val'kyra Boon
+	[132787] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Vault Guardian Core
+	[133137] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Wisps of Illusion
+	[132776] = "9301. Arcane Relic#Gem|60&DEMONHUNTER,60&DRUID,60&HUNTER,60&MAGE,60&PALADIN", -- Yotnar's Pride
 
 	-- Blood Relic (9302)
 	[133008] = "9302. Blood Relic#Gem|60&DEATHKNIGHT,60&DRUID,60&HUNTER,60&PRIEST,60&ROGUE,60&WARLOCK,60&WARRIOR", -- Azurewing Blood
@@ -5994,6 +6006,10 @@ local ZigiItems = {
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	-- Consumable
+	[183599] = "Toy#Miscellaneous", -- Tossable Head
+	[169674] = "Toy#Miscellaneous", -- Green Paint Filled Bladder
+	[169673] = "Toy#Miscellaneous", -- Blue Paint Filled Bladder
+	[169675] = "Toy#Miscellaneous", -- Orange Paint Filled Bladder
 	[188761] = "Toy#Miscellaneous", -- Happy Fun Sphere
 	[190738] = "Toy#Miscellaneous", -- Bouncing Bufonids
 	[190740] = "Toy#Miscellaneous", -- Automa Integration
@@ -6090,6 +6106,7 @@ local ZigiItems = {
 	[86572] = "Toy#Miscellaneous", -- Terracotta Fragment
 	[117566] = "Toy#Miscellaneous", -- Heavy Frostwolf Shroud
 	-- Battle Pets
+	[184506] = "Toy [Battle Pets]#Miscellaneous", -- "Flying Faerie" Costume
 	[71153] = "Toy [Battle Pets]#Miscellaneous", -- Magical Pet Biscuit
 	[35223] = "Toy [Battle Pets]#Miscellaneous", -- Papa Hummel's Old-Fashioned Pet Biscuit
 	[89906] = "Toy [Battle Pets]#Miscellaneous", -- Magical Mini-Treat
@@ -6353,6 +6370,14 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[90839] = "Openable", -- Cache of Sha-Touched Gold
+	[118529] = "Openable", -- Cache of Highmaul Treasures (Normal)
+	[118531] = "Openable", -- Cache of Highmaul Treasures (Heroic)
+	[118530] = "Openable", -- Cache of Highmaul Treasures (Mythic)
+	[103624] = "Openable", -- Treasures of the Vale
+	[90625] = "Openable", -- Treasures of the Vale
+	[104275] = "Openable", -- Twisted Treasures of the Vale
+	[105713] = "Openable", -- Twisted Treasures of the Vale
 	[89991] = "Openable", -- Pandaria Fireworks
 	[178128] = "Openable", -- Pouch of Shinies
 	[168394] = "Openable", -- Box of Assorted Parts
@@ -8049,9 +8074,9 @@ function Zigi:Filter(slotData)
 end
 
 
-local OldEquipment = AdiBags:RegisterFilter("Old Equipment", 91)
+local OldEquipment = AdiBags:RegisterFilter("Old Equipment", 65)
 OldEquipment.uiName = "Old Equipment"
-OldEquipment.uiDesc = "Separates low item level Armor and Weapons for max level characters."
+OldEquipment.uiDesc = "Separates low item level Armor and Weapons for high level characters."
 
 function OldEquipment:CheckItem(id, bag, slot)
 	if ItemLevelThreshold[UnitLevel("player") or 0] then
