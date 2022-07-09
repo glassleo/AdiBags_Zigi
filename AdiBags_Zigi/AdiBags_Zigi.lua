@@ -404,6 +404,7 @@ local ZigiItems = {
 	[182326] = "9189. The Maw#Zone", -- Dominion Etching: Pain
 	[182327] = "9189. The Maw#Zone", -- Dominion Etching: Loss
 	[182328] = "9189. The Maw#Zone", -- Dominion Etching: Grief
+	[185829] = "9189. The Maw#Zone", -- Trueheart Spear
 	-- -- Revendreth (91)
 	-- -- -- The Avowed (98)
 	[180451] = "919198. The Avowed#Zone", -- Grand Inquisitor's Sinstone Fragment
@@ -5757,6 +5758,7 @@ local ZigiItems = {
 	[150737] = "Account Bound", -- Abundant Order Resources Cache
 	[187077] = "Account Bound", -- Packaged Soul Ash
 	[191031] = "Account Bound", -- Packaged Soul Cinders
+	[198449] = "Account Bound", -- Pouch of Prodigious Wonders
 	[188198] = "Account Bound", -- Traveler's Anima Cache
 	[191300] = "Account Bound", -- Certified Vouchsafe
 
