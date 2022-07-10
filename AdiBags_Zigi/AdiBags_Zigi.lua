@@ -6693,6 +6693,8 @@ local ZigiItems = {
 	[97955] = "Openable", -- Surplus Supplies
 	[97956] = "Openable", -- Surplus Supplies
 	[97957] = "Openable", -- Surplus Supplies
+	-- -- Profession Skill
+	[6712] = "Openable|Engineering", -- Clockwork Box
 	-- -- Archaeology
 	[154913] = "Openable", -- Akun'Jar Vase
 	[114171] = "Openable", -- Ancestral Talisman
@@ -7964,20 +7966,8 @@ function Zigi:CheckItem(id, bag, slot)
 		local faction = UnitFactionGroup("player")
 
 		local prof1, prof2 = GetProfessions()
-		local profession = ""
-
-		if prof1 then
-			local prof = GetProfessionInfo(prof1)
-			if prof ~= "Engineering" then
-				profession = prof
-			end
-		end
-		if prof2 then
-			local prof = GetProfessionInfo(prof2)
-			if prof ~= "Engineering" then
-				profession = prof
-			end
-		end
+		local profession1 = GetProfessionInfo(prof1 or 0)
+		local profession2 = GetProfessionInfo(prof2 or 0)
 
 		name = Zigi:FormatName(name, profession)
 
@@ -7999,7 +7989,7 @@ function Zigi:CheckItem(id, bag, slot)
 
 					if v == class then
 						match = true
-					elseif v == profession then
+					elseif v == profession1 or v == profession2 then
 						match = true
 					elseif v == "XP" and (UnitLevel("player") <= 49) then
 						match = true -- XP items can only be used until level 49
