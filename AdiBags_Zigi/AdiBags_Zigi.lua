@@ -1812,6 +1812,7 @@ local ZigiItems = {
 	[5498] = "0999. Jewelcrafting#Tradeskill", -- Small Lustrous Pearl
 	[774] = "0999. Jewelcrafting#Tradeskill", -- Malachite
 	[11754] = "0999. Jewelcrafting#Tradeskill", -- Black Diamond
+	[18335] = "0999. Jewelcrafting#Tradeskill", -- Pristine Black Diamond
 
 	--! Parts (10)
 	-- -- Shadowlands (91)
@@ -7318,6 +7319,11 @@ local ZigiItems = {
 	[183369] = "Learnable", -- Memory of Wilfred's Sigil of Superior Summoning
 	[183297] = "Learnable", -- Memory of Xuen
 	[183291] = "Learnable", -- Memory of Yu'lon
+	-- -- Guild
+	[120352] = "Learnable", -- Garrison Guild Banners
+	[62286] = "Learnable", -- Guild Vault Voucher (7th Slot)
+	[68136] = "Learnable", -- Guild Vault Voucher (8th Slot)
+	[62287] = "Learnable", -- Guild Vault Voucher (8th Slot)
 	-- -- Conduit
 	[190184] = "Learnable|Quest:65623|Account Bound", -- Incense of Infinity
 	[190640] = "Learnable", -- Font of Ephemeral Power
