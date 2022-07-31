@@ -290,7 +290,6 @@ local ZigiItems = {
 	[189767] = "918701. Zereth Mortis#Zone", -- Roaming Repair Tool
 	[189768] = "918701. Zereth Mortis#Zone", -- Jiro Hammer
 	[189863] = "918701. Zereth Mortis#Zone", -- Spatial Opener
-	[190189] = "918701. Zereth Mortis#Zone", -- Sandworn Relic
 	[190197] = "918701. Zereth Mortis#Zone", -- Sandworn Chest Key
 	[190198] = "918701. Zereth Mortis#Zone", -- Sandworn Chest Key Fragment
 	[190657] = "918701. Zereth Mortis#Zone", -- Resonant Rage Fluidic Spheroid
@@ -432,6 +431,7 @@ local ZigiItems = {
 	[182702] = "919199. Revendreth#Zone", -- Phial of Black Muck Dye
 	[173939] = "919199. Revendreth#Zone", -- Enticing Anima
 	[177223] = "919199. Revendreth#Zone", -- Scorched Crypt Key
+	[179823] = "919199. Revendreth#Zone", -- Harvest Key
 	-- -- Ardenweald (92)
 	[180655] = "9192. Ardenweald#Zone", -- Raw Dream Fibers
 	[180656] = "9192. Ardenweald#Zone", -- Enchanted Bough
@@ -3217,6 +3217,8 @@ local ZigiItems = {
 	[169318] = "9999. Legacy Equipment#Equipment|MAGE,PALADIN,DRUID,PRIEST,SHAMAN,WARLOCK,MONK|Old Equipment#Equipment", -- Shockbiter's Fang
 	-- -- Weapons (99)
 	[168963] = "9999. Legacy Equipment#Equipment|DEATHKNIGHT,PALADIN,WARRIOR|Old Equipment#Equipment", -- Fusion Hacker
+	[132243] = "9999. Legacy Equipment#Equipment|DEMONHUNTER|Old Equipment#Equipment", -- Fel-Etched Glaive
+	[128956] = "9999. Legacy Equipment#Equipment|DEMONHUNTER|Old Equipment#Equipment", -- Fel-Etched Glaive
 
 
 	-- -- -- Fangs of the Father (9698)
@@ -3279,6 +3281,7 @@ local ZigiItems = {
 	[50399] = "9999. Legacy Equipment#Equipment", -- Ashen Band of Unmatched Wisdom
 	[50376] = "9999. Legacy Equipment#Equipment", -- Ashen Band of Vengeance
 	[50378] = "9999. Legacy Equipment#Equipment", -- Ashen Band of Wisdom
+	[124229] = "9999. Legacy Equipment#Equipment|PALADIN,PRIEST,SHAMAN,MAGE,WARLOCK,DRUID,EVOKER", -- Unblinking Gaze of Sethe
 	[124224] = "9999. Legacy Equipment#Equipment|HUNTER,ROGUE,SHAMAN,MONK,DRUID,DEMONHUNTER", -- Mirror of the Blademaster
 	[147012] = "9999. Legacy Equipment#Equipment", -- Umbral Moonglaives
 
@@ -5762,6 +5765,7 @@ local ZigiItems = {
 	[198449] = "Account Bound", -- Pouch of Prodigious Wonders
 	[188198] = "Account Bound", -- Traveler's Anima Cache
 	[191300] = "Account Bound", -- Certified Vouchsafe
+	[190189] = "Account Bound", -- Sandworn Relic
 
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
@@ -6109,6 +6113,8 @@ local ZigiItems = {
 	[86572] = "Toy#Miscellaneous", -- Terracotta Fragment
 	[117566] = "Toy#Miscellaneous", -- Heavy Frostwolf Shroud
 	-- Battle Pets
+	[169943] = "Toy [Battle Pets]#Miscellaneous", -- Little Princess Cap
+	[169860] = "Toy [Battle Pets]#Miscellaneous", -- Tiny Dapper Hat
 	[184506] = "Toy [Battle Pets]#Miscellaneous", -- "Flying Faerie" Costume
 	[71153] = "Toy [Battle Pets]#Miscellaneous", -- Magical Pet Biscuit
 	[35223] = "Toy [Battle Pets]#Miscellaneous", -- Papa Hummel's Old-Fashioned Pet Biscuit
@@ -6805,7 +6811,7 @@ local ZigiItems = {
 	-- -- Rockin' Rollin' Racer
 	[187560] = "Learnable", -- Rockin' Rollin' Racer Pack
 	-- -- Currency Increase
-	[184219] = "Learnable|Quest:62821|Already Learned", -- Treatise on Sinstone Fragment Acquisition
+	[184219] = "Learnable|Quest:62821|Already known", -- Treatise on Sinstone Fragment Acquisition
 	[188793] = "Learnable|Quest:65282|Account Bound", -- Improvised Cypher Analysis Tool
 	-- -- Renown
 	[188167] = "Learnable", -- Broker Mark of Distinction
@@ -6825,7 +6831,9 @@ local ZigiItems = {
 	[174865] = "Learnable", -- A Tiny Winter Hat
 	[186473] = "Learnable", -- A Tiny Winter Staff
 	-- -- Nazjatar
-	[169885] = "Learnable|Quest:56766|Already Learned", -- Budding Deepcoral
+	[169885] = "Learnable|Quest:56766|Already known", -- Budding Deepcoral
+	-- -- Vashj'ir
+	[54465] = "Learnable", -- Vashj'ir Seahorse
 	-- -- Azeroth Mini
 	[169895] = "Learnable", -- Azeroth Mini: Beastbot
 	[169852] = "Learnable", -- Azeroth Mini: Blastatron
@@ -6871,29 +6879,33 @@ local ZigiItems = {
 	[94232] = "Learnable|HUNTER&Spell:138430", -- Ancient Tome of Dinomancy
 	[134125] = "Learnable|HUNTER&Spell:205154|Unbound", -- Mecha-Bond Imprint Matrix
 	[147580] = "Learnable|HUNTER&Spell:242155|Account Bound", -- Tome of the Hybrid Beast
-	[183123] = "Learnable|Quest:62254|Already Learned", -- How to School Your Serpent
-	[166502] = "Learnable|Quest:54753|Already Learned", -- Blood-Soaked Tome of Dark Whispers
-	[183124] = "Learnable|Quest:62255|Already Learned", -- Simple Tome of Bone-Binding
-	[180705] = "Learnable|Quest:61160|Already Learned", -- Gargon Training Manual
+	[183123] = "Learnable|Quest:62254|Already known", -- How to School Your Serpent
+	[166502] = "Learnable|Quest:54753|Already known", -- Blood-Soaked Tome of Dark Whispers
+	[183124] = "Learnable|Quest:62255|Already known", -- Simple Tome of Bone-Binding
+	[180705] = "Learnable|Quest:61160|Already known", -- Gargon Training Manual
 	-- -- Mage Polymorph
 	[44709] = "Learnable|MAGE&Spell:61305|Unbound", -- Tome of Polymorph: Black Cat
-	[162626] = "Learnable|MAGE&Spell:277792|Already Learned", -- Tome of Polymorph: Bumblebee
-	[162625] = "Learnable|MAGE&Spell:277787|Already Learned", -- Tome of Polymorph: Direhorn
+	[162626] = "Learnable|MAGE&Spell:277792|Already known", -- Tome of Polymorph: Bumblebee
+	[162625] = "Learnable|MAGE&Spell:277787|Already known", -- Tome of Polymorph: Direhorn
 	[120138] = "Learnable|MAGE&Spell:161354|Unbound", -- Tome of Polymorph: Monkey
-	[120139] = "Learnable|MAGE&Spell:161355|Already Learned", -- Tome of Polymorph: Penguin
+	[120139] = "Learnable|MAGE&Spell:161355|Already known", -- Tome of Polymorph: Penguin
 	[120137] = "Learnable|MAGE&Spell:161353|Unbound", -- Tome of Polymorph: Polar Bear Cub
 	[120140] = "Learnable|MAGE&Spell:126819|Unbound", -- Tome of Polymorph: Porcupine
-	[44793] = "Learnable|MAGE&Spell:61721|Already Learned", -- Tome of Polymorph: Rabbit
+	[44793] = "Learnable|MAGE&Spell:61721|Already known", -- Tome of Polymorph: Rabbit
 	[22739] = "Learnable|MAGE&Spell:28271|Unbound", -- Tome of Polymorph: Turtle
+	-- -- Rogue Tome
+	[136803] = "Learnable|ROGUE&Spell:56814|Already known", -- Dirty Tricks, Vol 1: Detection
+	-- -- Monk Tome
+	[136800] = "Learnable|MONK&Spell:125883|Already known", -- Meditation Manual: Zen Flight
 	-- -- Shaman Hex
 	[136972] = "Learnable|SHAMAN&Spell:211015|Unbound", -- Tome of Hex: Cockroach
-	[136938] = "Learnable|SHAMAN&Spell:210873|Already Learned", -- Tome of Hex: Compy
-	[172405] = "Learnable|SHAMAN&Spell:309328|Already Learned", -- Tome of Hex: Living Honey
-	[159841] = "Learnable|SHAMAN&Spell:269352|Already Learned", -- Tome of Hex: Skeletal Hatchling
-	[136971] = "Learnable|SHAMAN&Spell:211010|Already Learned", -- Tome of Hex: Snake
-	[136969] = "Learnable|SHAMAN&Spell:211004|Already Learned", -- Tome of Hex: Spider
-	[162624] = "Learnable|SHAMAN&Spell:277784|Already Learned", -- Tome of Hex: Wicker Mongrel
-	[162623] = "Learnable|SHAMAN&Spell:277778|Already Learned", -- Tome of Hex: Zandalari Tendonripper
+	[136938] = "Learnable|SHAMAN&Spell:210873|Already known", -- Tome of Hex: Compy
+	[172405] = "Learnable|SHAMAN&Spell:309328|Already known", -- Tome of Hex: Living Honey
+	[159841] = "Learnable|SHAMAN&Spell:269352|Already known", -- Tome of Hex: Skeletal Hatchling
+	[136971] = "Learnable|SHAMAN&Spell:211010|Already known", -- Tome of Hex: Snake
+	[136969] = "Learnable|SHAMAN&Spell:211004|Already known", -- Tome of Hex: Spider
+	[162624] = "Learnable|SHAMAN&Spell:277784|Already known", -- Tome of Hex: Wicker Mongrel
+	[162623] = "Learnable|SHAMAN&Spell:277778|Already known", -- Tome of Hex: Zandalari Tendonripper
 	-- -- Warlock Demon
 	[189719] = "Learnable", -- Barbed Collar of the Incubus
 	[189720] = "Learnable", -- Barbed Collar of the Succubus
@@ -7820,7 +7832,7 @@ function Zigi:FormatName(name, profession)
 	if name == "Pieces" then name = "96. {vehicle-hammergold} Pieces#Container" end
 	if name == "Buff" then name = "97. {ParagonReputation_Checkmark} [00ff00]Buff]#Container" end
 	if name == "Learnable" then name = "98. {ParagonReputation_Checkmark} [00ff00]Learnable]#Container" end
-	if name == "Learned" then name = "98. [ff0000]Learned]#Container" end
+	if name == "Already known" then name = "99. [ff0000]Already known]#Junk" end
 	if name == "Openable" then name = "99. {ParagonReputation_Bag} [00ff00]Openable]#Container" end
 	if name == "Unbound" then name = "98. Unbound#Unbound" end
 	if name == "Account Bound" then name = "99. [00ccff]Account Bound]#Unbound" end
@@ -8080,7 +8092,7 @@ function OldEquipment:CheckItem(id, bag, slot)
 	if ItemLevelThreshold[UnitLevel("player") or 0] then
 		-- https://wowpedia.fandom.com/wiki/ItemType
 		-- 4 is Armor, 2 is Weapon
-		local itemclass = select(12, GetItemInfo(id)) or -1
+		local itemclass = select(12, GetItemInfo(id or 0)) or -1
 
 		if itemclass == 4 or itemclass == 2 then
 			local link = GetContainerItemLink(bag, slot)
