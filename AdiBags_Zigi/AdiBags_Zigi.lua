@@ -7989,6 +7989,10 @@ function Zigi:CheckItem(id, bag, slot)
 
 		name = Zigi:FormatName(name, profession)
 
+		if id == 182744 and GetItemCount(182746) >= 1 then -- Ornate Belt Buckle
+			return strsplit("#", Zigi:FormatName("Openable"))
+		end
+
 		if conditions then
 			local values = { strsplit(",", conditions) }
 
