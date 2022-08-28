@@ -5766,12 +5766,15 @@ local ZigiItems = {
 	[188198] = "Account Bound", -- Traveler's Anima Cache
 	[191300] = "Account Bound", -- Certified Vouchsafe
 	[190189] = "Account Bound", -- Sandworn Relic
+	[137642] = "Account Bound", -- Mark of Honor
 
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
 	[128658] = "Currency#Miscellaneous", -- Spooky Supplies
 	[49927] = "Currency#Miscellaneous", -- Love Token
-	[187219] = "Currency#Miscellaneous", -- Attendant's Token of Merit
+	-- Season 4
+	[199202] = "[00ff00]Shadowlands Season 4]#Miscellaneous", -- Attendant's Token of Merit (Season 4)
+	[192466] = "[00ff00]Shadowlands Season 4]#Miscellaneous", -- Puzzling Cartel Dinar
 
 	--! Reputation (02)
 	[191299] = "02. Reputation#Miscellaneous", -- Tribute to the Enlightened
@@ -6379,6 +6382,24 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[60681] = "Openable", -- Cannary's Cache
+	[57540] = "Openable", -- Coldridge Mountaineer's Pouch
+	[170190] = "Openable", -- Mardivas' Bag of Containing
+	[39418] = "Openable", -- Ornately Jeweled Box
+	[170473] = "Openable", -- Jingling Sack
+	[122484] = "Openable", -- Blackrock Foundry Spoils (Normal)
+	[122485] = "Openable", -- Blackrock Foundry Spoils (Heroic)
+	[122486] = "Openable", -- Blackrock Foundry Spoils (Mythic)
+	[187597] = "Openable", -- Broken Isles Fish Delivery
+	[187604] = "Openable", -- Broken Isles Enchantment Delivery
+	[187605] = "Openable", -- Broken Isles Gem Delivery
+	[187596] = "Openable", -- Broken Isles Meat Delivery
+	[187600] = "Openable", -- Broken Isles Ore Delivery
+	[187598] = "Openable", -- Broken Isles Cloth Delivery
+	[187601] = "Openable", -- Broken Isles Leather Delivery
+	[187599] = "Openable", -- Broken Isles Herb Delivery
+	[192437] = "Openable", -- Cache of Fated Treasures (Fated)
+	[192438] = "Openable", -- Cache of Fated Treasures (Fated Heroic)
 	[90839] = "Openable", -- Cache of Sha-Touched Gold
 	[118529] = "Openable", -- Cache of Highmaul Treasures (Normal)
 	[118531] = "Openable", -- Cache of Highmaul Treasures (Heroic)
@@ -7672,6 +7693,11 @@ local ZigiItems = {
 	[177034] = "Junk", -- Gem Chisel Kit
 	[6218] = "Junk", -- Runed Copper Rod
 	[39505] = "Junk", -- Virtuoso Inking Set
+
+	-- Cursed Item
+	[170472] = "[9600ff]Cursed Item]#Junk", -- Encrusted Coin
+	[170189] = "[9600ff]Cursed Item]#Junk", -- Blind Eye
+	[170191] = "[9600ff]Cursed Item]#Junk", -- Skeletal Hand
 
 	-- Trash
 	[152868] = "Junk", -- Anglin' Art's Mudfish Bait
