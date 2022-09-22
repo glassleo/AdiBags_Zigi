@@ -404,6 +404,11 @@ local ZigiItems = {
 	[182327] = "9189. The Maw#Zone", -- Dominion Etching: Loss
 	[182328] = "9189. The Maw#Zone", -- Dominion Etching: Grief
 	[185829] = "9189. The Maw#Zone", -- Trueheart Spear
+	[186184] = "9189. The Maw#Zone", -- Lil'Abom Torso
+	[186185] = "9189. The Maw#Zone", -- Lil'Abom Legs
+	[186186] = "9189. The Maw#Zone", -- Lil'Abom Right Hand
+	[186187] = "9189. The Maw#Zone", -- Lil'Abom Spare Arm
+	[186183] = "9189. The Maw#Zone", -- Lil'Abom Head
 	-- -- Revendreth (91)
 	-- -- -- The Avowed (98)
 	[180451] = "919198. The Avowed#Zone", -- Grand Inquisitor's Sinstone Fragment
@@ -432,6 +437,7 @@ local ZigiItems = {
 	[173939] = "919199. Revendreth#Zone", -- Enticing Anima
 	[177223] = "919199. Revendreth#Zone", -- Scorched Crypt Key
 	[179823] = "919199. Revendreth#Zone", -- Harvest Key
+	[181363] = "919199. Revendreth#Zone", -- Handcrafted Mirror Repair Kit
 	-- -- Ardenweald (92)
 	[180655] = "9192. Ardenweald#Zone", -- Raw Dream Fibers
 	[180656] = "9192. Ardenweald#Zone", -- Enchanted Bough
@@ -439,6 +445,7 @@ local ZigiItems = {
 	-- -- Maldraxxus (93)
 	[175757] = "9193. Maldraxxus#Zone", -- Construct Supply Key
 	[183401] = "9193. Maldraxxus#Zone", -- Amethystine Dye
+	[178594] = "9193. Maldraxxus#Zone", -- Anima-bound Wraps
 	-- -- Bastion (94)
 	[180049] = "9194. Bastion#Zone", -- Steward's Silver Key
 	[180285] = "9194. Bastion#Zone", -- Steward's Golden Key
@@ -471,6 +478,13 @@ local ZigiItems = {
 	[169332] = "9288. Nazjatar#Zone", -- Strange Mineralized Water
 	[169333] = "9288. Nazjatar#Zone", -- Strange Volcanic Rock
 	[169334] = "9288. Nazjatar#Zone", -- Strange Oceanic Sediment
+	[170171] = "9288. Nazjatar#Zone", -- Giant Crab Leg
+	[170176] = "9288. Nazjatar#Zone", -- Fathom Ray Wing
+	[170167] = "9288. Nazjatar#Zone", -- Eel Fillet
+	[170183] = "9288. Nazjatar#Zone", -- Reefwalker Bark
+	[170184] = "9288. Nazjatar#Zone", -- Ancient Reefwalker Bark
+	[168053] = "9288. Nazjatar#Zone", -- Unusually Wise Hermit Crab
+	[170085] = "9288. Nazjatar#Zone", -- Naga Deployment Orders
 	-- -- Mechagon (89)
 	[167555] = "9289. Mechagon#Zone", -- Pocket-Sized Computation Device
 	[169114] = "9289. Mechagon#Zone", -- Personal Time Displacer
@@ -587,6 +601,7 @@ local ZigiItems = {
 	-- -- Tanaan Jungle (92)
 	[128502] = "9492. Tanaan Jungle#Zone", -- Hunter's Seeking Crystal
 	[128503] = "9492. Tanaan Jungle#Zone", -- Master Hunter's Seeking Crystal
+	[124099] = "9492. Tanaan Jungle#Zone", -- Blackfang Claw
 	-- -- Nagrand (93)
 	-- -- Spires of Arak (94)
 	-- -- Talador (96)
@@ -706,17 +721,21 @@ local ZigiItems = {
 
 	-- Holidays
 	-- -- Darkmoon Faire (89)
-	[81055] = "9989. Darkmoon Faire#Zone", -- Darkmoon Ride Ticket
-	[71083] = "9989. Darkmoon Faire#Zone", -- Darkmoon Game Token
-	[93730] = "9989. Darkmoon Faire#Zone", -- Darkmoon Top Hat
+	[81055]  = "9989. Darkmoon Faire#Zone", -- Darkmoon Ride Ticket
+	[71083]  = "9989. Darkmoon Faire#Zone", -- Darkmoon Game Token
+	[93730]  = "9989. Darkmoon Faire#Zone", -- Darkmoon Top Hat
 	[171364] = "9989. Darkmoon Faire#Zone", -- Darkmoon Top Hat
 	-- -- Trial of Style (90)
-	[151134] = "9990. Trial of Style#Zone", -- Trial of Style Token
+	[151134] = "9990. [ff7f3f]Trial of Style]#Zone", -- Trial of Style Token
 	-- -- Noblegarden (99)
-	[44791] = "9999. Noblegarden#Zone", -- Noblegarden Chocolate
-	[44802] = "9999. Noblegarden#Zone", -- Borrowed Egg Basket
+	[44791] = "9999. [ff7f3f]Noblegarden]#Zone", -- Noblegarden Chocolate
+	[44802] = "9999. [ff7f3f]Noblegarden]#Zone", -- Borrowed Egg Basket
 	-- -- Midsummer Fire Festival
-	[23247] = "9999. Midsummer Fire Festival#Zone", -- Burning Blossom
+	[23247] = "9999. [ff7f3f]Midsummer Fire Festival]#Zone", -- Burning Blossom
+	-- -- Brewfest
+	[37829] = "9999. [ff7f3f]Brewfest]#Zone", -- Brewfest Prize Token
+	[38280] = "9999. [ff7f3f]Brewfest]#Zone", -- Direbrew's Dire Brew (Alliance)
+	[38281] = "9999. [ff7f3f]Brewfest]#Zone", -- Direbrew's Dire Brew (Horde)
 
 
 	--[[ ! Professions ! ]]--
@@ -2145,8 +2164,140 @@ local ZigiItems = {
 	--[[ ! Equipment ! ]]--
 
 	--! BoA Token (98)
-	-- -- Shadowlands (91)
-	-- -- -- Zereth Mortis (87)
+	-- -- Mists of Pandaria - Timeless
+	[102318] = "98. Unbound#Unbound", -- Timeless Cloak
+	[104013] = "98. Unbound#Unbound", -- Timeless Cloth Armor Cache
+	[102290] = "98. Unbound#Unbound", -- Timeless Cloth Belt
+	[102285] = "98. Unbound#Unbound", -- Timeless Cloth Boots
+	[102321] = "98. Unbound#Unbound", -- Timeless Cloth Bracers
+	[102286] = "98. Unbound#Unbound", -- Timeless Cloth Gloves
+	[102287] = "98. Unbound#Unbound", -- Timeless Cloth Helm
+	[102288] = "98. Unbound#Unbound", -- Timeless Cloth Leggings
+	[102284] = "98. Unbound#Unbound", -- Timeless Cloth Robes
+	[102289] = "98. Unbound#Unbound", -- Timeless Cloth Spaulders
+	[104347] = "98. Unbound#Unbound", -- Timeless Curio
+	[104345] = "98. Unbound#Unbound", -- Timeless Lavalliere
+	[104012] = "98. Unbound#Unbound", -- Timeless Leather Armor Cache
+	[102283] = "98. Unbound#Unbound", -- Timeless Leather Belt
+	[102278] = "98. Unbound#Unbound", -- Timeless Leather Boots
+	[102322] = "98. Unbound#Unbound", -- Timeless Leather Bracers
+	[102277] = "98. Unbound#Unbound", -- Timeless Leather Chestpiece
+	[102279] = "98. Unbound#Unbound", -- Timeless Leather Gloves
+	[102280] = "98. Unbound#Unbound", -- Timeless Leather Helm
+	[102281] = "98. Unbound#Unbound", -- Timeless Leather Leggings
+	[102282] = "98. Unbound#Unbound", -- Timeless Leather Spaulders
+	[104010] = "98. Unbound#Unbound", -- Timeless Mail Armor Cache
+	[102276] = "98. Unbound#Unbound", -- Timeless Mail Belt
+	[102271] = "98. Unbound#Unbound", -- Timeless Mail Boots
+	[102323] = "98. Unbound#Unbound", -- Timeless Mail Bracers
+	[102270] = "98. Unbound#Unbound", -- Timeless Mail Chestpiece
+	[102272] = "98. Unbound#Unbound", -- Timeless Mail Gloves
+	[102273] = "98. Unbound#Unbound", -- Timeless Mail Helm
+	[102274] = "98. Unbound#Unbound", -- Timeless Mail Leggings
+	[102275] = "98. Unbound#Unbound", -- Timeless Mail Spaulders
+	[104009] = "98. Unbound#Unbound", -- Timeless Plate Armor Cache
+	[102269] = "98. Unbound#Unbound", -- Timeless Plate Belt
+	[102264] = "98. Unbound#Unbound", -- Timeless Plate Boots
+	[102320] = "98. Unbound#Unbound", -- Timeless Plate Bracers
+	[102263] = "98. Unbound#Unbound", -- Timeless Plate Chestpiece
+	[102265] = "98. Unbound#Unbound", -- Timeless Plate Gloves
+	[102266] = "98. Unbound#Unbound", -- Timeless Plate Helm
+	[102267] = "98. Unbound#Unbound", -- Timeless Plate Leggings
+	[102268] = "98. Unbound#Unbound", -- Timeless Plate Spaulders
+	[102291] = "98. Unbound#Unbound", -- Timeless Signet
+	-- -- Warlords of Draenor - Baleful
+	[127777] = "98. Unbound#Unbound", -- Baleful Cloth Bracers
+	[127780] = "98. Unbound#Unbound", -- Baleful Cloth Gauntlets
+	[127784] = "98. Unbound#Unbound", -- Baleful Cloth Girdle
+	[127781] = "98. Unbound#Unbound", -- Baleful Cloth Hood
+	[127782] = "98. Unbound#Unbound", -- Baleful Cloth Leggings
+	[127778] = "98. Unbound#Unbound", -- Baleful Cloth Robe
+	[127783] = "98. Unbound#Unbound", -- Baleful Cloth Spaulders
+	[127779] = "98. Unbound#Unbound", -- Baleful Cloth Treads
+	[127790] = "98. Unbound#Unbound", -- Baleful Leather Bracers
+	[127793] = "98. Unbound#Unbound", -- Baleful Leather Gauntlets
+	[127797] = "98. Unbound#Unbound", -- Baleful Leather Girdle
+	[127794] = "98. Unbound#Unbound", -- Baleful Leather Hood
+	[127795] = "98. Unbound#Unbound", -- Baleful Leather Leggings
+	[127796] = "98. Unbound#Unbound", -- Baleful Leather Spaulders
+	[127792] = "98. Unbound#Unbound", -- Baleful Leather Treads
+	[127791] = "98. Unbound#Unbound", -- Baleful Leather Tunic
+	[127803] = "98. Unbound#Unbound", -- Baleful Mail Bracers
+	[127806] = "98. Unbound#Unbound", -- Baleful Mail Gauntlets
+	[127810] = "98. Unbound#Unbound", -- Baleful Mail Girdle
+	[127807] = "98. Unbound#Unbound", -- Baleful Mail Hood
+	[127808] = "98. Unbound#Unbound", -- Baleful Mail Leggings
+	[127804] = "98. Unbound#Unbound", -- Baleful Mail Robe
+	[127809] = "98. Unbound#Unbound", -- Baleful Mail Spaulders
+	[127805] = "98. Unbound#Unbound", -- Baleful Mail Treads
+	[127799] = "98. Unbound#Unbound", -- Baleful Pendant
+	[127816] = "98. Unbound#Unbound", -- Baleful Plate Bracers
+	[127817] = "98. Unbound#Unbound", -- Baleful Plate Chest
+	[127819] = "98. Unbound#Unbound", -- Baleful Plate Gauntlets
+	[127823] = "98. Unbound#Unbound", -- Baleful Plate Girdle
+	[127820] = "98. Unbound#Unbound", -- Baleful Plate Hood
+	[127821] = "98. Unbound#Unbound", -- Baleful Plate Leggings
+	[127822] = "98. Unbound#Unbound", -- Baleful Plate Spaulders
+	[127818] = "98. Unbound#Unbound", -- Baleful Plate Treads
+	[127798] = "98. Unbound#Unbound", -- Baleful Ring
+	-- -- Battle for Azeroth - Benthic
+	[169478] = "98. Unbound#Unbound", -- Benthic Bracers
+	[169480] = "98. Unbound#Unbound", -- Benthic Chestguard
+	[169481] = "98. Unbound#Unbound", -- Benthic Cloak
+	[169485] = "98. Unbound#Unbound", -- Benthic Gauntlets
+	[169477] = "98. Unbound#Unbound", -- Benthic Girdle
+	[169479] = "98. Unbound#Unbound", -- Benthic Helm
+	[169482] = "98. Unbound#Unbound", -- Benthic Leggings
+	[169484] = "98. Unbound#Unbound", -- Benthic Spaulders
+	[169483] = "98. Unbound#Unbound", -- Benthic Treads
+	-- -- Battle for Azeroth - Black Empire
+	[173420] = "98. Unbound#Unbound", -- Black Empire Cloth Belt
+	[173415] = "98. Unbound#Unbound", -- Black Empire Cloth Boots
+	[173423] = "98. Unbound#Unbound", -- Black Empire Cloth Bracers
+	[173416] = "98. Unbound#Unbound", -- Black Empire Cloth Gloves
+	[173417] = "98. Unbound#Unbound", -- Black Empire Cloth Helm
+	[173418] = "98. Unbound#Unbound", -- Black Empire Cloth Leggings
+	[173414] = "98. Unbound#Unbound", -- Black Empire Cloth Robes
+	[173419] = "98. Unbound#Unbound", -- Black Empire Cloth Spaulders
+	[173413] = "98. Unbound#Unbound", -- Black Empire Leather Belt
+	[173408] = "98. Unbound#Unbound", -- Black Empire Leather Boots
+	[173424] = "98. Unbound#Unbound", -- Black Empire Leather Bracers
+	[173407] = "98. Unbound#Unbound", -- Black Empire Leather Chestpiece
+	[173409] = "98. Unbound#Unbound", -- Black Empire Leather Gloves
+	[173410] = "98. Unbound#Unbound", -- Black Empire Leather Helm
+	[173411] = "98. Unbound#Unbound", -- Black Empire Leather Leggings
+	[173412] = "98. Unbound#Unbound", -- Black Empire Leather Spaulders
+	[173406] = "98. Unbound#Unbound", -- Black Empire Mail Belt
+	[173401] = "98. Unbound#Unbound", -- Black Empire Mail Boots
+	[173425] = "98. Unbound#Unbound", -- Black Empire Mail Bracers
+	[173400] = "98. Unbound#Unbound", -- Black Empire Mail Chestpiece
+	[173402] = "98. Unbound#Unbound", -- Black Empire Mail Gloves
+	[173403] = "98. Unbound#Unbound", -- Black Empire Mail Helm
+	[173404] = "98. Unbound#Unbound", -- Black Empire Mail Leggings
+	[173405] = "98. Unbound#Unbound", -- Black Empire Mail Spaulders
+	[173399] = "98. Unbound#Unbound", -- Black Empire Plate Belt
+	[173394] = "98. Unbound#Unbound", -- Black Empire Plate Boots
+	[173422] = "98. Unbound#Unbound", -- Black Empire Plate Bracers
+	[173393] = "98. Unbound#Unbound", -- Black Empire Plate Chestpiece
+	[173395] = "98. Unbound#Unbound", -- Black Empire Plate Gloves
+	[173396] = "98. Unbound#Unbound", -- Black Empire Plate Helm
+	[173397] = "98. Unbound#Unbound", -- Black Empire Plate Leggings
+	[173398] = "98. Unbound#Unbound", -- Black Empire Plate Spaulders
+	-- -- Shadowlands - Korthian
+	[188156] = "98. Unbound#Unbound", -- Korthian Accessory
+	[187187] = "98. Unbound#Unbound", -- Korthian Armaments
+	[187187] = "98. Unbound#Unbound", -- Korthian Armaments
+	[188161] = "98. Unbound#Unbound", -- Korthian Belt
+	[188155] = "98. Unbound#Unbound", -- Korthian Boots
+	[188163] = "98. Unbound#Unbound", -- Korthian Bracers
+	[188154] = "98. Unbound#Unbound", -- Korthian Chestpiece
+	[188153] = "98. Unbound#Unbound", -- Korthian Cloak
+	[188157] = "98. Unbound#Unbound", -- Korthian Gloves
+	[188158] = "98. Unbound#Unbound", -- Korthian Helm
+	[188159] = "98. Unbound#Unbound", -- Korthian Legguards
+	[188160] = "98. Unbound#Unbound", -- Korthian Shoulders
+	[188162] = "98. Unbound#Unbound", -- Korthian Weaponry
+	-- -- Shadowlands - Zereth Mortis (87)
 	[191036] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Accessory
 	[190763] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Belt
 	[190762] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Boots
@@ -2160,20 +2311,6 @@ local ZigiItems = {
 	[190764] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Ring
 	[190755] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Shoulders
 	[190741] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Weaponry
-	-- -- -- Korthia (88)
-	[188156] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Accessory
-	[187187] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Armaments
-	[187187] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Armaments
-	[188161] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Belt
-	[188155] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Boots
-	[188163] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Bracers
-	[188154] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Chestpiece
-	[188153] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Cloak
-	[188157] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Gloves
-	[188158] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Helm
-	[188159] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Legguards
-	[188160] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Shoulders
-	[188162] = "989188. [00ccff]Korthian Armament]#Equipment", -- Korthian Weaponry
 
 	--! Legacy Equipment (99)
 	-- -- Artifact (01)
@@ -5223,48 +5360,83 @@ local ZigiItems = {
 	-- Shadowlands (91)
 	-- -- Venthyr (01)
 	-- -- -- Ember Court (98)
-	[181248] = "910198. Ember Court#Sanctum", -- Ancient Sinstone
-	[176850] = "910198. Ember Court#Sanctum", -- Blank Invitation
+	[181248] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Ancient Sinstone
+	[176850] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Blank Invitation
+	[179958] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Ember Court Guest List
+	[176115] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Alexandros Mograine
+	[176097] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Baroness Vashj
+	[176119] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Choofa
+	[176120] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Cryptkeeper Kassir
+	[176121] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Droman Aliothe
+	[176122] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Grandmaster Vole
+	[176116] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Hunt-Captain Korayn
+	[176123] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Kleia and Pelagos
+	[176112] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Lady Moonberry
+	[176113] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Mikanikos
+	[176124] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Plague Deviser Marileth
+	[176117] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Polemarch Adrestes
+	[176118] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Rendle and Cudgelface
+	[176125] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Sika
+	[178686] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Stonehead
+	[176114] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: The Countess
+	[181362] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Blob of Slime
 	-- -- -- Sinfall (99)
 	-- -- Night Fae (02)
 	-- -- -- Queen's Conservatory (98)
-	[177953] = "910298. Queen's Conservatory#Sanctum", -- Untamed Spirit (Quest)
-	[178881] = "910298. Queen's Conservatory#Sanctum", -- Dutiful Spirit
-	[178880] = "910298. Queen's Conservatory#Sanctum", -- Greater Dutiful Spirit
-	[178879] = "910298. Queen's Conservatory#Sanctum", -- Divine Dutiful Spirit
-	[178874] = "910298. Queen's Conservatory#Sanctum", -- Martial Spirit
-	[178877] = "910298. Queen's Conservatory#Sanctum", -- Greater Martial Spirit
-	[178878] = "910298. Queen's Conservatory#Sanctum", -- Divine Martial Spirit
-	[177698] = "910298. Queen's Conservatory#Sanctum", -- Untamed Spirit
-	[177699] = "910298. Queen's Conservatory#Sanctum", -- Greater Untamed Spirit
-	[177700] = "910298. Queen's Conservatory#Sanctum", -- Divine Untamed Spirit
-	[178882] = "910298. Queen's Conservatory#Sanctum", -- Prideful Spirit
-	[178883] = "910298. Queen's Conservatory#Sanctum", -- Greater Prideful Spirit
-	[178884] = "910298. Queen's Conservatory#Sanctum", -- Divine Prideful Spirit
-	[176921] = "910298. Queen's Conservatory#Sanctum", -- Temporal Leaves
-	[176922] = "910298. Queen's Conservatory#Sanctum", -- Wild Nightbloom
-	[176832] = "910298. Queen's Conservatory#Sanctum", -- Wildseed Root Grain
-	[183521] = "910298. Queen's Conservatory#Sanctum", -- Temporal Leaf Seeds
-	[183520] = "910298. Queen's Conservatory#Sanctum", -- Wild Nightbloom Seeds
-	[183522] = "910298. Queen's Conservatory#Sanctum", -- Wildseed Root Grain Seeds
+	[177953] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Untamed Spirit (Quest)
+	[178881] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Dutiful Spirit
+	[178880] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Greater Dutiful Spirit
+	[178879] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Divine Dutiful Spirit
+	[178874] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Martial Spirit
+	[178877] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Greater Martial Spirit
+	[178878] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Divine Martial Spirit
+	[177698] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Untamed Spirit
+	[177699] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Greater Untamed Spirit
+	[177700] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Divine Untamed Spirit
+	[178882] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Prideful Spirit
+	[178883] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Greater Prideful Spirit
+	[178884] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Divine Prideful Spirit
+	[176921] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Temporal Leaves
+	[176922] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Wild Nightbloom
+	[176832] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Wildseed Root Grain
+	[183521] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Temporal Leaf Seeds
+	[183520] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Wild Nightbloom Seeds
+	[183522] = "910298. [8697ff]Queen's Conservatory] {queensconservatory-32x32}#Sanctum", -- Wildseed Root Grain Seeds
 	-- -- -- Heart of the Forest (99)
 	-- -- Necrolord (03)
 	-- -- -- Abominable Stitching (98)
-	[183744] = "910398. Abominable Stitching#Sanctum", -- Superior Parts
-	[178061] = "910398. Abominable Stitching#Sanctum", -- Malleable Flesh
-	[183830] = "910398. Abominable Stitching#Sanctum", -- Do It Yourself Flag Kit
-	[184304] = "910398. Abominable Stitching#Sanctum", -- Anima-Touched Weapon Fragments
-	[183754] = "910398. Abominable Stitching#Sanctum", -- Stitchflesh's Design Notes
+	[183744] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Superior Parts
+	[178061] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Malleable Flesh
+	[183830] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Do It Yourself Flag Kit
+	[184304] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Anima-Touched Weapon Fragments
+	[183754] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Stitchflesh's Design Notes
+	[183755] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Ardenweald Wreath
+	[183824] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Cache of Spare Weapons
+	[183828] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Friendly Bugs
+	[184037] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Maldraxxus Candles
+	[183786] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Happiness Bird
+	[184225] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Small Posable Skeleton
+	[184203] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Fungal Hair Tonic
+	[181798] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Stuffed Construct
+	[184038] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Trained Corpselice
+	[183829] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Slime Cat
+	[184039] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Clean White Hat
+	[184040] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Broken Egg Shells
 	-- -- -- Seat of the Primus (99)
 	-- -- Kyrian (04)
 	-- -- -- Path of Ascension (98)
-	[178995] = "910498. Path of Ascension#Sanctum", -- Soul Mirror Shard
-	[179009] = "910498. Path of Ascension#Sanctum", -- Tampered Anima Charger
-	[179008] = "910498. Path of Ascension#Sanctum", -- Depleted Goliath Core
-	[180477] = "910498. Path of Ascension#Sanctum", -- Elysian Feathers
-	[180594] = "910498. Path of Ascension#Sanctum", -- Calloused Bone
-	[180478] = "910498. Path of Ascension#Sanctum", -- Champion's Pelt
-	[180595] = "910498. Path of Ascension#Sanctum", -- Nightforged Steel
+	[178995] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Soul Mirror Shard
+	[179009] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Tampered Anima Charger
+	[179008] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Depleted Goliath Core
+	[180477] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Elysian Feathers
+	[180594] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Calloused Bone
+	[180478] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Champion's Pelt
+	[180595] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Nightforged Steel
+	[180479] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Charm of Fortitude
+	[181145] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Charm of Persistence
+	[181157] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Charm of Discord
+	[181239] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Charm of Focus
+	[181846] = "910498. [46cdff]Path of Ascension] {pathofascension-32x32}#Sanctum", -- Charm of Quickness
 	-- -- -- Elysian Hold (99)
 	-- -- Covenant (01-04)
 	[186472] = "91. Covenant#Sanctum", -- Wisps of Memory
@@ -6357,6 +6529,21 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Equipment Token
+	[124562] = "Openable", -- Baleful Armament
+	[124550] = "Openable", -- Baleful Bracers
+	[124559] = "Openable", -- Baleful Choker
+	[127800] = "Openable", -- Baleful Cloak
+	[124560] = "Openable", -- Baleful Cloak
+	[124553] = "Openable", -- Baleful Gauntlets
+	[124557] = "Openable", -- Baleful Girdle
+	[124554] = "Openable", -- Baleful Hood
+	[124555] = "Openable", -- Baleful Leggings
+	[124558] = "Openable", -- Baleful Ring
+	[128348] = "Openable", -- Baleful Spaulders
+	[124556] = "Openable", -- Baleful Spaulders
+	[124552] = "Openable", -- Baleful Treads
+	[124561] = "Openable", -- Baleful Trinket
+	[124551] = "Openable", -- Baleful Tunic
 	[114052] = "Openable", -- Gleaming Ring
 	[114053] = "Openable", -- Shimmering Gauntlets
 	[114108] = "Openable", -- Tormented Armament
@@ -6382,6 +6569,21 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[184047] = "Openable", -- Ascended Chest of Arms
+	[184048] = "Openable", -- Weapon Satchel of the Wild Hunt
+	[184046] = "Openable", -- Undying Army Weapon Cache
+	[184045] = "Openable", -- Martial Tithe of the Court of Harvesters
+	[117393] = "Openable", -- Keg-Shaped Treasure Chest
+	[54535] = "Openable", -- Keg-Shaped Treasure Chest
+	[149752] = "Openable", -- Keg-Shaped Treasure Box
+	[185992] = "Openable", -- War Chest of the Undying Army
+	[186196] = "Openable", -- Death's Advance War Chest
+	[187543] = "Openable", -- Death's Advance War Chest
+	[185991] = "Openable", -- War Chest of the Wild Hunt
+	[185990] = "Openable", -- Harvester's War Chest
+	[185993] = "Openable", -- Ascended War Chest
+	[173372] = "Openable", -- Cache of the Black Empire
+	[95601] = "Openable", -- Shiny Pile of Refuse
 	[60681] = "Openable", -- Cannary's Cache
 	[57540] = "Openable", -- Coldridge Mountaineer's Pouch
 	[170190] = "Openable", -- Mardivas' Bag of Containing
@@ -6829,6 +7031,25 @@ local ZigiItems = {
 	[79917] = "Openable", -- Worn Monument Ledger
 
 	--! Learnable (98)
+	-- -- Ember Court
+	[181536] = "Learnable", -- Guest List Page (Uncommon)
+	[181537] = "Learnable", -- Guest List Page (Rare)
+	[181538] = "Learnable", -- Guest List Page (Epic)
+	[181517] = "Learnable", -- Building: Dredger Pool
+	[181518] = "Learnable", -- Building: Guardhouse
+	[181519] = "Learnable", -- Staff: Dredger Decorators
+	[181520] = "Learnable", -- Staff: Stage Crew
+	[181522] = "Learnable", -- Staff: Waiters
+	[181523] = "Learnable", -- Staff: Bouncers
+	[181443] = "Learnable|Quest:61459|Account Bound", -- The Party Herald's Party Hat
+	[182296] = "Learnable|Quest:61493|Account Bound", -- Letter of Note, Premier Party Planner
+	[185741] = "Learnable|Quest:63765|Account Bound", -- Restock and Repair, Tips and Tricks for Keeping the Party Going
+	-- -- Maw Upgrades
+	[184653] = "Learnable", -- Animated Levitating Chain
+	[180949] = "Learnable", -- Animaflow Stabilizer
+	[184588] = "Learnable", -- Soul-Stabilizing Talisman
+	[184901] = "Learnable", -- Broker Traversal Enhancer
+	[184613] = "Learnable", -- Encased Riftwalker Essence
 	-- -- Rockin' Rollin' Racer
 	[187560] = "Learnable", -- Rockin' Rollin' Racer Pack
 	-- -- Currency Increase
