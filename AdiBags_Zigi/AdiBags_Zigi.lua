@@ -388,27 +388,31 @@ local ZigiItems = {
 	[187613] = "9188. Korthia#Zone", -- Key of the Inner Chambers
 	[186984] = "9188. Korthia#Zone", -- Korthite Crystal Key
 	[187614] = "9188. Korthia#Zone", -- Key of Many Thoughts
+	[187508] = "9188. Korthia#Zone", -- Trained Gromit Carrier
 	-- -- The Maw (89)
-	[186603] = "9189. The Maw#Zone", -- Nilganihmaht's Stone Ring
-	[186600] = "9189. The Maw#Zone", -- Quartered Ancient Ring
-	[186601] = "9189. The Maw#Zone", -- Quartered Ancient Ring
-	[186602] = "9189. The Maw#Zone", -- Quartered Ancient Ring
-	[186604] = "9189. The Maw#Zone", -- Quartered Ancient Ring
-	[186605] = "9189. The Maw#Zone", -- Nilganihmaht's Runed Band
-	[186608] = "9189. The Maw#Zone", -- Nilganihmaht's Gold Band
-	[186607] = "9189. The Maw#Zone", -- Nilganihmaht's Silver Ring
-	[186727] = "9189. The Maw#Zone", -- Seal Breaker Key
-	[186606] = "9189. The Maw#Zone", -- Nilganihmaht's Signet Ring
-	[182329] = "9189. The Maw#Zone", -- Domination's Calling
-	[182326] = "9189. The Maw#Zone", -- Dominion Etching: Pain
-	[182327] = "9189. The Maw#Zone", -- Dominion Etching: Loss
-	[182328] = "9189. The Maw#Zone", -- Dominion Etching: Grief
-	[185829] = "9189. The Maw#Zone", -- Trueheart Spear
-	[186184] = "9189. The Maw#Zone", -- Lil'Abom Torso
-	[186185] = "9189. The Maw#Zone", -- Lil'Abom Legs
-	[186186] = "9189. The Maw#Zone", -- Lil'Abom Right Hand
-	[186187] = "9189. The Maw#Zone", -- Lil'Abom Spare Arm
-	[186183] = "9189. The Maw#Zone", -- Lil'Abom Head
+	-- -- -- Hand of Nilganihmaht (98)
+	[186603] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Nilganihmaht's Stone Ring
+	[186605] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Nilganihmaht's Runed Band
+	[186608] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Nilganihmaht's Gold Band
+	[186607] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Nilganihmaht's Silver Ring
+	[186606] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Nilganihmaht's Signet Ring
+	[186600] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Quartered Ancient Ring
+	[186601] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Quartered Ancient Ring
+	[186602] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Quartered Ancient Ring
+	[186604] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Quartered Ancient Ring
+	[186727] = "918998. Hand of Nilganihmaht [The Maw]#Zone|Mount:1503", -- Seal Breaker Key
+	-- -- -- The Maw (99)
+	[182329] = "918999. The Maw#Zone", -- Domination's Calling
+	[182326] = "918999. The Maw#Zone", -- Dominion Etching: Pain
+	[182327] = "918999. The Maw#Zone", -- Dominion Etching: Loss
+	[182328] = "918999. The Maw#Zone", -- Dominion Etching: Grief
+	[185829] = "918999. The Maw#Zone", -- Trueheart Spear
+	[186184] = "918999. The Maw#Zone", -- Lil'Abom Torso
+	[186185] = "918999. The Maw#Zone", -- Lil'Abom Legs
+	[186186] = "918999. The Maw#Zone", -- Lil'Abom Right Hand
+	[186187] = "918999. The Maw#Zone", -- Lil'Abom Spare Arm
+	[186183] = "918999. The Maw#Zone", -- Lil'Abom Head
+	[186190] = "918999. The Maw#Zone", -- Etherwyrm Cage Key
 	-- -- Revendreth (91)
 	-- -- -- The Avowed (98)
 	[180451] = "919198. The Avowed#Zone", -- Grand Inquisitor's Sinstone Fragment
@@ -446,6 +450,7 @@ local ZigiItems = {
 	[175757] = "9193. Maldraxxus#Zone", -- Construct Supply Key
 	[183401] = "9193. Maldraxxus#Zone", -- Amethystine Dye
 	[178594] = "9193. Maldraxxus#Zone", -- Anima-bound Wraps
+	[180277] = "9193. Maldraxxus#Zone", -- Battlefront Ration Key
 	-- -- Bastion (94)
 	[180049] = "9194. Bastion#Zone", -- Steward's Silver Key
 	[180285] = "9194. Bastion#Zone", -- Steward's Golden Key
@@ -5363,23 +5368,9 @@ local ZigiItems = {
 	[181248] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Ancient Sinstone
 	[176850] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Blank Invitation
 	[179958] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Ember Court Guest List
-	[176115] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Alexandros Mograine
-	[176097] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Baroness Vashj
-	[176119] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Choofa
-	[176120] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Cryptkeeper Kassir
-	[176121] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Droman Aliothe
-	[176122] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Grandmaster Vole
-	[176116] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Hunt-Captain Korayn
-	[176123] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Kleia and Pelagos
-	[176112] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Lady Moonberry
-	[176113] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Mikanikos
-	[176124] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Plague Deviser Marileth
-	[176117] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Polemarch Adrestes
-	[176118] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Rendle and Cudgelface
-	[176125] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Sika
-	[178686] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: Stonehead
-	[176114] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- RSVP: The Countess
 	[181362] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Blob of Slime
+	[180248] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Ambassador's Reserve
+	[182712] = "910198. [f90000]Ember Court] {embercourt-32x32}#Sanctum", -- Dredger's Short Sleeved Doublet
 	-- -- -- Sinfall (99)
 	-- -- Night Fae (02)
 	-- -- -- Queen's Conservatory (98)
@@ -6188,6 +6179,7 @@ local ZigiItems = {
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	-- Consumable
+	[44817] = "Toy#Miscellaneous", -- The Mischief Maker
 	[183599] = "Toy#Miscellaneous", -- Tossable Head
 	[169674] = "Toy#Miscellaneous", -- Green Paint Filled Bladder
 	[169673] = "Toy#Miscellaneous", -- Blue Paint Filled Bladder
@@ -6569,6 +6561,11 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[20708] = "Openable", -- Tightly Sealed Trunk
+	[183886] = "Openable", -- Sika's Rare Ore Pouch
+	[182114] = "Openable", -- Assorted Parts and 'Things'
+	[181557] = "Openable", -- Favor of the Court
+	[186705] = "Openable", -- Gold Filled Chalice
 	[184047] = "Openable", -- Ascended Chest of Arms
 	[184048] = "Openable", -- Weapon Satchel of the Wild Hunt
 	[184046] = "Openable", -- Undying Army Weapon Cache
@@ -7041,15 +7038,54 @@ local ZigiItems = {
 	[181520] = "Learnable", -- Staff: Stage Crew
 	[181522] = "Learnable", -- Staff: Waiters
 	[181523] = "Learnable", -- Staff: Bouncers
+	[181521] = "Learnable", -- Staff: Ambassador
+	[182343] = "Learnable", -- Staff: Ambassador
+	[181524] = "Learnable", -- Staff: Ambassador
+	[182342] = "Learnable", -- Staff: Ambassador
 	[181443] = "Learnable|Quest:61459|Account Bound", -- The Party Herald's Party Hat
-	[182296] = "Learnable|Quest:61493|Account Bound", -- Letter of Note, Premier Party Planner
+	[182296] = "Learnable|Quest:61493&Quest:61494|Account Bound", -- Letter of Note, Premier Party Planner
 	[185741] = "Learnable|Quest:63765|Account Bound", -- Restock and Repair, Tips and Tricks for Keeping the Party Going
+	[176126] = "Learnable", -- Contract: Traditional Theme
+	[176127] = "Learnable", -- Contract: Mystery Mirrors
+	[176128] = "Learnable", -- Contract: Mortal Reminders
+	[176130] = "Learnable", -- Contract: Atoning Rituals
+	[176131] = "Learnable", -- Contract: Glimpse of the Wilds
+	[176132] = "Learnable", -- Contract: Lost Chalice Band
+	[176134] = "Learnable", -- Contract: Tubbins's Tea Party
+	[176135] = "Learnable", -- Contract: Divine Desserts
+	[176136] = "Learnable", -- Contract: Mushroom Surprise!
+	[176138] = "Learnable", -- Contract: Venthyr Volunteers
+	[176139] = "Learnable", -- Contract: Stoneborn Reserves
+	[176140] = "Learnable", -- Contract: Maldraxxian Army
+	[181530] = "Learnable", -- Stock: Greeting Kits
+	[181532] = "Learnable", -- Stock: Appetizers
+	[181533] = "Learnable", -- Stock: Anima Samples
+	[181535] = "Learnable", -- Stock: Comfy Chairs
+	[183957] = "Learnable", -- Invitation: Grandmaster Vole
+	[183956] = "Learnable", -- Invitation: Choofa
+	[176115] = "Learnable", -- RSVP: Alexandros Mograine
+	[176097] = "Learnable", -- RSVP: Baroness Vashj
+	[176119] = "Learnable", -- RSVP: Choofa
+	[176120] = "Learnable", -- RSVP: Cryptkeeper Kassir
+	[176121] = "Learnable", -- RSVP: Droman Aliothe
+	[176122] = "Learnable", -- RSVP: Grandmaster Vole
+	[176116] = "Learnable", -- RSVP: Hunt-Captain Korayn
+	[176123] = "Learnable", -- RSVP: Kleia and Pelagos
+	[176112] = "Learnable", -- RSVP: Lady Moonberry
+	[176113] = "Learnable", -- RSVP: Mikanikos
+	[176124] = "Learnable", -- RSVP: Plague Deviser Marileth
+	[176117] = "Learnable", -- RSVP: Polemarch Adrestes
+	[176118] = "Learnable", -- RSVP: Rendle and Cudgelface
+	[176125] = "Learnable", -- RSVP: Sika
+	[178686] = "Learnable", -- RSVP: Stonehead
+	[176114] = "Learnable", -- RSVP: The Countess
 	-- -- Maw Upgrades
 	[184653] = "Learnable", -- Animated Levitating Chain
 	[180949] = "Learnable", -- Animaflow Stabilizer
 	[184588] = "Learnable", -- Soul-Stabilizing Talisman
 	[184901] = "Learnable", -- Broker Traversal Enhancer
 	[184613] = "Learnable", -- Encased Riftwalker Essence
+	[187706] = "Learnable|Quest:64828|Already known", -- Treatise: Bonds of Stygia in Mortals
 	-- -- Rockin' Rollin' Racer
 	[187560] = "Learnable", -- Rockin' Rollin' Racer Pack
 	-- -- Currency Increase
@@ -7117,7 +7153,9 @@ local ZigiItems = {
 	[190096] = "Learnable", -- Pocobold
 	[190098] = "Learnable", -- Pepepec
 	[190182] = "Learnable", -- Lovely Regal Pocopoc
-	-- -- Hunter Taming
+	-- -- Fishing
+	[34109] = "Learnable|Spell:43308|Already known", -- Weather-Beaten Journal
+	-- -- Hunter
 	[94232] = "Learnable|HUNTER&Spell:138430", -- Ancient Tome of Dinomancy
 	[134125] = "Learnable|HUNTER&Spell:205154|Unbound", -- Mecha-Bond Imprint Matrix
 	[147580] = "Learnable|HUNTER&Spell:242155|Account Bound", -- Tome of the Hybrid Beast
@@ -7125,7 +7163,8 @@ local ZigiItems = {
 	[166502] = "Learnable|Quest:54753|Already known", -- Blood-Soaked Tome of Dark Whispers
 	[183124] = "Learnable|Quest:62255|Already known", -- Simple Tome of Bone-Binding
 	[180705] = "Learnable|Quest:61160|Already known", -- Gargon Training Manual
-	-- -- Mage Polymorph
+	[136782] = "Learnable|HUNTER&Spell:127933|Already known", -- Fireworks Instruction Manual
+	-- -- Mage
 	[44709] = "Learnable|MAGE&Spell:61305|Unbound", -- Tome of Polymorph: Black Cat
 	[162626] = "Learnable|MAGE&Spell:277792|Already known", -- Tome of Polymorph: Bumblebee
 	[162625] = "Learnable|MAGE&Spell:277787|Already known", -- Tome of Polymorph: Direhorn
@@ -7135,11 +7174,11 @@ local ZigiItems = {
 	[120140] = "Learnable|MAGE&Spell:126819|Unbound", -- Tome of Polymorph: Porcupine
 	[44793] = "Learnable|MAGE&Spell:61721|Already known", -- Tome of Polymorph: Rabbit
 	[22739] = "Learnable|MAGE&Spell:28271|Unbound", -- Tome of Polymorph: Turtle
-	-- -- Rogue Tome
+	-- -- Rogue
 	[136803] = "Learnable|ROGUE&Spell:56814|Already known", -- Dirty Tricks, Vol 1: Detection
-	-- -- Monk Tome
+	-- -- Monk
 	[136800] = "Learnable|MONK&Spell:125883|Already known", -- Meditation Manual: Zen Flight
-	-- -- Shaman Hex
+	-- -- Shaman
 	[136972] = "Learnable|SHAMAN&Spell:211015|Unbound", -- Tome of Hex: Cockroach
 	[136938] = "Learnable|SHAMAN&Spell:210873|Already known", -- Tome of Hex: Compy
 	[172405] = "Learnable|SHAMAN&Spell:309328|Already known", -- Tome of Hex: Living Honey
@@ -7148,7 +7187,7 @@ local ZigiItems = {
 	[136969] = "Learnable|SHAMAN&Spell:211004|Already known", -- Tome of Hex: Spider
 	[162624] = "Learnable|SHAMAN&Spell:277784|Already known", -- Tome of Hex: Wicker Mongrel
 	[162623] = "Learnable|SHAMAN&Spell:277778|Already known", -- Tome of Hex: Zandalari Tendonripper
-	-- -- Warlock Demon
+	-- -- Warlock
 	[189719] = "Learnable", -- Barbed Collar of the Incubus
 	[189720] = "Learnable", -- Barbed Collar of the Succubus
 	-- -- Crypt Couture
@@ -8268,6 +8307,13 @@ function Zigi:CheckItem(id, bag, slot)
 						end
 					elseif string.match(v, "Spell:(%d)") then
 						if not IsPlayerSpell(tonumber(string.gsub(v, "Spell:(%d)", "%1") or 0)) then
+							match = true
+						end
+					elseif string.match(v, "Mount:(%d)") then
+						-- MountID: https://wow.tools/dbc/?dbc=mount
+						local mountinfo = C_MountJournal.GetMountInfoByID(tonumber(string.gsub(v, "Mount:(%d)", "%1") or 0))
+
+						if mountinfo and mountinfo.isCollected then
 							match = true
 						end
 					end
