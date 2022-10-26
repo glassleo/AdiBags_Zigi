@@ -413,6 +413,7 @@ local ZigiItems = {
 	[186187] = "918999. The Maw#Zone", -- Lil'Abom Spare Arm
 	[186183] = "918999. The Maw#Zone", -- Lil'Abom Head
 	[186190] = "918999. The Maw#Zone", -- Etherwyrm Cage Key
+	[184485] = "918999. The Maw#Zone", -- Mawforged Key
 	-- -- Revendreth (91)
 	-- -- -- The Avowed (98)
 	[180451] = "919198. The Avowed#Zone", -- Grand Inquisitor's Sinstone Fragment
@@ -5396,23 +5397,39 @@ local ZigiItems = {
 	-- -- -- Heart of the Forest (99)
 	-- -- Necrolord (03)
 	-- -- -- Abominable Stitching (98)
-	[183744] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Superior Parts
 	[178061] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Malleable Flesh
-	[183830] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Do It Yourself Flag Kit
-	[184304] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Anima-Touched Weapon Fragments
+	[181797] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Strange Cloth
+	[181798] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Stuffed Construct
+	[181799] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Extra Large Hat
+	[183744] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Superior Parts
+	[183752] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Empty Nightcap Cask
 	[183754] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Stitchflesh's Design Notes
 	[183755] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Ardenweald Wreath
-	[183824] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Cache of Spare Weapons
-	[183828] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Friendly Bugs
-	[184037] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Maldraxxus Candles
+	[183756] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Floating Circlet
+	[183759] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Unusually Large Cranium
+	[183760] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Venthyr Spectacles
 	[183786] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Happiness Bird
-	[184225] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Small Posable Skeleton
-	[184203] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Fungal Hair Tonic
-	[181798] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Stuffed Construct
-	[184038] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Trained Corpselice
+	[183789] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Six-League Pack
+	[183824] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Cache of Spare Weapons
+	[183826] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Big Floppy Hat
+	[183827] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Blacksteel Backplate
+	[183828] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Friendly Bugs
 	[183829] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Slime Cat
+	[183830] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Do It Yourself Flag Kit
+	[183831] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Safe Fall Kit
+	[183833] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Kash's Bag of Junk
+	[184036] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Dundae's Hat
+	[184037] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Maldraxxus Candles
+	[184038] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Trained Corpselice
 	[184039] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Clean White Hat
 	[184040] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Broken Egg Shells
+	[184203] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Fungal Hair Tonic
+	[184203] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Fungal Hair Tonic
+	[184204] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Otherworld Hat
+	[184205] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Long Lost Crown
+	[184224] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Dapperling Seeds
+	[184225] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Small Posable Skeleton
+	[184304] = "910398. [20db9e]Abominable Stitching] {buildanabomination-32x32}#Sanctum", -- Anima-Touched Weapon Fragments
 	-- -- -- Seat of the Primus (99)
 	-- -- Kyrian (04)
 	-- -- -- Path of Ascension (98)
@@ -5930,6 +5947,8 @@ local ZigiItems = {
 	[191300] = "Account Bound", -- Certified Vouchsafe
 	[190189] = "Account Bound", -- Sandworn Relic
 	[137642] = "Account Bound", -- Mark of Honor
+	[166750] = "Account Bound", -- Draught of Ten Lands
+	[166751] = "Account Bound", -- Draught of Ten Lands
 
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
@@ -6561,6 +6580,11 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[66943] = "Openable", -- Treasures from Grim Batol
+	[20767] = "Openable", -- Scum Covered Bag
+	[178128] = "Openable", -- Bag of Shinies
+	[183883] = "Openable", -- Bulging Collection of Random Bits
+	[20766] = "Openable", -- Slimy Bag
 	[20708] = "Openable", -- Tightly Sealed Trunk
 	[183886] = "Openable", -- Sika's Rare Ore Pouch
 	[182114] = "Openable", -- Assorted Parts and 'Things'
@@ -7063,6 +7087,7 @@ local ZigiItems = {
 	[181535] = "Learnable", -- Stock: Comfy Chairs
 	[183957] = "Learnable", -- Invitation: Grandmaster Vole
 	[183956] = "Learnable", -- Invitation: Choofa
+	[181441] = "Learnable", -- Altar of Accomplishment
 	[176115] = "Learnable", -- RSVP: Alexandros Mograine
 	[176097] = "Learnable", -- RSVP: Baroness Vashj
 	[176119] = "Learnable", -- RSVP: Choofa
@@ -7155,6 +7180,12 @@ local ZigiItems = {
 	[190182] = "Learnable", -- Lovely Regal Pocopoc
 	-- -- Fishing
 	[34109] = "Learnable|Spell:43308|Already known", -- Weather-Beaten Journal
+	-- -- Druid
+	[136789] = "Learnable|DRUID&Spell:210053|Already known", -- Tome of the Wilds: Mount Form
+	[136787] = "Learnable|DRUID&Spell:114282|Already known", -- Tome of the Wilds: Treant Form
+	[136794] = "Learnable|DRUID&Spell:164862|Already known", -- Tome of the Wilds: Flap
+	[136795] = "Learnable|DRUID&Spell:127757|Already known", -- Tome of the Wilds: Charm Woodland Creature
+	[136790] = "Learnable|DRUID&Spell:210065|Already known", -- Tome of the Wilds: Track Beasts
 	-- -- Hunter
 	[94232] = "Learnable|HUNTER&Spell:138430", -- Ancient Tome of Dinomancy
 	[134125] = "Learnable|HUNTER&Spell:205154|Unbound", -- Mecha-Bond Imprint Matrix
@@ -7174,6 +7205,7 @@ local ZigiItems = {
 	[120140] = "Learnable|MAGE&Spell:126819|Unbound", -- Tome of Polymorph: Porcupine
 	[44793] = "Learnable|MAGE&Spell:61721|Already known", -- Tome of Polymorph: Rabbit
 	[22739] = "Learnable|MAGE&Spell:28271|Unbound", -- Tome of Polymorph: Turtle
+	[200205] = "Learnable|MAGE&Spell:391622|Unbound", -- Tome of Polymorph: Duck
 	-- -- Rogue
 	[136803] = "Learnable|ROGUE&Spell:56814|Already known", -- Dirty Tricks, Vol 1: Detection
 	-- -- Monk
