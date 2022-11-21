@@ -217,7 +217,7 @@ function Stuff:CheckItem(id)
 end
 
 function Stuff:Filter(slotData)
-	local id = GetContainerItemID(slotData.bag, slotData.slot)
+	local id = C_Container.GetContainerItemID(slotData.bag, slotData.slot)
 
 	if id and Keepsakes[id] then
 		local char, realm = UnitFullName("player")
@@ -719,6 +719,7 @@ local ZigiItems = {
 	[20890] = "9951. Ahn'Qiraj#Zone|PRIEST,MAGE,WARLOCK,DRUID", -- Qiraji Ornate Hilt
 	[20889] = "9951. Ahn'Qiraj#Zone|PALADIN,HUNTER,SHAMAN,WARLOCK,DRUID", -- Qiraji Regal Drape
 	[20885] = "9951. Ahn'Qiraj#Zone|WARRIOR,ROGUE,PRIEST,MAGE", -- Qiraji Martial Drape
+	[21230] = "9951. Ahn'Qiraj#Zone", -- Ancient Qiraji Artifact
 	-- -- Dire Maul (71)
 	[18258] = "9971. Dire Maul#Zone", -- Gordok Ogre Suit
 	[18240] = "9971. Dire Maul#Zone", -- Ogre Tannin
@@ -5949,6 +5950,11 @@ local ZigiItems = {
 	[137642] = "Account Bound", -- Mark of Honor
 	[166750] = "Account Bound", -- Draught of Ten Lands
 	[166751] = "Account Bound", -- Draught of Ten Lands
+	[199838] = "Account Bound", -- Dimmed Primeval Storm
+	[199837] = "Account Bound", -- Dimmed Primeval Earth
+	[199839] = "Account Bound", -- Dimmed Primeval Water
+	[199836] = "Account Bound", -- Dimmed Primeval Fire
+	[199211] = "Account Bound", -- Primeval Essence
 
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
@@ -6197,6 +6203,7 @@ local ZigiItems = {
 	[163604] = "Toy#Miscellaneous", -- Net-o-Matic 5000
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
+	[172013] = "Toy#Miscellaneous", -- Celebration Firework
 	-- Consumable
 	[44817] = "Toy#Miscellaneous", -- The Mischief Maker
 	[183599] = "Toy#Miscellaneous", -- Tossable Head
@@ -6580,6 +6587,7 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[104272] = "Openable", -- Celestial Treasure Box
 	[66943] = "Openable", -- Treasures from Grim Batol
 	[20767] = "Openable", -- Scum Covered Bag
 	[178128] = "Openable", -- Bag of Shinies
@@ -7933,6 +7941,16 @@ local ZigiItems = {
 	[181866] = "Learnable", -- Withering Plague
 	[182456] = "Learnable", -- Wrench Evil
 	[181465] = "Learnable", -- Xuen's Bond
+	[199456] = "Learnable", -- Grandiose Boon
+	[199455] = "Learnable", -- Intense Awakening
+	[199454] = "Learnable", -- Bronze Acceleration
+	[199457] = "Learnable", -- Circle of Life
+	[199458] = "Learnable", -- Inherent Resistance
+	[199459] = "Learnable", -- Primal Fortitude
+	[199460] = "Learnable", -- Graceful Stride
+	[199462] = "Learnable", -- Natural Weapons
+	[199453] = "Learnable", -- Spark of Savagery
+	[199461] = "Learnable", -- Legacy of Coldarra
 
 	--! Buff
 	[187709] = "Buff", -- Celebration Package (18th)
@@ -8352,7 +8370,7 @@ function Zigi:CheckItem(id, bag, slot)
 
 					if (tonumber(v) or 0) > 0 then -- Minimum item level
 						match = true
-						local link = GetContainerItemLink(bag, slot)
+						local link = C_Container.GetContainerItemLink(bag, slot)
 						local itemLevel = GetDetailedItemLevelInfo(link) or 1
 						if itemLevel < (tonumber(v) or 0) then
 							match = false
@@ -8388,7 +8406,7 @@ function Zigi:CheckItem(id, bag, slot)
 		local itemclass = select(12, GetItemInfo(id)) or -1
 
 		if itemclass == 4 or itemclass == 2 then
-			local link = GetContainerItemLink(bag, slot)
+			local link = C_Container.GetContainerItemLink(bag, slot)
 			local itemLevel = GetDetailedItemLevelInfo(link) or 1
 
 			if itemLevel < 220 then
@@ -8402,7 +8420,7 @@ end
 
 function Zigi:Filter(slotData)
 	local bag, slot = slotData.bag, slotData.slot
-	local id = GetContainerItemID(bag, slot)
+	local id = C_Container.GetContainerItemID(bag, slot)
 
 	if id and ZigiItems[id] then
 		if Zigi:CheckItem(id, bag, slot) then
@@ -8424,7 +8442,7 @@ function OldEquipment:CheckItem(id, bag, slot)
 		local itemclass = select(12, GetItemInfo(id or 0)) or -1
 
 		if itemclass == 4 or itemclass == 2 then
-			local link = GetContainerItemLink(bag, slot)
+			local link = C_Container.GetContainerItemLink(bag, slot)
 			local itemLevel = GetDetailedItemLevelInfo(link) or 1
 
 			if itemLevel < ItemLevelThreshold[UnitLevel("player") or 0] then
@@ -8438,7 +8456,7 @@ end
 
 function OldEquipment:Filter(slotData)
 	local bag, slot = slotData.bag, slotData.slot
-	local id = GetContainerItemID(bag, slot)
+	local id = C_Container.GetContainerItemID(bag, slot)
 
 	if OldEquipment:CheckItem(id, bag, slot) then
 		return OldEquipment:CheckItem(id, bag, slot)
