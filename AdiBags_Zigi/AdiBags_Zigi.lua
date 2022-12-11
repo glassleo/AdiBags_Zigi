@@ -265,6 +265,60 @@ local ZigiItems = {
 	--[[ ! Zone ! ]]--
 	-- Sort by Expansion descending, Level descending
 
+	-- https://wowpedia.fandom.com/wiki/MountID
+
+	-- Dragon Isles (90)
+	-- -- The Forbidden Reach (90)
+	-- -- Valdrakken (91)
+	-- -- Thaldraszus (92)
+	-- -- The Azure Span (93)
+	-- -- -- Iskaaran Fishing
+	[194510] = "909399. Iskaaran Fishing#Zone", -- Iskaaran Harpoon
+	[198070] = "909399. Iskaaran Fishing#Zone", -- Tattered Seavine
+	[199641] = "909399. Iskaaran Fishing#Zone", -- Reinforced Irontree Harpoon Handle
+	[199694] = "909399. Iskaaran Fishing#Zone", -- Flying Fish Bone Charm
+	[199695] = "909399. Iskaaran Fishing#Zone", -- Iskaaran Fishing Net
+	[199696] = "909399. Iskaaran Fishing#Zone", -- Iskaaran Ice Axe
+	[199697] = "909399. Iskaaran Fishing#Zone", -- Polished Basalt Bracelet
+	[199698] = "909399. Iskaaran Fishing#Zone", -- Irontree Harpoon Handle
+	[199844] = "909399. Iskaaran Fishing#Zone", -- Serevite Harpoon Head
+	[199845] = "909399. Iskaaran Fishing#Zone", -- Jagged Serevite Harpoon Head
+	[199846] = "909399. Iskaaran Fishing#Zone", -- Seavine Harpoon Rope
+	[199847] = "909399. Iskaaran Fishing#Zone", -- Braided Seavine Harpoon Rope
+	[199848] = "909399. Iskaaran Fishing#Zone", -- Draconium Net Weights
+	[199849] = "909399. Iskaaran Fishing#Zone", -- Dense Draconium Net Weights
+	[199850] = "909399. Iskaaran Fishing#Zone", -- Imbu Knot
+	[199851] = "909399. Iskaaran Fishing#Zone", -- Double Imbu Knot
+	[199924] = "909399. Iskaaran Fishing#Zone", -- Strong Sea Kelp
+	[199925] = "909399. Iskaaran Fishing#Zone", -- Stone With Hole
+	[200075] = "909399. Iskaaran Fishing#Zone", -- Flying Fish Bones
+	[200076] = "909399. Iskaaran Fishing#Zone", -- Harpoon Head
+	[200077] = "909399. Iskaaran Fishing#Zone", -- Wooden Pole
+	[200078] = "909399. Iskaaran Fishing#Zone", -- Pickaxe Blade
+	[200079] = "909399. Iskaaran Fishing#Zone", -- Sea-Polished Basalt
+	[200080] = "909399. Iskaaran Fishing#Zone", -- Draconium Nugget
+	[200081] = "909399. Iskaaran Fishing#Zone", -- Strong Seavine
+	[200082] = "909399. Iskaaran Fishing#Zone", -- Battered Imbu-made Net
+	[200083] = "909399. Iskaaran Fishing#Zone", -- Irontree Branch
+	[200084] = "909399. Iskaaran Fishing#Zone", -- Salinated Serevite
+	[200085] = "909399. Iskaaran Fishing#Zone", -- Khaz'gorite Wire
+	[200086] = "909399. Iskaaran Fishing#Zone", -- Khaz'gorite-infused Resin
+	-- -- Ohn'ahran Plains (94)
+	-- -- -- Divine Kiss of Ohn'ahra (97)
+	[201929] = "909497. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Stolen Breath of Ohn'ahra
+	[201323] = "909497. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Essence of Awakening
+	-- -- -- Lizi (98)
+	[192615] = "909498. Lizi#Zone|Mount:1639", -- Fluorescent Fluid
+	[192658] = "909498. Lizi#Zone|Mount:1639", -- High-Fiber Leaf
+	[192636] = "909498. Lizi#Zone|Mount:1639", -- Woolly Mountain Pelt
+	-- -- -- Ohn'ahran Plains (99)
+	[202070] = "909499. Ohn'ahran Plains#Zone", -- Exceptional Pelt
+	[202071] = "909499. Ohn'ahran Plains#Zone", -- Elemental Mote
+	-- -- The Waking Shores (95)
+	[193201] = "9095. The Waking Shores#Zone", -- Key Framing
+	[191251] = "9095. The Waking Shores#Zone", -- Key Fragments
+	[191264] = "9095. The Waking Shores#Zone", -- Restored Obsidian Key
+	[191837] = "9095. The Waking Shores#Zone", -- Earthen Charm
 	-- Shadowlands (91)
 	-- -- Sepulcher of the First Ones (57)
 	-- -- Sanctum of Domination (58)
@@ -749,6 +803,31 @@ local ZigiItems = {
 	-- Sort by Category ascending, Expansion descending
 
 	--! Cloth (01)
+	-- -- Dragon Isles (90)
+	[193938] = "0190. Dragon Isles Cloth#Tradeskill", -- Azureweave Bolt
+	[193939] = "0190. Dragon Isles Cloth#Tradeskill", -- Azureweave Bolt
+	[193940] = "0190. Dragon Isles Cloth#Tradeskill", -- Azureweave Bolt
+	[193936] = "0190. Dragon Isles Cloth#Tradeskill", -- Chronocloth Bolt
+	[193935] = "0190. Dragon Isles Cloth#Tradeskill", -- Chronocloth Bolt
+	[193937] = "0190. Dragon Isles Cloth#Tradeskill", -- Chronocloth Bolt
+	[193053] = "0190. Dragon Isles Cloth#Tradeskill", -- Contoured Fowlfeather
+	[193923] = "0190. Dragon Isles Cloth#Tradeskill", -- Decayed Wildercloth
+	[193924] = "0190. Dragon Isles Cloth#Tradeskill", -- Frostbitten Wildercloth
+	[193932] = "0190. Dragon Isles Cloth#Tradeskill", -- Infurious Wildercloth Bolt
+	[193933] = "0190. Dragon Isles Cloth#Tradeskill", -- Infurious Wildercloth Bolt
+	[193934] = "0190. Dragon Isles Cloth#Tradeskill", -- Infurious Wildercloth Bolt
+	[193925] = "0190. Dragon Isles Cloth#Tradeskill", -- Singed Wildercloth
+	[192096] = "0190. Dragon Isles Cloth#Tradeskill", -- Spool of Wilderthread
+	[192095] = "0190. Dragon Isles Cloth#Tradeskill", -- Spool of Wilderthread
+	[192097] = "0190. Dragon Isles Cloth#Tradeskill", -- Spool of Wilderthread
+	[193050] = "0190. Dragon Isles Cloth#Tradeskill", -- Tattered Wildercloth
+	[193929] = "0190. Dragon Isles Cloth#Tradeskill", -- Vibrant Wildercloth Bolt
+	[193931] = "0190. Dragon Isles Cloth#Tradeskill", -- Vibrant Wildercloth Bolt
+	[193930] = "0190. Dragon Isles Cloth#Tradeskill", -- Vibrant Wildercloth Bolt
+	[193922] = "0190. Dragon Isles Cloth#Tradeskill", -- Wildercloth
+	[193926] = "0190. Dragon Isles Cloth#Tradeskill", -- Wildercloth Bolt
+	[193927] = "0190. Dragon Isles Cloth#Tradeskill", -- Wildercloth Bolt
+	[193928] = "0190. Dragon Isles Cloth#Tradeskill", -- Wildercloth Bolt
 	-- -- Shadowlands (91)
 	[187703] = "0191. Shadowlands Cloth#Tradeskill", -- Silken Protofiber
 	[172439] = "0191. Shadowlands Cloth#Tradeskill", -- Enchanted Lightless Silk
@@ -827,6 +906,53 @@ local ZigiItems = {
 	[7072] = "0199. Cloth#Tradeskill", -- Naga Scale
 
 	--! Leather (02)
+	-- -- Dragon Isles (90)
+	[193213] = "0290. Dragon Isles Leather#Tradeskill", -- Adamant Scales
+	[193214] = "0290. Dragon Isles Leather#Tradeskill", -- Adamant Scales
+	[193215] = "0290. Dragon Isles Leather#Tradeskill", -- Adamant Scales
+	[193261] = "0290. Dragon Isles Leather#Tradeskill", -- Bite-Sized Morsel
+	[193253] = "0290. Dragon Isles Leather#Tradeskill", -- Cacophonous Thunderscale
+	[193251] = "0290. Dragon Isles Leather#Tradeskill", -- Crystalspine Fur
+	[193232] = "0290. Dragon Isles Leather#Tradeskill", -- Deathchill Hide
+	[193233] = "0290. Dragon Isles Leather#Tradeskill", -- Deathchill Hide
+	[193234] = "0290. Dragon Isles Leather#Tradeskill", -- Deathchill Hide
+	[193216] = "0290. Dragon Isles Leather#Tradeskill", -- Dense Hide
+	[193217] = "0290. Dragon Isles Leather#Tradeskill", -- Dense Hide
+	[193218] = "0290. Dragon Isles Leather#Tradeskill", -- Dense Hide
+	[193239] = "0290. Dragon Isles Leather#Tradeskill", -- Drygrate Scales
+	[193240] = "0290. Dragon Isles Leather#Tradeskill", -- Drygrate Scales
+	[193241] = "0290. Dragon Isles Leather#Tradeskill", -- Drygrate Scales
+	[193242] = "0290. Dragon Isles Leather#Tradeskill", -- Earthshine Scales
+	[193244] = "0290. Dragon Isles Leather#Tradeskill", -- Earthshine Scales
+	[193243] = "0290. Dragon Isles Leather#Tradeskill", -- Earthshine Scales
+	[193262] = "0290. Dragon Isles Leather#Tradeskill", -- Exceptional Morsel
+	[193258] = "0290. Dragon Isles Leather#Tradeskill", -- Fire-Infused Hide
+	[193259] = "0290. Dragon Isles Leather#Tradeskill", -- Flawless Proto Dragon Scale
+	[193245] = "0290. Dragon Isles Leather#Tradeskill", -- Frostbite Scales
+	[193246] = "0290. Dragon Isles Leather#Tradeskill", -- Frostbite Scales
+	[193247] = "0290. Dragon Isles Leather#Tradeskill", -- Frostbite Scales
+	[193236] = "0290. Dragon Isles Leather#Tradeskill", -- Infurious Hide
+	[193237] = "0290. Dragon Isles Leather#Tradeskill", -- Infurious Hide
+	[193238] = "0290. Dragon Isles Leather#Tradeskill", -- Infurious Hide
+	[193248] = "0290. Dragon Isles Leather#Tradeskill", -- Infurious Scales
+	[193249] = "0290. Dragon Isles Leather#Tradeskill", -- Infurious Scales
+	[193250] = "0290. Dragon Isles Leather#Tradeskill", -- Infurious Scales
+	[193222] = "0290. Dragon Isles Leather#Tradeskill", -- Lustrous Scaled Hide
+	[193223] = "0290. Dragon Isles Leather#Tradeskill", -- Lustrous Scaled Hide
+	[193224] = "0290. Dragon Isles Leather#Tradeskill", -- Lustrous Scaled Hide
+	[193229] = "0290. Dragon Isles Leather#Tradeskill", -- Mireslush Hide
+	[193230] = "0290. Dragon Isles Leather#Tradeskill", -- Mireslush Hide
+	[193231] = "0290. Dragon Isles Leather#Tradeskill", -- Mireslush Hide
+	[193255] = "0290. Dragon Isles Leather#Tradeskill", -- Pristine Vorquin Horn
+	[193208] = "0290. Dragon Isles Leather#Tradeskill", -- Resilient Leather
+	[193210] = "0290. Dragon Isles Leather#Tradeskill", -- Resilient Leather
+	[193211] = "0290. Dragon Isles Leather#Tradeskill", -- Resilient Leather
+	[193254] = "0290. Dragon Isles Leather#Tradeskill", -- Rockfang Leather
+	[193252] = "0290. Dragon Isles Leather#Tradeskill", -- Salamanther Scales
+	[193226] = "0290. Dragon Isles Leather#Tradeskill", -- Stonecrust Hide
+	[193228] = "0290. Dragon Isles Leather#Tradeskill", -- Stonecrust Hide
+	[193227] = "0290. Dragon Isles Leather#Tradeskill", -- Stonecrust Hide
+	[193256] = "0290. Dragon Isles Leather#Tradeskill", -- Windsong Plumage
 	-- -- Shadowlands (91)
 	[172438] = "0291. Shadowlands Leather#Tradeskill", -- Enchanted Heavy Callous Hide
 	[172089] = "0291. Shadowlands Leather#Tradeskill", -- Desolate Leather
@@ -934,6 +1060,30 @@ local ZigiItems = {
 	[17056] = "0299. Leather#Tradeskill", -- Light Feather
 
 	--! Metal & Stone (03)
+	-- -- Dragon Isles (90)
+	[188658] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Draconium Ore
+	[189143] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Draconium Ore
+	[190311] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Draconium Ore
+	[190530] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Frostfire Alloy
+	[190531] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Frostfire Alloy
+	[190532] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Frostfire Alloy
+	[190536] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Infurious Alloy
+	[190537] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Infurious Alloy
+	[190538] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Infurious Alloy
+	[190312] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Khaz'gorite Ore
+	[190313] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Khaz'gorite Ore
+	[190314] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Khaz'gorite Ore
+	[190533] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Obsidian Seared Alloy
+	[190534] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Obsidian Seared Alloy
+	[190535] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Obsidian Seared Alloy
+	[190452] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Primal Flux
+	[189542] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Primal Molten Alloy
+	[189541] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Primal Molten Alloy
+	[189543] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Primal Molten Alloy
+	[194545] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Prismatic Ore
+	[190396] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Serevite Ore
+	[190395] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Serevite Ore
+	[190394] = "0390. Dragon Isles Metal & Stone#Tradeskill", -- Serevite Ore
 	-- -- Shadowlands (91)
 	[171428] = "0391. Shadowlands Metal & Stone#Tradeskill", -- Shadowghast Ingot
 	[187700] = "0391. Shadowlands Metal & Stone#Tradeskill", -- Progenium Ore
@@ -1051,6 +1201,53 @@ local ZigiItems = {
 	[2880] = "0399. Metal & Stone#Tradeskill", -- Weak Flux
 
 	--! Cooking (04)
+	[199105] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Ancheevy
+	[199212] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Clubfish
+	[199833] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Dragonhead Eel
+	[199101] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Dried Wyldermane Kelp
+	[199208] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Grungle
+	[199102] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Hunk o' Blubber
+	[199207] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Iceback Sculpin
+	[199213] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Lakkamuk Blenny
+	[199205] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Manasucker
+	[199103] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Nappa's Famous Tea
+	[199100] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Peppersmelt
+	[199104] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Piping-Hot Orca Milk
+	[199834] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Pulpy Seagrass
+	[199063] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Salted Fish Scraps
+	[199832] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Smoked Seaviper
+	[199106] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Tiny Leviathan Bone
+	[199835] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Torga's Braid
+	-- -- Dragon Isles (90)
+	[197765] = "049099. Dragon Isles Cooking#Tradeskill", -- Impossibly Sharp Cutting Knife
+	[194967] = "049099. Dragon Isles Cooking#Tradeskill", -- Aileron Seamoth
+	[197757] = "049099. Dragon Isles Cooking#Tradeskill", -- Assorted Exotic Spices
+	[197745] = "049099. Dragon Isles Cooking#Tradeskill", -- Basilisk Eggs
+	[197746] = "049099. Dragon Isles Cooking#Tradeskill", -- Bruffalon Flank
+	[197748] = "049099. Dragon Isles Cooking#Tradeskill", -- Burly Bear Haunch
+	[194968] = "049099. Dragon Isles Cooking#Tradeskill", -- Cerulean Spinefish
+	[197752] = "049099. Dragon Isles Cooking#Tradeskill", -- Conveniently Packaged Ingredients
+	[200074] = "049099. Dragon Isles Cooking#Tradeskill", -- Frosted Rimefin Tuna
+	[197744] = "049099. Dragon Isles Cooking#Tradeskill", -- Hornswog Hunk
+	[194970] = "049099. Dragon Isles Cooking#Tradeskill", -- Islefin Dorado
+	[197755] = "049099. Dragon Isles Cooking#Tradeskill", -- Lava Beetle
+	[199344] = "049099. Dragon Isles Cooking#Tradeskill", -- Magma Thresher
+	[197741] = "049099. Dragon Isles Cooking#Tradeskill", -- Maybe Meat
+	[197747] = "049099. Dragon Isles Cooking#Tradeskill", -- Mighty Mammoth Ribs
+	[197749] = "049099. Dragon Isles Cooking#Tradeskill", -- Ohn'ahran Potato
+	[197751] = "049099. Dragon Isles Cooking#Tradeskill", -- Pastry Packets
+	[197756] = "049099. Dragon Isles Cooking#Tradeskill", -- Pebbled Rock Salts
+	[200061] = "049099. Dragon Isles Cooking#Tradeskill", -- Prismatic Leaper
+	[197742] = "049099. Dragon Isles Cooking#Tradeskill", -- Ribbed Mollusk Meat
+	[199345] = "049099. Dragon Isles Cooking#Tradeskill", -- Rimefin Tuna
+	[199346] = "049099. Dragon Isles Cooking#Tradeskill", -- Rotten Rimefin Tuna
+	[197754] = "049099. Dragon Isles Cooking#Tradeskill", -- Salt Deposit
+	[194730] = "049099. Dragon Isles Cooking#Tradeskill", -- Scalebelly Mackerel
+	[194969] = "049099. Dragon Isles Cooking#Tradeskill", -- Temporal Dragonhead
+	[197753] = "049099. Dragon Isles Cooking#Tradeskill", -- Thaldraszian Cocoa Powder
+	[194966] = "049099. Dragon Isles Cooking#Tradeskill", -- Thousandbite Piranha
+	[197750] = "049099. Dragon Isles Cooking#Tradeskill", -- Three-Cheese Blend
+	[197743] = "049099. Dragon Isles Cooking#Tradeskill", -- Waterfowl Filet
 	-- -- Shadowlands (91)
 	[172052] = "0491. Shadowlands Cooking#Tradeskill", -- Aethereal Meat
 	[179314] = "0491. Shadowlands Cooking#Tradeskill", -- Creeping Crawler Meat
@@ -1369,6 +1566,19 @@ local ZigiItems = {
 	[34412] = "04999. Holiday Cooking [Feast of Winter Veil]#Tradeskill", -- Sparkling Apple Cider
 
 	--! Herb (05)
+	-- -- Dragon Isles (90)
+	[191467] = "0590. Dragon Isles Herb#Tradeskill", -- Bubble Poppy (1)
+	[191468] = "0590. Dragon Isles Herb#Tradeskill", -- Bubble Poppy (2)
+	[191469] = "0590. Dragon Isles Herb#Tradeskill", -- Bubble Poppy (3)
+	[191464] = "0590. Dragon Isles Herb#Tradeskill", -- Saxifrage (1)
+	[191465] = "0590. Dragon Isles Herb#Tradeskill", -- Saxifrage (2)
+	[191466] = "0590. Dragon Isles Herb#Tradeskill", -- Saxifrage (3)
+	[191470] = "0590. Dragon Isles Herb#Tradeskill", -- Writhebark (1)
+	[191471] = "0590. Dragon Isles Herb#Tradeskill", -- Writhebark (2)
+	[191472] = "0590. Dragon Isles Herb#Tradeskill", -- Writhebark (3)
+	[191460] = "0590. Dragon Isles Herb#Tradeskill", -- Hochenblume (1)
+	[191461] = "0590. Dragon Isles Herb#Tradeskill", -- Hochenblume (2)
+	[191462] = "0590. Dragon Isles Herb#Tradeskill", -- Hochenblume (3)
 	-- -- Shadowlands (91)
 	[187699] = "0591. Shadowlands Herb#Tradeskill", -- First Flower
 	[171315] = "0591. Shadowlands Herb#Tradeskill", -- Nightshade
@@ -1477,6 +1687,11 @@ local ZigiItems = {
 	[3369] = "0599. Herb#Tradeskill", -- Grave Moss
 
 	--! Enchanting (06)
+	-- -- Dragon Isles (90)
+	[200113] = "0690. Dragon Isles Enchanting#Tradeskill", -- Resonant Crystal
+	[194124] = "0690. Dragon Isles Enchanting#Tradeskill", -- Vibrant Shard
+	[194123] = "0690. Dragon Isles Enchanting#Tradeskill", -- Chromatic Dust
+	[201584] = "0690. Dragon Isles Enchanting#Tradeskill", -- Serevite Rod
 	-- -- Shadowlands (91)
 	[172232] = "0691. Shadowlands Enchanting#Tradeskill", -- Eternal Crystal
 	[172231] = "0691. Shadowlands Enchanting#Tradeskill", -- Sacred Shard
@@ -1536,60 +1751,232 @@ local ZigiItems = {
 	[4470] = "0699. Enchanting#Tradeskill", -- Simple Wood
 	[11291] = "0699. Enchanting#Tradeskill", -- Star Wood
 
-	--! Alchemy (07)
+	--! Reagent (07)
+	-- -- Dragon Isles (90)
+	[201400] = "0790. Dragon Isles Reagent#Tradeskill", -- Aquatic Maw
+	[198219] = "0790. Dragon Isles Reagent#Tradeskill", -- Overcharged Overclocker
+	[198220] = "0790. Dragon Isles Reagent#Tradeskill", -- Overcharged Overclocker
+	[198221] = "0790. Dragon Isles Reagent#Tradeskill", -- Overcharged Overclocker
+	[193360] = "0790. Dragon Isles Reagent#Tradeskill", -- Centaur's Trophy Necklace
+	[201404] = "0790. Dragon Isles Reagent#Tradeskill", -- Tallstrider Sinew
+	[201399] = "0790. Dragon Isles Reagent#Tradeskill", -- Primal Bear Spine
+	[201401] = "0790. Dragon Isles Reagent#Tradeskill", -- Iridescent Plume
+	[191526] = "0790. Dragon Isles Reagent#Tradeskill", -- Lesser Illustrious Insight
+	[191529] = "0790. Dragon Isles Reagent#Tradeskill", -- Illustrious Insight
+	[191514] = "0790. Dragon Isles Reagent#Tradeskill", -- Brood Salt
+	[191515] = "0790. Dragon Isles Reagent#Tradeskill", -- Brood Salt
+	[191516] = "0790. Dragon Isles Reagent#Tradeskill", -- Brood Salt
+	[191517] = "0790. Dragon Isles Reagent#Tradeskill", -- Writhefire Oil
+	[191518] = "0790. Dragon Isles Reagent#Tradeskill", -- Writhefire Oil
+	[191519] = "0790. Dragon Isles Reagent#Tradeskill", -- Writhefire Oil
+	[192887] = "0790. Dragon Isles Reagent#Tradeskill", -- Elemental Harmony
+	[193379] = "0790. Dragon Isles Reagent#Tradeskill", -- Elemental Harmony
+	[193378] = "0790. Dragon Isles Reagent#Tradeskill", -- Elemental Harmony
+	[191784] = "0790. Dragon Isles Reagent#Tradeskill", -- Dragon Shard of Knowledge
+	[190332] = "0790. Dragon Isles Reagent#Tradeskill", -- Sparking Catalyst
+	[201405] = "0790. Dragon Isles Reagent#Tradeskill", -- Tuft of Primal Wool
+	[191493] = "0790. Dragon Isles Reagent#Tradeskill", -- Primal Convergent
+	[191494] = "0790. Dragon Isles Reagent#Tradeskill", -- Primal Convergent
+	[191495] = "0790. Dragon Isles Reagent#Tradeskill", -- Primal Convergent
+	[190456] = "0790. Dragon Isles Reagent#Tradeskill", -- Artisan's Mettle
+	[191496] = "0790. Dragon Isles Reagent#Tradeskill", -- Omnium Draconis (1)
+	[191497] = "0790. Dragon Isles Reagent#Tradeskill", -- Omnium Draconis (2)
+	[191498] = "0790. Dragon Isles Reagent#Tradeskill", -- Omnium Draconis (3)
+	[198048] = "0790. Dragon Isles Reagent#Tradeskill", -- Titan Training Matrix I
+	[198056] = "0790. Dragon Isles Reagent#Tradeskill", -- Titan Training Matrix II
+	[198058] = "0790. Dragon Isles Reagent#Tradeskill", -- Titan Training Matrix III
+	[198059] = "0790. Dragon Isles Reagent#Tradeskill", -- Titan Training Matrix IV
+	[200572] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Crafting Speed
+	[200571] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Crafting Speed
+	[200573] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Crafting Speed
+	[200580] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Deftness
+	[200581] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Deftness
+	[200582] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Deftness
+	[200574] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Finesse
+	[200576] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Finesse
+	[200575] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Finesse
+	[198534] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Inspiration
+	[198536] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Inspiration
+	[198535] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Inspiration
+	[200568] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Multicraft
+	[200570] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Multicraft
+	[200569] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Multicraft
+	[200577] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Perception
+	[200579] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Perception
+	[200578] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Perception
+	[200565] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Resourcefulness
+	[200566] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Resourcefulness
+	[200567] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Resourcefulness
+	[194570] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Aurora
+	[194569] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Aurora
+	[194571] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Aurora
+	[194567] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Feverflare
+	[194566] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Feverflare
+	[194568] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Feverflare
+	[192552] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Fireflash
+	[192553] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Fireflash
+	[192554] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Fireflash
+	[194576] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Harmonious
+	[194575] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Harmonious
+	[194577] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Harmonious
+	[194579] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Peerless
+	[194580] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Peerless
+	[194578] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Peerless
+	[194573] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Quickblade
+	[194572] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Quickblade
+	[194574] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of the Quickblade
+	[198216] = "0790. Dragon Isles Reagent#Tradeskill", -- Haphazardly Tethered Wires
+	[198217] = "0790. Dragon Isles Reagent#Tradeskill", -- Haphazardly Tethered Wires
+	[198218] = "0790. Dragon Isles Reagent#Tradeskill", -- Haphazardly Tethered Wires
+	[191570] = "0790. Dragon Isles Reagent#Tradeskill", -- Dragon's Alchemical Solution
 	-- -- Shadowlands (91)
-	[171292] = "0791. Shadowlands Alchemy#Tradeskill", -- Ground Nightshade
-	[171289] = "0791. Shadowlands Alchemy#Tradeskill", -- Ground Widowbloom
-	[171288] = "0791. Shadowlands Alchemy#Tradeskill", -- Ground Vigil's Torch
-	[171290] = "0791. Shadowlands Alchemy#Tradeskill", -- Ground Marrowroot
-	[171291] = "0791. Shadowlands Alchemy#Tradeskill", -- Ground Rising Glory
-	[171287] = "0791. Shadowlands Alchemy#Tradeskill", -- Ground Death Blossom
-	[183950] = "0791. Shadowlands Alchemy#Tradeskill", -- Distilled Death Extract
-	[180732] = "0891. Shadowlands Inscription#Tradeskill|Inscription|0791. Shadowlands Alchemy#Tradeskill", -- Rune Etched Vial
-	[180457] = "0791. Shadowlands Alchemy#Tradeskill", -- Shadestone
+	[171292] = "0791. Shadowlands Reagent#Tradeskill", -- Ground Nightshade
+	[171289] = "0791. Shadowlands Reagent#Tradeskill", -- Ground Widowbloom
+	[171288] = "0791. Shadowlands Reagent#Tradeskill", -- Ground Vigil's Torch
+	[171290] = "0791. Shadowlands Reagent#Tradeskill", -- Ground Marrowroot
+	[171291] = "0791. Shadowlands Reagent#Tradeskill", -- Ground Rising Glory
+	[171287] = "0791. Shadowlands Reagent#Tradeskill", -- Ground Death Blossom
+	[183950] = "0791. Shadowlands Reagent#Tradeskill", -- Distilled Death Extract
+	[180732] = "0891. Shadowlands Reagent#Tradeskill", -- Rune Etched Vial
+	[180457] = "0791. Shadowlands Reagent#Tradeskill", -- Shadestone
+	[187829] = "0891. Shadowlands Reagent#Tradeskill", -- Aealic Harmonizing Stone
+	[187825] = "0891. Shadowlands Reagent#Tradeskill", -- Cosmic Protoweave
+	[187849] = "0891. Shadowlands Reagent#Tradeskill", -- Devourer Essence Stone
+	[187836] = "0891. Shadowlands Reagent#Tradeskill", -- Erratic Genesis Matrix
+	[187827] = "0891. Shadowlands Reagent#Tradeskill", -- Infusion: Corpse Purification
+	[187823] = "0891. Shadowlands Reagent#Tradeskill", -- Magically Regulated Automa Core
+	[187831] = "0891. Shadowlands Reagent#Tradeskill", -- Pure-Air Sail Extensions
+	[187850] = "0891. Shadowlands Reagent#Tradeskill", -- Sustaining Armor Polish
+	[187784] = "0891. Shadowlands Reagent#Tradeskill", -- Vestige of the Eternal
+	[185960] = "0891. Shadowlands Reagent#Tradeskill", -- Vestige of Origins
+	[187742] = "0891. Shadowlands Reagent#Tradeskill", -- Crafter's Mark of the First Ones
+	[173384] = "0891. Shadowlands Reagent#Tradeskill", -- Crafter's Mark of the Chained Isle
+	[187741] = "0891. Shadowlands Reagent#Tradeskill", -- Crafter's Mark IV
+	[173383] = "0891. Shadowlands Reagent#Tradeskill", -- Crafter's Mark III
+	[173382] = "0891. Shadowlands Reagent#Tradeskill", -- Crafter's Mark II
+	[173381] = "0891. Shadowlands Reagent#Tradeskill", -- Crafter's Mark I
+	[183942] = "0891. Shadowlands Reagent#Tradeskill", -- Novice Crafter's Mark
+	[173161] = "0891. Shadowlands Reagent#Tradeskill", -- Missive of Critical Strike
+	[173160] = "0891. Shadowlands Reagent#Tradeskill", -- Missive of Haste
+	[173162] = "0891. Shadowlands Reagent#Tradeskill", -- Missive of Mastery
+	[173163] = "0891. Shadowlands Reagent#Tradeskill", -- Missive of Versatility
 	-- -- Kul Tiras/Zandalar (92)
-	[160325] = "0792. Kul Tiras/Zandalar Alchemy#Tradeskill", -- Quivering Sac
-	[168143] = "0792. Kul Tiras/Zandalar Alchemy#Tradeskill", -- Purposefully Potent Potion
-	[168146] = "0792. Kul Tiras/Zandalar Alchemy#Tradeskill", -- Sphere of Sangaurum
-	[168144] = "0792. Kul Tiras/Zandalar Alchemy#Tradeskill", -- Extremely Precise Vial
-	[168145] = "0792. Kul Tiras/Zandalar Alchemy#Tradeskill", -- Sly Rogue's Decanter
+	[160325] = "0792. Kul Tiras/Zandalar Reagent#Tradeskill", -- Quivering Sac
+	[168143] = "0792. Kul Tiras/Zandalar Reagent#Tradeskill", -- Purposefully Potent Potion
+	[168146] = "0792. Kul Tiras/Zandalar Reagent#Tradeskill", -- Sphere of Sangaurum
+	[168144] = "0792. Kul Tiras/Zandalar Reagent#Tradeskill", -- Extremely Precise Vial
+	[168145] = "0792. Kul Tiras/Zandalar Reagent#Tradeskill", -- Sly Rogue's Decanter
 	-- -- Broken Isles (93)
-	[137596] = "0793. Broken Isles Alchemy#Tradeskill", -- Black Transmutagen
-	[137597] = "0793. Broken Isles Alchemy#Tradeskill", -- Oily Transmutagen
-	[137595] = "0793. Broken Isles Alchemy#Tradeskill", -- Viscous Transmutagen
+	[137596] = "0793. Broken Isles Reagent#Tradeskill", -- Black Transmutagen
+	[137597] = "0793. Broken Isles Reagent#Tradeskill", -- Oily Transmutagen
+	[137595] = "0793. Broken Isles Reagent#Tradeskill", -- Viscous Transmutagen
 	-- -- Draenor (94)
-	[108996] = "0794. Draenor Alchemy#Tradeskill", -- Alchemical Catalyst
-	[109123] = "0794. Draenor Alchemy#Tradeskill", -- Crescent Oil
+	[108996] = "0794. Draenor Reagent#Tradeskill", -- Alchemical Catalyst
+	[109123] = "0794. Draenor Reagent#Tradeskill", -- Crescent Oil
 	-- -- Pandaria (95)
-	[87872] = "0795. Pandaria Alchemy#Tradeskill", -- Desecrated Oil
-	[83064] = "0795. Pandaria Alchemy#Tradeskill", -- Spinefish
+	[87872] = "0795. Pandaria Reagent#Tradeskill", -- Desecrated Oil
+	[83064] = "0795. Pandaria Reagent#Tradeskill", -- Spinefish
 	-- -- Cataclysm (96)
-	[65892] = "0796. Cataclysm Alchemy#Tradeskill", -- Pyrium-Laced Crystalline Vial
-	[65893] = "0796. Cataclysm Alchemy#Tradeskill", -- Sands of Time
-	[56850] = "0796. Cataclysm Alchemy#Tradeskill", -- Deepstone Oil
-	[53065] = "0796. Cataclysm Alchemy#Tradeskill", -- Albino Cavefish
+	[65892] = "0796. Cataclysm Reagent#Tradeskill", -- Pyrium-Laced Crystalline Vial
+	[65893] = "0796. Cataclysm Reagent#Tradeskill", -- Sands of Time
+	[56850] = "0796. Cataclysm Reagent#Tradeskill", -- Deepstone Oil
+	[53065] = "0796. Cataclysm Reagent#Tradeskill", -- Albino Cavefish
 	-- -- Northrend (97)
-	[44958] = "0797. Northrend Alchemy#Tradeskill", -- Ethereal Oil
-	[41814] = "0797. Northrend Alchemy#Tradeskill", -- Glassfin Minnow
-	[40195] = "0797. Northrend Alchemy#Tradeskill", -- Pygmy Oil
-	[40199] = "0797. Northrend Alchemy#Tradeskill", -- Pygmy Suckerfish
-	-- -- Alchemy (99)
-	[3824] = "0799. Alchemy#Tradeskill", -- Shadow Oil
-	[3371] = "0799. Alchemy#Tradeskill", -- Crystal Vial
-	[9262] = "0799. Alchemy#Tradeskill", -- Black Vitriol
-	[13423] = "0799. Alchemy#Tradeskill", -- Stonescale Oil
-	[13422] = "0799. Alchemy#Tradeskill", -- Stonescale Eel
-	[6371] = "0799. Alchemy#Tradeskill", -- Fire Oil
-	[6359] = "0799. Alchemy#Tradeskill", -- Firefin Snapper
-	[6370] = "0799. Alchemy#Tradeskill", -- Blackmouth Oil
-	[6358] = "0799. Alchemy#Tradeskill", -- Oily Blackmouth
-	[19441] = "0799. Alchemy#Tradeskill", -- Huge Venom Sac
-	[1288] = "0799. Alchemy#Tradeskill", -- Large Venom Sac
-	[1475] = "0799. Alchemy#Tradeskill", -- Small Venom Sac
-	[4402] = "0799. Alchemy#Tradeskill", -- Small Flame Sac
-	[3164] = "0799. Alchemy#Tradeskill", -- Discolored Worg Heart
+	[44958] = "0797. Northrend Reagent#Tradeskill", -- Ethereal Oil
+	[41814] = "0797. Northrend Reagent#Tradeskill", -- Glassfin Minnow
+	[40195] = "0797. Northrend Reagent#Tradeskill", -- Pygmy Oil
+	[40199] = "0797. Northrend Reagent#Tradeskill", -- Pygmy Suckerfish
+	-- -- Reagent (99)
+	[3824] = "0799. Reagent#Tradeskill", -- Shadow Oil
+	[3371] = "0799. Reagent#Tradeskill", -- Crystal Vial
+	[9262] = "0799. Reagent#Tradeskill", -- Black Vitriol
+	[13423] = "0799. Reagent#Tradeskill", -- Stonescale Oil
+	[13422] = "0799. Reagent#Tradeskill", -- Stonescale Eel
+	[6371] = "0799. Reagent#Tradeskill", -- Fire Oil
+	[6359] = "0799. Reagent#Tradeskill", -- Firefin Snapper
+	[6370] = "0799. Reagent#Tradeskill", -- Blackmouth Oil
+	[6358] = "0799. Reagent#Tradeskill", -- Oily Blackmouth
+	[19441] = "0799. Reagent#Tradeskill", -- Huge Venom Sac
+	[1288] = "0799. Reagent#Tradeskill", -- Large Venom Sac
+	[1475] = "0799. Reagent#Tradeskill", -- Small Venom Sac
+	[4402] = "0799. Reagent#Tradeskill", -- Small Flame Sac
+	[3164] = "0799. Reagent#Tradeskill", -- Discolored Worg Heart
+	[180060] = "0799. Reagent#Tradeskill", -- Relic of the Past V
+	[180059] = "0799. Reagent#Tradeskill", -- Relic of the Past IV
+	[180058] = "0799. Reagent#Tradeskill", -- Relic of the Past III
+	[180057] = "0799. Reagent#Tradeskill", -- Relic of the Past II
+	[180055] = "0799. Reagent#Tradeskill", -- Relic of the Past I
 
 	--! Inscription (08)
+	-- -- Dragon Isles (90)
+	[194801] = "0890. Dragon Isles Inscription#Tradeskill", -- Ace of Air
+	[194809] = "0890. Dragon Isles Inscription#Tradeskill", -- Ace of Earth
+	[194785] = "0890. Dragon Isles Inscription#Tradeskill", -- Ace of Fire
+	[194793] = "0890. Dragon Isles Inscription#Tradeskill", -- Ace of Frost
+	[194751] = "0890. Dragon Isles Inscription#Tradeskill", -- Blazing Ink
+	[194752] = "0890. Dragon Isles Inscription#Tradeskill", -- Blazing Ink
+	[194846] = "0890. Dragon Isles Inscription#Tradeskill", -- Blazing Ink
+	[198418] = "0890. Dragon Isles Inscription#Tradeskill", -- Blazing Pigment
+	[198420] = "0890. Dragon Isles Inscription#Tradeskill", -- Blazing Pigment
+	[198419] = "0890. Dragon Isles Inscription#Tradeskill", -- Blazing Pigment
+	[194760] = "0890. Dragon Isles Inscription#Tradeskill", -- Burnished Ink
+	[194761] = "0890. Dragon Isles Inscription#Tradeskill", -- Burnished Ink
+	[194855] = "0890. Dragon Isles Inscription#Tradeskill", -- Burnished Ink
+	[194859] = "0890. Dragon Isles Inscription#Tradeskill", -- Chilled Rune
+	[194767] = "0890. Dragon Isles Inscription#Tradeskill", -- Chilled Rune
+	[194768] = "0890. Dragon Isles Inscription#Tradeskill", -- Chilled Rune
+	[194754] = "0890. Dragon Isles Inscription#Tradeskill", -- Cosmic Ink
+	[194756] = "0890. Dragon Isles Inscription#Tradeskill", -- Cosmic Ink
+	[194755] = "0890. Dragon Isles Inscription#Tradeskill", -- Cosmic Ink
+	[194808] = "0890. Dragon Isles Inscription#Tradeskill", -- Eight of Air
+	[194816] = "0890. Dragon Isles Inscription#Tradeskill", -- Eight of Earth
+	[194792] = "0890. Dragon Isles Inscription#Tradeskill", -- Eight of Fire
+	[194800] = "0890. Dragon Isles Inscription#Tradeskill", -- Eight of Frost
+	[194805] = "0890. Dragon Isles Inscription#Tradeskill", -- Five of Air
+	[194813] = "0890. Dragon Isles Inscription#Tradeskill", -- Five of Earth
+	[194789] = "0890. Dragon Isles Inscription#Tradeskill", -- Five of Fire
+	[194797] = "0890. Dragon Isles Inscription#Tradeskill", -- Five of Frost
+	[194850] = "0890. Dragon Isles Inscription#Tradeskill", -- Flourishing Ink
+	[194758] = "0890. Dragon Isles Inscription#Tradeskill", -- Flourishing Ink
+	[194852] = "0890. Dragon Isles Inscription#Tradeskill", -- Flourishing Ink
+	[198415] = "0890. Dragon Isles Inscription#Tradeskill", -- Flourishing Pigment
+	[198416] = "0890. Dragon Isles Inscription#Tradeskill", -- Flourishing Pigment
+	[198417] = "0890. Dragon Isles Inscription#Tradeskill", -- Flourishing Pigment
+	[194804] = "0890. Dragon Isles Inscription#Tradeskill", -- Four of Air
+	[194812] = "0890. Dragon Isles Inscription#Tradeskill", -- Four of Earth
+	[194788] = "0890. Dragon Isles Inscription#Tradeskill", -- Four of Fire
+	[194796] = "0890. Dragon Isles Inscription#Tradeskill", -- Four of Frost
+	[194784] = "0890. Dragon Isles Inscription#Tradeskill", -- Glittering Parchment
+	[198487] = "0890. Dragon Isles Inscription#Tradeskill", -- Iridescent Water
+	[198615] = "0890. Dragon Isles Inscription#Tradeskill", -- Pentagold Seal
+	[194862] = "0890. Dragon Isles Inscription#Tradeskill", -- Runed Writhebark
+	[194864] = "0890. Dragon Isles Inscription#Tradeskill", -- Runed Writhebark
+	[194863] = "0890. Dragon Isles Inscription#Tradeskill", -- Runed Writhebark
+	[194856] = "0890. Dragon Isles Inscription#Tradeskill", -- Serene Ink
+	[194857] = "0890. Dragon Isles Inscription#Tradeskill", -- Serene Ink
+	[194858] = "0890. Dragon Isles Inscription#Tradeskill", -- Serene Ink
+	[198412] = "0890. Dragon Isles Inscription#Tradeskill", -- Serene Pigment
+	[198413] = "0890. Dragon Isles Inscription#Tradeskill", -- Serene Pigment
+	[198414] = "0890. Dragon Isles Inscription#Tradeskill", -- Serene Pigment
+	[194807] = "0890. Dragon Isles Inscription#Tradeskill", -- Seven of Air
+	[194815] = "0890. Dragon Isles Inscription#Tradeskill", -- Seven of Earth
+	[194799] = "0890. Dragon Isles Inscription#Tradeskill", -- Seven of Fire
+	[194791] = "0890. Dragon Isles Inscription#Tradeskill", -- Seven of Frost
+	[198421] = "0890. Dragon Isles Inscription#Tradeskill", -- Shimmering Pigment
+	[198422] = "0890. Dragon Isles Inscription#Tradeskill", -- Shimmering Pigment
+	[198423] = "0890. Dragon Isles Inscription#Tradeskill", -- Shimmering Pigment
+	[194806] = "0890. Dragon Isles Inscription#Tradeskill", -- Six of Air
+	[194814] = "0890. Dragon Isles Inscription#Tradeskill", -- Six of Earth
+	[194790] = "0890. Dragon Isles Inscription#Tradeskill", -- Six of Fire
+	[194798] = "0890. Dragon Isles Inscription#Tradeskill", -- Six of Frost
+	[194803] = "0890. Dragon Isles Inscription#Tradeskill", -- Three of Air
+	[194811] = "0890. Dragon Isles Inscription#Tradeskill", -- Three of Earth
+	[194787] = "0890. Dragon Isles Inscription#Tradeskill", -- Three of Fire
+	[194795] = "0890. Dragon Isles Inscription#Tradeskill", -- Three of Frost
+	[194802] = "0890. Dragon Isles Inscription#Tradeskill", -- Two of Air
+	[194810] = "0890. Dragon Isles Inscription#Tradeskill", -- Two of Earth
+	[194786] = "0890. Dragon Isles Inscription#Tradeskill", -- Two of Fire
+	[194794] = "0890. Dragon Isles Inscription#Tradeskill", -- Two of Frost
 	-- -- Shadowlands (91)
 	[175970] = "0891. Shadowlands Inscription#Tradeskill", -- Tranquil Ink
 	[175788] = "0891. Shadowlands Inscription#Tradeskill", -- Tranquil Pigment
@@ -1672,6 +2059,59 @@ local ZigiItems = {
 	[39354] = "0899. Inscription#Tradeskill", -- Light Parchment
 
 	--! Jewelcrafting (09)
+	-- -- Dragon Isles (90)
+	[192852] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Alexstraszite
+	[192855] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Alexstraszite
+	[192853] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Alexstraszite
+	[192880] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Crumbled Stone
+	[200860] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Draconic Stopper
+	[192849] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Eternity Amber
+	[192850] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Eternity Amber
+	[192851] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Eternity Amber
+	[192872] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Fractured Glass
+	[200864] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Glimmering Alexstraszite Cluster
+	[200866] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Glimmering Malygite Cluster
+	[200867] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Glimmering Neltharite Cluster
+	[200863] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Glimmering Nozdorite Cluster
+	[200865] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Glimmering Ysemerald Cluster
+	[192883] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Glossy Stone
+	[192884] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Glossy Stone
+	[192885] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Glossy Stone
+	[192869] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Illimited Diamond
+	[192871] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Illimited Diamond
+	[192870] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Illimited Diamond
+	[192856] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Malygite
+	[192858] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Malygite
+	[192857] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Malygite
+	[192833] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Misshapen Filigree
+	[192840] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Mystic Sapphire
+	[192841] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Mystic Sapphire
+	[192842] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Mystic Sapphire
+	[192862] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Neltharite
+	[192863] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Neltharite
+	[192865] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Neltharite
+	[192867] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Nozdorite
+	[192866] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Nozdorite
+	[192868] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Nozdorite
+	[192838] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Queen's Ruby
+	[192837] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Queen's Ruby
+	[192839] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Queen's Ruby
+	[198397] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Rainbow Pearl
+	[192834] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Shimmering Clasp
+	[192835] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Shimmering Clasp
+	[192836] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Shimmering Clasp
+	[193368] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Silken Gemdust
+	[193369] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Silken Gemdust
+	[193370] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Silken Gemdust
+	[192848] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Sundered Onyx
+	[192847] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Sundered Onyx
+	[192846] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Sundered Onyx
+	[192843] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Vibrant Emerald
+	[192844] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Vibrant Emerald
+	[192845] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Vibrant Emerald
+	[192859] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Ysemerald
+	[192860] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Ysemerald
+	[192861] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Ysemerald
 	-- -- Shadowlands (91)
 	[173108] = "0991. Shadowlands Jewelcrafting#Tradeskill", -- Oriblase
 	[173110] = "0991. Shadowlands Jewelcrafting#Tradeskill", -- Umbryl
@@ -1841,6 +2281,34 @@ local ZigiItems = {
 	[18335] = "0999. Jewelcrafting#Tradeskill", -- Pristine Black Diamond
 
 	--! Parts (10)
+	-- -- Dragon Isles (90)
+	[201832] = "1090. Dragon Isles Parts#Tradeskill", -- Smudged Lens
+	[197735] = "1090. Dragon Isles Parts#Tradeskill", -- Finished Prototype Explorer's Barding
+	[197736] = "1090. Dragon Isles Parts#Tradeskill", -- Finished Prototype Regal Barding
+	[192876] = "1090. Dragon Isles Parts#Tradeskill", -- Frameless Lens
+	[192877] = "1090. Dragon Isles Parts#Tradeskill", -- Frameless Lens
+	[192878] = "1090. Dragon Isles Parts#Tradeskill", -- Frameless Lens
+	[198195] = "1090. Dragon Isles Parts#Tradeskill", -- Arclight Capacitor
+	[198196] = "1090. Dragon Isles Parts#Tradeskill", -- Arclight Capacitor
+	[198197] = "1090. Dragon Isles Parts#Tradeskill", -- Arclight Capacitor
+	[198201] = "1090. Dragon Isles Parts#Tradeskill", -- Assorted Safety Fuses
+	[198202] = "1090. Dragon Isles Parts#Tradeskill", -- Assorted Safety Fuses
+	[198203] = "1090. Dragon Isles Parts#Tradeskill", -- Assorted Safety Fuses
+	[198189] = "1090. Dragon Isles Parts#Tradeskill", -- Everburning Blasting Powder
+	[198191] = "1090. Dragon Isles Parts#Tradeskill", -- Everburning Blasting Powder
+	[198190] = "1090. Dragon Isles Parts#Tradeskill", -- Everburning Blasting Powder
+	[198192] = "1090. Dragon Isles Parts#Tradeskill", -- Greased-Up Gears
+	[198193] = "1090. Dragon Isles Parts#Tradeskill", -- Greased-Up Gears
+	[198194] = "1090. Dragon Isles Parts#Tradeskill", -- Greased-Up Gears
+	[198183] = "1090. Dragon Isles Parts#Tradeskill", -- Handful of Serevite Bolts
+	[198185] = "1090. Dragon Isles Parts#Tradeskill", -- Handful of Serevite Bolts
+	[198184] = "1090. Dragon Isles Parts#Tradeskill", -- Handful of Serevite Bolts
+	[198198] = "1090. Dragon Isles Parts#Tradeskill", -- Reinforced Machine Chassis
+	[198200] = "1090. Dragon Isles Parts#Tradeskill", -- Reinforced Machine Chassis
+	[198199] = "1090. Dragon Isles Parts#Tradeskill", -- Reinforced Machine Chassis
+	[198186] = "1090. Dragon Isles Parts#Tradeskill", -- Shock-Spring Coil
+	[198188] = "1090. Dragon Isles Parts#Tradeskill", -- Shock-Spring Coil
+	[198187] = "1090. Dragon Isles Parts#Tradeskill", -- Shock-Spring Coil
 	-- -- Shadowlands (91)
 	[172935] = "1091. Shadowlands Parts#Tradeskill", -- Porous Polishing Abrasive
 	[172934] = "1091. Shadowlands Parts#Tradeskill", -- Handful of Laestrite Bolts
@@ -1903,6 +2371,31 @@ local ZigiItems = {
 	[2324] = "1099. Parts#Tradeskill", -- Bleach
 
 	--! Elemental (11)
+	-- -- Dragon Isles (90)
+	[190453] = "1190. Dragon Isles Elemental#Tradeskill", -- Spark of Ingenuity
+	[199197] = "1190. Dragon Isles Elemental#Tradeskill", -- Bottled Essence
+	[190454] = "1190. Dragon Isles Elemental#Tradeskill", -- Primal Chaos
+	[193921] = "1190. Dragon Isles Elemental#Tradeskill", -- Airy Soul
+	[190327] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Air
+	[190331] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Decay
+	[190316] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Earth
+	[190321] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Fire
+	[190329] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Frost
+	[190450] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Ire
+	[190324] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Order
+	[193920] = "1190. Dragon Isles Elemental#Tradeskill", -- Earthen Soul
+	[193362] = "1190. Dragon Isles Elemental#Tradeskill", -- Fiery Soul
+	[194729] = "1190. Dragon Isles Elemental#Tradeskill", -- Fiery Spirit
+	[194727] = "1190. Dragon Isles Elemental#Tradeskill", -- Fiery Spirit
+	[194728] = "1190. Dragon Isles Elemental#Tradeskill", -- Fiery Spirit
+	[193919] = "1190. Dragon Isles Elemental#Tradeskill", -- Frosty Soul
+	[190326] = "1190. Dragon Isles Elemental#Tradeskill", -- Rousing Air
+	[190330] = "1190. Dragon Isles Elemental#Tradeskill", -- Rousing Decay
+	[190315] = "1190. Dragon Isles Elemental#Tradeskill", -- Rousing Earth
+	[190320] = "1190. Dragon Isles Elemental#Tradeskill", -- Rousing Fire
+	[190328] = "1190. Dragon Isles Elemental#Tradeskill", -- Rousing Frost
+	[190451] = "1190. Dragon Isles Elemental#Tradeskill", -- Rousing Ire
+	[190322] = "1190. Dragon Isles Elemental#Tradeskill", -- Rousing Order
 	-- -- Shadowlands (91)
 	[187707] = "1191. Shadowlands Elemental#Tradeskill", -- Progenitor Essentia
 	[186017] = "1191. Shadowlands Elemental#Tradeskill", -- Korthite Crystal
@@ -2002,36 +2495,6 @@ local ZigiItems = {
 	[7081] = "1199. Elemental#Tradeskill", -- Breath of Wind
 	[7972] = "1199. Elemental#Tradeskill", -- Ichor of Undeath
 	[10286] = "1199. Elemental#Tradeskill", -- Heart of the Wild
-
-	--! Optional Reagents (12)
-	-- -- Shadowlands (91)
-	[187829] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Aealic Harmonizing Stone
-	[187825] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Cosmic Protoweave
-	[187849] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Devourer Essence Stone
-	[187836] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Erratic Genesis Matrix
-	[187827] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Infusion: Corpse Purification
-	[187823] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Magically Regulated Automa Core
-	[187831] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Pure-Air Sail Extensions
-	[187850] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Sustaining Armor Polish
-	[187784] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Vestige of the Eternal
-	[185960] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Vestige of Origins
-	[187742] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Crafter's Mark of the First Ones
-	[173384] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Crafter's Mark of the Chained Isle
-	[187741] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Crafter's Mark IV
-	[173383] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Crafter's Mark III
-	[173382] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Crafter's Mark II
-	[173381] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Crafter's Mark I
-	[183942] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Novice Crafter's Mark
-	[173161] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Missive of Critical Strike
-	[173160] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Missive of Haste
-	[173162] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Missive of Mastery
-	[173163] = "1291. Shadowlands Optional Reagents#Tradeskill", -- Missive of Versatility
-	-- -- Optional Reagents (99)
-	[180060] = "1299. Optional Reagents#Tradeskill", -- Relic of the Past V
-	[180059] = "1299. Optional Reagents#Tradeskill", -- Relic of the Past IV
-	[180058] = "1299. Optional Reagents#Tradeskill", -- Relic of the Past III
-	[180057] = "1299. Optional Reagents#Tradeskill", -- Relic of the Past II
-	[180055] = "1299. Optional Reagents#Tradeskill", -- Relic of the Past I
 
 	--! Fishing (13)
 	-- -- Shadowlands (91)
@@ -3431,6 +3894,30 @@ local ZigiItems = {
 
 
 	--[[ ! Gem ! ]]--
+
+	-- Tinker Module (9098)
+	[198291] = "9098. Tinker Module#Gem", -- Tinker: Alarm-O-Turret
+	[198290] = "9098. Tinker Module#Gem", -- Tinker: Alarm-O-Turret
+	[198289] = "9098. Tinker Module#Gem", -- Tinker: Alarm-O-Turret
+	[198853] = "9098. Tinker Module#Gem", -- Tinker: Always Malfunction
+	[201409] = "9098. Tinker Module#Gem", -- Tinker: Arclight Vital Correctors
+	[201408] = "9098. Tinker Module#Gem", -- Tinker: Arclight Vital Correctors
+	[201407] = "9098. Tinker Module#Gem", -- Tinker: Arclight Vital Correctors
+	[198297] = "9098. Tinker Module#Gem", -- Tinker: Breath of Neltharion
+	[198296] = "9098. Tinker Module#Gem", -- Tinker: Breath of Neltharion
+	[198295] = "9098. Tinker Module#Gem", -- Tinker: Breath of Neltharion
+	[198306] = "9098. Tinker Module#Gem", -- Tinker: Grounded Circuitry
+	[198305] = "9098. Tinker Module#Gem", -- Tinker: Grounded Circuitry
+	[198304] = "9098. Tinker Module#Gem", -- Tinker: Grounded Circuitry
+	[198300] = "9098. Tinker Module#Gem", -- Tinker: Plane Displacer
+	[198299] = "9098. Tinker Module#Gem", -- Tinker: Plane Displacer
+	[198298] = "9098. Tinker Module#Gem", -- Tinker: Plane Displacer
+	[199190] = "9098. Tinker Module#Gem", -- Tinker: Polarity Amplifier
+	[199189] = "9098. Tinker Module#Gem", -- Tinker: Polarity Amplifier
+	[199188] = "9098. Tinker Module#Gem", -- Tinker: Polarity Amplifier
+	[198303] = "9098. Tinker Module#Gem", -- Tinker: Supercollide-O-Tron
+	[198302] = "9098. Tinker Module#Gem", -- Tinker: Supercollide-O-Tron
+	[198301] = "9098. Tinker Module#Gem", -- Tinker: Supercollide-O-Tron
 
 	-- Shard of Domination (9199) -- 9199. Shard of Domination#Gem
 	[187532] = "Junk#Junk", -- Soulfire Chisel
@@ -5761,6 +6248,11 @@ local ZigiItems = {
 
 	--[[ ! Consumable ! ]]--
 
+	-- Consumable
+	[191304] = "Consumable#Consumable", -- Sturdy Expedition Shovel
+	[191294] = "Consumable#Consumable", -- Small Expedition Shovel
+	[202087] = "Consumable#Consumable", -- Tinker Removal Kit
+
 	--! Item Enhancement
 	[172920] = "Item Enhancement", -- Optical Target Embiggener
 	[172921] = "Item Enhancement", -- Infra-green Reflex Sight
@@ -5960,11 +6452,14 @@ local ZigiItems = {
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
 	[128658] = "Currency#Miscellaneous", -- Spooky Supplies
 	[49927] = "Currency#Miscellaneous", -- Love Token
-	-- Season 4
-	[199202] = "[00ff00]Shadowlands Season 4]#Miscellaneous", -- Attendant's Token of Merit (Season 4)
-	[192466] = "[00ff00]Shadowlands Season 4]#Miscellaneous", -- Puzzling Cartel Dinar
 
 	--! Reputation (02)
+	[201991] = "02. Reputation#Miscellaneous", -- Sargha's Signet
+	[200071] = "02. Reputation#Miscellaneous", -- Sacred Tuskarr Totem
+	[200093] = "02. Reputation#Miscellaneous", -- Centaur Hunting Trophy
+	[192055] = "02. Reputation#Miscellaneous", -- Dragon Isles Artifact
+	[199906] = "02. Reputation#Miscellaneous", -- Titan Relic
+	[198790] = "02. Reputation#Miscellaneous", -- I.O.U.
 	[191299] = "02. Reputation#Miscellaneous", -- Tribute to the Enlightened
 	[71088] = "02. Reputation#Miscellaneous", -- Bilgewater Writ of Commendation
 	[45720] = "02. Reputation#Miscellaneous", -- Sen'jin Commendation Badge
@@ -6205,6 +6700,11 @@ local ZigiItems = {
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	[172013] = "Toy#Miscellaneous", -- Celebration Firework
 	-- Consumable
+	[193029] = "Toy#Miscellaneous", -- Projection Prism
+	[193030] = "Toy#Miscellaneous", -- Projection Prism
+	[193031] = "Toy#Miscellaneous", -- Projection Prism
+	[18640] = "Toy#Miscellaneous", -- Happy Fun Rock
+	[44812] = "Toy#Miscellaneous", -- Turkey Shooter
 	[44817] = "Toy#Miscellaneous", -- The Mischief Maker
 	[183599] = "Toy#Miscellaneous", -- Tossable Head
 	[169674] = "Toy#Miscellaneous", -- Green Paint Filled Bladder
@@ -6366,6 +6866,7 @@ local ZigiItems = {
 	-- Sort by priority
 
 	--! Lockbox
+	[190954] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Serevite Lockbox
 	[16882] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Battered Junkbox
 	[4632] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Ornate Bronze Lockbox
 	[4633] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Heavy Bronze Lockbox
@@ -6400,7 +6901,7 @@ local ZigiItems = {
 	[186161] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Stygian Lockbox
 	[188787] = "95. {ParagonReputation_Bag} [00ff00]Lockbox]|ROGUE|80. [ff0000]Lockbox]#Container", -- Locked Broker Luggage
 
-	--! Pieces (98)
+	--! Pieces (96)
 	[171839] = "Pieces", -- Elethium Nugget
 	[171835] = "Pieces", -- Solenium Nugget
 	[171836] = "Pieces", -- Oxxein Nugget
@@ -6545,48 +7046,85 @@ local ZigiItems = {
 	[169774] = "Pieces", -- Progression Sprocket
 	[174287] = "Pieces", -- Sparks of Unwavering Strength
 
+	--! Seedling (98)
+	[200506] = "98. [00ff00]Seed]#Container|Herbalism|0590. Dragon Isles Herb#Tradeskill", -- Roused Seedling
+	[200508] = "98. [00ff00]Seed]#Container|Herbalism|0590. Dragon Isles Herb#Tradeskill", -- Propagating Roused Seedling
+	[200509] = "98. [00ff00]Seed]#Container|Herbalism|0590. Dragon Isles Herb#Tradeskill", -- Agitated Roused Seedling
+	[200507] = "98. [00ff00]Seed]#Container|Herbalism|0590. Dragon Isles Herb#Tradeskill", -- Decayed Roused Seedling
+
 	--! Openable (99)
-	-- -- Equipment Token
-	[124562] = "Openable", -- Baleful Armament
-	[124550] = "Openable", -- Baleful Bracers
-	[124559] = "Openable", -- Baleful Choker
-	[127800] = "Openable", -- Baleful Cloak
-	[124560] = "Openable", -- Baleful Cloak
-	[124553] = "Openable", -- Baleful Gauntlets
-	[124557] = "Openable", -- Baleful Girdle
-	[124554] = "Openable", -- Baleful Hood
-	[124555] = "Openable", -- Baleful Leggings
-	[124558] = "Openable", -- Baleful Ring
-	[128348] = "Openable", -- Baleful Spaulders
-	[124556] = "Openable", -- Baleful Spaulders
-	[124552] = "Openable", -- Baleful Treads
-	[124561] = "Openable", -- Baleful Trinket
-	[124551] = "Openable", -- Baleful Tunic
-	[114052] = "Openable", -- Gleaming Ring
-	[114053] = "Openable", -- Shimmering Gauntlets
-	[114108] = "Openable", -- Tormented Armament
-	[114094] = "Openable", -- Tormented Bracers
-	[114097] = "Openable", -- Tormented Gauntlets
-	[114101] = "Openable", -- Tormented Girdle
-	[114098] = "Openable", -- Tormented Hood
-	[114099] = "Openable", -- Tormented Leggings
-	[114100] = "Openable", -- Tormented Spaulders
-	[114096] = "Openable", -- Tormented Treads
-	[114105] = "Openable", -- Tormented Trinket
-	[147212] = "Openable", -- Dauntless Bracers
-	[147221] = "Openable", -- Dauntless Choker
-	[147222] = "Openable", -- Dauntless Cloak
-	[147215] = "Openable", -- Dauntless Gauntlets
-	[147219] = "Openable", -- Dauntless Girdle
-	[147216] = "Openable", -- Dauntless Hood
-	[147217] = "Openable", -- Dauntless Leggings
-	[147220] = "Openable", -- Dauntless Ring
-	[147218] = "Openable", -- Dauntless Spaulders
-	[147214] = "Openable", -- Dauntless Treads
-	[147223] = "Openable", -- Dauntless Trinket
-	[147213] = "Openable", -- Dauntless Tunic
-	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Container
+	[200069] = "Openable", -- Obsidian Cache
+	[201754] = "Openable", -- Obsidian Forgemaster's Cache
+	[10456] = "Openable", -- A Bulging Coin Purse
+	[163734] = "Openable", -- Bulging Coin Purse
+	[158814] = "Openable", -- Bulging Coin Purse
+	[201756] = "Openable", -- Bulging Coin Purse
+	[199474] = "Openable", -- Overflowing Maruuk Centaur Supply Satchel
+	[198864] = "Openable", -- Large Maruuk Centaur Supply Satchel
+	[189765] = "Openable", -- Maruuk Centaur Supply Satchel
+	[194419] = "Openable", -- Life Pool Herb Pouch
+	[200095] = "Openable", -- Supply-Laden Soup Pot
+	[198395] = "Openable", -- Dull Spined Clam
+	[200468] = "Openable", -- Grand Hunt Spoils (Epic)
+	[200513] = "Openable", -- Grand Hunt Spoils (Rare)
+	[200515] = "Openable", -- Grand Hunt Spoils (Uncommon)
+	[200516] = "Openable", -- Grand Hunt Spoils (Common)
+	[198863] = "Openable", -- Small Dragon Expedition Supply Pack
+	[198863] = "Openable", -- Small Dragon Expedition Supply Pack
+	[200072] = "Openable", -- Dragonbane Keep Strongbox (Epic)
+	[202142] = "Openable", -- Dragonbane Keep Strongbox (Rare)
+	[200070] = "Openable", -- Obsidian Strongbox
+	[201755] = "Openable", -- Obsidian Forgemaster's Strongbox
+	[199192] = "Openable", -- Dragon Racer's Purse
+	[200073] = "Openable", -- Valdrakken Treasures
+	[200156] = "Openable", -- Amethyzarite Geode
+	[192889] = "Openable", -- Dreamer's Vision
+	[202055] = "Openable", -- Dreamer's Vision
+	[202049] = "Openable", -- Dreamer's Vision
+	[202057] = "Openable", -- Earthwarden's Prize
+	[202051] = "Openable", -- Earthwarden's Prize
+	[192891] = "Openable", -- Earthwarden's Prize
+	[192893] = "Openable", -- Jeweled Dragon's Heart
+	[202059] = "Openable", -- Jeweled Dragon's Heart
+	[202053] = "Openable", -- Jeweled Dragon's Heart
+	[192890] = "Openable", -- Keeper's Glory
+	[202050] = "Openable", -- Keeper's Glory
+	[202056] = "Openable", -- Keeper's Glory
+	[192888] = "Openable", -- Queen's Gift
+	[202048] = "Openable", -- Queen's Gift
+	[202054] = "Openable", -- Queen's Gift
+	[192892] = "Openable", -- Timewatcher's Patience
+	[202052] = "Openable", -- Timewatcher's Patience
+	[202058] = "Openable", -- Timewatcher's Patience
+	[201728] = "Openable", -- Vakril's Strongbox
+	[199475] = "Openable", -- Overflowing Valdrakken Accord Supply Pack
+	[198869] = "Openable", -- Large Valdrakken Accord Supply Pack
+	[198868] = "Openable", -- Small Valdrakken Accord Supply Pack
+	[201343] = "Openable", -- Bag of Cloth Armor Reagents
+	[201352] = "Openable", -- Bag of Leather Reagents
+	[201353] = "Openable", -- Bag of Mail Armor Reagents
+	[201354] = "Openable", -- Bag of Plate Armor Reagents
+	[201326] = "Openable", -- Draconic Satchel of Cooperation
+	[202098] = "Openable", -- Crowded Crate of Mined Materials
+	[202097] = "Openable", -- Bulging Box of Skins and Scales
+	[202100] = "Openable", -- Populous Pack of Castoff Cloth
+	[202101] = "Openable", -- Topped Trunk of Disenchanted Detritus
+	[202099] = "Openable", -- Stocked Sack of Hale Herbs
+	[202122] = "Openable", -- Primal Chaos Cluster
+	[116404] = "Openable", -- Pilgrim's Bounty
+	[46809] = "Openable", -- Bountiful Cookbook
+	[46810] = "Openable", -- Bountiful Cookbook
+	[137565] = "Openable", -- Warden's Field Kit
+	[157827] = "Openable", -- Warden's Field Kit
+	[151469] = "Openable", -- Warden's Field Kit
+	[146752] = "Openable", -- Warden's Field Kit
+	[154908] = "Openable", -- Warden's Field Kit
+	[137563] = "Openable", -- Farondis Lockbox
+	[157825] = "Openable", -- Farondis Lockbox
+	[146750] = "Openable", -- Farondis Lockbox
+	[151467] = "Openable", -- Farondis Lockbox
+	[154906] = "Openable", -- Farondis Lockbox
 	[104272] = "Openable", -- Celestial Treasure Box
 	[66943] = "Openable", -- Treasures from Grim Batol
 	[20767] = "Openable", -- Scum Covered Bag
@@ -6952,8 +7490,50 @@ local ZigiItems = {
 	[97955] = "Openable", -- Surplus Supplies
 	[97956] = "Openable", -- Surplus Supplies
 	[97957] = "Openable", -- Surplus Supplies
+	-- -- Equipment Token
+	[124562] = "Openable", -- Baleful Armament
+	[124550] = "Openable", -- Baleful Bracers
+	[124559] = "Openable", -- Baleful Choker
+	[127800] = "Openable", -- Baleful Cloak
+	[124560] = "Openable", -- Baleful Cloak
+	[124553] = "Openable", -- Baleful Gauntlets
+	[124557] = "Openable", -- Baleful Girdle
+	[124554] = "Openable", -- Baleful Hood
+	[124555] = "Openable", -- Baleful Leggings
+	[124558] = "Openable", -- Baleful Ring
+	[128348] = "Openable", -- Baleful Spaulders
+	[124556] = "Openable", -- Baleful Spaulders
+	[124552] = "Openable", -- Baleful Treads
+	[124561] = "Openable", -- Baleful Trinket
+	[124551] = "Openable", -- Baleful Tunic
+	[114052] = "Openable", -- Gleaming Ring
+	[114053] = "Openable", -- Shimmering Gauntlets
+	[114108] = "Openable", -- Tormented Armament
+	[114094] = "Openable", -- Tormented Bracers
+	[114097] = "Openable", -- Tormented Gauntlets
+	[114101] = "Openable", -- Tormented Girdle
+	[114098] = "Openable", -- Tormented Hood
+	[114099] = "Openable", -- Tormented Leggings
+	[114100] = "Openable", -- Tormented Spaulders
+	[114096] = "Openable", -- Tormented Treads
+	[114105] = "Openable", -- Tormented Trinket
+	[147212] = "Openable", -- Dauntless Bracers
+	[147221] = "Openable", -- Dauntless Choker
+	[147222] = "Openable", -- Dauntless Cloak
+	[147215] = "Openable", -- Dauntless Gauntlets
+	[147219] = "Openable", -- Dauntless Girdle
+	[147216] = "Openable", -- Dauntless Hood
+	[147217] = "Openable", -- Dauntless Leggings
+	[147220] = "Openable", -- Dauntless Ring
+	[147218] = "Openable", -- Dauntless Spaulders
+	[147214] = "Openable", -- Dauntless Treads
+	[147223] = "Openable", -- Dauntless Trinket
+	[147213] = "Openable", -- Dauntless Tunic
+	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Profession Skill
 	[6712] = "Openable|Engineering", -- Clockwork Box
+	-- -- Quest
+	[192545] = "Openable", -- Primal Flame Fragment
 	-- -- Archaeology
 	[154913] = "Openable", -- Akun'Jar Vase
 	[114171] = "Openable", -- Ancestral Talisman
@@ -7060,6 +7640,321 @@ local ZigiItems = {
 	[79917] = "Openable", -- Worn Monument Ledger
 
 	--! Learnable (98)
+	-- -- Treasure Map
+	[199061] = "Learnable", -- A Guide to Rare Fish
+	[198854] = "Learnable", -- Archeologist Artifact Notes
+	[199065] = "Learnable", -- Sorrowful Letter
+	-- -- Profession Knowledge
+	[194697] = "Learnable|Alchemy", -- Draconic Treatise on Alchemy
+	[198454] = "Learnable|Blacksmithing", -- Draconic Treatise on Blacksmithing
+	[198965] = "Learnable|Blacksmithing", -- Primeval Earth Fragment
+	[192131] = "Learnable|Blacksmithing", -- Valdrakken Weapon Chain
+	[192132] = "Learnable|Blacksmithing", -- Draconium Blade Sharpener
+	[201007] = "Learnable|Blacksmithing", -- Ancient Monument
+	[201005] = "Learnable|Blacksmithing", -- Curious Ingots
+	[201009] = "Learnable|Blacksmithing", -- Falconer Gauntlet Drawings
+	[201008] = "Learnable|Blacksmithing", -- Molten Ingot
+	[201010] = "Learnable|Blacksmithing", -- Qalashi Weapon Diagram
+	[201004] = "Learnable|Blacksmithing", -- Ancient Spear Shards
+	[201011] = "Learnable|Blacksmithing", -- Spelltouched Tongs
+	[201006] = "Learnable|Blacksmithing", -- Draconic Flux
+	[198606] = "Learnable|Blacksmithing", -- Blacksmith's Writ
+	[198966] = "Learnable|Blacksmithing", -- Molten Globule
+	[200972] = "Learnable|Blacksmithing", -- Dusty Blacksmith's Diagrams
+	[201268] = "Learnable|Blacksmithing", -- Rare Blacksmith's Diagrams
+	[201279] = "Learnable|Blacksmithing", -- Ancient Blacksmith's Diagrams
+	[194702] = "Learnable|Enchanting", -- Draconic Treatise on Enchanting
+	[198510] = "Learnable|Engineering", -- Draconic Treatise on Engineering
+	[198970] = "Learnable|Engineering", -- Infinitely Attachable Pair o' Docks
+	[193902] = "Learnable|Engineering", -- Eroded Titan Gizmo
+	[193903] = "Learnable|Engineering", -- Watcher Power Core
+	[198611] = "Learnable|Engineering", -- Engineering Details
+	[200977] = "Learnable|Engineering", -- Dusty Engineer's Scribblings
+	[201273] = "Learnable|Engineering", -- Rare Engineer's Scribblings
+	[201284] = "Learnable|Engineering", -- Ancient Engineer's Scribblings
+	[198969] = "Learnable|Engineering", -- Keeper's Mark
+	[194704] = "Learnable|Herbalism", -- Draconic Treatise on Herbalism
+	[200677] = "Learnable|Herbalism", -- Dreambloom Petal
+	[200678] = "Learnable|Herbalism", -- Dreambloom
+	[199115] = "Learnable|Herbalism", -- Herbalism Field Notes
+	[194699] = "Learnable|Inscription", -- Draconic Treatise on Inscription
+	[194703] = "Learnable|Jewelcrafting", -- Draconic Treatise on Jewelcrafting
+	[194700] = "Learnable|Leatherworking", -- Draconic Treatise on Leatherworking
+	[194708] = "Learnable|Mining", -- Draconic Treatise on Mining
+	[202011] = "Learnable|Mining", -- Elementally-Charged Stone
+	[194039] = "Learnable|Mining", -- Heated Ore Sample
+	[201300] = "Learnable|Mining", -- Iridescent Ore Fragments
+	[201301] = "Learnable|Mining", -- Iridescent Ore
+	[200981] = "Learnable|Mining", -- Dusty Miner's Notes
+	[201277] = "Learnable|Mining", -- Rare Miner's Notes
+	[201288] = "Learnable|Mining", -- Ancient Miner's Notes
+	[199122] = "Learnable|Mining", -- Mining Field Notes
+	[201023] = "Learnable|Skinning", -- Draconic Treatise on Skinning
+	[194698] = "Learnable|Tailoring", -- Draconic Treatise on Tailoring
+	-- -- Grand Hunt Companion Customization
+	[194088] = "Learnable", -- Ohuna Companion Color: Dark
+	[194087] = "Learnable", -- Ohuna Companion Color: Red
+	[193205] = "Learnable", -- Ohuna Companion Color: Brown
+	[194095] = "Learnable", -- Ohuna Companion Color: Sepia
+	[194091] = "Learnable", -- Bakar Companion Color: Golden Brown
+	[194089] = "Learnable", -- Bakar Companion Color: Orange
+	[194094] = "Learnable", -- Bakar Companion Color: Black
+	[194090] = "Learnable", -- Bakar Companion Color: White
+	[194093] = "Learnable", -- Bakar Companion Color: Brown
+	-- -- Dragonriding Customization
+	[197588] = "Learnable", -- Windborne Velocidrake: Armor
+	[197620] = "Learnable", -- Windborne Velocidrake: Beaked Snout
+	[197597] = "Learnable", -- Windborne Velocidrake: Black Fur
+	[197611] = "Learnable", -- Windborne Velocidrake: Black Scales
+	[197612] = "Learnable", -- Windborne Velocidrake: Blue Scales
+	[197577] = "Learnable", -- Windborne Velocidrake: Bronze and Green Armor
+	[197613] = "Learnable", -- Windborne Velocidrake: Bronze Scales
+	[197624] = "Learnable", -- Windborne Velocidrake: Club Tail
+	[197602] = "Learnable", -- Windborne Velocidrake: Cluster Horns
+	[197605] = "Learnable", -- Windborne Velocidrake: Curled Horns
+	[197603] = "Learnable", -- Windborne Velocidrake: Curved Horns
+	[197583] = "Learnable", -- Windborne Velocidrake: Exposed Finned Back
+	[197626] = "Learnable", -- Windborne Velocidrake: Exposed Finned Neck
+	[197621] = "Learnable", -- Windborne Velocidrake: Exposed Finned Tail
+	[197587] = "Learnable", -- Windborne Velocidrake: Feathered Back
+	[197630] = "Learnable", -- Windborne Velocidrake: Feathered Neck
+	[197593] = "Learnable", -- Windborne Velocidrake: Feathery Head
+	[197625] = "Learnable", -- Windborne Velocidrake: Feathery Tail
+	[197584] = "Learnable", -- Windborne Velocidrake: Finned Back
+	[197595] = "Learnable", -- Windborne Velocidrake: Finned Ears
+	[197627] = "Learnable", -- Windborne Velocidrake: Finned Neck
+	[197622] = "Learnable", -- Windborne Velocidrake: Finned Tail
+	[197580] = "Learnable", -- Windborne Velocidrake: Gold and Red Armor
+	[197598] = "Learnable", -- Windborne Velocidrake: Gray Hair
+	[197608] = "Learnable", -- Windborne Velocidrake: Gray Horns
+	[197591] = "Learnable", -- Windborne Velocidrake: Hairy Head
+	[197617] = "Learnable", -- Windborne Velocidrake: Heavy Scales
+	[197600] = "Learnable", -- Windborne Velocidrake: Helm
+	[197619] = "Learnable", -- Windborne Velocidrake: Hooked Snout
+	[197596] = "Learnable", -- Windborne Velocidrake: Horned Jaw
+	[197589] = "Learnable", -- Windborne Velocidrake: Large Head Fin
+	[197618] = "Learnable", -- Windborne Velocidrake: Long Snout
+	[197585] = "Learnable", -- Windborne Velocidrake: Maned Back
+	[197604] = "Learnable", -- Windborne Velocidrake: Ox Horns
+	[197628] = "Learnable", -- Windborne Velocidrake: Plated Neck
+	[197635] = "Learnable", -- Windborne Velocidrake: Reaver Pattern
+	[197599] = "Learnable", -- Windborne Velocidrake: Red Hair
+	[197614] = "Learnable", -- Windborne Velocidrake: Red Scales
+	[197636] = "Learnable", -- Windborne Velocidrake: Shrieker Pattern
+	[197578] = "Learnable", -- Windborne Velocidrake: Silver and Blue Armor
+	[197581] = "Learnable", -- Windborne Velocidrake: Silver and Purple Armor
+	[197594] = "Learnable", -- Windborne Velocidrake: Small Ears
+	[197590] = "Learnable", -- Windborne Velocidrake: Small Head Fin
+	[197586] = "Learnable", -- Windborne Velocidrake: Spiked Back
+	[197629] = "Learnable", -- Windborne Velocidrake: Spiked Neck
+	[197623] = "Learnable", -- Windborne Velocidrake: Spiked Tail
+	[197592] = "Learnable", -- Windborne Velocidrake: Spined Head
+	[197607] = "Learnable", -- Windborne Velocidrake: Split Horns
+	[197579] = "Learnable", -- Windborne Velocidrake: Steel and Orange Armor
+	[197606] = "Learnable", -- Windborne Velocidrake: Swept Horns
+	[197615] = "Learnable", -- Windborne Velocidrake: Teal Scales
+	[197601] = "Learnable", -- Windborne Velocidrake: Wavy Horns
+	[197582] = "Learnable", -- Windborne Velocidrake: White and Pink Armor
+	[197609] = "Learnable", -- Windborne Velocidrake: White Horns
+	[197616] = "Learnable", -- Windborne Velocidrake: White Scales
+	[197634] = "Learnable", -- Windborne Velocidrake: Windswept Pattern
+	[197610] = "Learnable", -- Windborne Velocidrake: Yellow Horns
+	[197099] = "Learnable", -- Highland Drake: Armor
+	[197117] = "Learnable", -- Highland Drake: Black Hair
+	[197142] = "Learnable", -- Highland Drake: Black Scales
+	[197153] = "Learnable", -- Highland Drake: Bladed Tail
+	[197156] = "Learnable", -- Highland Drake: Bronze and Green Armor
+	[197145] = "Learnable", -- Highland Drake: Bronze Scales
+	[197118] = "Learnable", -- Highland Drake: Brown Hair
+	[197101] = "Learnable", -- Highland Drake: Bushy Brow
+	[197149] = "Learnable", -- Highland Drake: Club Tail
+	[197125] = "Learnable", -- Highland Drake: Coiled Horns
+	[197100] = "Learnable", -- Highland Drake: Crested Brow
+	[197128] = "Learnable", -- Highland Drake: Curled Back Horns
+	[197116] = "Learnable", -- Highland Drake: Ears
+	[201792] = "Learnable", -- Highland Drake: Embodiment of the Crimson Gladiator
+	[197098] = "Learnable", -- Highland Drake: Finned Back
+	[197106] = "Learnable", -- Highland Drake: Finned Head
+	[197155] = "Learnable", -- Highland Drake: Finned Neck
+	[197090] = "Learnable", -- Highland Drake: Gold and Black Armor
+	[197094] = "Learnable", -- Highland Drake: Gold and Red Armor
+	[197095] = "Learnable", -- Highland Drake: Gold and White Armor
+	[197127] = "Learnable", -- Highland Drake: Grand Thorn Horns
+	[197143] = "Learnable", -- Highland Drake: Green Scales
+	[197131] = "Learnable", -- Highland Drake: Hairy Cheek
+	[197122] = "Learnable", -- Highland Drake: Heavy Horns
+	[197147] = "Learnable", -- Highland Drake: Heavy Scales
+	[197119] = "Learnable", -- Highland Drake: Helm
+	[197126] = "Learnable", -- Highland Drake: Hooked Horns
+	[197152] = "Learnable", -- Highland Drake: Hooked Tail
+	[197102] = "Learnable", -- Highland Drake: Horned Chin
+	[197139] = "Learnable", -- Highland Drake: Large Spotted Pattern
+	[197103] = "Learnable", -- Highland Drake: Maned Chin
+	[197111] = "Learnable", -- Highland Drake: Maned Head
+	[197114] = "Learnable", -- Highland Drake: Multi-Horned Head
+	[197120] = "Learnable", -- Highland Drake: Ornate Helm
+	[197110] = "Learnable", -- Highland Drake: Plated Head
+	[197144] = "Learnable", -- Highland Drake: Red Scales
+	[197141] = "Learnable", -- Highland Drake: Scaled Pattern
+	[197091] = "Learnable", -- Highland Drake: Silver and Blue Armor
+	[197093] = "Learnable", -- Highland Drake: Silver and Purple Armor
+	[197112] = "Learnable", -- Highland Drake: Single Horned Head
+	[197129] = "Learnable", -- Highland Drake: Sleek Horns
+	[197140] = "Learnable", -- Highland Drake: Small Spotted Pattern
+	[197132] = "Learnable", -- Highland Drake: Spiked Cheek
+	[197150] = "Learnable", -- Highland Drake: Spiked Club Tail
+	[197109] = "Learnable", -- Highland Drake: Spiked Head
+	[197134] = "Learnable", -- Highland Drake: Spiked Legs
+	[197151] = "Learnable", -- Highland Drake: Spiked Tail
+	[197097] = "Learnable", -- Highland Drake: Spined Back
+	[197133] = "Learnable", -- Highland Drake: Spined Cheek
+	[197105] = "Learnable", -- Highland Drake: Spined Chin
+	[197108] = "Learnable", -- Highland Drake: Spined Head
+	[197154] = "Learnable", -- Highland Drake: Spined Neck
+	[197137] = "Learnable", -- Highland Drake: Spined Nose
+	[197130] = "Learnable", -- Highland Drake: Stag Horns
+	[197096] = "Learnable", -- Highland Drake: Steel and Yellow Armor
+	[197138] = "Learnable", -- Highland Drake: Striped Pattern
+	[197124] = "Learnable", -- Highland Drake: Swept Horns
+	[197113] = "Learnable", -- Highland Drake: Swept Spiked Head
+	[197121] = "Learnable", -- Highland Drake: Tan Horns
+	[197104] = "Learnable", -- Highland Drake: Tapered Chin
+	[197136] = "Learnable", -- Highland Drake: Taperered Nose
+	[197123] = "Learnable", -- Highland Drake: Thorn Horns
+	[197115] = "Learnable", -- Highland Drake: Thorned Jaw
+	[197135] = "Learnable", -- Highland Drake: Toothy Mouth
+	[197107] = "Learnable", -- Highland Drake: Triple Finned Head
+	[197148] = "Learnable", -- Highland Drake: Vertical Finned Tail
+	[197146] = "Learnable", -- Highland Drake: White Scales
+	[196961] = "Learnable", -- Cliffside Wylderdrake: Armor
+	[196986] = "Learnable", -- Cliffside Wylderdrake: Black Hair
+	[196991] = "Learnable", -- Cliffside Wylderdrake: Black Horns
+	[197013] = "Learnable", -- Cliffside Wylderdrake: Black Scales
+	[196987] = "Learnable", -- Cliffside Wylderdrake: Blonde Hair
+	[197012] = "Learnable", -- Cliffside Wylderdrake: Blue Scales
+	[197019] = "Learnable", -- Cliffside Wylderdrake: Blunt Spiked Tail
+	[196996] = "Learnable", -- Cliffside Wylderdrake: Branched Horns
+	[196965] = "Learnable", -- Cliffside Wylderdrake: Bronze and Teal Armor
+	[197000] = "Learnable", -- Cliffside Wylderdrake: Coiled Horns
+	[196981] = "Learnable", -- Cliffside Wylderdrake: Conical Head
+	[196979] = "Learnable", -- Cliffside Wylderdrake: Curled Head Horns
+	[197015] = "Learnable", -- Cliffside Wylderdrake: Dark Skin Variation
+	[196973] = "Learnable", -- Cliffside Wylderdrake: Dual Horned Chin
+	[196982] = "Learnable", -- Cliffside Wylderdrake: Ears
+	[196969] = "Learnable", -- Cliffside Wylderdrake: Finned Back
+	[197001] = "Learnable", -- Cliffside Wylderdrake: Finned Cheek
+	[196984] = "Learnable", -- Cliffside Wylderdrake: Finned Jaw
+	[197022] = "Learnable", -- Cliffside Wylderdrake: Finned Neck
+	[197018] = "Learnable", -- Cliffside Wylderdrake: Finned Tail
+	[197002] = "Learnable", -- Cliffside Wylderdrake: Flared Cheek
+	[196974] = "Learnable", -- Cliffside Wylderdrake: Four Horned Chin
+	[196964] = "Learnable", -- Cliffside Wylderdrake: Gold and Black Armor
+	[196966] = "Learnable", -- Cliffside Wylderdrake: Gold and Orange Armor
+	[196967] = "Learnable", -- Cliffside Wylderdrake: Gold and White Armor
+	[197011] = "Learnable", -- Cliffside Wylderdrake: Green Scales
+	[196975] = "Learnable", -- Cliffside Wylderdrake: Head Fin
+	[196976] = "Learnable", -- Cliffside Wylderdrake: Head Mane
+	[196992] = "Learnable", -- Cliffside Wylderdrake: Heavy Horns
+	[196990] = "Learnable", -- Cliffside Wylderdrake: Helm
+	[196998] = "Learnable", -- Cliffside Wylderdrake: Hook Horns
+	[196985] = "Learnable", -- Cliffside Wylderdrake: Horned Jaw
+	[197005] = "Learnable", -- Cliffside Wylderdrake: Horned Nose
+	[197017] = "Learnable", -- Cliffside Wylderdrake: Large Tail Spikes
+	[196983] = "Learnable", -- Cliffside Wylderdrake: Maned Jaw
+	[197023] = "Learnable", -- Cliffside Wylderdrake: Maned Neck
+	[197016] = "Learnable", -- Cliffside Wylderdrake: Maned Tail
+	[197008] = "Learnable", -- Cliffside Wylderdrake: Narrow Stripes Pattern
+	[196972] = "Learnable", -- Cliffside Wylderdrake: Plated Brow
+	[197006] = "Learnable", -- Cliffside Wylderdrake: Plated Nose
+	[196988] = "Learnable", -- Cliffside Wylderdrake: Red Hair
+	[197010] = "Learnable", -- Cliffside Wylderdrake: Red Scales
+	[197009] = "Learnable", -- Cliffside Wylderdrake: Scaled Pattern
+	[196994] = "Learnable", -- Cliffside Wylderdrake: Short Horns
+	[196963] = "Learnable", -- Cliffside Wylderdrake: Silver and Blue Armor
+	[196962] = "Learnable", -- Cliffside Wylderdrake: Silver and Purple Armor
+	[196993] = "Learnable", -- Cliffside Wylderdrake: Sleek Horns
+	[196978] = "Learnable", -- Cliffside Wylderdrake: Small Head Spikes
+	[197020] = "Learnable", -- Cliffside Wylderdrake: Spear Tail
+	[196970] = "Learnable", -- Cliffside Wylderdrake: Spiked Back
+	[196971] = "Learnable", -- Cliffside Wylderdrake: Spiked Brow
+	[197003] = "Learnable", -- Cliffside Wylderdrake: Spiked Cheek
+	[197021] = "Learnable", -- Cliffside Wylderdrake: Spiked Club Tail
+	[196995] = "Learnable", -- Cliffside Wylderdrake: Spiked Horns
+	[197004] = "Learnable", -- Cliffside Wylderdrake: Spiked Legs
+	[196977] = "Learnable", -- Cliffside Wylderdrake: Split Head Horns
+	[196997] = "Learnable", -- Cliffside Wylderdrake: Split Horns
+	[196968] = "Learnable", -- Cliffside Wylderdrake: Steel and Yellow Armor
+	[196999] = "Learnable", -- Cliffside Wylderdrake: Swept Horns
+	[196980] = "Learnable", -- Cliffside Wylderdrake: Triple Head Horns
+	[196989] = "Learnable", -- Cliffside Wylderdrake: White Hair
+	[197014] = "Learnable", -- Cliffside Wylderdrake: White Scales
+	[197007] = "Learnable", -- Cliffside Wylderdrake: Wide Stripes Pattern
+	[197357] = "Learnable", -- Renewed Proto-Drake: Armor
+	[197401] = "Learnable", -- Renewed Proto-Drake: Beaked Snout
+	[197348] = "Learnable", -- Renewed Proto-Drake: Black and Red Armor
+	[197392] = "Learnable", -- Renewed Proto-Drake: Black Scales
+	[197368] = "Learnable", -- Renewed Proto-Drake: Blue Hair
+	[197390] = "Learnable", -- Renewed Proto-Drake: Blue Scales
+	[197377] = "Learnable", -- Renewed Proto-Drake: Bovine Horns
+	[197353] = "Learnable", -- Renewed Proto-Drake: Bronze and Pink Armor
+	[197391] = "Learnable", -- Renewed Proto-Drake: Bronze Scales
+	[197369] = "Learnable", -- Renewed Proto-Drake: Brown Hair
+	[197403] = "Learnable", -- Renewed Proto-Drake: Club Tail
+	[197375] = "Learnable", -- Renewed Proto-Drake: Curled Horns
+	[197380] = "Learnable", -- Renewed Proto-Drake: Curved Horns
+	[197358] = "Learnable", -- Renewed Proto-Drake: Curved Spiked Brow
+	[197366] = "Learnable", -- Renewed Proto-Drake: Dual Horned Crest
+	[197376] = "Learnable", -- Renewed Proto-Drake: Ears
+	[201790] = "Learnable", -- Renewed Proto-Drake: Embodiment of the Storm-Eater
+	[197365] = "Learnable", -- Renewed Proto-Drake: Finned Crest
+	[197388] = "Learnable", -- Renewed Proto-Drake: Finned Jaw
+	[197404] = "Learnable", -- Renewed Proto-Drake: Finned Tail
+	[197408] = "Learnable", -- Renewed Proto-Drake: Finned Throat
+	[197346] = "Learnable", -- Renewed Proto-Drake: Gold and Black Armor
+	[197351] = "Learnable", -- Renewed Proto-Drake: Gold and Red Armor
+	[197349] = "Learnable", -- Renewed Proto-Drake: Gold and White Armor
+	[197381] = "Learnable", -- Renewed Proto-Drake: Gradient Horns
+	[197367] = "Learnable", -- Renewed Proto-Drake: Gray Hair
+	[197371] = "Learnable", -- Renewed Proto-Drake: Green Hair
+	[192523] = "Learnable", -- Renewed Proto-Drake: Green Scales
+	[197389] = "Learnable", -- Renewed Proto-Drake: Green Scales
+	[197356] = "Learnable", -- Renewed Proto-Drake: Hairy Back
+	[197359] = "Learnable", -- Renewed Proto-Drake: Hairy Brow
+	[197395] = "Learnable", -- Renewed Proto-Drake: Harrier Pattern
+	[197383] = "Learnable", -- Renewed Proto-Drake: Heavy Horns
+	[197397] = "Learnable", -- Renewed Proto-Drake: Heavy Scales
+	[197373] = "Learnable", -- Renewed Proto-Drake: Helm
+	[197354] = "Learnable", -- Renewed Proto-Drake: Horned Back
+	[197385] = "Learnable", -- Renewed Proto-Drake: Horned Jaw
+	[197379] = "Learnable", -- Renewed Proto-Drake: Impaler Horns
+	[197363] = "Learnable", -- Renewed Proto-Drake: Maned Crest
+	[197405] = "Learnable", -- Renewed Proto-Drake: Maned Tail
+	[197394] = "Learnable", -- Renewed Proto-Drake: Predator Pattern
+	[197372] = "Learnable", -- Renewed Proto-Drake: Purple Hair
+	[197399] = "Learnable", -- Renewed Proto-Drake: Razor Snout
+	[197370] = "Learnable", -- Renewed Proto-Drake: Red Hair
+	[192111] = "Learnable", -- Renewed Proto-Drake: Red Scales
+	[197400] = "Learnable", -- Renewed Proto-Drake: Shark Snout
+	[197364] = "Learnable", -- Renewed Proto-Drake: Short Spiked Crest
+	[197347] = "Learnable", -- Renewed Proto-Drake: Silver and Blue Armor
+	[197350] = "Learnable", -- Renewed Proto-Drake: Silver and Purple Armor
+	[197396] = "Learnable", -- Renewed Proto-Drake: Skyterror Pattern
+	[197398] = "Learnable", -- Renewed Proto-Drake: Snub Snout
+	[197402] = "Learnable", -- Renewed Proto-Drake: Spiked Club Tail
+	[197361] = "Learnable", -- Renewed Proto-Drake: Spiked Crest
+	[197386] = "Learnable", -- Renewed Proto-Drake: Spiked Jaw
+	[197407] = "Learnable", -- Renewed Proto-Drake: Spiked Throat
+	[197360] = "Learnable", -- Renewed Proto-Drake: Spined Brow
+	[197362] = "Learnable", -- Renewed Proto-Drake: Spined Crest
+	[197406] = "Learnable", -- Renewed Proto-Drake: Spined Tail
+	[197352] = "Learnable", -- Renewed Proto-Drake: Steel and Yellow Armor
+	[197378] = "Learnable", -- Renewed Proto-Drake: Subtle Horns
+	[197374] = "Learnable", -- Renewed Proto-Drake: Swept Horns
+	[197355] = "Learnable", -- Renewed Proto-Drake: Thick Spined Jaw
+	[197384] = "Learnable", -- Renewed Proto-Drake: Thick Spined Jaw
+	[197387] = "Learnable", -- Renewed Proto-Drake: Thin Spined Jaw
+	[197382] = "Learnable", -- Renewed Proto-Drake: White Horns
+	[197393] = "Learnable", -- Renewed Proto-Drake: White Scales
 	-- -- Ember Court
 	[181536] = "Learnable", -- Guest List Page (Uncommon)
 	[181537] = "Learnable", -- Guest List Page (Rare)
@@ -8010,6 +8905,15 @@ local ZigiItems = {
 	[170191] = "[9600ff]Cursed Item]#Junk", -- Skeletal Hand
 
 	-- Trash
+	[199202] = "Junk", -- Attendant's Token of Merit (Season 4)
+	[11733] = "Junk", -- Libram of Constitution
+	[18333] = "Junk", -- Libram of Focus
+	[18334] = "Junk", -- Libram of Protection
+	[18332] = "Junk", -- Libram of Rapidity
+	[11736] = "Junk", -- Libram of Resilience
+	[11732] = "Junk", -- Libram of Rumination
+	[11734] = "Junk", -- Libram of Tenacity
+	[11737] = "Junk", -- Libram of Voracity
 	[152868] = "Junk", -- Anglin' Art's Mudfish Bait
 	[187893] = "Junk", -- Volatile Precursor
 	[118225] = "Junk", -- Highmaul Hops
@@ -8190,18 +9094,19 @@ function Zigi:FormatName(name, profession)
 		if faction == "Horde" then name = "94. Frostwall#Sanctum" end
 	elseif name == "93. Order Hall#Sanctum" then
 		-- Class specific names for Order Halls
-		if class == "DEATHKNIGHT" then name = "93. Acherus: The Ebon Hold#Sanctum" end
-		if class == "DEMONHUNTER" then name = "93. The Fel Hammer#Sanctum" end
-		if class == "DRUID" then name = "93. The Dreamgrove#Sanctum" end
-		if class == "HUNTER" then name = "93. Trueshot Lodge#Sanctum" end
-		if class == "MAGE" then name = "93. Hall of the Guardian#Sanctum" end
-		if class == "MONK" then name = "93. Temple of Five Dawns#Sanctum" end
-		if class == "PALADIN" then name = "93. Sanctum of Light#Sanctum" end
-		if class == "PRIEST" then name = "93. Netherlight Temple#Sanctum" end
-		if class == "ROGUE" then name = "93. Hall of Shadows#Sanctum" end
-		if class == "SHAMAN" then name = "93. Heart of Azeroth#Sanctum" end
-		if class == "WARLOCK" then name = "93. Dreadscar Rift#Sanctum" end
-		if class == "WARRIOR" then name = "93. Skyhold#Sanctum" end
+		if class == "DEATHKNIGHT" then name = "93. Acherus: The Ebon Hold#Sanctum"
+		elseif class == "DEMONHUNTER" then name = "93. The Fel Hammer#Sanctum"
+		elseif class == "DRUID" then name = "93. The Dreamgrove#Sanctum"
+		elseif class == "HUNTER" then name = "93. Trueshot Lodge#Sanctum"
+		elseif class == "MAGE" then name = "93. Hall of the Guardian#Sanctum"
+		elseif class == "MONK" then name = "93. Temple of Five Dawns#Sanctum"
+		elseif class == "PALADIN" then name = "93. Sanctum of Light#Sanctum"
+		elseif class == "PRIEST" then name = "93. Netherlight Temple#Sanctum"
+		elseif class == "ROGUE" then name = "93. Hall of Shadows#Sanctum"
+		elseif class == "SHAMAN" then name = "93. Heart of Azeroth#Sanctum"
+		elseif class == "WARLOCK" then name = "93. Dreadscar Rift#Sanctum"
+		elseif class == "WARRIOR" then name = "93. Skyhold#Sanctum"
+		else name = "Junk#Junk" end -- Other classes have no use for these
 	elseif name == "9299. War Ship#Sanctum" then
 		-- Faction specific names for the BfA War Ship
 		if faction == "Alliance" then name = "9299. The Wind's Redemption#Sanctum" end
@@ -8361,9 +9266,9 @@ function Zigi:CheckItem(id, bag, slot)
 						end
 					elseif string.match(v, "Mount:(%d)") then
 						-- MountID: https://wow.tools/dbc/?dbc=mount
-						local mountinfo = C_MountJournal.GetMountInfoByID(tonumber(string.gsub(v, "Mount:(%d)", "%1") or 0))
-
-						if mountinfo and mountinfo.isCollected then
+						local collected = select(11, C_MountJournal.GetMountInfoByID(tonumber(string.gsub(v, "Mount:(%d)", "%1") or 0)))
+						
+						if not collected then
 							match = true
 						end
 					end
@@ -8400,16 +9305,25 @@ function Zigi:CheckItem(id, bag, slot)
 		else
 			return strsplit("#", name)
 		end
-	elseif UnitLevel("player") >= 60 then
-		-- https://wowpedia.fandom.com/wiki/ItemType
-		-- 4 is Armor, 2 is Weapon
-		local itemclass = select(12, GetItemInfo(id)) or -1
+	else
+		local link = C_Container.GetContainerItemLink(bag, slot)
+		if not link then return false end
+		local itemName, _, quality, _, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType = GetItemInfo(link)
 
-		if itemclass == 4 or itemclass == 2 then
-			local link = C_Container.GetContainerItemLink(bag, slot)
+		if quality == nil or type(quality) ~= "number" then
+			return false
+		elseif quality == 0 then
+			return "Junk", "Junk" -- Poor quality
+		elseif quality == 1 and (classID == 4 or classID == 2) then
+			--print(itemName, quality, classID, itemType, itemSubType)
+			return "Junk", "Junk" -- Common quality armor or weapon
+		elseif quality < 5 and (classID == 4 or classID == 2) and bindType == 1 then
 			local itemLevel = GetDetailedItemLevelInfo(link) or 1
 
-			if itemLevel < 220 then
+			-- Uncommon, Rare or Epic quality armor or weapon
+			if UnitLevel("player") >= 60 and itemLevel < 200 then
+				return "Old Equipment", "Equipment"
+			elseif UnitLevel("player") >= 70 and itemLevel < 300 then
 				return "Old Equipment", "Equipment"
 			end
 		end
@@ -8422,7 +9336,7 @@ function Zigi:Filter(slotData)
 	local bag, slot = slotData.bag, slotData.slot
 	local id = C_Container.GetContainerItemID(bag, slot)
 
-	if id and ZigiItems[id] then
+	if id and bag and slot then
 		if Zigi:CheckItem(id, bag, slot) then
 			return Zigi:CheckItem(id, bag, slot)
 		end
