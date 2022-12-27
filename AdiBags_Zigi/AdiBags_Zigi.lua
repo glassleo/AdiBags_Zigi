@@ -69,6 +69,14 @@ local ChallengeMap = {
 	[382] = "Theater of Pain",
 	[391] = "Tazavesh: Streets of Wonder",
 	[392] = "Tazavesh: So'leah's Gambit",
+	[399] = "Ruby Life Pools",
+	[400] = "The Nokhud Offensive",
+	[401] = "The Azure Vault",
+	[402] = "Algeth'ar Academy",
+	[403] = "Uldaman: Legacy of Tyr",
+	[404] = "Neltharus",
+	[405] = "Brackenhide Hollow",
+	[406] = "Halls of Infusion",
 }
 
 local StuffItems = {
@@ -97,6 +105,7 @@ local StuffItems = {
 	[144392] = true, -- Pugilist's Powerful Punching Ring (Horde)
 	[168862] = true, -- G.E.A.R. Tracking Beacon
 	[180817] = true, -- Cypher of Relocation
+	[200613] = true, -- Aylaag Windstone Fragment
 	[32757] = true, -- Blessed Medallion of Karabor
 	[37863] = true, -- Direbrew's Remote
 	[40585] = true, -- Signet of the Kirin Tor
@@ -273,6 +282,10 @@ local ZigiItems = {
 	-- -- Thaldraszus (92)
 	-- -- The Azure Span (93)
 	-- -- -- Iskaaran Fishing
+	[199338] = "909399. Iskaaran Fishing#Zone", -- Copper Coin of the Isles
+	[199339] = "909399. Iskaaran Fishing#Zone", -- Silver Coin of the Isles
+	[199340] = "909399. Iskaaran Fishing#Zone", -- Gold Coin of the Isles
+	[194701] = "909399. Iskaaran Fishing#Zone", -- Ominous Conch
 	[194510] = "909399. Iskaaran Fishing#Zone", -- Iskaaran Harpoon
 	[198070] = "909399. Iskaaran Fishing#Zone", -- Tattered Seavine
 	[199641] = "909399. Iskaaran Fishing#Zone", -- Reinforced Irontree Harpoon Handle
@@ -304,13 +317,6 @@ local ZigiItems = {
 	[200085] = "909399. Iskaaran Fishing#Zone", -- Khaz'gorite Wire
 	[200086] = "909399. Iskaaran Fishing#Zone", -- Khaz'gorite-infused Resin
 	-- -- Ohn'ahran Plains (94)
-	-- -- -- Divine Kiss of Ohn'ahra (97)
-	[201929] = "909497. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Stolen Breath of Ohn'ahra
-	[201323] = "909497. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Essence of Awakening
-	-- -- -- Lizi (98)
-	[192615] = "909498. Lizi#Zone|Mount:1639", -- Fluorescent Fluid
-	[192658] = "909498. Lizi#Zone|Mount:1639", -- High-Fiber Leaf
-	[192636] = "909498. Lizi#Zone|Mount:1639", -- Woolly Mountain Pelt
 	-- -- -- Ohn'ahran Plains (99)
 	[202070] = "909499. Ohn'ahran Plains#Zone", -- Exceptional Pelt
 	[202071] = "909499. Ohn'ahran Plains#Zone", -- Elemental Mote
@@ -319,6 +325,26 @@ local ZigiItems = {
 	[191251] = "9095. The Waking Shores#Zone", -- Key Fragments
 	[191264] = "9095. The Waking Shores#Zone", -- Restored Obsidian Key
 	[191837] = "9095. The Waking Shores#Zone", -- Earthen Charm
+	-- -- Mounts (99)
+	-- -- -- Divine Kiss of Ohn'ahra (96)
+	[201929] = "909996. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Stolen Breath of Ohn'ahra
+	[201323] = "909996. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Essence of Awakening
+	-- -- -- Loyal Magmammoth (97)
+	[201840] = "909997. Loyal Magmammoth#Zone|Mount:1612", -- Sturdy Obsidian Glasses
+	[201839] = "909997. Loyal Magmammoth#Zone|Mount:1612", -- Netherforged Lavaproof Boots
+	[201837] = "909997. Loyal Magmammoth#Zone|Mount:1612", -- Magmammoth Harness
+	-- -- -- Otto (98)
+	[202061] = "909998. Otto#Zone|Mount:1656", -- Empty Fish Barrel
+	[202066] = "909998. Otto#Zone|Mount:1656", -- Half-Filled Fish Barrel
+	[202068] = "909998. Otto#Zone|Mount:1656", -- Brimming Fish Barrel
+	[202069] = "909998. Otto#Zone|Mount:1656", -- Overflowing Fish Barrel
+	[202072] = "909998. Otto#Zone|Mount:1656", -- Frigid Floe Fish
+	[202073] = "909998. Otto#Zone|Mount:1656", -- Calamitous Carp
+	[202074] = "909998. Otto#Zone|Mount:1656", -- Kingfin, the Wise Whiskerfish
+	-- -- -- Lizi (99)
+	[192615] = "Quest#Quest|Quest:71196", -- Fluorescent Fluid
+	[192658] = "Quest#Quest|Quest:71197", -- High-Fiber Leaf
+	[192636] = "Quest#Quest|Quest:71199", -- Woolly Mountain Pelt
 	-- Shadowlands (91)
 	-- -- Sepulcher of the First Ones (57)
 	-- -- Sanctum of Domination (58)
@@ -1753,6 +1779,11 @@ local ZigiItems = {
 
 	--! Reagent (07)
 	-- -- Dragon Isles (90)
+	[191476] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconium Vial
+	[191475] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconium Vial
+	[191474] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconium Vial
+	[201402] = "0790. Dragon Isles Reagent#Tradeskill", -- Large Sturdy Femur
+	[201403] = "0790. Dragon Isles Reagent#Tradeskill", -- Mastodon Tusk
 	[201400] = "0790. Dragon Isles Reagent#Tradeskill", -- Aquatic Maw
 	[198219] = "0790. Dragon Isles Reagent#Tradeskill", -- Overcharged Overclocker
 	[198220] = "0790. Dragon Isles Reagent#Tradeskill", -- Overcharged Overclocker
@@ -2373,7 +2404,6 @@ local ZigiItems = {
 	--! Elemental (11)
 	-- -- Dragon Isles (90)
 	[190453] = "1190. Dragon Isles Elemental#Tradeskill", -- Spark of Ingenuity
-	[199197] = "1190. Dragon Isles Elemental#Tradeskill", -- Bottled Essence
 	[190454] = "1190. Dragon Isles Elemental#Tradeskill", -- Primal Chaos
 	[193921] = "1190. Dragon Isles Elemental#Tradeskill", -- Airy Soul
 	[190327] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Air
@@ -2597,6 +2627,8 @@ local ZigiItems = {
 	[34836] = "1399. Fishing#Tradeskill", -- Spun Truesilver Fishing Line
 	[68796] = "1399. Fishing#Tradeskill", -- Reinforced Fishing Line
 	-- Fishing Equipment
+	[193543] = "1399. Fishing#Tradeskill", -- Master's Wildercloth Fishing Cap
+	[193529] = "1399. Fishing#Tradeskill", -- Wildercloth Fishing Cap
 	[33820] = "1399. Fishing#Tradeskill", -- Weather-Beaten Fishing Hat
 	[88710] = "1399. Fishing#Tradeskill", -- Nat's Hat
 	[117405] = "1399. Fishing#Tradeskill", -- Nat's Drinking Hat
@@ -6447,19 +6479,23 @@ local ZigiItems = {
 	[199839] = "Account Bound", -- Dimmed Primeval Water
 	[199836] = "Account Bound", -- Dimmed Primeval Fire
 	[199211] = "Account Bound", -- Primeval Essence
+	[201254] = "Account Bound", -- Medal of Honor (Alliance)
+	[201255] = "Account Bound", -- Medal of Honor (Horde)
 
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
 	[128658] = "Currency#Miscellaneous", -- Spooky Supplies
 	[49927] = "Currency#Miscellaneous", -- Love Token
+	[202184] = "Currency#Miscellaneous", -- Trophy of Strife
+	[103533] = "Currency#Miscellaneous", -- Vicious Saddle
 
 	--! Reputation (02)
+	[200224] = "02. Reputation#Miscellaneous", -- Mark of Sargha
 	[201991] = "02. Reputation#Miscellaneous", -- Sargha's Signet
 	[200071] = "02. Reputation#Miscellaneous", -- Sacred Tuskarr Totem
 	[200093] = "02. Reputation#Miscellaneous", -- Centaur Hunting Trophy
 	[192055] = "02. Reputation#Miscellaneous", -- Dragon Isles Artifact
 	[199906] = "02. Reputation#Miscellaneous", -- Titan Relic
-	[198790] = "02. Reputation#Miscellaneous", -- I.O.U.
 	[191299] = "02. Reputation#Miscellaneous", -- Tribute to the Enlightened
 	[71088] = "02. Reputation#Miscellaneous", -- Bilgewater Writ of Commendation
 	[45720] = "02. Reputation#Miscellaneous", -- Sen'jin Commendation Badge
@@ -6700,6 +6736,7 @@ local ZigiItems = {
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	[172013] = "Toy#Miscellaneous", -- Celebration Firework
 	-- Consumable
+	[21213] = "Toy#Miscellaneous", -- Preserved Holly
 	[193029] = "Toy#Miscellaneous", -- Projection Prism
 	[193030] = "Toy#Miscellaneous", -- Projection Prism
 	[193031] = "Toy#Miscellaneous", -- Projection Prism
@@ -6806,6 +6843,7 @@ local ZigiItems = {
 	[86572] = "Toy#Miscellaneous", -- Terracotta Fragment
 	[117566] = "Toy#Miscellaneous", -- Heavy Frostwolf Shroud
 	-- Battle Pets
+	[128650] = "Toy [Battle Pets]#Miscellaneous", -- "Merry Munchkin" Costume
 	[169943] = "Toy [Battle Pets]#Miscellaneous", -- Little Princess Cap
 	[169860] = "Toy [Battle Pets]#Miscellaneous", -- Tiny Dapper Hat
 	[184506] = "Toy [Battle Pets]#Miscellaneous", -- "Flying Faerie" Costume
@@ -7054,6 +7092,12 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[199473] = "Openable", -- Overflowing Iskaaran Supply Pack
+	[198867] = "Openable", -- Large Iskaaran Supply Pack
+	[198866] = "Openable", -- Small Iskaaran Supply Pack
+	[199197] = "Openable", -- Bottled Essence
+	[198438] = "Openable", -- Draconic Recipe in a Bottle
+	[201250] = "Openable", -- Victorious Contender's Strongbox
 	[200069] = "Openable", -- Obsidian Cache
 	[201754] = "Openable", -- Obsidian Forgemaster's Cache
 	[10456] = "Openable", -- A Bulging Coin Purse
@@ -7640,12 +7684,20 @@ local ZigiItems = {
 	[79917] = "Openable", -- Worn Monument Ledger
 
 	--! Learnable (98)
+	-- -- Reputation
+	[201783] = "Learnable", -- Tutaqan's Commendation
+	[201781] = "Learnable", -- Memory of Tyr
+	[198790] = "Learnable", -- I.O.U.
 	-- -- Treasure Map
 	[199061] = "Learnable", -- A Guide to Rare Fish
 	[198854] = "Learnable", -- Archeologist Artifact Notes
 	[199065] = "Learnable", -- Sorrowful Letter
 	-- -- Profession Knowledge
+	[201716] = "Learnable|Mining", -- Notebook of Crafting Knowledge
+	[201700] = "Learnable|Mining", -- Notebook of Crafting Knowledge
+	[201706] = "Learnable|Alchemy", -- Notebook of Crafting Knowledge
 	[194697] = "Learnable|Alchemy", -- Draconic Treatise on Alchemy
+	[201708] = "Learnable|Blacksmithing", -- Notebook of Crafting Knowledge
 	[198454] = "Learnable|Blacksmithing", -- Draconic Treatise on Blacksmithing
 	[198965] = "Learnable|Blacksmithing", -- Primeval Earth Fragment
 	[192131] = "Learnable|Blacksmithing", -- Valdrakken Weapon Chain
@@ -7663,7 +7715,9 @@ local ZigiItems = {
 	[200972] = "Learnable|Blacksmithing", -- Dusty Blacksmith's Diagrams
 	[201268] = "Learnable|Blacksmithing", -- Rare Blacksmith's Diagrams
 	[201279] = "Learnable|Blacksmithing", -- Ancient Blacksmith's Diagrams
+	[201709] = "Learnable|Enchanting", -- Notebook of Crafting Knowledge
 	[194702] = "Learnable|Enchanting", -- Draconic Treatise on Enchanting
+	[201710] = "Learnable|Engineering", -- Notebook of Crafting Knowledge
 	[198510] = "Learnable|Engineering", -- Draconic Treatise on Engineering
 	[198970] = "Learnable|Engineering", -- Infinitely Attachable Pair o' Docks
 	[193902] = "Learnable|Engineering", -- Eroded Titan Gizmo
@@ -7673,12 +7727,17 @@ local ZigiItems = {
 	[201273] = "Learnable|Engineering", -- Rare Engineer's Scribblings
 	[201284] = "Learnable|Engineering", -- Ancient Engineer's Scribblings
 	[198969] = "Learnable|Engineering", -- Keeper's Mark
+	[201705] = "Learnable|Herbalism", -- Notebook of Crafting Knowledge
+	[201717] = "Learnable|Herbalism", -- Notebook of Crafting Knowledge
 	[194704] = "Learnable|Herbalism", -- Draconic Treatise on Herbalism
 	[200677] = "Learnable|Herbalism", -- Dreambloom Petal
 	[200678] = "Learnable|Herbalism", -- Dreambloom
 	[199115] = "Learnable|Herbalism", -- Herbalism Field Notes
+	[201711] = "Learnable|Inscription", -- Notebook of Crafting Knowledge
 	[194699] = "Learnable|Inscription", -- Draconic Treatise on Inscription
+	[201712] = "Learnable|Jewelcrafting", -- Notebook of Crafting Knowledge
 	[194703] = "Learnable|Jewelcrafting", -- Draconic Treatise on Jewelcrafting
+	[201713] = "Learnable|Leatherworking", -- Notebook of Crafting Knowledge
 	[194700] = "Learnable|Leatherworking", -- Draconic Treatise on Leatherworking
 	[194708] = "Learnable|Mining", -- Draconic Treatise on Mining
 	[202011] = "Learnable|Mining", -- Elementally-Charged Stone
@@ -7689,8 +7748,12 @@ local ZigiItems = {
 	[201277] = "Learnable|Mining", -- Rare Miner's Notes
 	[201288] = "Learnable|Mining", -- Ancient Miner's Notes
 	[199122] = "Learnable|Mining", -- Mining Field Notes
+	[201714] = "Learnable|Skinning", -- Notebook of Crafting Knowledge
+	[201718] = "Learnable|Skinning", -- Notebook of Crafting Knowledge
 	[201023] = "Learnable|Skinning", -- Draconic Treatise on Skinning
+	[201715] = "Learnable|Tailoring", -- Notebook of Crafting Knowledge
 	[194698] = "Learnable|Tailoring", -- Draconic Treatise on Tailoring
+	[198609] = "Learnable|Tailoring", -- Tailoring Examples
 	-- -- Grand Hunt Companion Customization
 	[194088] = "Learnable", -- Ohuna Companion Color: Dark
 	[194087] = "Learnable", -- Ohuna Companion Color: Red
