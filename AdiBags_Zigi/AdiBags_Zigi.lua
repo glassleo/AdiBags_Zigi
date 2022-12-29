@@ -326,9 +326,16 @@ local ZigiItems = {
 	[191264] = "9095. The Waking Shores#Zone", -- Restored Obsidian Key
 	[191837] = "9095. The Waking Shores#Zone", -- Earthen Charm
 	-- -- Mounts (99)
-	-- -- -- Divine Kiss of Ohn'ahra (96)
-	[201929] = "909996. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Stolen Breath of Ohn'ahra
-	[201323] = "909996. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Essence of Awakening
+	-- -- -- Divine Kiss of Ohn'ahra (94)
+	[201929] = "909994. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Stolen Breath of Ohn'ahra
+	[201323] = "909994. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Essence of Awakening
+	-- -- -- Iskaara Trader's Ottuk (95)
+	[195502] = "909995. Iskaara Trader's Ottuk#Zone|Mount:1546", -- Terros's Captive Core
+	[195496] = "909995. Iskaara Trader's Ottuk#Zone|Mount:1546", -- Eye of the Vengeful Hurricane
+	-- -- -- Ivory Trader's Ottuk (96)
+	[193696] = "909996. Ivory Trader's Ottuk#Zone|Mount:1658", -- Thunderous Downburst Ring
+	[193633] = "909996. Ivory Trader's Ottuk#Zone|Mount:1658", -- Unstable Arcane Loop
+	[193708] = "909996. Ivory Trader's Ottuk#Zone|Mount:1658", -- Platinum Star Band
 	-- -- -- Loyal Magmammoth (97)
 	[201840] = "909997. Loyal Magmammoth#Zone|Mount:1612", -- Sturdy Obsidian Glasses
 	[201839] = "909997. Loyal Magmammoth#Zone|Mount:1612", -- Netherforged Lavaproof Boots
@@ -6281,6 +6288,7 @@ local ZigiItems = {
 	--[[ ! Consumable ! ]]--
 
 	-- Consumable
+	[198727] = "Consumable#Consumable", -- Expedition Explosives
 	[191304] = "Consumable#Consumable", -- Sturdy Expedition Shovel
 	[191294] = "Consumable#Consumable", -- Small Expedition Shovel
 	[202087] = "Consumable#Consumable", -- Tinker Removal Kit
@@ -7092,6 +7100,10 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[201439] = "Openable", -- Renewed Dream
+	[201437] = "Openable", -- Slumbering Dream Fragment
+	[202080] = "Openable", -- Cache of Vault Treasures (Heroic)
+	[202079] = "Openable", -- Cache of Vault Treasures (Normal)
 	[199473] = "Openable", -- Overflowing Iskaaran Supply Pack
 	[198867] = "Openable", -- Large Iskaaran Supply Pack
 	[198866] = "Openable", -- Small Iskaaran Supply Pack
@@ -7685,6 +7697,7 @@ local ZigiItems = {
 
 	--! Learnable (98)
 	-- -- Reputation
+	[201779] = "Learnable", -- Merithra's Blessing
 	[201783] = "Learnable", -- Tutaqan's Commendation
 	[201781] = "Learnable", -- Memory of Tyr
 	[198790] = "Learnable", -- I.O.U.
@@ -7697,6 +7710,13 @@ local ZigiItems = {
 	[201700] = "Learnable|Mining", -- Notebook of Crafting Knowledge
 	[201706] = "Learnable|Alchemy", -- Notebook of Crafting Knowledge
 	[194697] = "Learnable|Alchemy", -- Draconic Treatise on Alchemy
+	[198608] = "Learnable|Alchemy", -- Alchemy Notes
+	[193891] = "Learnable|Alchemy", -- Experimental Substance
+	[198599] = "Learnable|Alchemy", -- Experimental Decay Sample
+	[198964] = "Learnable|Alchemy", -- Elementious Splinter
+	[193897] = "Learnable|Alchemy", -- Reawakened Catalyst
+	[201003] = "Learnable|Alchemy", -- Furry Gloop
+	[198685] = "Learnable|Alchemy", -- Well Insulated Mug
 	[201708] = "Learnable|Blacksmithing", -- Notebook of Crafting Knowledge
 	[198454] = "Learnable|Blacksmithing", -- Draconic Treatise on Blacksmithing
 	[198965] = "Learnable|Blacksmithing", -- Primeval Earth Fragment
