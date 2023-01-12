@@ -1726,6 +1726,7 @@ local ZigiItems = {
 	[200113] = "0690. Dragon Isles Enchanting#Tradeskill", -- Resonant Crystal
 	[194124] = "0690. Dragon Isles Enchanting#Tradeskill", -- Vibrant Shard
 	[194123] = "0690. Dragon Isles Enchanting#Tradeskill", -- Chromatic Dust
+	[201406] = "0690. Dragon Isles Enchanting#Tradeskill", -- Glowing Titan Orb
 	[201584] = "0690. Dragon Isles Enchanting#Tradeskill", -- Serevite Rod
 	-- -- Shadowlands (91)
 	[172232] = "0691. Shadowlands Enchanting#Tradeskill", -- Eternal Crystal
@@ -2412,7 +2413,6 @@ local ZigiItems = {
 
 	--! Elemental (11)
 	-- -- Dragon Isles (90)
-	[201406] = "1190. Dragon Isles Elemental#Tradeskill", -- Glowing Titan Orb
 	[198046] = "1190. Dragon Isles Elemental#Tradeskill", -- Concentrated Primal Infusion
 	[190455] = "1190. Dragon Isles Elemental#Tradeskill", -- Concentrated Primal Focus
 	[197921] = "1190. Dragon Isles Elemental#Tradeskill", -- Primal Infusion
@@ -7597,7 +7597,11 @@ local ZigiItems = {
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Profession Skill
 	[6712] = "Openable|Engineering", -- Clockwork Box
-	-- -- Quest
+	-- -- Quest/Treasure
+	[200066] = "Openable|Item:200064&Item:200065|Quest#Quest", -- Well-Preserved Bone
+	[200064] = "Openable|Item:200066&Item:200065|Quest#Quest", -- Marmoni's Prize
+	[200065] = "Openable|Item:200066&Item:200064|Quest#Quest", -- Adventurer's Lost Soap Bar
+	[200063] = "Openable", -- Oservant Riddle "Treat"
 	[192545] = "Openable", -- Primal Flame Fragment
 	-- -- Archaeology
 	[154913] = "Openable", -- Akun'Jar Vase
@@ -7727,6 +7731,9 @@ local ZigiItems = {
 	[193897] = "Learnable|Alchemy", -- Reawakened Catalyst
 	[201003] = "Learnable|Alchemy", -- Furry Gloop
 	[198685] = "Learnable|Alchemy", -- Well Insulated Mug
+	[200974] = "Learnable|Alchemy", -- Dusty Alchemist's Research
+	[201270] = "Learnable|Alchemy", -- Rare Alchemist's Research
+	[201281] = "Learnable|Alchemy", -- Ancient Alchemist's Research
 	[201708] = "Learnable|Blacksmithing", -- Notebook of Crafting Knowledge
 	[198454] = "Learnable|Blacksmithing", -- Draconic Treatise on Blacksmithing
 	[198965] = "Learnable|Blacksmithing", -- Primeval Earth Fragment
@@ -7757,6 +7764,11 @@ local ZigiItems = {
 	[201273] = "Learnable|Engineering", -- Rare Engineer's Scribblings
 	[201284] = "Learnable|Engineering", -- Ancient Engineer's Scribblings
 	[198969] = "Learnable|Engineering", -- Keeper's Mark
+	[201014] = "Learnable|Engineering", -- Boomthyr Rocket
+	[198816] = "Quest#Quest|Quest:70270|Junk#Junk", -- Aerospace Grade Draconium
+	[198815] = "Quest#Quest|Quest:70270|Junk#Junk", -- Ash
+	[198814] = "Quest#Quest|Quest:70270|Junk#Junk", -- Boom Fumes
+	[198817] = "Quest#Quest|Quest:70270|Junk#Junk", -- Durable Crystal
 	[201705] = "Learnable|Herbalism", -- Notebook of Crafting Knowledge
 	[201717] = "Learnable|Herbalism", -- Notebook of Crafting Knowledge
 	[194704] = "Learnable|Herbalism", -- Draconic Treatise on Herbalism
@@ -10303,6 +10315,10 @@ function Zigi:CheckItem(id, bag, slot)
 						match = true -- XP items can only be used until level 49
 					elseif string.match(v, "Quest:(%d)") then
 						if not C_QuestLog.IsQuestFlaggedCompleted(tonumber(string.gsub(v, "Quest:(%d)", "%1") or 0)) then
+							match = true
+						end
+					elseif string.match(v, "Item:(%d)") then
+						if (GetItemCount(tonumber(string.gsub(v, "Item:(%d)", "%1") or 0), true, false, true) >= 1) then
 							match = true
 						end
 					elseif string.match(v, "Spell:(%d)") then
