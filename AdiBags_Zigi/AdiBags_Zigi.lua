@@ -6496,6 +6496,10 @@ local ZigiItems = {
 	[199211] = "Account Bound", -- Primeval Essence
 	[201254] = "Account Bound", -- Medal of Honor (Alliance)
 	[201255] = "Account Bound", -- Medal of Honor (Horde)
+	[200443] = "Account Bound", -- Dragon Isles Artifact
+	[200447] = "Account Bound", -- Centaur Hunting Trophy
+	[200449] = "Account Bound", -- Sacred Tuskarr Totem
+	[200450] = "Account Bound", -- Titan Relic
 
 	--! Currency (01)
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
@@ -6503,8 +6507,10 @@ local ZigiItems = {
 	[49927] = "Currency#Miscellaneous", -- Love Token
 	[202184] = "Currency#Miscellaneous", -- Trophy of Strife
 	[103533] = "Currency#Miscellaneous", -- Vicious Saddle
+	[201159] = "Currency#Miscellaneous", -- Aloom's Token
 
 	--! Reputation (02)
+	[201411] = "02. Reputation#Miscellaneous", -- Ancient Vault Artifact
 	[200224] = "02. Reputation#Miscellaneous", -- Mark of Sargha
 	[201991] = "02. Reputation#Miscellaneous", -- Sargha's Signet
 	[200071] = "02. Reputation#Miscellaneous", -- Sacred Tuskarr Totem
@@ -7143,7 +7149,7 @@ local ZigiItems = {
 	[201755] = "Openable", -- Obsidian Forgemaster's Strongbox
 	[199192] = "Openable", -- Dragon Racer's Purse
 	[200073] = "Openable", -- Valdrakken Treasures
-	[200156] = "Openable", -- Amethyzarite Geode
+	[200156] = "Openable|Jewelcrafting|[ff0000]Jewelcrafting]#Container", -- Amethyzarite Geode
 	[192889] = "Openable", -- Dreamer's Vision
 	[202055] = "Openable", -- Dreamer's Vision
 	[202049] = "Openable", -- Dreamer's Vision
@@ -7710,6 +7716,7 @@ local ZigiItems = {
 
 	--! Learnable (98)
 	-- -- Reputation
+	[201782] = "Learnable", -- Tyr's Blessing
 	[201779] = "Learnable", -- Merithra's Blessing
 	[201783] = "Learnable", -- Tutaqan's Commendation
 	[201781] = "Learnable", -- Memory of Tyr
@@ -7720,8 +7727,6 @@ local ZigiItems = {
 	[199065] = "Learnable", -- Sorrowful Letter
 	[200738] = "Learnable", -- Onyx Gem Cluster Map
 	-- -- Profession Knowledge
-	[201716] = "Learnable|Mining", -- Notebook of Crafting Knowledge
-	[201700] = "Learnable|Mining", -- Notebook of Crafting Knowledge
 	[201706] = "Learnable|Alchemy", -- Notebook of Crafting Knowledge
 	[194697] = "Learnable|Alchemy", -- Draconic Treatise on Alchemy
 	[198608] = "Learnable|Alchemy", -- Alchemy Notes
@@ -7730,10 +7735,12 @@ local ZigiItems = {
 	[198964] = "Learnable|Alchemy", -- Elementious Splinter
 	[193897] = "Learnable|Alchemy", -- Reawakened Catalyst
 	[201003] = "Learnable|Alchemy", -- Furry Gloop
+	[198963] = "Learnable|Alchemy", -- Decaying Phlegm
 	[198685] = "Learnable|Alchemy", -- Well Insulated Mug
 	[200974] = "Learnable|Alchemy", -- Dusty Alchemist's Research
 	[201270] = "Learnable|Alchemy", -- Rare Alchemist's Research
 	[201281] = "Learnable|Alchemy", -- Ancient Alchemist's Research
+	[198663] = "Learnable|Alchemy", -- Frostforged Potion
 	[201708] = "Learnable|Blacksmithing", -- Notebook of Crafting Knowledge
 	[198454] = "Learnable|Blacksmithing", -- Draconic Treatise on Blacksmithing
 	[198965] = "Learnable|Blacksmithing", -- Primeval Earth Fragment
@@ -7781,15 +7788,24 @@ local ZigiItems = {
 	[194703] = "Learnable|Jewelcrafting", -- Draconic Treatise on Jewelcrafting
 	[201713] = "Learnable|Leatherworking", -- Notebook of Crafting Knowledge
 	[194700] = "Learnable|Leatherworking", -- Draconic Treatise on Leatherworking
+	[198613] = "Learnable|Leatherworking", -- Leatherworking Designs
+	[198975] = "Learnable|Leatherworking", -- Ossified Hide
+	[198711] = "Learnable|Leatherworking", -- Poacher's Pack
+	[193910] = "Learnable|Leatherworking", -- Molted Dragon Scales
+	[193913] = "Learnable|Leatherworking", -- Preserved Animal Parts
+	[198696] = "Learnable|Leatherworking", -- Wind-Blessed Hide
 	[194708] = "Learnable|Mining", -- Draconic Treatise on Mining
 	[202011] = "Learnable|Mining", -- Elementally-Charged Stone
 	[194039] = "Learnable|Mining", -- Heated Ore Sample
 	[201300] = "Learnable|Mining", -- Iridescent Ore Fragments
 	[201301] = "Learnable|Mining", -- Iridescent Ore
+	[194062] = "Learnable|Mining", -- Unyielding Stone Chunk
 	[200981] = "Learnable|Mining", -- Dusty Miner's Notes
 	[201277] = "Learnable|Mining", -- Rare Miner's Notes
 	[201288] = "Learnable|Mining", -- Ancient Miner's Notes
 	[199122] = "Learnable|Mining", -- Mining Field Notes
+	[201716] = "Learnable|Mining", -- Notebook of Crafting Knowledge
+	[201700] = "Learnable|Mining", -- Notebook of Crafting Knowledge
 	[201714] = "Learnable|Skinning", -- Notebook of Crafting Knowledge
 	[201718] = "Learnable|Skinning", -- Notebook of Crafting Knowledge
 	[201023] = "Learnable|Skinning", -- Draconic Treatise on Skinning
