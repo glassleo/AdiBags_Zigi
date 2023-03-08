@@ -1270,6 +1270,7 @@ local ZigiItems = {
 	[199106] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Tiny Leviathan Bone
 	[199835] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Torga's Braid
 	-- -- Dragon Isles (90)
+	[17202]  = "049099. Dragon Isles Cooking#Tradeskill", -- Snowball
 	[197765] = "049099. Dragon Isles Cooking#Tradeskill", -- Impossibly Sharp Cutting Knife
 	[194967] = "049099. Dragon Isles Cooking#Tradeskill", -- Aileron Seamoth
 	[197757] = "049099. Dragon Isles Cooking#Tradeskill", -- Assorted Exotic Spices
@@ -2884,6 +2885,19 @@ local ZigiItems = {
 	[128908] = "9901. [e6cc80]Artifact]#Equipment", -- Warswords of the Valarjar
 	[128827] = "9901. [e6cc80]Artifact]#Equipment", -- Xal'atath, Blade of the Black Empire
 	-- -- Legendary (02)
+	[190464] = "990201. [ff8000]Legendary]#Equipment", -- Cord of Unity (Mage)
+	[190468] = "990201. [ff8000]Legendary]#Equipment", -- Cord of Unity (Priest)
+	[190469] = "990201. [ff8000]Legendary]#Equipment", -- Cord of Unity (Warlock)
+	[190470] = "990201. [ff8000]Legendary]#Equipment", -- Cinch of Unity (Demon Hunter)
+	[190465] = "990201. [ff8000]Legendary]#Equipment", -- Cinch of Unity (Druid)
+	[190472] = "990201. [ff8000]Legendary]#Equipment", -- Cinch of Unity (Monk)
+	[190471] = "990201. [ff8000]Legendary]#Equipment", -- Cinch of Unity (Rogue)
+	[199551] = "990201. [ff8000]Legendary]#Equipment", -- Clasp of Unity (Evoker)
+	[190466] = "990201. [ff8000]Legendary]#Equipment", -- Clasp of Unity (Hunter)
+	[190473] = "990201. [ff8000]Legendary]#Equipment", -- Clasp of Unity (Shaman)
+	[190467] = "990201. [ff8000]Legendary]#Equipment", -- Girdle of Unity (Death Knight)
+	[190474] = "990201. [ff8000]Legendary]#Equipment", -- Girdle of Unity (Paladin)
+	[190475] = "990201. [ff8000]Legendary]#Equipment", -- Girdle of Unity (Warrior)
 	[173241] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Robe
 	[173242] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Cape
 	[173243] = "990201. [ff8000]Legendary]#Equipment", -- Grim-Veiled Sandals
@@ -6579,7 +6593,6 @@ local ZigiItems = {
 	[150925] = "Account Bound", -- Greater Valarjar Insignia
 	[141338] = "Account Bound", -- Valarjar Insignia
 	[146941] = "Account Bound", -- Valarjar Insignia
-	[128315] = "Account Bound", -- Medallion of the Legion
 	[167924] = "Account Bound", -- Commendation of the Arakkoa Outcasts
 	[117492] = "Account Bound", -- Relic of Rukhmar
 	[167929] = "Account Bound", -- Commendation of the Council of Exarchs
@@ -6664,6 +6677,7 @@ local ZigiItems = {
 	[199219] = "Currency#Miscellaneous", -- Element-Infused Blood
 
 	--! Reputation (02)
+	[128315] = "02. Reputation#Miscellaneous", -- Medallion of the Legion
 	[201411] = "02. Reputation#Miscellaneous", -- Ancient Vault Artifact
 	[200224] = "02. Reputation#Miscellaneous", -- Mark of Sargha
 	[201991] = "02. Reputation#Miscellaneous", -- Sargha's Signet
@@ -7167,6 +7181,7 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[202172] = "Openable", -- Overflowing Satchel of Coins
 	[192892] = "Openable", -- Timewatcher's Patience
 	[202052] = "Openable", -- Timewatcher's Patience
 	[202058] = "Openable", -- Timewatcher's Patience
@@ -7897,7 +7912,7 @@ local ZigiItems = {
 	[203471] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Tasty Candy
 	[198697] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Contraband Concoction
 	[201708] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
-	[198454] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Draconic Treatise on Blacksmithing
+	[198454] = "Learnable|Quest:74109&Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Draconic Treatise on Blacksmithing
 	[198965] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Primeval Earth Fragment
 	[192131] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Valdrakken Weapon Chain
 	[192132] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Draconium Blade Sharpener
@@ -7925,7 +7940,7 @@ local ZigiItems = {
 	[198694] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Enriched Earthen Shard
 	[198800] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Fractured Titanic Sphere
 	[201710] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
-	[198510] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Draconic Treatise on Engineering
+	[198510] = "Learnable|Quest:74111&Recipe:Engineering:10:25|Recipe#Recipe", -- Draconic Treatise on Engineering
 	[198970] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Infinitely Attachable Pair o' Docks
 	[193902] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Eroded Titan Gizmo
 	[193903] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Watcher Power Core
@@ -7945,9 +7960,10 @@ local ZigiItems = {
 	[194704] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Draconic Treatise on Herbalism
 	[200677] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Dreambloom Petal
 	[200678] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Dreambloom
+	[202014] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Infused Pollen
 	[199115] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Herbalism Field Notes
 	[201711] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
-	[194699] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Draconic Treatise on Inscription
+	[194699] = "Learnable|Quest:74105&Recipe:Inscription:10:25|Recipe#Recipe", -- Draconic Treatise on Inscription
 	[198704] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Pulsing Earth Rune
 	[198703] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Sign Language Reference Sheet
 	[198693] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Dusty Darkmoon Card
@@ -7955,6 +7971,11 @@ local ZigiItems = {
 	[198669] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- How to Train Your Whelpling
 	[198659] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Forgetful Apprentice's Tome
 	[201015] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Counterfeit Darkmoon Deck
+	[200973] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Dusty Scribe's Runic Drawings
+	[200973] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Dusty Scribe's Runic Drawings
+	[201269] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Rare Scribe's Runic Drawings
+	[201280] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Ancient Scribe's Runic Drawings
+	[198607] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Scribe's Glyphs
 	[201712] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
 	[194703] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Draconic Treatise on Jewelcrafting
 	[198612] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Jeweler's Cuts
@@ -7969,6 +7990,10 @@ local ZigiItems = {
 	[198670] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Lofty Malygite
 	[198687] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Closely Guarded Shiny
 	[201017] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Igneous Gem
+	[193909] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Ancient Gem Fragments
+	[198974] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Elegantly Engraved Embellishment
+	[198973] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Incandescent Curio
+	[193907] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Chipped Tyrstone
 	[201713] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
 	[194700] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Draconic Treatise on Leatherworking
 	[198613] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Leatherworking Designs
@@ -8016,6 +8041,9 @@ local ZigiItems = {
 	[198978] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Stupidly Effective Stitchery
 	[193898] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Umbral Bone Needle
 	[193899] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Primalweave Spindle
+	[200975] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Dusty Tailor's Diagrams
+	[201271] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Rare Tailor's Diagrams
+	[201282] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Ancient Tailor's Diagrams
 	[198688] = "Openable|Tailoring&Quest:70303", -- Catnip Leaf
 	[118700] = "Recipe#Recipe|Alchemy", -- Secret of Draenor Alchemy
 	[118720] = "Recipe#Recipe|Blacksmithing", -- Secret of Draenor Blacksmithing
@@ -15100,20 +15128,10 @@ local ZigiItems = {
 	[180375] = "Bag#Equipment", -- Hopebreaker's Pack (32)
 	[183960] = "Bag#Equipment", -- Portable Pocket Dimension (32)
 	[186560] = "Bag#Equipment", -- Semi-Permeable Gelatinous Storage Pouch (32)
-	[114821] = "Bag#Equipment", -- Hexweave Bag (30)
-	[154695] = "Bag#Equipment", -- Deep Sea Bag (30)
-	[184479] = "Bag#Equipment", -- Shrouded Cloth Bag (30)
-	[142075] = "Bag#Equipment", -- Imbued Silkweave Bag (30)
-	[184033] = "Bag#Equipment", -- Extra-Spacious Knapsack (30)
-	[140335] = "Bag#Equipment", -- Totem Tote (30)
-	[161976] = "Bag#Equipment", -- Admiralty Marine's Duffel (30)
-	[182716] = "Bag#Equipment", -- Messenger's Satchel (30)
-	[166700] = "Bag#Equipment", -- Durable Sailor's Duffel (30)
-	[161999] = "Bag#Equipment", -- Pack of Many Pockets (30)
-	[166699] = "Bag#Equipment", -- Desert Rucksack (30)
 	-- Reagent Bag
 	[194020] = "Bag#Equipment", -- Chronocloth Reagent Bag (36)
 	[194019] = "Bag#Equipment", -- Simply Stitched Reagent Bag (32)
+	[194715] = "Junk", -- Gatherer's Reagent Pouch (26)
 	[202188] = "Junk", -- Storm-Battered Reagent Bag (20)
 	-- Cooking Bag
 	[92747]  = "Bag#Equipment", -- Advanced Refrigeration Unit (36)
@@ -15170,7 +15188,18 @@ local ZigiItems = {
 	[67396]  = "Junk", -- "Carriage - Christina" Precious Metal Bag (20)
 	-- Fishing Bag
 	[60218]  = "Bag#Equipment", -- Lure Master Tackle Box (36)
-	-- Regular 28 slots or lower
+	-- Regular 30 slots or lower
+	[114821] = "Junk", -- Hexweave Bag (30)
+	[154695] = "Junk", -- Deep Sea Bag (30)
+	[184479] = "Junk", -- Shrouded Cloth Bag (30)
+	[142075] = "Junk", -- Imbued Silkweave Bag (30)
+	[184033] = "Junk", -- Extra-Spacious Knapsack (30)
+	[140335] = "Junk", -- Totem Tote (30)
+	[161976] = "Junk", -- Admiralty Marine's Duffel (30)
+	[182716] = "Junk", -- Messenger's Satchel (30)
+	[166700] = "Junk", -- Durable Sailor's Duffel (30)
+	[161999] = "Junk", -- Pack of Many Pockets (30)
+	[166699] = "Junk", -- Desert Rucksack (30)
 	[82446]  = "Junk", -- Royal Satchel (28)
 	[160452] = "Junk", -- Goat's Tote
 	[113094] = "Junk", -- Gronnskin Bag
@@ -15690,10 +15719,15 @@ function Zigi:IsRecipeKnown(bag, slot)
 		for i = start, lines do
 			if tooltipData.lines[i] then
 				local t = tooltipData.lines[i].leftText
+				local c = tooltipData.lines[i].leftColor:GenerateHexColor()
 				if t == ITEM_SPELL_KNOWN then
 					return 1 -- Already known
 				elseif t == TOOLTIP_SUPERCEDING_SPELL_NOT_KNOWN then
 					return 2 -- Requires Previous Rank
+				elseif string.match(t, "Requires [%a%s]+ %([%d]+%)") and c == "ffff2020" then
+					return 2 -- Requires %s (%d)
+				elseif string.match(t, "Requires [%a%s]+") and c == "ffff2020" then
+					return 2 -- Requires %s
 				end
 			end
 		end
