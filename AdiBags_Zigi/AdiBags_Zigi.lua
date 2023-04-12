@@ -25,7 +25,7 @@ local ItemLevelThreshold = {
 	[50] = 50,
 }
 
--- https://wow.tools/dbc/?dbc=mapchallengemode
+-- https://wago.tools/db2/MapChallengeMode?sort[ID]=desc
 local ChallengeMap = {
 	[2]   = "Temple of the Jade Serpent",
 	[56]  = "Stormstout Brewery",
@@ -87,6 +87,7 @@ local ChallengeMap = {
 	[404] = "Neltharus",
 	[405] = "Brackenhide Hollow",
 	[406] = "Halls of Infusion",
+	[438] = "The Vortex Pinnacle",
 }
 
 local StuffItems = {
@@ -344,32 +345,43 @@ local ZigiItems = {
 	[191837] = "909598. The Obsidian Citadel#Zone", -- Earthen Charm
 	[191211] = "909598. The Obsidian Citadel#Zone", -- Wurmling Bones
 	-- -- Mounts (99)
-	-- -- -- Divine Kiss of Ohn'ahra (94)
-	[201929] = "909994. Divine Kiss of Ohn'ahra#Zone|Mount:1545|?", -- Stolen Breath of Ohn'ahra
-	[201323] = "909994. Divine Kiss of Ohn'ahra#Zone|Mount:1545|?", -- Essence of Awakening
-	-- -- -- Iskaara Trader's Ottuk (95)
-	[195502] = "909995. Iskaara Trader's Ottuk#Zone|Mount:1546|?", -- Terros's Captive Core
-	[195496] = "909995. Iskaara Trader's Ottuk#Zone|Mount:1546|?", -- Eye of the Vengeful Hurricane
-	-- -- -- Ivory Trader's Ottuk (96)
-	[193696] = "909996. Ivory Trader's Ottuk#Zone|Mount:1658|?", -- Thunderous Downburst Ring
-	[193633] = "909996. Ivory Trader's Ottuk#Zone|Mount:1658|?", -- Unstable Arcane Loop
-	[193708] = "909996. Ivory Trader's Ottuk#Zone|Mount:1658|?", -- Platinum Star Band
-	-- -- -- Loyal Magmammoth (97)
-	[201840] = "909997. Loyal Magmammoth#Zone|Mount:1612", -- Sturdy Obsidian Glasses
-	[201839] = "909997. Loyal Magmammoth#Zone|Mount:1612", -- Netherforged Lavaproof Boots
-	[201837] = "909997. Loyal Magmammoth#Zone|Mount:1612", -- Magmammoth Harness
-	-- -- -- Otto (98)
-	[202061] = "909998. Otto#Zone|Mount:1656", -- Empty Fish Barrel
-	[202066] = "909998. Otto#Zone|Mount:1656", -- Half-Filled Fish Barrel
-	[202068] = "909998. Otto#Zone|Mount:1656", -- Brimming Fish Barrel
-	[202069] = "909998. Otto#Zone|Mount:1656", -- Overflowing Fish Barrel
-	[202072] = "909998. Otto#Zone|Mount:1656", -- Frigid Floe Fish
-	[202073] = "909998. Otto#Zone|Mount:1656", -- Calamitous Carp
-	[202074] = "909998. Otto#Zone|Mount:1656", -- Kingfin, the Wise Whiskerfish
-	-- -- -- Lizi (99)
-	[192615] = "Quest#Quest|Mount:1639", -- Fluorescent Fluid
-	[192658] = "Quest#Quest|Mount:1639", -- High-Fiber Leaf
-	[192636] = "Quest#Quest|Mount:1639", -- Woolly Mountain Pelt
+	-- -- -- Mossy Mammoth
+	[204360] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Strange Petrified Orb
+	[204369] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Scrap of Black Dragonscales
+	[204363] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Particularly Ordinary Egg
+	[204371] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Drop of Blue Dragon Magic
+	[204364] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Magically Altered Egg
+	[204375] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Everburning Ruby Coals
+	[204366] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Egg of Unknown Contents
+	[204372] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Speck of Bronze Dust
+	[204367] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Sleeping Ancient Mammoth
+	[204374] = "9099. Mossy Mammoth#Zone|Mount:1634", -- Emerald Dragon Brooch
+	-- -- -- Divine Kiss of Ohn'ahra
+	[201929] = "9099. Divine Kiss of Ohn'ahra#Zone|Mount:1545", -- Stolen Breath of Ohn'ahra
+	[201323] = "9099. Divine Kiss of Ohn'ahra#Zone|Mount:1545|?", -- Essence of Awakening
+	-- -- -- Iskaara Trader's Ottuk
+	[195502] = "9099. Iskaara Trader's Ottuk#Zone|Mount:1546|?", -- Terros's Captive Core
+	[195496] = "9099. Iskaara Trader's Ottuk#Zone|Mount:1546|?", -- Eye of the Vengeful Hurricane
+	-- -- -- Ivory Trader's Ottuk
+	[193696] = "9099. Ivory Trader's Ottuk#Zone|Mount:1658|?", -- Thunderous Downburst Ring
+	[193633] = "9099. Ivory Trader's Ottuk#Zone|Mount:1658|?", -- Unstable Arcane Loop
+	[193708] = "9099. Ivory Trader's Ottuk#Zone|Mount:1658|?", -- Platinum Star Band
+	-- -- -- Loyal Magmammoth
+	[201840] = "9099. Loyal Magmammoth#Zone|Mount:1612", -- Sturdy Obsidian Glasses
+	[201839] = "9099. Loyal Magmammoth#Zone|Mount:1612", -- Netherforged Lavaproof Boots
+	[201837] = "9099. Loyal Magmammoth#Zone|Mount:1612", -- Magmammoth Harness
+	-- -- -- Otto
+	[202061] = "9099. Otto#Zone|Mount:1656", -- Empty Fish Barrel
+	[202066] = "9099. Otto#Zone|Mount:1656", -- Half-Filled Fish Barrel
+	[202068] = "9099. Otto#Zone|Mount:1656", -- Brimming Fish Barrel
+	[202069] = "9099. Otto#Zone|Mount:1656", -- Overflowing Fish Barrel
+	[202072] = "9099. Otto#Zone|Mount:1656", -- Frigid Floe Fish
+	[202073] = "9099. Otto#Zone|Mount:1656", -- Calamitous Carp
+	[202074] = "9099. Otto#Zone|Mount:1656", -- Kingfin, the Wise Whiskerfish
+	-- -- -- Lizi
+	[192615] = "9099. Lizi|Mount:1639", -- Fluorescent Fluid
+	[192658] = "9099. Lizi|Mount:1639", -- High-Fiber Leaf
+	[192636] = "9099. Lizi|Mount:1639", -- Woolly Mountain Pelt
 	-- Shadowlands (91)
 	-- -- Sepulcher of the First Ones (57)
 	-- -- Sanctum of Domination (58)
@@ -2429,12 +2441,6 @@ local ZigiItems = {
 
 	--! Elemental (11)
 	-- -- Dragon Isles (90)
-	[198046] = "1190. Dragon Isles Elemental#Tradeskill", -- Concentrated Primal Infusion
-	[190455] = "1190. Dragon Isles Elemental#Tradeskill", -- Concentrated Primal Focus
-	[197921] = "1190. Dragon Isles Elemental#Tradeskill", -- Primal Infusion
-	[200686] = "1190. Dragon Isles Elemental#Tradeskill", -- Primal Focus
-	[190453] = "1190. Dragon Isles Elemental#Tradeskill", -- Spark of Ingenuity
-	[190454] = "1190. Dragon Isles Elemental#Tradeskill", -- Primal Chaos
 	[193921] = "1190. Dragon Isles Elemental#Tradeskill", -- Airy Soul
 	[190327] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Air
 	[190331] = "1190. Dragon Isles Elemental#Tradeskill", -- Awakened Decay
@@ -2695,6 +2701,15 @@ local ZigiItems = {
 
 	--[[ ! Equipment ! ]]--
 
+	--! Equipment Upgrades (97)
+	[204276] = "97. Equipment Upgrades#Equipment", -- Untapped Forbidden Knowledge
+	[198046] = "97. Equipment Upgrades#Equipment", -- Concentrated Primal Infusion
+	[190455] = "97. Equipment Upgrades#Equipment", -- Concentrated Primal Focus
+	[197921] = "97. Equipment Upgrades#Equipment", -- Primal Infusion
+	[200686] = "97. Equipment Upgrades#Equipment", -- Primal Focus
+	[190453] = "97. Equipment Upgrades#Equipment", -- Spark of Ingenuity
+	[190454] = "97. Equipment Upgrades#Equipment", -- Primal Chaos
+
 	--! BoA Token (98)
 	-- -- Mists of Pandaria - Timeless
 	[102318] = "Unbound", -- Timeless Cloak
@@ -2829,20 +2844,58 @@ local ZigiItems = {
 	[188159] = "Unbound", -- Korthian Legguards
 	[188160] = "Unbound", -- Korthian Shoulders
 	[188162] = "Unbound", -- Korthian Weaponry
-	-- -- Shadowlands - Zereth Mortis (87)
-	[191036] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Accessory
-	[190763] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Belt
-	[190762] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Boots
-	[190761] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Bracers
-	[191037] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Braid
-	[190760] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Chestpiece
-	[190759] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Cloak
-	[190758] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Gloves
-	[190757] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Helm
-	[190756] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Legguards
-	[190764] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Ring
-	[190755] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Shoulders
-	[190741] = "989187. [00ccff]Broker's Armament]#Equipment", -- Broker's Weaponry
+	-- -- Shadowlands - Zereth Mortis
+	[191036] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Accessory
+	[190763] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Belt
+	[190762] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Boots
+	[190761] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Bracers
+	[191037] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Braid
+	[190760] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Chestpiece
+	[190759] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Cloak
+	[190758] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Gloves
+	[190757] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Helm
+	[190756] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Legguards
+	[190764] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Ring
+	[190755] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Shoulders
+	[190741] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Weaponry
+	-- -- Dragon Isles - Primalist
+	[202196] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Zskera Vault Key
+	[203648] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Necklace
+	[203647] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Ring
+	[203650] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Weapon
+	[203649] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Trinket
+	[203635] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Belt
+	[203641] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Boots
+	[203632] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Bracers
+	[203616] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Chestpiece
+	[203642] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Gloves
+	[203612] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Helm
+	[203622] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Leggings
+	[203627] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Spaulders
+	[203637] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Belt
+	[203638] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Boots
+	[203630] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Bracers
+	[203618] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Chestpiece
+	[203645] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Gloves
+	[203614] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Helm
+	[203619] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Leggings
+	[203629] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Spaulders
+	[203636] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Belt
+	[203639] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Boots
+	[203631] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Bracers
+	[203617] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Chestpiece
+	[203644] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Gloves
+	[203613] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Helm
+	[203620] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Leggings
+	[203628] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Spaulders
+	[203634] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Belt
+	[203640] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Boots
+	[203633] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Bracers
+	[203615] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Chestpiece
+	[203643] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Gloves
+	[203611] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Helm
+	[203623] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Leggings
+	[203626] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Spaulders
 
 	--! Legacy Equipment (99)
 	-- -- Artifact (01)
@@ -3971,6 +4024,36 @@ local ZigiItems = {
 
 
 	--[[ ! Gem ! ]]--
+
+	-- Primordial Stone (9097)
+	[204217] = "9097. Primordial Stone#Gem", -- Unstable Elementium
+	[204215] = "9097. Primordial Stone#Gem", -- Dormant Primordial Fragment
+	[204029] = "9097. Primordial Stone#Gem", -- Prophetic Twilight Stone
+	[204027] = "9097. Primordial Stone#Gem", -- Desirous Blood Stone
+	[204000] = "9097. Primordial Stone#Gem", -- Storm Infused Stone
+	[204013] = "9097. Primordial Stone#Gem", -- Exuding Steam Stone
+	[204020] = "9097. Primordial Stone#Gem", -- Wild Spirit Stone
+	[204011] = "9097. Primordial Stone#Gem", -- Freezing Ice Stone
+	[204010] = "9097. Primordial Stone#Gem", -- Deluging Water Stone
+	[204018] = "9097. Primordial Stone#Gem", -- Humming Arcane Stone
+	[204022] = "9097. Primordial Stone#Gem", -- Pestilent Plague Stone
+	[204025] = "9097. Primordial Stone#Gem", -- Obscure Pastel Stone
+	[204015] = "9097. Primordial Stone#Gem", -- Swirling Mojo Stone
+	[204002] = "9097. Primordial Stone#Gem", -- Flame Licked Stone
+	[204007] = "9097. Primordial Stone#Gem", -- Shining Obsidian Stone
+	[204012] = "9097. Primordial Stone#Gem", -- Cold Frost Stone
+	[204001] = "9097. Primordial Stone#Gem", -- Echoing Thunder Stone
+	[204006] = "9097. Primordial Stone#Gem", -- Indomitable Earth Stone
+	[204021] = "9097. Primordial Stone#Gem", -- Necromantic Death Stone
+	[204019] = "9097. Primordial Stone#Gem", -- Harmonic Music Stone
+	[204030] = "9097. Primordial Stone#Gem", -- Wind Sculpted Stone
+	[204009] = "9097. Primordial Stone#Gem", -- Gleaming Iron Stone
+	[204005] = "9097. Primordial Stone#Gem", -- Entropic Fel Stone
+	[204004] = "9097. Primordial Stone#Gem", -- Searing Smokey Stone
+	[204003] = "9097. Primordial Stone#Gem", -- Raging Magma Stone
+	[204014] = "9097. Primordial Stone#Gem", -- Sparkling Mana Stone
+	[203703] = "Openable|Item:203702&Item:203703:7|9097. Primordial Stone#Gem", -- Prismatic Fragment
+	[203702] = "9097. Primordial Stone#Gem", -- Experimental Melder
 
 	-- Tinker Module (9098)
 	[198291] = "9098. Tinker Module#Gem", -- Tinker: Alarm-O-Turret
@@ -6491,18 +6574,34 @@ local ZigiItems = {
 
 	-- Ashran (99)
 
+
+	--! Instance
 	-- Torghast (99)
-	[168207] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Plundered Anima Cell
-	[184662] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Requisitioned Anima Cell
-	[170540] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Ravenous Anima Cell
-	[176409] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Rejuvenating Siphoned Essence
-	[176443] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Fleeting Frenzy Potion
-	[168035] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mawrat Harness
-	[186615] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mirror of the Conjured Twin
-	[186614] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Soul Jar
-	[186636] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Cage of Mawrats
-	[186678] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Mawforged Weapons Cache
-	[186679] = "99. [00ff00]Torghast, Tower of the Damned]#Consumable", -- Scroll of Domination
+	[168207] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Plundered Anima Cell
+	[184662] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Requisitioned Anima Cell
+	[170540] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Ravenous Anima Cell
+	[176409] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Rejuvenating Siphoned Essence
+	[176443] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Fleeting Frenzy Potion
+	[168035] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Mawrat Harness
+	[186615] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Mirror of the Conjured Twin
+	[186614] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Soul Jar
+	[186636] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Cage of Mawrats
+	[186678] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Mawforged Weapons Cache
+	[186679] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Scroll of Domination
+
+	-- Zskera Vault
+	[203701] = "99. [00ff00]Zskera Vaults]#Instance", -- Neltharion Gift Token
+	[202403] = "99. [00ff00]Zskera Vaults]#Instance", -- Runic Wrench
+	[169872] = "99. [00ff00]Zskera Vaults]#Instance", -- Key of Bound Earth
+	[203690] = "99. [00ff00]Zskera Vaults]#Instance", -- Pearlescent Bubble Key
+	[204443] = "99. [00ff00]Zskera Vaults]#Instance", -- Blacksteel Hammer
+	[203705] = "99. [00ff00]Zskera Vaults]#Instance", -- Empty Obsidian Vial
+	[203704] = "99. [00ff00]Zskera Vaults]#Instance", -- Stone Dissolver
+	[203718] = "99. [00ff00]Zskera Vaults]#Instance", -- Vial of Flames
+	[203720] = "99. [00ff00]Zskera Vaults]#Instance", -- Restorative Water
+	[203715] = "99. [00ff00]Zskera Vaults]#Instance", -- Oozing Gold
+	[204199] = "99. [00ff00]Zskera Vaults]#Instance", -- Ley-Infused Crystal
+	[204439] = "99. [00ff00]Zskera Vaults]#Instance", -- Research Chest Key
 
 
 	--[[ ! Miscellaneous ! ]]--
@@ -6510,6 +6609,7 @@ local ZigiItems = {
 
 	--! Account Bound
 	-- Currency
+	--[202196] = "Account Bound", -- Zskera Vault Key
 	[142156] = "Account Bound", -- Order Resources Cache
 	[150737] = "Account Bound", -- Abundant Order Resources Cache
 	[187077] = "Account Bound", -- Packaged Soul Ash
@@ -6817,6 +6917,7 @@ local ZigiItems = {
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	[172013] = "Toy#Miscellaneous", -- Celebration Firework
 	-- Consumable
+	[199216] = "Toy#Miscellaneous", -- A Box of Rocks
 	[194733] = "Toy#Miscellaneous", -- Illusion Parchment: Aqua Torrent
 	[194735] = "Toy#Miscellaneous", -- Illusion Parchment: Arcane Burst
 	[194736] = "Toy#Miscellaneous", -- Illusion Parchment: Chilling Wind
@@ -7184,6 +7285,18 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[194072] = "Openable", -- Sack of Gold
+	[204383] = "Openable", -- Sack of Oddities
+	[204403] = "Openable", -- Sack of Sack of Oddities
+	[203700] = "Openable", -- Tattered Gift Package
+	[203699] = "Openable", -- Tattered Gift Package
+	[204573] = "Openable", -- Condensed Fire Magic
+	[204574] = "Openable", -- Condensed Frost Magic
+	[204575] = "Openable", -- Condensed Earth Magic
+	[204576] = "Openable", -- Condensed Shadow Magic
+	[204577] = "Openable", -- Condensed Nature Magic
+	[204578] = "Openable", -- Condensed Arcane Magic
+	[204579] = "Openable", -- Condensed Necromantic Magic
 	[201462] = "Openable", -- Curiously-Shaped Stomach
 	[194827] = "Openable", -- Bundle O' Cards: Dragon Isles
 	[202172] = "Openable", -- Overflowing Satchel of Coins
@@ -7692,7 +7805,7 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Profession Skill
-	[6712]   = "Openable|Engineering", -- Clockwork Box
+	[6712]   = "Junk|Engineering&Recipe:Engineering:1:125|Learnable", -- Clockwork Box
 	-- -- Quest/Treasure
 	[200066] = "Openable|Item:200064&Item:200065|Quest#Quest", -- Well-Preserved Bone
 	[200064] = "Openable|Item:200066&Item:200065|Quest#Quest", -- Marmoni's Prize
@@ -7954,6 +8067,8 @@ local ZigiItems = {
 	[201283] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Ancient Enchanter's Research
 	[193900] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Prismatic Focusing Shard
 	[193901] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Primal Dust
+	[198967] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Primordial Aether
+	[198968] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Primalist Charm
 	-- -- -- Engineering
 	[198510] = "Learnable|Quest:74111&Recipe:Engineering:10:25|Recipe#Recipe", -- Draconic Treatise on Engineering
 	[201710] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -7997,6 +8112,10 @@ local ZigiItems = {
 	[201269] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Rare Scribe's Runic Drawings
 	[201280] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Ancient Scribe's Runic Drawings
 	[198607] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Scribe's Glyphs
+	[193904] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Phoenix Feather Quill
+	[193905] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Iskaaran Trading Ledger
+	[198972] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Draconic Glamour
+	[198971] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Curious Djaradin Rune
 	-- -- -- Jewelcrafting
 	[194703] = "Learnable|Quest:74112&Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Draconic Treatise on Jewelcrafting
 	[201712] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8016,6 +8135,7 @@ local ZigiItems = {
 	[198974] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Elegantly Engraved Embellishment
 	[198973] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Incandescent Curio
 	[193907] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Chipped Tyrstone
+	[204222] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Conductive Ametrine Shard
 	-- -- -- Leatherworking
 	[194700] = "Learnable|Quest:74113&Recipe:Leatherworking:10:25|Recipe#Recipe", -- Draconic Treatise on Leatherworking
 	[201713] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -11088,6 +11208,7 @@ local ZigiItems = {
 
 	-- Alchemy
 	-- Dragon Isles Alchemy
+	[203420] = "Learnable|Recipe:Alchemy:10:50", -- Recipe: Draconic Suppression Powder
 	[201740] = "Learnable|Recipe:Alchemy:10:50|Unbound", -- Elemental Codex of Ultimate Power
 	[191450] = "Learnable|Recipe:Alchemy:10:50", -- Recipe: Elemental Potion of Ultimate Power
 	[191547] = "Learnable|Recipe:Alchemy:10:50", -- Recipe: Alacritous Alchemist Stone
@@ -11481,6 +11602,7 @@ local ZigiItems = {
 
 	-- Blacksmithing
 	-- Dragon Isles Blacksmithing
+	[203421] = "Learnable|Recipe:Blacksmithing:10:50", -- Plans: Ancient Ceremonial Trident
 	[194492] = "Learnable|Recipe:Blacksmithing:10:50|Unbound", -- Plans: Unstable Frostfire Belt
 	[194503] = "Learnable|Recipe:Blacksmithing:10:50|Unbound", -- Plans: Black Dragon Touched Hammer
 	[194508] = "Learnable|Recipe:Blacksmithing:10:50|Unbound", -- Plans: Alvin the Anvil
@@ -11984,6 +12106,21 @@ local ZigiItems = {
 	[142279] = "Learnable|Recipe:Blacksmithing:2:1", -- Plans: Windforged Rapier
 
 	-- Classic Blacksmithing
+	[203861] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Venomreaver
+	[203836] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Warblades of the Hakkari, Reborn
+	[203833] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Bloodherald
+	[203831] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Gurubashi Crusher
+	[203835] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Fiery Vengeance
+	[203834] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Bloodlord's Reaver
+	[203826] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Venomfang
+	[203832] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Pitchfork of Mojo Madness
+	[203827] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Gurubashi Poker
+	[203825] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Gurubashi Carver
+	[203829] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Gurubashi Hexxer
+	[203837] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Gurubashi Slicer
+	[203828] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Gurubashi Grinder
+	[203824] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Gurubashi Headplate
+	[203830] = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Ancient Plans: Sceptre of Hexing
 	[22222]  = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Plans: Thick Obsidian Breastplate
 	[18592]  = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Plans: Sulfuron Hammer
 	[12727]  = "Learnable|Recipe:Blacksmithing:1:300|Unbound", -- Plans: Enchanted Thorium Breastplate
@@ -12148,6 +12285,7 @@ local ZigiItems = {
 
 	-- Enchanting
 	-- Dragon Isles Enchanting
+	[203423] = "Learnable|Recipe:Enchanting:10:50", -- Formula: Glowing Crystal Bookmark
 	[200916] = "Learnable|Recipe:Enchanting:10:50|Unbound", -- Formula: Illusion: Primal Mastery
 	[200913] = "Learnable|Recipe:Enchanting:10:50|Unbound", -- Formula: Illusion: Primal Fire
 	[200911] = "Learnable|Recipe:Enchanting:10:50|Unbound", -- Formula: Illusion: Primal Air
@@ -12456,6 +12594,7 @@ local ZigiItems = {
 	[33153]  = "Learnable|Recipe:Enchanting:2:1", -- Formula: Enchant Gloves - Threat
 	[33151]  = "Learnable|Recipe:Enchanting:2:1", -- Formula: Enchant Cloak - Subtlety
 	-- Classic Enchanting
+	[203838] = "Learnable|Recipe:Enchanting:1:300|Unbound", -- Ancient Formula: Mindslave's Reach
 	[16252]  = "Learnable|Recipe:Enchanting:1:300|Unbound", -- Formula: Enchant Weapon - Crusader
 	[16254]  = "Learnable|Recipe:Enchanting:1:300|Unbound", -- Formula: Enchant Weapon - Lifestealing
 	[18259]  = "Learnable|Recipe:Enchanting:1:300|Unbound", -- Formula: Enchant Weapon - Spellpower
@@ -12541,6 +12680,7 @@ local ZigiItems = {
 
 	-- Engineering
 	-- Dragon Isles Engineering
+	[203424] = "Learnable|Recipe:Engineering:10:50", -- Schematic: Gnomish Voicebox
 	[199234] = "Learnable|Recipe:Engineering:10:50|Unbound", -- Schematic: Khaz'gorite Fisherfriend
 	[199229] = "Learnable|Recipe:Engineering:10:50|Unbound", -- Schematic: Tinker: Breath of Neltharion
 	[199227] = "Learnable|Recipe:Engineering:10:50|Unbound", -- Schematic: Ol' Smoky
@@ -12969,6 +13109,7 @@ local ZigiItems = {
 
 	-- Inscription
 	-- Dragon Isles Inscription
+	[203425] = "Learnable|Recipe:Inscription:10:50", -- Technique: Arcane Dispelling Rune
 	[198952] = "Learnable|Recipe:Inscription:10:50|Unbound", -- Technique: Darkmoon Deck Box: Dance
 	[198876] = "Learnable|Recipe:Inscription:10:50|Unbound", -- Technique: Weathered Explorer's Stave
 	[201735] = "Learnable|Recipe:Inscription:10:50|Unbound", -- Technique: Highland Drake: Silver and Blue Armor
@@ -13384,11 +13525,17 @@ local ZigiItems = {
 	[167733] = "Learnable|Recipe:Inscription:3:1", -- Technique: Glyph of Dalaran Brilliance
 	[46108]  = "Learnable|Recipe:Inscription:3:1", -- Technique: Rituals of the New Moon
 	-- Classic Inscription
+	[203840] = "Learnable|Recipe:Inscription:1:300|Unbound", -- Ancient Technique: Judgment of the Gurubashi
+	[203841] = "Learnable|Recipe:Inscription:1:300|Unbound", -- Ancient Technique: Gurubashi Ceremonial Staff
+	[203839] = "Learnable|Recipe:Inscription:1:300|Unbound", -- Ancient Technique: Gurubashi Hoodoo Stick
 	[45912]  = "Learnable|Recipe:Inscription:1:1|Unbound", -- Book of Glyph Mastery
 	[147118] = "Learnable|Recipe:Inscription:1:1", -- Technique: Glyph of the Fel Succubus
 
 	-- Jewelcrafting
 	-- Dragon Isles Jewelcrafting
+	[204219] = "Learnable|Recipe:Jewelcrafting:10:50", -- Design: Unstable Elementium
+	[203426] = "Learnable|Recipe:Jewelcrafting:10:50", -- Design: Crystal Tuning Fork
+	[204218] = "Learnable|Recipe:Jewelcrafting:10:50", -- Design: Primordial Pulverizing
 	[194641] = "Learnable|Recipe:Jewelcrafting:10:50|Unbound", -- Design: Elemental Lariat
 	[194640] = "Learnable|Recipe:Jewelcrafting:10:50|Unbound", -- Design: Ring-Bound Hourglass
 	[194642] = "Learnable|Recipe:Jewelcrafting:10:50|Unbound", -- Design: Choker of Shielding
@@ -14181,6 +14328,7 @@ local ZigiItems = {
 	[23145] = "Learnable|Recipe:Jewelcrafting:2:5", -- Design: Purified Shadow Draenite
 	[23149] = "Learnable|Recipe:Jewelcrafting:2:5", -- Design: Smooth Golden Draenite
 	-- Classic Jewelcrafting
+	[204406] = "Learnable|Recipe:Jewelcrafting:300:50|Unbound", -- Ancient Design: Square Holders
 	[23152] = "Learnable|Recipe:Jewelcrafting:1:300|Unbound", -- Design: Solid Azure Moonstone
 	[23140] = "Learnable|Recipe:Jewelcrafting:1:300|Unbound", -- Design: Radiant Deep Peridot
 	[23135] = "Learnable|Recipe:Jewelcrafting:1:300|Unbound", -- Design: Inscribed Flame Spessarite
@@ -14212,6 +14360,7 @@ local ZigiItems = {
 
 	-- Leatherworking
 	-- Dragon Isles Leatherworking
+	[203427] = "Learnable|Recipe:Leatherworking:10:50", -- Pattern: Reinforced Pristine Leather
 	[193883] = "Learnable|Recipe:Leatherworking:10:50|Unbound", -- Pattern: Venom-Steeped Stompers
 	[194312] = "Learnable|Recipe:Leatherworking:10:50|Unbound", -- Pattern: Gnoll Tent
 	[193869] = "Learnable|Recipe:Leatherworking:10:50|Unbound", -- Pattern: Toxic Thorn Footwraps
@@ -14856,8 +15005,14 @@ local ZigiItems = {
 	[25721]  = "Learnable|Recipe:Leatherworking:2:25", -- Pattern: Vindicator's Armor Kit
 	[30444]  = "Learnable|Recipe:Leatherworking:2:25", -- Pattern: Reinforced Mining Bag
 	-- Classic Leatherworking
+	[203847] = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Ancient Pattern: Gurubashi's Grasp
+	[203842] = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Ancient Pattern: Animist's Footwraps
+	[203846] = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Ancient Pattern: Junglefury Leggings
+	[203844] = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Ancient Pattern: Gloves of the Tormentor
+	[203843] = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Ancient Pattern: Animist's Legguards
+	[203845] = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Ancient Pattern: Junglefury Gauntlets
+	[203968] = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Ancient Pattern: Cord of Shriveled Heads
 	[25726]  = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Pattern: Comfortable Insoles
-
 	[15774]  = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Pattern: Heavy Scorpid Shoulders
 	[15781]  = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Pattern: Black Dragonscale Leggings
 	[15770]  = "Learnable|Recipe:Leatherworking:1:300|Unbound", -- Pattern: Black Dragonscale Shoulders
@@ -15042,6 +15197,8 @@ local ZigiItems = {
 
 	-- Tailoring
 	-- Dragon Isles Tailoring
+	[203428] = "Learnable|Recipe:Tailoring:10:50", -- Pattern: Traditional Morqut Kite
+	[204678] = "Learnable|Recipe:Tailoring:10:50", -- Pattern: Paw-Made Winterpelt Reagent Bag
 	[194255] = "Learnable|Recipe:Tailoring:10:50|Unbound", -- Pattern: Amice of the Blue
 	[194262] = "Learnable|Recipe:Tailoring:10:50|Unbound", -- Pattern: Temporal Spellthread
 	[194258] = "Learnable|Recipe:Tailoring:10:50|Unbound", -- Pattern: Infurious Legwraps of Possibility
@@ -15434,6 +15591,10 @@ local ZigiItems = {
 	[24293]  = "Learnable|Recipe:Tailoring:2:35", -- Pattern: Silver Spellthread
 	[21892]  = "Learnable|Recipe:Tailoring:2:25|Unbound", -- Pattern: Bolt of Imbued Netherweave
 	-- Classic Tailoring
+	[203848] = "Learnable|Recipe:Tailoring:1:300|Unbound", -- Ancient Pattern: Bloodlord's Embrace
+	[203850] = "Learnable|Recipe:Tailoring:1:300|Unbound", -- Ancient Pattern: Gurubashi Headdress
+	[203851] = "Learnable|Recipe:Tailoring:1:300|Unbound", -- Ancient Pattern: Ritualistic Legwarmers
+	[203849] = "Learnable|Recipe:Tailoring:1:300|Unbound", -- Ancient Pattern: Gurubashi Tigerhide Cloak
 	[18487]  = "Learnable|Recipe:Tailoring:1:300|Unbound", -- Pattern: Mooncloth Robe
 	[14514]  = "Learnable|Recipe:Tailoring:1:300|Unbound", -- Pattern: Robe of the Void
 	[14501]  = "Learnable|Recipe:Tailoring:1:300|Unbound", -- Pattern: Mooncloth Vest
@@ -15593,6 +15754,8 @@ local ZigiItems = {
 
 	-- Cooking
 	-- Dragon Isles Cooking
+	[204073] = "Learnable|Recipe:Cooking:10:50", -- Ratcipe: Deviously Deviled Eggs
+	[203422] = "Learnable|Recipe:Cooking:10:50", -- Recipe: Sparkling Spice Pouch
 	[198127] = "Learnable|Recipe:Cooking:10:50|Unbound", -- Recipe: Fated Fortune Cookie
 	[198132] = "Learnable|Recipe:Cooking:10:50|Unbound", -- Recipe: Hoard of Draconic Delicacies
 	[198098] = "Learnable|Recipe:Cooking:10:50", -- Recipe: Ooey-Gooey Chocolate
@@ -15632,6 +15795,7 @@ local ZigiItems = {
 	[198099] = "Learnable|Recipe:Cooking:10:10|Unbound", -- Recipe: Pebbled Rock Salts
 	[198094] = "Learnable|Recipe:Cooking:10:5|Unbound", -- Recipe: Mackerel Snackerel
 	[198093] = "Learnable|Recipe:Cooking:10:5|Unbound", -- Recipe: Cheese and Quackers
+	[202289] = "Learnable|Recipe:Cooking:10:1", -- Recipe: Firewater Sorbet
 	[198104] = "Learnable|Recipe:Cooking:10:1", -- Recipe: Blubbery Muffin
 	[198106] = "Learnable|Recipe:Cooking:10:1", -- Recipe: Tasty Hatchling's Treat
 	[198103] = "Learnable|Recipe:Cooking:10:1", -- Recipe: Snow in a Cone
@@ -16833,6 +16997,10 @@ function Zigi:CheckItem(id, bag, slot, bypass)
 						end
 					elseif string.match(v, "Quest:(%d+)") then
 						if not C_QuestLog.IsQuestFlaggedCompleted(tonumber(string.match(v, "Quest:(%d+)") or 0)) then
+							match = true
+						end
+					elseif string.match(v, "Item:(%d+):%d+") then
+						if (GetItemCount(tonumber(string.match(v, "Item:(%d+):%d+") or 0), true, false, true) >= tonumber(string.match(v, "Item:%d+:(%d+)") or 0)) then
 							match = true
 						end
 					elseif string.match(v, "Item:(%d+)") then
