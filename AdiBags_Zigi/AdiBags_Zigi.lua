@@ -1818,6 +1818,7 @@ local ZigiItems = {
 
 	--! Reagent (07)
 	-- -- Dragon Isles (90)
+	[204460] = "0790. Dragon Isles Reagent#Tradeskill", -- Zaralek Glowspores
 	[191476] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconium Vial
 	[191475] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconium Vial
 	[191474] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconium Vial
@@ -1851,10 +1852,6 @@ local ZigiItems = {
 	[191496] = "0790. Dragon Isles Reagent#Tradeskill", -- Omnium Draconis (1)
 	[191497] = "0790. Dragon Isles Reagent#Tradeskill", -- Omnium Draconis (2)
 	[191498] = "0790. Dragon Isles Reagent#Tradeskill", -- Omnium Draconis (3)
-	[198048] = "0790. Dragon Isles Reagent#Tradeskill", -- Titan Training Matrix I
-	[198056] = "0790. Dragon Isles Reagent#Tradeskill", -- Titan Training Matrix II
-	[198058] = "0790. Dragon Isles Reagent#Tradeskill", -- Titan Training Matrix III
-	[198059] = "0790. Dragon Isles Reagent#Tradeskill", -- Titan Training Matrix IV
 	[200572] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Crafting Speed
 	[200571] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Crafting Speed
 	[200573] = "0790. Dragon Isles Reagent#Tradeskill", -- Draconic Missive of Crafting Speed
@@ -2129,6 +2126,8 @@ local ZigiItems = {
 
 	--! Jewelcrafting (09)
 	-- -- Dragon Isles (90)
+	[203404] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Crystal Fork
+	[203413] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Crystal Tuning Fork
 	[192852] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Alexstraszite
 	[192855] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Alexstraszite
 	[192853] = "0990. Dragon Isles Jewelcrafting#Tradeskill", -- Alexstraszite
@@ -2351,6 +2350,7 @@ local ZigiItems = {
 
 	--! Parts (10)
 	-- -- Dragon Isles (90)
+	[198651] = "1090. Dragon Isles Parts#Tradeskill", -- Piece of Scrap
 	[201832] = "1090. Dragon Isles Parts#Tradeskill", -- Smudged Lens
 	[197735] = "1090. Dragon Isles Parts#Tradeskill", -- Finished Prototype Explorer's Barding
 	[197736] = "1090. Dragon Isles Parts#Tradeskill", -- Finished Prototype Regal Barding
@@ -2708,7 +2708,25 @@ local ZigiItems = {
 	[197921] = "97. Equipment Upgrades#Equipment", -- Primal Infusion
 	[200686] = "97. Equipment Upgrades#Equipment", -- Primal Focus
 	[190453] = "97. Equipment Upgrades#Equipment", -- Spark of Ingenuity
-	[190454] = "97. Equipment Upgrades#Equipment", -- Primal Chaos
+	[204717] = "97. Equipment Upgrades#Equipment", -- Splintered Spark of Shadowflame
+	[204440] = "97. Equipment Upgrades#Equipment", -- Spark of Shadowflame
+	[205263] = "97. Equipment Upgrades#Equipment", -- Empowered Flightstone
+	[198048] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix I
+	[198056] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix II
+	[198058] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix III
+	[198059] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix IV
+	[204673] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix V
+	[204194] = "97. Equipment Upgrades#Equipment", -- Aspect's Shadowflame Crest
+	[204078] = "97. Equipment Upgrades#Equipment", -- Aspect's Shadowflame Crest Fragment
+	[204195] = "97. Equipment Upgrades#Equipment", -- Drake's Shadowflame Crest
+	[204076] = "97. Equipment Upgrades#Equipment", -- Drake's Shadowflame Crest Fragment
+	[204697] = "97. Equipment Upgrades#Equipment", -- Enchanted Aspect's Shadowflame Crest
+	[204681] = "97. Equipment Upgrades#Equipment", -- Enchanted Whelpling's Shadowflame Crest
+	[204682] = "97. Equipment Upgrades#Equipment", -- Enchanted Wyrm's Shadowflame Crest
+	[204193] = "97. Equipment Upgrades#Equipment", -- Whelpling's Shadowflame Crest
+	[204075] = "97. Equipment Upgrades#Equipment", -- Whelpling's Shadowflame Crest Fragment
+	[204196] = "97. Equipment Upgrades#Equipment", -- Wyrm's Shadowflame Crest
+	[204077] = "97. Equipment Upgrades#Equipment", -- Wyrm's Shadowflame Crest Fragment
 
 	--! BoA Token (98)
 	-- -- Mists of Pandaria - Timeless
@@ -2859,44 +2877,43 @@ local ZigiItems = {
 	[190755] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Shoulders
 	[190741] = "99. [00ccff]Broker's Equipment]#Unbound", -- Broker's Weaponry
 	-- -- Dragon Isles - Primalist
-	[202196] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Zskera Vault Key
-	[203646] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloak
-	[203648] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Necklace
-	[203647] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Ring
-	[203650] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Weapon
-	[203649] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Trinket
-	[203635] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Belt
-	[203641] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Boots
-	[203632] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Bracers
-	[203616] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Chestpiece
-	[203642] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Gloves
-	[203612] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Helm
-	[203622] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Leggings
-	[203627] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Cloth Spaulders
-	[203637] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Belt
-	[203638] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Boots
-	[203630] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Bracers
-	[203618] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Chestpiece
-	[203645] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Gloves
-	[203614] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Helm
-	[203619] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Leggings
-	[203629] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Leather Spaulders
-	[203636] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Belt
-	[203639] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Boots
-	[203631] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Bracers
-	[203617] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Chestpiece
-	[203644] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Gloves
-	[203613] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Helm
-	[203620] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Leggings
-	[203628] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Mail Spaulders
-	[203634] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Belt
-	[203640] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Boots
-	[203633] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Bracers
-	[203615] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Chestpiece
-	[203643] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Gloves
-	[203611] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Helm
-	[203623] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Leggings
-	[203626] = "9999. [00ccff]Primalist Equipment]#Unbound", -- Primalist Plate Spaulders
+	[203646] = "9995. [00ccff]Primalist Accessory]#Unbound", -- Primalist Cloak
+	[203648] = "9995. [00ccff]Primalist Accessory]#Unbound", -- Primalist Necklace
+	[203647] = "9995. [00ccff]Primalist Accessory]#Unbound", -- Primalist Ring
+	[203650] = "9995. [00ccff]Primalist Accessory]#Unbound", -- Primalist Weapon
+	[203649] = "9995. [00ccff]Primalist Accessory]#Unbound", -- Primalist Trinket
+	[203635] = "9996. [00ccff]Primalist Cloth Armor]#Unbound", -- Primalist Cloth Belt
+	[203641] = "9996. [00ccff]Primalist Cloth Armor]#Unbound", -- Primalist Cloth Boots
+	[203632] = "9996. [00ccff]Primalist Cloth Armor]#Unbound", -- Primalist Cloth Bracers
+	[203616] = "9996. [00ccff]Primalist Cloth Armor]#Unbound", -- Primalist Cloth Chestpiece
+	[203642] = "9996. [00ccff]Primalist Cloth Armor]#Unbound", -- Primalist Cloth Gloves
+	[203612] = "9996. [00ccff]Primalist Cloth Armor]#Unbound", -- Primalist Cloth Helm
+	[203622] = "9996. [00ccff]Primalist Cloth Armor]#Unbound", -- Primalist Cloth Leggings
+	[203627] = "9996. [00ccff]Primalist Cloth Armor]#Unbound", -- Primalist Cloth Spaulders
+	[203637] = "9997. [00ccff]Primalist Leather Armor]#Unbound", -- Primalist Leather Belt
+	[203638] = "9997. [00ccff]Primalist Leather Armor]#Unbound", -- Primalist Leather Boots
+	[203630] = "9997. [00ccff]Primalist Leather Armor]#Unbound", -- Primalist Leather Bracers
+	[203618] = "9997. [00ccff]Primalist Leather Armor]#Unbound", -- Primalist Leather Chestpiece
+	[203645] = "9997. [00ccff]Primalist Leather Armor]#Unbound", -- Primalist Leather Gloves
+	[203614] = "9997. [00ccff]Primalist Leather Armor]#Unbound", -- Primalist Leather Helm
+	[203619] = "9997. [00ccff]Primalist Leather Armor]#Unbound", -- Primalist Leather Leggings
+	[203629] = "9997. [00ccff]Primalist Leather Armor]#Unbound", -- Primalist Leather Spaulders
+	[203636] = "9998. [00ccff]Primalist Mail Armor]#Unbound", -- Primalist Mail Belt
+	[203639] = "9998. [00ccff]Primalist Mail Armor]#Unbound", -- Primalist Mail Boots
+	[203631] = "9998. [00ccff]Primalist Mail Armor]#Unbound", -- Primalist Mail Bracers
+	[203617] = "9998. [00ccff]Primalist Mail Armor]#Unbound", -- Primalist Mail Chestpiece
+	[203644] = "9998. [00ccff]Primalist Mail Armor]#Unbound", -- Primalist Mail Gloves
+	[203613] = "9998. [00ccff]Primalist Mail Armor]#Unbound", -- Primalist Mail Helm
+	[203620] = "9998. [00ccff]Primalist Mail Armor]#Unbound", -- Primalist Mail Leggings
+	[203628] = "9998. [00ccff]Primalist Mail Armor]#Unbound", -- Primalist Mail Spaulders
+	[203634] = "9999. [00ccff]Primalist Plate Armor]#Unbound", -- Primalist Plate Belt
+	[203640] = "9999. [00ccff]Primalist Plate Armor]#Unbound", -- Primalist Plate Boots
+	[203633] = "9999. [00ccff]Primalist Plate Armor]#Unbound", -- Primalist Plate Bracers
+	[203615] = "9999. [00ccff]Primalist Plate Armor]#Unbound", -- Primalist Plate Chestpiece
+	[203643] = "9999. [00ccff]Primalist Plate Armor]#Unbound", -- Primalist Plate Gloves
+	[203611] = "9999. [00ccff]Primalist Plate Armor]#Unbound", -- Primalist Plate Helm
+	[203623] = "9999. [00ccff]Primalist Plate Armor]#Unbound", -- Primalist Plate Leggings
+	[203626] = "9999. [00ccff]Primalist Plate Armor]#Unbound", -- Primalist Plate Spaulders
 
 	--! Legacy Equipment (99)
 	-- -- Artifact (01)
@@ -6591,6 +6608,8 @@ local ZigiItems = {
 	[186679] = "99. [00ff00]Torghast, Tower of the Damned]#Instance", -- Scroll of Domination
 
 	-- Zskera Vault
+	[204278] = "99. [00ff00]Zskera Vaults]#Instance", -- Neltharion's Toolkit
+	[202196] = "99. [00ff00]Zskera Vaults]#Instance", -- Zskera Vault Key
 	[203701] = "99. [00ff00]Zskera Vaults]#Instance", -- Neltharion Gift Token
 	[202403] = "99. [00ff00]Zskera Vaults]#Instance", -- Runic Wrench
 	[169872] = "99. [00ff00]Zskera Vaults]#Instance", -- Key of Bound Earth
@@ -6917,6 +6936,7 @@ local ZigiItems = {
 	[116114] = "Toy#Miscellaneous", -- Prestige Card: The Turn
 	[179295] = "Toy#Miscellaneous", -- Squeaky Bat
 	[172013] = "Toy#Miscellaneous", -- Celebration Firework
+	[204405] = "Toy#Miscellaneous", -- Stuffed Bear
 	-- Consumable
 	[199216] = "Toy#Miscellaneous", -- A Box of Rocks
 	[194733] = "Toy#Miscellaneous", -- Illusion Parchment: Aqua Torrent
@@ -7286,6 +7306,16 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[205347] = "Openable", -- Gathered Niffen Resources
+	[204359] = "Openable", -- Reach Racer's Purse
+	[205962] = "Openable", -- Echoing Storm Flightstone
+	[205970] = "Openable", -- Azure Flightstone
+	[206037] = "Openable", -- Ruby Flightstone
+	[202171] = "Openable", -- Obsidian Flightstone
+	[198614] = "Openable", -- Soggy Clump of Darkmoon Cards
+	[199341] = "Openable", -- Regurgitated Sac of Swog Treasures
+	[199342] = "Openable", -- Weighted Sac of Swog Treasures
+	[202102] = "Openable", -- Immaculate Sac of Swog Treasures
 	[194072] = "Openable", -- Sack of Gold
 	[204383] = "Openable", -- Sack of Oddities
 	[204403] = "Openable", -- Sack of Sack of Oddities
@@ -7806,7 +7836,8 @@ local ZigiItems = {
 	[147213] = "Openable", -- Dauntless Tunic
 	[133549] = "Openable", -- Muck-Covered Shoes
 	-- -- Profession Skill
-	[6712]   = "Junk|Engineering&Recipe:Engineering:1:125|Learnable", -- Clockwork Box
+	[194337] = "Learnable|Alchemy", -- Liquid Courage
+	[6712]   = "Learnable|Engineering", -- Clockwork Box
 	-- -- Quest/Treasure
 	[200064] = "Openable|Item:200066&Item:200065|Quest#Quest", -- Marmoni's Prize
 	[200066] = "Quest#Quest", -- Well-Preserved Bone
@@ -7994,6 +8025,7 @@ local ZigiItems = {
 
 	--! Learnable (98)
 	-- -- Reputation
+	[205249] = "Learnable", -- Pungent Niffen Incense
 	[201782] = "Learnable", -- Tyr's Blessing
 	[201779] = "Learnable", -- Merithra's Blessing
 	[201783] = "Learnable", -- Tutaqan's Commendation
@@ -11318,6 +11350,8 @@ local ZigiItems = {
 
 	-- Alchemy
 	-- Dragon Isles Alchemy
+	[204696] = "Learnable|Recipe:Alchemy:10:50|Unbound", -- Recipe: Draconic Phial Cauldron
+	[204695] = "Learnable|Recipe:Alchemy:10:50|Unbound", -- Recipe: Cauldron of Extracted Putrescence
 	[203420] = "Learnable|Recipe:Alchemy:10:50", -- Recipe: Draconic Suppression Powder
 	[201740] = "Learnable|Recipe:Alchemy:10:50|Unbound", -- Elemental Codex of Ultimate Power
 	[191450] = "Learnable|Recipe:Alchemy:10:50", -- Recipe: Elemental Potion of Ultimate Power
@@ -11338,6 +11372,8 @@ local ZigiItems = {
 	[191593] = "Learnable|Recipe:Alchemy:10:50", -- Recipe: Agitating Potion Augmentation
 	[191581] = "Learnable|Recipe:Alchemy:10:50|Unbound", -- Recipe: Transmute: Awakened Air
 	[191591] = "Learnable|Recipe:Alchemy:10:30", -- Recipe: Brood Salt
+	[204631] = "Learnable|Recipe:Alchemy:10:25", -- Recipe: Transmute: Dracothyst
+	[204984] = "Learnable|Recipe:Alchemy:10:25", -- Recipe: Stinky Bright Potion
 	[191596] = "Learnable|Recipe:Alchemy:10:25", -- Recipe: Illustrious Insight
 	[191602] = "Learnable|Recipe:Alchemy:10:25", -- Recipe: Advanced Phial Experimentation
 	[191545] = "Learnable|Recipe:Alchemy:10:25", -- Recipe: Sustaining Alchemist's Stone
@@ -11712,6 +11748,8 @@ local ZigiItems = {
 
 	-- Blacksmithing
 	-- Dragon Isles Blacksmithing
+	[205145] = "Learnable|Recipe:Blacksmithing:10:50|Unbound", -- Plans: Shadowed Impact Buckler
+	[205144] = "Learnable|Recipe:Blacksmithing:10:50|Unbound", -- Plans: Shadowed Razing Annihilator
 	[203421] = "Learnable|Recipe:Blacksmithing:10:50", -- Plans: Ancient Ceremonial Trident
 	[194492] = "Learnable|Recipe:Blacksmithing:10:50|Unbound", -- Plans: Unstable Frostfire Belt
 	[194503] = "Learnable|Recipe:Blacksmithing:10:50|Unbound", -- Plans: Black Dragon Touched Hammer
@@ -11742,6 +11780,17 @@ local ZigiItems = {
 	[198719] = "Learnable|Recipe:Blacksmithing:10:40", -- Plans: Sturdy Expedition Shovel
 	[194497] = "Learnable|Recipe:Blacksmithing:10:40", -- Plans: Khaz'gorite Skinning Knife
 	[194506] = "Learnable|Recipe:Blacksmithing:10:40", -- Plans: Primal Razorstone
+	[205143] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Shadowed Belt Clasp
+	[205137] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Shadowed Alloy
+	[205161] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Heat-Resistant Rescue Ring
+	[204141] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Obsidian Combatant's Draconium Pauldrons
+	[204143] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Obsidian Combatant's Draconium Sabatons
+	[204139] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Obsidian Combatant's Draconium Breastplate
+	[204138] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Obsidian Combatant's Draconium Helm
+	[204140] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Obsidian Combatant's Draconium Greaves
+	[204144] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Obsidian Combatant's Draconium Armguards
+	[204145] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Obsidian Combatant's Draconium Waistguard
+	[204142] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Obsidian Combatant's Draconium Gauntlets
 	[194454] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Crimson Combatant's Draconium Breastplate
 	[194457] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Crimson Combatant's Draconium Gauntlets
 	[194458] = "Learnable|Recipe:Blacksmithing:10:35|Unbound", -- Plans: Crimson Combatant's Draconium Sabatons
@@ -12395,12 +12444,20 @@ local ZigiItems = {
 
 	-- Enchanting
 	-- Dragon Isles Enchanting
+	[204978] = "Learnable|Recipe:Enchanting:10:50", -- Formula: Enchant Weapon - Spore Tender
+	[204975] = "Learnable|Recipe:Enchanting:10:50|Unbound", -- Formula: Enchant Weapon - Shadowflame Wreathe
+	[205340] = "Learnable|Recipe:Enchanting:10:50", -- Formula: Enchanted Aspect's Shadowflame Crest
 	[203423] = "Learnable|Recipe:Enchanting:10:50", -- Formula: Glowing Crystal Bookmark
 	[200916] = "Learnable|Recipe:Enchanting:10:50|Unbound", -- Formula: Illusion: Primal Mastery
 	[200913] = "Learnable|Recipe:Enchanting:10:50|Unbound", -- Formula: Illusion: Primal Fire
 	[200911] = "Learnable|Recipe:Enchanting:10:50|Unbound", -- Formula: Illusion: Primal Air
 	[200912] = "Learnable|Recipe:Enchanting:10:50|Unbound", -- Formula: Illusion: Primal Earth
 	[200914] = "Learnable|Recipe:Enchanting:10:50|Unbound", -- Formula: Illusion: Primal Frost
+	[205339] = "Learnable|Recipe:Enchanting:10:45", -- Formula: Enchanted Wyrm's Shadowflame Crest
+	[205338] = "Learnable|Recipe:Enchanting:10:35", -- Formula: Enchanted Whelpling's Shadowflame Crest
+	[205337] = "Learnable|Recipe:Enchanting:10:25", -- Formula: Titan Training Matrix V
+	[204976] = "Learnable|Recipe:Enchanting:10:25", -- Formula: Spore Keeper's Baton
+	[204977] = "Learnable|Recipe:Enchanting:10:25", -- Formula: Illusory Adornment: Spores
 	[199814] = "Learnable|Recipe:Enchanting:10:25", -- Formula: Enchant Boots - Plainsrunner's Breeze
 	[199811] = "Learnable|Recipe:Enchanting:10:25", -- Formula: Enchant Cloak - Graceful Avoidance
 	[199818] = "Learnable|Recipe:Enchanting:10:25", -- Formula: Enchant Boots - Watcher's Loam
@@ -12790,6 +12847,10 @@ local ZigiItems = {
 
 	-- Engineering
 	-- Dragon Isles Engineering
+	[205036] = "Learnable|Recipe:Engineering:10:50|Unbound", -- Schematic: Tinker: Shadowflame Rockets
+	[205178] = "Learnable|Recipe:Engineering:10:50|Unbound", -- Schematic: Mallard Mortar
+	[204844] = "Learnable|Recipe:Engineering:10:50|Unbound", -- Schematic: Polarity Bomb
+	[202320] = "Learnable|Recipe:Engineering:10:50", -- Schematic: Winston the Whelpling
 	[203424] = "Learnable|Recipe:Engineering:10:50", -- Schematic: Gnomish Voicebox
 	[199234] = "Learnable|Recipe:Engineering:10:50|Unbound", -- Schematic: Khaz'gorite Fisherfriend
 	[199229] = "Learnable|Recipe:Engineering:10:50|Unbound", -- Schematic: Tinker: Breath of Neltharion
@@ -12875,6 +12936,10 @@ local ZigiItems = {
 	[199247] = "Learnable|Recipe:Engineering:10:50", -- Schematic: Haphazardly Tethered Wires
 	[199276] = "Learnable|Recipe:Engineering:10:50", -- Schematic: Oscillating Wilderness Opticals
 	[199289] = "Learnable|Recipe:Engineering:10:50", -- Schematic: Blue Fireflight
+	[205283] = "Learnable|Recipe:Engineering:10:35|Unbound", -- Schematic: Obsidian Combatant's Leather Goggles
+	[205284] = "Learnable|Recipe:Engineering:10:35|Unbound", -- Schematic: Obsidian Combatant's Mail Goggles
+	[205282] = "Learnable|Recipe:Engineering:10:35|Unbound", -- Schematic: Obsidian Combatant's Cloth Goggles
+	[205285] = "Learnable|Recipe:Engineering:10:35|Unbound", -- Schematic: Obsidian Combatant's Plate Goggles
 	[199685] = "Learnable|Recipe:Engineering:10:1", -- Scribbled Drawings of Explosions
 	-- Shadowlands Engineering
 	[183097] = "Learnable|Recipe:Engineering:9:100", -- Schematic: PHA7-YNX
@@ -13219,6 +13284,7 @@ local ZigiItems = {
 
 	-- Inscription
 	-- Dragon Isles Inscription
+	[205134] = "Learnable|Recipe:Inscription:10:50|Unbound", -- Technique: Vantus Rune: Aberrus, the Shadowed Crucible
 	[203425] = "Learnable|Recipe:Inscription:10:50", -- Technique: Arcane Dispelling Rune
 	[198952] = "Learnable|Recipe:Inscription:10:50|Unbound", -- Technique: Darkmoon Deck Box: Dance
 	[198876] = "Learnable|Recipe:Inscription:10:50|Unbound", -- Technique: Weathered Explorer's Stave
@@ -13256,6 +13322,9 @@ local ZigiItems = {
 	[198937] = "Learnable|Recipe:Inscription:10:40", -- Technique: Contract: Maruuk Centaur
 	[198788] = "Learnable|Recipe:Inscription:10:40", -- Technique: Contract: Dragonscale Expedition
 	[198924] = "Learnable|Recipe:Inscription:10:40", -- Technique: Emberscale Sigil
+	[204169] = "Learnable|Recipe:Inscription:10:35", -- Technique: Obsidian Combatant's Emblem
+	[204167] = "Learnable|Recipe:Inscription:10:35", -- Technique: Obsidian Combatant's Medallion
+	[204168] = "Learnable|Recipe:Inscription:10:35", -- Technique: Obsidian Combatant's Insignia of Alacrity
 	[198933] = "Learnable|Recipe:Inscription:10:35|Unbound", -- Technique: Cosmic Ink
 	[200599] = "Learnable|Recipe:Inscription:10:35", -- Technique: Draconic Missive of Inspiration
 	[203378] = "Learnable|Recipe:Inscription:10:35", -- Technique: Crimson Combatant's Medallion
@@ -13268,6 +13337,15 @@ local ZigiItems = {
 	[200605] = "Learnable|Recipe:Inscription:10:35", -- Technique: Draconic Missive of Deftness
 	[200602] = "Learnable|Recipe:Inscription:10:35", -- Technique: Draconic Missive of Crafting Speed
 	[200603] = "Learnable|Recipe:Inscription:10:35", -- Technique: Draconic Missive of Finesse
+	[205135] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Hissing Rune
+	[205132] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Glyph of the Chosen Glaive
+	[205136] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Contract: Loamm Niffen
+	[205133] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Glyph of the Heaved Armament
+	[205131] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Winding Slitherdrake: Small Finned Throat
+	[205130] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Winding Slitherdrake: White Hair
+	[205129] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Winding Slitherdrake: Curved Chin Horn
+	[205128] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Winding Slitherdrake: Yellow and Silver Armor
+	[205127] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Winding Slitherdrake: Blue and Silver Armor
 	[198899] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Renewed Proto-Drake: Predator Pattern
 	[198893] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Cliffside Wylderdrake: Triple Head Horns
 	[198918] = "Learnable|Recipe:Inscription:10:25|Unbound", -- Technique: Howling Rune
@@ -13643,6 +13721,9 @@ local ZigiItems = {
 
 	-- Jewelcrafting
 	-- Dragon Isles Jewelcrafting
+	[205176] = "Learnable|Recipe:Jewelcrafting:10:50|Unbound", -- Design: Figurine of the Gathering Storm
+	[205174] = "Learnable|Recipe:Jewelcrafting:10:50|Unbound", -- Design: B.B.F. Fist
+	[205175] = "Learnable|Recipe:Jewelcrafting:10:50|Unbound", -- Design: Statuette of Foreseen Power
 	[204219] = "Learnable|Recipe:Jewelcrafting:10:50", -- Design: Unstable Elementium
 	[203426] = "Learnable|Recipe:Jewelcrafting:10:50", -- Design: Crystal Tuning Fork
 	[204218] = "Learnable|Recipe:Jewelcrafting:10:50", -- Design: Primordial Pulverizing
@@ -13667,6 +13748,8 @@ local ZigiItems = {
 	[194666] = "Learnable|Recipe:Jewelcrafting:10:40|Unbound", -- Design: Keeper's Glory
 	[194665] = "Learnable|Recipe:Jewelcrafting:10:40|Unbound", -- Design: Dreamer's Vision
 	[194667] = "Learnable|Recipe:Jewelcrafting:10:40|Unbound", -- Design: Earthwarden's Prize
+	[204147] = "Learnable|Recipe:Jewelcrafting:10:35|Unbound", -- Design: Obsidian Combatant's Jeweled Signet
+	[204146] = "Learnable|Recipe:Jewelcrafting:10:35|Unbound", -- Design: Obsidian Combatant's Jeweled Amulet
 	[194660] = "Learnable|Recipe:Jewelcrafting:10:35", -- Design: Fine-Print Trifocals
 	[194663] = "Learnable|Recipe:Jewelcrafting:10:35", -- Design: Resonant Focus
 	[194661] = "Learnable|Recipe:Jewelcrafting:10:35", -- Design: Magnificent Margin Magnifier
@@ -14470,6 +14553,9 @@ local ZigiItems = {
 
 	-- Leatherworking
 	-- Dragon Isles Leatherworking
+	[204968] = "Learnable|Recipe:Leatherworking:10:50|Unbound", -- Pattern: Shadowflame-Tempered Armor Patch
+	[204970] = "Learnable|Recipe:Leatherworking:10:50|Unbound", -- Pattern: Adaptive Dracothyst Armguards
+	[204969] = "Learnable|Recipe:Leatherworking:10:50|Unbound", -- Pattern: Spore Colony Shoulderguards
 	[203427] = "Learnable|Recipe:Leatherworking:10:50", -- Pattern: Reinforced Pristine Leather
 	[193883] = "Learnable|Recipe:Leatherworking:10:50|Unbound", -- Pattern: Venom-Steeped Stompers
 	[194312] = "Learnable|Recipe:Leatherworking:10:50|Unbound", -- Pattern: Gnoll Tent
@@ -14499,23 +14585,40 @@ local ZigiItems = {
 	[193878] = "Learnable|Recipe:Leatherworking:10:50", -- Pattern: Ancestor's Dew Drippers
 	[194311] = "Learnable|Recipe:Leatherworking:10:50", -- Pattern: Tuskarr Beanbag
 	[198464] = "Learnable|Recipe:Leatherworking:10:50", -- Pattern: Reinforced Pack
+	[204150] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Resilient Trousers
+	[204161] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Adamant Gauntlets
+	[204156] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Adamant Cowl
+	[204159] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Adamant Epaulettes
+	[204162] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Adamant Cuffs
+	[204149] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Resilient Chestpiece
+	[204151] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Resilient Shoulderpads
+	[204154] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Resilient Wristwraps
+	[204157] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Adamant Chainmail
+	[204152] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Resilient Boots
+	[204153] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Resilient Gloves
+	[204158] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Adamant Leggings
+	[204160] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Adamant Treads
+	[204155] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Resilient Belt
+	[204163] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Adamant Girdle
+	[204148] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Obsidian Combatant's Resilient Mask
+	[197973] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Adamant Chainmail
+	[197976] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Adamant Treads
+	[197965] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Resilient Chestpiece
+	[197979] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Adamant Girdle
+	[197978] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Adamant Cuffs
+	[197972] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Adamant Cowl
+	[197964] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Resilient Mask
+	[197969] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Resilient Gloves
+	[197967] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Resilient Shoulderpads
+	[197974] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Adamant Leggings
+	[197971] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Resilient Belt
+	[197968] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Resilient Boots
+	[197966] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Resilient Trousers
+	[197975] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Adamant Epaulettes
+	[197970] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Resilient Wristwraps
+	[197977] = "Learnable|Recipe:Leatherworking:10:35|Unbound", -- Pattern: Crimson Combatant's Adamant Gauntlets
 	[198618] = "Learnable|Recipe:Leatherworking:10:35", -- Pattern: Artisan's Sign
-	[197973] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Adamant Chainmail
-	[197976] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Adamant Treads
-	[197965] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Resilient Chestpiece
-	[197979] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Adamant Girdle
-	[197978] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Adamant Cuffs
-	[197972] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Adamant Cowl
-	[197964] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Resilient Mask
-	[197969] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Resilient Gloves
-	[197967] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Resilient Shoulderpads
-	[197974] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Adamant Leggings
-	[197971] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Resilient Belt
-	[197968] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Resilient Boots
-	[197966] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Resilient Trousers
-	[197975] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Adamant Epaulettes
-	[197970] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Resilient Wristwraps
-	[197977] = "Learnable|Recipe:Leatherworking:10:30|Unbound", -- Pattern: Crimson Combatant's Adamant Gauntlets
+	[204974] = "Learnable|Recipe:Leatherworking:10:25|Unbound", -- Pattern: Lambent Armor Kit
 	[201732] = "Learnable|Recipe:Leatherworking:10:25", -- Pattern: Fierce Armor Kit
 	[201733] = "Learnable|Recipe:Leatherworking:10:25", -- Pattern: Frosted Armor Kit
 	[200104] = "Learnable|Recipe:Leatherworking:10:20|Unbound", -- Pattern: Infurious Scales
@@ -15307,6 +15410,7 @@ local ZigiItems = {
 
 	-- Tailoring
 	-- Dragon Isles Tailoring
+	[205140] = "Learnable|Recipe:Tailoring:10:50|Unbound", -- Pattern: Undulating Sporecloak
 	[203428] = "Learnable|Recipe:Tailoring:10:50", -- Pattern: Traditional Morqut Kite
 	[204678] = "Learnable|Recipe:Tailoring:10:50", -- Pattern: Paw-Made Winterpelt Reagent Bag
 	[194255] = "Learnable|Recipe:Tailoring:10:50|Unbound", -- Pattern: Amice of the Blue
@@ -15326,6 +15430,8 @@ local ZigiItems = {
 	[194280] = "Learnable|Recipe:Tailoring:10:50", -- Pattern: Chronocloth Sash
 	[194279] = "Learnable|Recipe:Tailoring:10:50", -- Pattern: Azureweave Slippers
 	[194283] = "Learnable|Recipe:Tailoring:10:50", -- Pattern: Duck-Stuffed Duck Lovie
+	[205139] = "Learnable|Recipe:Tailoring:10:45|Unbound", -- Pattern: Reserve Parachute
+	[205138] = "Learnable|Recipe:Tailoring:10:45|Unbound", -- Pattern: Medical Wrap Kit
 	[194298] = "Learnable|Recipe:Tailoring:10:45|Unbound", -- Pattern: Forlorn Funeral Pall
 	[194290] = "Learnable|Recipe:Tailoring:10:45", -- Pattern: Master's Wildercloth Enchanter's Hat
 	[194266] = "Learnable|Recipe:Tailoring:10:40|Unbound", -- Pattern: Bronzed Grip Wrappings
@@ -15334,6 +15440,15 @@ local ZigiItems = {
 	[194288] = "Learnable|Recipe:Tailoring:10:40", -- Pattern: Master's Wildercloth Alchemist's Robe
 	[194295] = "Learnable|Recipe:Tailoring:10:40", -- Pattern: Explorer's Banner of Geology
 	[194294] = "Learnable|Recipe:Tailoring:10:40", -- Pattern: Explorer's Banner of Herbology
+	[204132] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Obsidian Combatant's Wildercloth Hood
+	[204130] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Obsidian Combatant's Wildercloth Cloak
+	[204129] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Obsidian Combatant's Wildercloth Bands
+	[204135] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Obsidian Combatant's Wildercloth Shoulderpads
+	[204136] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Obsidian Combatant's Wildercloth Treads
+	[204137] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Obsidian Combatant's Wildercloth Tunic
+	[204131] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Obsidian Combatant's Wildercloth Gloves
+	[204133] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Obsidian Combatant's Wildercloth Leggings
+	[204134] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Obsidian Combatant's Wildercloth Sash
 	[194277] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Crimson Combatant's Wildercloth Treads
 	[194273] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Crimson Combatant's Wildercloth Hood
 	[194278] = "Learnable|Recipe:Tailoring:10:35|Unbound", -- Pattern: Crimson Combatant's Wildercloth Tunic
@@ -15864,6 +15979,7 @@ local ZigiItems = {
 
 	-- Cooking
 	-- Dragon Isles Cooking
+	[204849] = "Learnable|Recipe:Cooking:10:50", -- Ratcipe: Charitable Cheddar
 	[204073] = "Learnable|Recipe:Cooking:10:50", -- Ratcipe: Deviously Deviled Eggs
 	[203422] = "Learnable|Recipe:Cooking:10:50", -- Recipe: Sparkling Spice Pouch
 	[198127] = "Learnable|Recipe:Cooking:10:50|Unbound", -- Recipe: Fated Fortune Cookie
@@ -15905,6 +16021,7 @@ local ZigiItems = {
 	[198099] = "Learnable|Recipe:Cooking:10:10|Unbound", -- Recipe: Pebbled Rock Salts
 	[198094] = "Learnable|Recipe:Cooking:10:5|Unbound", -- Recipe: Mackerel Snackerel
 	[198093] = "Learnable|Recipe:Cooking:10:5|Unbound", -- Recipe: Cheese and Quackers
+	[204847] = "Learnable|Recipe:Cooking:10:1", -- Recipe: Rocks on the Rocks
 	[202289] = "Learnable|Recipe:Cooking:10:1", -- Recipe: Firewater Sorbet
 	[198104] = "Learnable|Recipe:Cooking:10:1", -- Recipe: Blubbery Muffin
 	[198106] = "Learnable|Recipe:Cooking:10:1", -- Recipe: Tasty Hatchling's Treat
