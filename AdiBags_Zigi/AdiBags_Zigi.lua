@@ -294,6 +294,11 @@ local ZigiItems = {
 	-- https://wowpedia.fandom.com/wiki/MountID
 
 	-- Dragon Isles (90)
+	-- -- Zaralek Cavern (89)
+	[204715] = "909389. Zaralek Cavern#Zone", -- Unearthed Fragrant Coin
+	[205188] = "909389. Zaralek Cavern#Zone", -- Barter Boulder
+	[204985] = "909389. Zaralek Cavern#Zone", -- Barter Brick
+	[205982] = "909389. Zaralek Cavern#Zone", -- Lost Dig Map
 	-- -- The Forbidden Reach (90)
 	-- -- Valdrakken (91)
 	-- -- Thaldraszus (92)
@@ -2708,7 +2713,7 @@ local ZigiItems = {
 	[197921] = "97. Equipment Upgrades#Equipment", -- Primal Infusion
 	[200686] = "97. Equipment Upgrades#Equipment", -- Primal Focus
 	[190453] = "97. Equipment Upgrades#Equipment", -- Spark of Ingenuity
-	[204717] = "97. Equipment Upgrades#Equipment", -- Splintered Spark of Shadowflame
+	[204717] = "Openable|Item:204717:2|97. Equipment Upgrades#Equipment", -- Splintered Spark of Shadowflame
 	[204440] = "97. Equipment Upgrades#Equipment", -- Spark of Shadowflame
 	[205263] = "97. Equipment Upgrades#Equipment", -- Empowered Flightstone
 	[198048] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix I
@@ -2717,16 +2722,16 @@ local ZigiItems = {
 	[198059] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix IV
 	[204673] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix V
 	[204194] = "97. Equipment Upgrades#Equipment", -- Aspect's Shadowflame Crest
-	[204078] = "97. Equipment Upgrades#Equipment", -- Aspect's Shadowflame Crest Fragment
+	[204078] = "Openable|Item:204078:15|97. Equipment Upgrades#Equipment", -- Aspect's Shadowflame Crest Fragment
 	[204195] = "97. Equipment Upgrades#Equipment", -- Drake's Shadowflame Crest
-	[204076] = "97. Equipment Upgrades#Equipment", -- Drake's Shadowflame Crest Fragment
+	[204076] = "Openable|Item:204076:15|97. Equipment Upgrades#Equipment", -- Drake's Shadowflame Crest Fragment
 	[204697] = "97. Equipment Upgrades#Equipment", -- Enchanted Aspect's Shadowflame Crest
 	[204681] = "97. Equipment Upgrades#Equipment", -- Enchanted Whelpling's Shadowflame Crest
 	[204682] = "97. Equipment Upgrades#Equipment", -- Enchanted Wyrm's Shadowflame Crest
 	[204193] = "97. Equipment Upgrades#Equipment", -- Whelpling's Shadowflame Crest
-	[204075] = "97. Equipment Upgrades#Equipment", -- Whelpling's Shadowflame Crest Fragment
+	[204075] = "Openable|Item:204075:15|97. Equipment Upgrades#Equipment", -- Whelpling's Shadowflame Crest Fragment
 	[204196] = "97. Equipment Upgrades#Equipment", -- Wyrm's Shadowflame Crest
-	[204077] = "97. Equipment Upgrades#Equipment", -- Wyrm's Shadowflame Crest Fragment
+	[204077] = "Openable|Item:204077:15|97. Equipment Upgrades#Equipment", -- Wyrm's Shadowflame Crest Fragment
 
 	--! BoA Token (98)
 	-- -- Mists of Pandaria - Timeless
@@ -6609,7 +6614,6 @@ local ZigiItems = {
 
 	-- Zskera Vault
 	[204278] = "99. [00ff00]Zskera Vaults]#Instance", -- Neltharion's Toolkit
-	[202196] = "99. [00ff00]Zskera Vaults]#Instance", -- Zskera Vault Key
 	[203701] = "99. [00ff00]Zskera Vaults]#Instance", -- Neltharion Gift Token
 	[202403] = "99. [00ff00]Zskera Vaults]#Instance", -- Runic Wrench
 	[169872] = "99. [00ff00]Zskera Vaults]#Instance", -- Key of Bound Earth
@@ -6629,7 +6633,8 @@ local ZigiItems = {
 
 	--! Account Bound
 	-- Currency
-	--[202196] = "Account Bound", -- Zskera Vault Key
+	[202196] = "Account Bound", -- Zskera Vault Key
+	[204727] = "Account Bound", -- Coveted Bauble
 	[142156] = "Account Bound", -- Order Resources Cache
 	[150737] = "Account Bound", -- Abundant Order Resources Cache
 	[187077] = "Account Bound", -- Packaged Soul Ash
@@ -6639,12 +6644,7 @@ local ZigiItems = {
 	[191300] = "Account Bound", -- Certified Vouchsafe
 	[190189] = "Account Bound", -- Sandworn Relic
 	[137642] = "Account Bound", -- Mark of Honor
-	[199838] = "Account Bound", -- Dimmed Primeval Storm
-	[199837] = "Account Bound", -- Dimmed Primeval Earth
-	[199839] = "Account Bound", -- Dimmed Primeval Water
-	[199836] = "Account Bound", -- Dimmed Primeval Fire
 	[199211] = "Account Bound", -- Primeval Essence
-	[204339] = "Account Bound", -- Satchel of Coalescing Chaos
 	-- Consumable
 	[166750] = "Account Bound", -- Draught of Ten Lands
 	[166751] = "Account Bound", -- Draught of Ten Lands
@@ -6938,6 +6938,7 @@ local ZigiItems = {
 	[172013] = "Toy#Miscellaneous", -- Celebration Firework
 	[204405] = "Toy#Miscellaneous", -- Stuffed Bear
 	-- Consumable
+	[205686] = "Toy#Miscellaneous", -- Clacking Claw
 	[199216] = "Toy#Miscellaneous", -- A Box of Rocks
 	[194733] = "Toy#Miscellaneous", -- Illusion Parchment: Aqua Torrent
 	[194735] = "Toy#Miscellaneous", -- Illusion Parchment: Arcane Burst
@@ -7306,6 +7307,17 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[205247] = "Openable", -- Clinking Dirt-Covered Pouch
+	[205248] = "Openable", -- Clanging Dirt-Covered Pouch
+	[205682] = "Openable|Level:70|Recipe#Recipe", -- Large Shadowflame Residue Sack
+	[205423] = "Openable|Level:70|Recipe#Recipe", -- Shadowflame Residue Sack
+	[205983] = "Openable", -- Scentsational Niffen Treasures
+	[204721] = "Openable", -- Whelpling's Small Chest
+	[204722] = "Openable", -- Whelpling's Bountiful Chest
+	[204723] = "Openable", -- Whelpling's Hefty Chest
+	[204724] = "Openable", -- Drake's Small Chest
+	[204725] = "Openable", -- Drake's Hefty Chest
+	[204726] = "Openable", -- Drake's Bountiful Chest
 	[205347] = "Openable", -- Gathered Niffen Resources
 	[204359] = "Openable", -- Reach Racer's Purse
 	[205962] = "Openable", -- Echoing Storm Flightstone
@@ -8025,6 +8037,11 @@ local ZigiItems = {
 
 	--! Learnable (98)
 	-- -- Reputation
+	[205251] = "Learnable", -- Champion's Rock Bar
+	[205253] = "Learnable", -- Farmhand's Abundant Harvest
+	[205989] = "Learnable", -- Symbol of Friendship
+	[205991] = "Learnable", -- Shiny Token of Gratitude
+	[205250] = "Learnable", -- Gift of the High Redolence
 	[205249] = "Learnable", -- Pungent Niffen Incense
 	[201782] = "Learnable", -- Tyr's Blessing
 	[201779] = "Learnable", -- Merithra's Blessing
@@ -8083,6 +8100,9 @@ local ZigiItems = {
 	[201268] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Rare Blacksmith's Diagrams
 	[201279] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Ancient Blacksmith's Diagrams
 	[198791] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Glimmer of Blacksmithing Wisdom
+	[205986] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Well-Worn Kiln
+	[205987] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Brimstone Rescue Ring
+	[205988] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Zaqali Elder Spear
 	-- -- -- Enchanting
 	[194702] = "Learnable|Quest:74110&Recipe:Enchanting:10:25|Recipe#Recipe", -- Draconic Treatise on Enchanting
 	[201709] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8114,11 +8134,20 @@ local ZigiItems = {
 	[201284] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Ancient Engineer's Scribblings
 	[198969] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Keeper's Mark
 	[201014] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Boomthyr Rocket
-	[198789] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Intact Coil Capacitor
 	[198816] = "Quest#Quest|Quest:70270|Junk#Junk", -- Aerospace Grade Draconium
 	[198815] = "Quest#Quest|Quest:70270|Junk#Junk", -- Ash
 	[198814] = "Quest#Quest|Quest:70270|Junk#Junk", -- Boom Fumes
 	[198817] = "Quest#Quest|Quest:70270|Junk#Junk", -- Durable Crystal
+	[198789] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Intact Coil Capacitor
+	[204475] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Busted Wyrmhole Generator
+	[205954] = "Learnable|Recipe:Engineering:10:1|Recipe#Recipe", -- Three-Dimensional Compass
+	[204470] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Haphazardly Discarded Bomb
+	[204855] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Overclocked Determination Core
+	[204469] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Misplaced Aberrus Outflow Blueprints
+	[204471] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Defective Survival Pack
+	[204480] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Inconspicuous Data Miner
+	[204853] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Discarded Dracothyst Drill
+	[204850] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Handful of Khaz'gorite Bolts
 	-- -- -- Herbalism
 	[194704] = "Learnable|Quest:74107&Recipe:Herbalism:10:25|Recipe#Recipe", -- Draconic Treatise on Herbalism
 	[201705] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
