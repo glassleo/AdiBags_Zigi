@@ -7288,13 +7288,13 @@ local ZigiItems = {
 	[90407] = "Pieces", -- Sparkling Shard
 	[127390] = "Pieces", -- Polished Crystal
 	-- -- Azerite Essence
-	[169694] = "Pieces", -- Aqueous Reliquary
-	[174288] = "Pieces", -- Breath of Everlasting Spirit
-	[174279] = "Pieces", -- Encrypted Ny'alothan Text
-	[169491] = "Pieces", -- Focused Life Anima
-	[169687] = "Pieces", -- Fragment of Zem'lan's Lost Treasure Map
-	[169774] = "Pieces", -- Progression Sprocket
-	[174287] = "Pieces", -- Sparks of Unwavering Strength
+	[169694] = "Openable|Item:169694:9|Quest#Quest", -- Aqueous Reliquary
+	[174288] = "Openable|Item:174288:3|Quest#Quest", -- Breath of Everlasting Spirit
+	[174279] = "Openable|Item:174279:30|Quest#Quest", -- Encrypted Ny'alothan Text
+	[169491] = "Openable|Item:169491:3|Quest#Quest", -- Focused Life Anima
+	[169687] = "Openable|Item:169687:15|Quest#Quest", -- Fragment of Zem'lan's Lost Treasure Map
+	[169774] = "Openable|Item:169774:4|Quest#Quest", -- Progression Sprocket
+	[174287] = "Openable|Item:174287:45|Quest#Quest", -- Sparks of Unwavering Strength
 
 	--! Seed (98)
 	[200506] = "98. [00ff00]Seed]#Usable|Herbalism|0590. Dragon Isles Herb#Tradeskill", -- Roused Seedling
@@ -8080,6 +8080,9 @@ local ZigiItems = {
 	[198712] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Firewater Powder Sample
 	[203471] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Tasty Candy
 	[198697] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Contraband Concoction
+	[205212] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Marrow-Ripened Slime
+	[205211] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Nutrient Diluted Protofluid
+	[205213] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Suspicious Mold
 	-- -- -- Blacksmithing
 	[198454] = "Learnable|Quest:74109&Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Draconic Treatise on Blacksmithing
 	[201708] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8122,6 +8125,9 @@ local ZigiItems = {
 	[193901] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Primal Dust
 	[198967] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Primordial Aether
 	[198968] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Primalist Charm
+	[204990] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Lava-Drenched Shadow Crystal
+	[205001] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Resonating Arcane Crystal
+	[204999] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Shimmering Aqueous Orb
 	-- -- -- Engineering
 	[198510] = "Learnable|Quest:74111&Recipe:Engineering:10:25|Recipe#Recipe", -- Draconic Treatise on Engineering
 	[201710] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8178,6 +8184,9 @@ local ZigiItems = {
 	[193905] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Iskaaran Trading Ledger
 	[198972] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Draconic Glamour
 	[198971] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Curious Djaradin Rune
+	[206034] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Hissing Rune Draft
+	[206035] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Ancient Research
+	[206031] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Intricate Zaqali Runes
 	-- -- -- Jewelcrafting
 	[194703] = "Learnable|Quest:74112&Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Draconic Treatise on Jewelcrafting
 	[201712] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8198,6 +8207,9 @@ local ZigiItems = {
 	[198973] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Incandescent Curio
 	[193907] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Chipped Tyrstone
 	[204222] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Conductive Ametrine Shard
+	[205219] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Broken Barter Boulder
+	[205216] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Gently Jostled Jewels
+	[205214] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Snubbed Snail Shells
 	-- -- -- Leatherworking
 	[194700] = "Learnable|Quest:74113&Recipe:Leatherworking:10:25|Recipe#Recipe", -- Draconic Treatise on Leatherworking
 	[201713] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8216,6 +8228,9 @@ local ZigiItems = {
 	[198658] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Decay-Infused Tanning Oil
 	[198683] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Treated Hides
 	[198690] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Decayed Scales
+	[204986] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Flame-Infused Scale Oil
+	[204987] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Lava-Forged Leatherworker's "Knife"
+	[204988] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Sulfur-Soaked Skins
 	-- -- -- Mining
 	[194708] = "Learnable|Quest:74106&Recipe:Mining:10:25|Recipe#Recipe", -- Draconic Treatise on Mining
 	[202011] = "Learnable|Recipe:Mining:10:25|Recipe#Recipe", -- Elementally-Charged Stone
@@ -8260,14 +8275,9 @@ local ZigiItems = {
 	[201271] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Rare Tailor's Diagrams
 	[201282] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Ancient Tailor's Diagrams
 	[198688] = "Openable|Tailoring&Quest:70303", -- Catnip Leaf
-	[118700] = "Recipe#Recipe|Alchemy", -- Secret of Draenor Alchemy
-	[118720] = "Recipe#Recipe|Blacksmithing", -- Secret of Draenor Blacksmithing
-	[119293] = "Recipe#Recipe|Enchanting", -- Secret of Draenor Enchanting
-	[119299] = "Recipe#Recipe|Engineering", -- Secret of Draenor Engineering
-	[119297] = "Recipe#Recipe|Inscription", -- Secret of Draenor Inscription
-	[118723] = "Recipe#Recipe|Jewelcrafting", -- Secret of Draenor Jewelcrafting
-	[118721] = "Recipe#Recipe|Leatherworking", -- Secret of Draenor Leatherworking
-	[118722] = "Recipe#Recipe|Tailoring", -- Secret of Draenor Tailoring
+	[206019] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Abandoned Reserve Chute
+	[206030] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Exquisitely Embroidered Banner
+	[206025] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Used Medical Wrap Kit
 	-- -- Grand Hunt Companion Customization
 	[194088] = "Learnable", -- Ohuna Companion Color: Dark
 	[194087] = "Learnable", -- Ohuna Companion Color: Red
@@ -11376,6 +11386,15 @@ local ZigiItems = {
 	[189747] = "Buff", -- Velocialic Fluidic Spheroid
 
 	--[[ ! Recipe ! ]]--
+
+	[118700] = "Recipe#Recipe|Alchemy", -- Secret of Draenor Alchemy
+	[118720] = "Recipe#Recipe|Blacksmithing", -- Secret of Draenor Blacksmithing
+	[119293] = "Recipe#Recipe|Enchanting", -- Secret of Draenor Enchanting
+	[119299] = "Recipe#Recipe|Engineering", -- Secret of Draenor Engineering
+	[119297] = "Recipe#Recipe|Inscription", -- Secret of Draenor Inscription
+	[118723] = "Recipe#Recipe|Jewelcrafting", -- Secret of Draenor Jewelcrafting
+	[118721] = "Recipe#Recipe|Leatherworking", -- Secret of Draenor Leatherworking
+	[118722] = "Recipe#Recipe|Tailoring", -- Secret of Draenor Tailoring
 
 	-- Alchemy
 	-- Dragon Isles Alchemy
