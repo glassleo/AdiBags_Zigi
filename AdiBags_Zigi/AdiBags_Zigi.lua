@@ -299,6 +299,7 @@ local ZigiItems = {
 	[205188] = "909389. Zaralek Cavern#Zone", -- Barter Boulder
 	[204985] = "909389. Zaralek Cavern#Zone", -- Barter Brick
 	[205982] = "909389. Zaralek Cavern#Zone", -- Lost Dig Map
+	[203708] = "909389. Zaralek Cavern#Zone", -- Conch Whistle
 	-- -- The Forbidden Reach (90)
 	-- -- Valdrakken (91)
 	-- -- Thaldraszus (92)
@@ -2707,6 +2708,7 @@ local ZigiItems = {
 	--[[ ! Equipment ! ]]--
 
 	--! Equipment Upgrades (97)
+	[204843] = "97. Equipment Upgrades#Equipment", -- Draconic Mark of Mastery (Season 2)
 	[204276] = "97. Equipment Upgrades#Equipment", -- Untapped Forbidden Knowledge
 	[198046] = "97. Equipment Upgrades#Equipment", -- Concentrated Primal Infusion
 	[190455] = "97. Equipment Upgrades#Equipment", -- Concentrated Primal Focus
@@ -7307,6 +7309,10 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[205367] = "Openable", -- Indebted Researcher's Gift
+	[205368] = "Openable", -- Thankful Researcher's Gift
+	[205369] = "Openable", -- Appreciative Researcher's Gift
+	[205370] = "Openable", -- Researcher's Gift
 	[205247] = "Openable", -- Clinking Dirt-Covered Pouch
 	[205248] = "Openable", -- Clanging Dirt-Covered Pouch
 	[205682] = "Openable|Level:70|Recipe#Recipe", -- Large Shadowflame Residue Sack
@@ -8037,6 +8043,8 @@ local ZigiItems = {
 
 	--! Learnable (98)
 	-- -- Reputation
+	[205998] = "Learnable", -- Sign of Respect
+	[205992] = "Learnable", -- Regurgitated Half-Digested Fish
 	[205251] = "Learnable", -- Champion's Rock Bar
 	[205253] = "Learnable", -- Farmhand's Abundant Harvest
 	[205989] = "Learnable", -- Symbol of Friendship
@@ -8083,6 +8091,7 @@ local ZigiItems = {
 	[205212] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Marrow-Ripened Slime
 	[205211] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Nutrient Diluted Protofluid
 	[205213] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Suspicious Mold
+	[205429] = "Learnable|Recipe:Alchemy:10:25|Recipe#Recipe", -- Bartered Alchemy Notes
 	-- -- -- Blacksmithing
 	[198454] = "Learnable|Quest:74109&Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Draconic Treatise on Blacksmithing
 	[201708] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8106,6 +8115,7 @@ local ZigiItems = {
 	[205986] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Well-Worn Kiln
 	[205987] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Brimstone Rescue Ring
 	[205988] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Zaqali Elder Spear
+	[205428] = "Learnable|Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Bartered Blacksmithing Notes
 	-- -- -- Enchanting
 	[194702] = "Learnable|Quest:74110&Recipe:Enchanting:10:25|Recipe#Recipe", -- Draconic Treatise on Enchanting
 	[201709] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8128,6 +8138,7 @@ local ZigiItems = {
 	[204990] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Lava-Drenched Shadow Crystal
 	[205001] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Resonating Arcane Crystal
 	[204999] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Shimmering Aqueous Orb
+	[205427] = "Learnable|Recipe:Enchanting:10:25|Recipe#Recipe", -- Bartered Enchanting Notes
 	-- -- -- Engineering
 	[198510] = "Learnable|Quest:74111&Recipe:Engineering:10:25|Recipe#Recipe", -- Draconic Treatise on Engineering
 	[201710] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8154,6 +8165,7 @@ local ZigiItems = {
 	[204480] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Inconspicuous Data Miner
 	[204853] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Discarded Dracothyst Drill
 	[204850] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Handful of Khaz'gorite Bolts
+	[205425] = "Learnable|Recipe:Engineering:10:25|Recipe#Recipe", -- Bartered Engineering Notes
 	-- -- -- Herbalism
 	[194704] = "Learnable|Quest:74107&Recipe:Herbalism:10:25|Recipe#Recipe", -- Draconic Treatise on Herbalism
 	[201705] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8165,6 +8177,7 @@ local ZigiItems = {
 	[200980] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Dusty Herbalist's Notes
 	[201276] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Rare Herbalist's Notes
 	[201287] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Ancient Herbalist's Notes
+	[205434] = "Learnable|Recipe:Herbalism:10:25|Recipe#Recipe", -- Bartered Herbalism Notes
 	-- -- -- Inscription
 	[194699] = "Learnable|Quest:74105&Recipe:Inscription:10:25|Recipe#Recipe", -- Draconic Treatise on Inscription
 	[201711] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8187,6 +8200,7 @@ local ZigiItems = {
 	[206034] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Hissing Rune Draft
 	[206035] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Ancient Research
 	[206031] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Intricate Zaqali Runes
+	[205430] = "Learnable|Recipe:Inscription:10:25|Recipe#Recipe", -- Bartered Inscription Notes
 	-- -- -- Jewelcrafting
 	[194703] = "Learnable|Quest:74112&Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Draconic Treatise on Jewelcrafting
 	[201712] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8210,6 +8224,7 @@ local ZigiItems = {
 	[205219] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Broken Barter Boulder
 	[205216] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Gently Jostled Jewels
 	[205214] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Snubbed Snail Shells
+	[205424] = "Learnable|Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Bartered Jewelcrafting Notes
 	-- -- -- Leatherworking
 	[194700] = "Learnable|Quest:74113&Recipe:Leatherworking:10:25|Recipe#Recipe", -- Draconic Treatise on Leatherworking
 	[201713] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8231,6 +8246,7 @@ local ZigiItems = {
 	[204986] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Flame-Infused Scale Oil
 	[204987] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Lava-Forged Leatherworker's "Knife"
 	[204988] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Sulfur-Soaked Skins
+	[205426] = "Learnable|Recipe:Leatherworking:10:25|Recipe#Recipe", -- Bartered Leatherworking Notes
 	-- -- -- Mining
 	[194708] = "Learnable|Quest:74106&Recipe:Mining:10:25|Recipe#Recipe", -- Draconic Treatise on Mining
 	[202011] = "Learnable|Recipe:Mining:10:25|Recipe#Recipe", -- Elementally-Charged Stone
@@ -8244,6 +8260,7 @@ local ZigiItems = {
 	[199122] = "Learnable|Recipe:Mining:10:25|Recipe#Recipe", -- Mining Field Notes
 	[201716] = "Learnable|Recipe:Mining:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
 	[201700] = "Learnable|Recipe:Mining:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
+	[205432] = "Learnable|Recipe:Mining:10:25|Recipe#Recipe", -- Bartered Mining Notes
 	-- -- -- Skinning
 	[201023] = "Learnable|Quest:74114&Recipe:Skinning:10:25|Recipe#Recipe", -- Draconic Treatise on Skinning
 	[201714] = "Learnable|Recipe:Skinning:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8255,6 +8272,7 @@ local ZigiItems = {
 	[200982] = "Learnable|Recipe:Skinning:10:25|Recipe#Recipe", -- Dusty Skinner's Notes
 	[201278] = "Learnable|Recipe:Skinning:10:25|Recipe#Recipe", -- Rare Skinner's Notes
 	[201289] = "Learnable|Recipe:Skinning:10:25|Recipe#Recipe", -- Ancient Skinner's Notes
+	[205433] = "Learnable|Recipe:Skinning:10:25|Recipe#Recipe", -- Bartered Skinning Notes
 	-- -- -- Tailoring
 	[194698] = "Learnable|Quest:74115&Recipe:Tailoring:10:25|Recipe#Recipe", -- Draconic Treatise on Tailoring
 	[201715] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Notebook of Crafting Knowledge
@@ -8278,6 +8296,7 @@ local ZigiItems = {
 	[206019] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Abandoned Reserve Chute
 	[206030] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Exquisitely Embroidered Banner
 	[206025] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Used Medical Wrap Kit
+	[205431] = "Learnable|Recipe:Tailoring:10:25|Recipe#Recipe", -- Bartered Tailoring Notes
 	-- -- Grand Hunt Companion Customization
 	[194088] = "Learnable", -- Ohuna Companion Color: Dark
 	[194087] = "Learnable", -- Ohuna Companion Color: Red
@@ -17000,7 +17019,7 @@ function Zigi:GetBindStatus(bag, slot)
 		TooltipUtil.SurfaceArgs(line)
 	end
 
-	for i = 2,3 do
+	for i = 2,4 do
 		if tooltipData.lines[i] then
 			local t = tooltipData.lines[i].leftText
 			if t == ITEM_BIND_ON_EQUIP then
