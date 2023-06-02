@@ -90,188 +90,13 @@ local ChallengeMap = {
 	[438] = "The Vortex Pinnacle",
 }
 
-local StuffItems = {
-	--[[ ! Bank Stuff ! ]]--
-
-	[6948] = "BANK", -- Hearthstone
-	[138393] = "BANK", -- Essence Swapper
-
-
-	--[[ ! Stuff ! ]]--
-
-	-- Teleport Item
-	[103678] = true, -- Time-Lost Artifact
-	[110560] = true, -- Garrison Hearthstone
-	[118662] = true, -- Bladespire Relic
-	[118663] = true, -- Relic of Karabor
-	[118907] = true, -- Pit Fighter's Punching Ring (Alliance)
-	[118908] = true, -- Pit Fighter's Punching Ring (Horde)
-	[128353] = true, -- Admiral's Compass
-	[139590] = true, -- Scroll of Teleport: Ravenholdt
-	[140192] = true, -- Dalaran Hearthstone
-	[141605] = true, -- Flight Master's Whistle
-	[142469] = true, -- Violet Seal of the Grand Magus
-	[144341] = true, -- Rechargeable Reaves Battery
-	[144391] = true, -- Pugilist's Powerful Punching Ring (Alliance)
-	[144392] = true, -- Pugilist's Powerful Punching Ring (Horde)
-	[168862] = true, -- G.E.A.R. Tracking Beacon
-	[180817] = true, -- Cypher of Relocation
-	[200613] = true, -- Aylaag Windstone Fragment
-	[32757] = true, -- Blessed Medallion of Karabor
-	[37863] = true, -- Direbrew's Remote
-	[40585] = true, -- Signet of the Kirin Tor
-	[40586] = true, -- Band of the Kirin Tor
-	[44935] = true, -- Ring of the Kirin Tor
-	[46874] = true, -- Argent Crusader's Tabard
-	[48957] = true, -- Etched Signet of the Kirin Tor
-	[50287] = true, -- Boots of the Bay
-	[52251] = true, -- Jaina's Locket
-	[63206] = true, -- Wrap of Unity (Alliance)
-	[63207] = true, -- Wrap of Unity (Horde)
-	[63352] = true, -- Shroud of Cooperation (Alliance)
-	[63353] = true, -- Shroud of Cooperation (Horde)
-	[63378] = true, -- Hellscream's Reach Tabard
-	[63379] = true, -- Baradin's Wardens Tabard
-	[64457] = true, -- The Last Relic of Argus
-	[65274] = true, -- Cloak of Coordination (Horde)
-	[65360] = true, -- Cloak of Coordination (Alliance)
-	[95050] = true, -- The Brassiest Knuckle (Horde)
-	[95051] = true, -- The Brassiest Knuckle (Alliance)
-
-	-- Toy
-	[111820] = true, -- Swapblaster
-	[122124] = true, -- Darkmoon Cannon
-	[167860] = true, -- Ancient Tauren Talisman
-	[180454] = true, -- Anti-Doom Broom
-	[94154] = true, -- Survivor's Bag of Coins
-
-	-- Profession Tool
-	[109262] = "Alchemy|Junk#Junk", -- Draenic Philosopher's Stone
-	[114943] = true, -- Ultimate Gnomish Army Knife
-	[116913] = "Mining", -- Peon's Mining Pick
-	[116916] = "Herbalism", -- Gorepetal's Gentle Grasp
-	[152839] = "Blacksmithing|Junk#Junk", -- Khaz'gorian Smithing Hammer
-	[153290] = "Mining|Junk#Junk", -- Krokul Mining Pick
-	[164733] = "Tailoring|Junk#Junk", -- Synchronous Thread
-	[164766] = "Enchanting|Junk#Junk", -- Iwen's Enchanting Rod
-	[23821] = true, -- Zapthrottle Mote Extractor
-	[49040] = true, -- Jeeves
-	[67494] = "Herbalism,Mining,Skinning|Junk#Junk", -- Electrostatic Condenser
-	[85777] = "Mining|Mining#Tradeskill", -- Ancient Pandaren Mining Pick
-	[86566] = "Herbalism,Mining,Skinning|14. Archaeology#Tradeskill", -- Forager's Gloves
-	[87213] = "Herbalism,Mining", -- Mist-Piercing Goggles
-
-	-- Miscellaneous
-	[113575] = true, -- Secretive Whistle
-	[127770] = true, -- Brazier of Awakening
-	[141652] = true, -- Mana Divining Stone
-	[147315] = true, -- Smelly's Luckydo
-	[151131] = true, -- Lamp of Al'Abas
-	[151143] = true, -- Shining Lamp of Al'Abas
-	[151144] = true, -- Gleaming Lamp of Al'Abas
-	[63359] = true, -- Banner of Cooperation (Alliance)
-	[64398] = true, -- Standard of Unity (Alliance)
-	[64399] = true, -- Battle Standard of Coordination (Alliance)
-	[64400] = true, -- Banner of Cooperation (Horde)
-	[64401] = true, -- Standard of Unity (Horde)
-	[64402] = true, -- Battle Standard of Coordination (Horde)
-}
-
-local Keepsakes = {
-	--[[ ! Character Specific Stuff ! ]]--
-
-	-- Felguard/Wrathguard Transmog
-	[118413] = "Eld-TheVentureCo", -- Flamegrinder
-}
-
-local Stuff = AdiBags:RegisterFilter("Stuff", 99)
-Stuff.uiName = "Stuff";
-Stuff.uiDesc = "Puts teleport items, profession tools and stuff we always want to keep in their own section."
-
-function Stuff:CheckItem(id)
-	local value = StuffItems[id]
-
-	if value == true then
-		return "Stuff", "Junk"
-	elseif value == "BANK" then
-		return "Bank Stuff", "Junk"
-	elseif value then
-		local values, alt = strsplit("|", value)
-		values = { strsplit(",", values) }
-
-		local class = select(2, UnitClass("player"))
-		local prof1, prof2 = GetProfessions()
-		local profession = ""
-
-		if prof1 then
-			local name = GetProfessionInfo(prof1)
-			if name ~= "Engineering" then
-				profession = name
-			end
-		end
-		if prof2 then
-			local name = GetProfessionInfo(prof2)
-			if name ~= "Engineering" then
-				profession = name
-			end
-		end
-
-		for k, v in ipairs(values) do
-			if v == class then
-				return "Stuff", "Junk"
-			elseif v == profession then
-				if id == 87213 and GetItemCount(87213, false) > 1 then
-					return "Mist-Piercing Goggles", "Junk"
-				else
-					return "Stuff", "Junk"
-				end
-			end
-		end
-
-		if alt then
-			return strsplit("#", alt)
-		end
-	end
-
-	return false
-end
-
-function Stuff:Filter(slotData)
-	local id = C_Container.GetContainerItemID(slotData.bag, slotData.slot)
-
-	if id and Keepsakes[id] then
-		local char, realm = UnitFullName("player")
-		local characters = { strsplit(",", Keepsakes[id]) }
-
-		for k, v in ipairs(characters) do
-			if v == (char .. "-" .. realm) then
-				return "Stuff", "Junk"
-			end
-		end
-
-		return "Stuff", "Junk"
-	end
-
-	if id and StuffItems[id] then
-		if Stuff:CheckItem(id) then
-			if id == 141605 and C_QuestLog.IsQuestFlaggedCompleted(54642) then
-				-- Put Flight Master's Whistle in the bank if the Gnome Heritage quest is completed
-				return "Bank Stuff", "Junk"
-			end
-
-			return Stuff:CheckItem(id)
-		end
-	end
-
-	return
-end
-
 
 local ZigiItems = {
 	-- Section#Category|CLASS,Profession|AltSection#AltCategory or Junk#Junk
 
 	-- Guild Charter
 	[5863] = "Guild Charter#Usable",
+
 
 	--[[ ! Mythic Keystone ! ]]--
 
@@ -282,10 +107,108 @@ local ZigiItems = {
 	[187786] = "Mythic Keystone", -- Timeworn Keystone
 
 
+	--[[ ! Bank Stuff ! ]]--
+
+	[6948]   = "Bank Stuff#Junk", -- Hearthstone
+	[138393] = "Bank Stuff#Junk", -- Essence Swapper
+
+
+	--[[ ! Stuff ! ]]--
+
+	-- Teleport Item
+	[103678] = "Stuff#Junk", -- Time-Lost Artifact
+	[110560] = "Stuff#Junk", -- Garrison Hearthstone
+	[118662] = "Stuff#Junk", -- Bladespire Relic
+	[118663] = "Stuff#Junk", -- Relic of Karabor
+	[118907] = "Stuff#Junk", -- Pit Fighter's Punching Ring (Alliance)
+	[118908] = "Stuff#Junk", -- Pit Fighter's Punching Ring (Horde)
+	[128353] = "Stuff#Junk", -- Admiral's Compass
+	[139590] = "Stuff#Junk", -- Scroll of Teleport: Ravenholdt
+	[181163] = "Stuff#Junk", -- Scroll of Teleport: Theater of Pain
+	[140192] = "Stuff#Junk", -- Dalaran Hearthstone
+	[141605] = "Stuff#Junk", -- Flight Master's Whistle
+	[142469] = "Stuff#Junk", -- Violet Seal of the Grand Magus
+	[144341] = "Stuff#Junk", -- Rechargeable Reaves Battery
+	[144391] = "Stuff#Junk", -- Pugilist's Powerful Punching Ring (Alliance)
+	[144392] = "Stuff#Junk", -- Pugilist's Powerful Punching Ring (Horde)
+	[168862] = "Stuff#Junk", -- G.E.A.R. Tracking Beacon
+	[180817] = "Stuff#Junk", -- Cypher of Relocation
+	[200613] = "Stuff#Junk", -- Aylaag Windstone Fragment
+	[32757]  = "Stuff#Junk", -- Blessed Medallion of Karabor
+	[37863]  = "Stuff#Junk", -- Direbrew's Remote
+	[40585]  = "Stuff#Junk", -- Signet of the Kirin Tor
+	[40586]  = "Stuff#Junk", -- Band of the Kirin Tor
+	[44935]  = "Stuff#Junk", -- Ring of the Kirin Tor
+	[46874]  = "Stuff#Junk", -- Argent Crusader's Tabard
+	[48957]  = "Stuff#Junk", -- Etched Signet of the Kirin Tor
+	[50287]  = "Stuff#Junk", -- Boots of the Bay
+	[52251]  = "Stuff#Junk", -- Jaina's Locket
+	[63206]  = "Stuff#Junk", -- Wrap of Unity (Alliance)
+	[63207]  = "Stuff#Junk", -- Wrap of Unity (Horde)
+	[63352]  = "Stuff#Junk", -- Shroud of Cooperation (Alliance)
+	[63353]  = "Stuff#Junk", -- Shroud of Cooperation (Horde)
+	[63378]  = "Stuff#Junk", -- Hellscream's Reach Tabard
+	[63379]  = "Stuff#Junk", -- Baradin's Wardens Tabard
+	[64457]  = "Stuff#Junk", -- The Last Relic of Argus
+	[65274]  = "Stuff#Junk", -- Cloak of Coordination (Horde)
+	[65360]  = "Stuff#Junk", -- Cloak of Coordination (Alliance)
+	[95050]  = "Stuff#Junk", -- The Brassiest Knuckle (Horde)
+	[95051]  = "Stuff#Junk", -- The Brassiest Knuckle (Alliance)
+
+	-- Toy
+	[111820] = "Stuff#Junk", -- Swapblaster
+	[122124] = "Stuff#Junk", -- Darkmoon Cannon
+	[167860] = "Stuff#Junk", -- Ancient Tauren Talisman
+	[180454] = "Stuff#Junk", -- Anti-Doom Broom
+	[94154]  = "Stuff#Junk", -- Survivor's Bag of Coins
+
+	-- Profession Tool
+	[109262] = "Stuff#Junk|Alchemy", -- Draenic Philosopher's Stone
+	[114943] = "Stuff#Junk", -- Ultimate Gnomish Army Knife
+	[116913] = "Stuff#Junk|Mining|94. Garrison#Sanctum", -- Peon's Mining Pick
+	[116916] = "Stuff#Junk|Herbalism|94. Garrison#Sanctum", -- Gorepetal's Gentle Grasp
+	[152839] = "Stuff#Junk|Blacksmithing", -- Khaz'gorian Smithing Hammer
+	[153290] = "Stuff#Junk|Mining", -- Krokul Mining Pick
+	[164733] = "Stuff#Junk|Tailoring", -- Synchronous Thread
+	[164766] = "Stuff#Junk|Enchanting", -- Iwen's Enchanting Rod
+	[23821]  = "Stuff#Junk", -- Zapthrottle Mote Extractor
+	[49040]  = "Stuff#Junk", -- Jeeves
+	[67494]  = "Stuff#Junk|Herbalism,Mining,Skinning", -- Electrostatic Condenser
+	[85777]  = "Stuff#Junk|Mining|Account Bound", -- Ancient Pandaren Mining Pick
+	[86566]  = "Stuff#Junk|Herbalism,Mining,Skinning|14. Archaeology#Tradeskill", -- Forager's Gloves
+	[87213]  = "Stuff#Junk|Herbalism,Mining", -- Mist-Piercing Goggles
+	[201366] = "Stuff#Junk|Blacksmithing", -- Master's Hammer
+
+	-- Miscellaneous
+	[113575] = "Stuff#Junk", -- Secretive Whistle
+	[127770] = "Stuff#Junk", -- Brazier of Awakening
+	[141652] = "Stuff#Junk", -- Mana Divining Stone
+	[147315] = "Stuff#Junk", -- Smelly's Luckydo
+	[151131] = "Stuff#Junk", -- Lamp of Al'Abas
+	[151143] = "Stuff#Junk", -- Shining Lamp of Al'Abas
+	[151144] = "Stuff#Junk", -- Gleaming Lamp of Al'Abas
+	[63359]  = "Stuff#Junk", -- Banner of Cooperation (Alliance)
+	[64400]  = "Stuff#Junk", -- Banner of Cooperation (Horde)
+	[64398]  = "Stuff#Junk", -- Standard of Unity (Alliance)
+	[64401]  = "Stuff#Junk", -- Standard of Unity (Horde)
+	[64399]  = "Stuff#Junk", -- Battle Standard of Coordination (Alliance)
+	[64402]  = "Stuff#Junk", -- Battle Standard of Coordination (Horde)
+
+	-- Charm
+	[142545] = "Stuff#Junk", -- Small Charm of Life
+	[142546] = "Stuff#Junk", -- Small Charm of Inertia
+	[206274] = "Stuff#Junk|DRUID,EVOKER,MAGE,MONK,PALADIN,PRIEST,SHAMAN,WARLOCK", -- Large Charm of Intelligence
+	[142548] = "Stuff#Junk|DEMONHUNTER,DRUID,HUNTER,MONK,ROGUE,SHAMAN", -- Large Charm of Dexterity
+	[142547] = "Stuff#Junk|DEATHKNIGHT,PALADIN,WARRIOR", -- Large Charm of Strength
+	[142551] = "Stuff#Junk", -- Stalwart's Grand Charm
+	[142549] = "Junk", -- Serpent's Grand Charm
+
+
 	--[[ ! Warlock ! ]]--
 
 	-- Felguard/Wrathguard Transmog
 	[112949] = "Stuff#Junk|Name:Beryl|?", -- Greatsword of Pride's Fall
+	[118413] = "Stuff#Junk|Name:Eld|?", -- Flamegrinder
 
 
 	--[[ ! Zone ! ]]--
@@ -741,13 +664,13 @@ local ZigiItems = {
 	-- Pandaria (95)
 	-- -- Timeless Isle (90)
 	-- -- Isle of Thunder (91)
-	[94222] = "9591. Isle of Thunder#Zone", -- Key to the Palace of Lei Shen
+	[94222]  = "9591. Isle of Thunder#Zone", -- Key to the Palace of Lei Shen
 	-- -- Isle of Giants (92)
-	[94288] = "9592. Isle of Giants#Zone", -- Giant Dinosaur Bone
+	[94288]  = "9592. Isle of Giants#Zone", -- Giant Dinosaur Bone
 	-- -- Vale of Eternal Blossoms (93)
-	[87779] = "9593. Vale of Eternal Blossoms#Zone", -- Ancient Guo-Lai Cache Key
-	[86547] = "9593. Vale of Eternal Blossoms#Zone", -- Skyshard
-	[86546] = "9593. Vale of Eternal Blossoms#Zone", -- Sky Crystal
+	[87779]  = "9593. Vale of Eternal Blossoms#Zone", -- Ancient Guo-Lai Cache Key
+	[86547]  = "9593. Vale of Eternal Blossoms#Zone", -- Skyshard
+	[86546]  = "9593. Vale of Eternal Blossoms#Zone", -- Sky Crystal
 	-- -- Dread Wastes (94)
 	-- -- Townlong Steppes (95)
 	-- -- Kun-Lai Summit (96)
@@ -759,12 +682,12 @@ local ZigiItems = {
 
 	-- Northrend (97)
 	-- -- Icecrown Citadel (52)
-	[52025] = "9752. Icecrown Citadel#Zone|ROGUE,DEATHKNIGHT,MAGE,DRUID", -- Vanquisher's Mark of Sanctification
-	[52028] = "9752. Icecrown Citadel#Zone|ROGUE,DEATHKNIGHT,MAGE,DRUID", -- Vanquisher's Mark of Sanctification (Heroic)
-	[52026] = "9752. Icecrown Citadel#Zone|WARRIOR,HUNTER,SHAMAN", -- Protector's Mark of Sanctification
-	[52029] = "9752. Icecrown Citadel#Zone|WARRIOR,HUNTER,SHAMAN", -- Protector's Mark of Sanctification (Heroic)
-	[52027] = "9752. Icecrown Citadel#Zone|PALADIN,PRIEST,WARLOCK", -- Conqueror's Mark of Sanctification
-	[52030] = "9752. Icecrown Citadel#Zone|PALADIN,PRIEST,WARLOCK", -- Conqueror's Mark of Sanctification (Heroic)
+	[52025]  = "9752. Icecrown Citadel#Zone|ROGUE,DEATHKNIGHT,MAGE,DRUID", -- Vanquisher's Mark of Sanctification
+	[52028]  = "9752. Icecrown Citadel#Zone|ROGUE,DEATHKNIGHT,MAGE,DRUID", -- Vanquisher's Mark of Sanctification (Heroic)
+	[52026]  = "9752. Icecrown Citadel#Zone|WARRIOR,HUNTER,SHAMAN", -- Protector's Mark of Sanctification
+	[52029]  = "9752. Icecrown Citadel#Zone|WARRIOR,HUNTER,SHAMAN", -- Protector's Mark of Sanctification (Heroic)
+	[52027]  = "9752. Icecrown Citadel#Zone|PALADIN,PRIEST,WARLOCK", -- Conqueror's Mark of Sanctification
+	[52030]  = "9752. Icecrown Citadel#Zone|PALADIN,PRIEST,WARLOCK", -- Conqueror's Mark of Sanctification (Heroic)
 
 	-- Outland (98)
 	-- -- Magister's Terrace (64)
@@ -774,8 +697,8 @@ local ZigiItems = {
 	-- -- Shadow Labyrinth (68)
 	-- -- Sethekk Halls (69)
 	-- -- Mana-Tombs (70)
-	[32092] = "9870. Mana-Tombs#Zone", -- The Eye of Haramad
-	[29750] = "9870. Mana-Tombs#Zone", -- Ethereum Stasis Chamber Key
+	[32092]  = "9870. Mana-Tombs#Zone", -- The Eye of Haramad
+	[29750]  = "9870. Mana-Tombs#Zone", -- Ethereum Stasis Chamber Key
 	-- -- The Black Morass (71)
 	-- -- Old Hillsbrad Foothills (72)
 	-- -- Auchenai Crypts (73)
@@ -790,7 +713,7 @@ local ZigiItems = {
 	-- -- Netherstorm (92)
 	-- -- Shadowmoon Valley (93)
 	-- -- Blade's Edge Mountains (94)
-	[32569] = "9894. Blade's Edge Mountains#Zone", -- Apexis Shard
+	[32569]  = "9894. Blade's Edge Mountains#Zone", -- Apexis Shard
 	-- -- Nagrand (95)
 	-- -- Terokkar Forest (96)
 	-- -- Zangarmarsh (97)
@@ -799,55 +722,55 @@ local ZigiItems = {
 
 	-- Classic (99)
 	-- -- Ahn'Qiraj (51)
-	[76401] = "9951. Ahn'Qiraj#Zone", -- Scarab Coffer Key
-	[76402] = "9951. Ahn'Qiraj#Zone", -- Greater Scarab Coffer Key
-	[21229] = "9951. Ahn'Qiraj#Zone", -- Qiraji Lord's Insignia
-	[20864] = "9951. Ahn'Qiraj#Zone", -- Bone Scarab
-	[20861] = "9951. Ahn'Qiraj#Zone", -- Bronze Scarab
-	[20863] = "9951. Ahn'Qiraj#Zone", -- Clay Scarab
-	[20862] = "9951. Ahn'Qiraj#Zone", -- Crystal Scarab
-	[20859] = "9951. Ahn'Qiraj#Zone", -- Gold Scarab
-	[20865] = "9951. Ahn'Qiraj#Zone", -- Ivory Scarab
-	[20860] = "9951. Ahn'Qiraj#Zone", -- Silver Scarab
-	[20858] = "9951. Ahn'Qiraj#Zone", -- Stone Scarab
-	[21232] = "9951. Ahn'Qiraj#Zone", -- Imperial Qiraji Armaments
-	[21237] = "9951. Ahn'Qiraj#Zone", -- Imperial Qiraji Regalia
-	[20874] = "9951. Ahn'Qiraj#Zone", -- Idol of the Sun
-	[20875] = "9951. Ahn'Qiraj#Zone", -- Idol of Night
-	[20876] = "9951. Ahn'Qiraj#Zone", -- Idol of Death
-	[20877] = "9951. Ahn'Qiraj#Zone", -- Idol of the Sage
-	[20878] = "9951. Ahn'Qiraj#Zone", -- Idol of Rebirth
-	[20879] = "9951. Ahn'Qiraj#Zone", -- Idol of Life
-	[20881] = "9951. Ahn'Qiraj#Zone", -- Idol of Strife
-	[20882] = "9951. Ahn'Qiraj#Zone", -- Idol of War
-	[20869] = "9951. Ahn'Qiraj#Zone", -- Amber Idol
-	[20870] = "9951. Ahn'Qiraj#Zone", -- Jasper Idol
-	[20872] = "9951. Ahn'Qiraj#Zone", -- Vermillion Idol
-	[20873] = "9951. Ahn'Qiraj#Zone", -- Alabaster Idol
-	[20871] = "9951. Ahn'Qiraj#Zone", -- Obsidian Idol
-	[20866] = "9951. Ahn'Qiraj#Zone", -- Azure Idol
-	[20868] = "9951. Ahn'Qiraj#Zone", -- Lambent Idol
-	[20867] = "9951. Ahn'Qiraj#Zone", -- Onyx Idol
-	[20928] = "9951. Ahn'Qiraj#Zone|WARRIOR,HUNTER,ROGUE,PRIEST", -- Qiraji Bindings of Command
-	[20932] = "9951. Ahn'Qiraj#Zone|PALADIN,SHAMAN,MAGE,WARLOCK,DRUID", -- Qiraji Bindings of Dominance
-	[20927] = "9951. Ahn'Qiraj#Zone|WARRIOR,ROGUE,PRIEST,MAGE", -- Ouro's Intact Hide
-	[20931] = "9951. Ahn'Qiraj#Zone|PALADIN,HUNTER,SHAMAN,WARLOCK,DRUID", -- Skin of the Great Sandworm
-	[20926] = "9951. Ahn'Qiraj#Zone|WARRIOR,PRIEST,MAGE,WARLOCK", -- Vek'nilash's Circlet
-	[20930] = "9951. Ahn'Qiraj#Zone|PALADIN,HUNTER,ROGUE,SHAMAN,DRUID", -- Vek'lor's Diadem
-	[20933] = "9951. Ahn'Qiraj#Zone|PRIEST,MAGE,WARLOCK,DRUID", -- Husk of the Old God
-	[20929] = "9951. Ahn'Qiraj#Zone|WARRIOR,PALADIN,HUNTER,ROGUE,SHAMAN", -- Carapace of the Old God
-	[20884] = "9951. Ahn'Qiraj#Zone|WARRIOR,PALADIN,SHAMAN,MAGE,DRUID", -- Qiraji Magisterial Ring
-	[20888] = "9951. Ahn'Qiraj#Zone|HUNTER,ROGUE,PRIEST,WARLOCK", -- Qiraji Ceremonial Ring
-	[20886] = "9951. Ahn'Qiraj#Zone|WARRIOR,PALADIN,HUNTER,ROGUE,SHAMAN", -- Qiraji Spiked Hilt
-	[20890] = "9951. Ahn'Qiraj#Zone|PRIEST,MAGE,WARLOCK,DRUID", -- Qiraji Ornate Hilt
-	[20889] = "9951. Ahn'Qiraj#Zone|PALADIN,HUNTER,SHAMAN,WARLOCK,DRUID", -- Qiraji Regal Drape
-	[20885] = "9951. Ahn'Qiraj#Zone|WARRIOR,ROGUE,PRIEST,MAGE", -- Qiraji Martial Drape
-	[21230] = "9951. Ahn'Qiraj#Zone", -- Ancient Qiraji Artifact
+	[76401]  = "9951. Ahn'Qiraj#Zone", -- Scarab Coffer Key
+	[76402]  = "9951. Ahn'Qiraj#Zone", -- Greater Scarab Coffer Key
+	[21229]  = "9951. Ahn'Qiraj#Zone", -- Qiraji Lord's Insignia
+	[20864]  = "9951. Ahn'Qiraj#Zone", -- Bone Scarab
+	[20861]  = "9951. Ahn'Qiraj#Zone", -- Bronze Scarab
+	[20863]  = "9951. Ahn'Qiraj#Zone", -- Clay Scarab
+	[20862]  = "9951. Ahn'Qiraj#Zone", -- Crystal Scarab
+	[20859]  = "9951. Ahn'Qiraj#Zone", -- Gold Scarab
+	[20865]  = "9951. Ahn'Qiraj#Zone", -- Ivory Scarab
+	[20860]  = "9951. Ahn'Qiraj#Zone", -- Silver Scarab
+	[20858]  = "9951. Ahn'Qiraj#Zone", -- Stone Scarab
+	[21232]  = "9951. Ahn'Qiraj#Zone", -- Imperial Qiraji Armaments
+	[21237]  = "9951. Ahn'Qiraj#Zone", -- Imperial Qiraji Regalia
+	[20874]  = "9951. Ahn'Qiraj#Zone", -- Idol of the Sun
+	[20875]  = "9951. Ahn'Qiraj#Zone", -- Idol of Night
+	[20876]  = "9951. Ahn'Qiraj#Zone", -- Idol of Death
+	[20877]  = "9951. Ahn'Qiraj#Zone", -- Idol of the Sage
+	[20878]  = "9951. Ahn'Qiraj#Zone", -- Idol of Rebirth
+	[20879]  = "9951. Ahn'Qiraj#Zone", -- Idol of Life
+	[20881]  = "9951. Ahn'Qiraj#Zone", -- Idol of Strife
+	[20882]  = "9951. Ahn'Qiraj#Zone", -- Idol of War
+	[20869]  = "9951. Ahn'Qiraj#Zone", -- Amber Idol
+	[20870]  = "9951. Ahn'Qiraj#Zone", -- Jasper Idol
+	[20872]  = "9951. Ahn'Qiraj#Zone", -- Vermillion Idol
+	[20873]  = "9951. Ahn'Qiraj#Zone", -- Alabaster Idol
+	[20871]  = "9951. Ahn'Qiraj#Zone", -- Obsidian Idol
+	[20866]  = "9951. Ahn'Qiraj#Zone", -- Azure Idol
+	[20868]  = "9951. Ahn'Qiraj#Zone", -- Lambent Idol
+	[20867]  = "9951. Ahn'Qiraj#Zone", -- Onyx Idol
+	[20928]  = "9951. Ahn'Qiraj#Zone|WARRIOR,HUNTER,ROGUE,PRIEST", -- Qiraji Bindings of Command
+	[20932]  = "9951. Ahn'Qiraj#Zone|PALADIN,SHAMAN,MAGE,WARLOCK,DRUID", -- Qiraji Bindings of Dominance
+	[20927]  = "9951. Ahn'Qiraj#Zone|WARRIOR,ROGUE,PRIEST,MAGE", -- Ouro's Intact Hide
+	[20931]  = "9951. Ahn'Qiraj#Zone|PALADIN,HUNTER,SHAMAN,WARLOCK,DRUID", -- Skin of the Great Sandworm
+	[20926]  = "9951. Ahn'Qiraj#Zone|WARRIOR,PRIEST,MAGE,WARLOCK", -- Vek'nilash's Circlet
+	[20930]  = "9951. Ahn'Qiraj#Zone|PALADIN,HUNTER,ROGUE,SHAMAN,DRUID", -- Vek'lor's Diadem
+	[20933]  = "9951. Ahn'Qiraj#Zone|PRIEST,MAGE,WARLOCK,DRUID", -- Husk of the Old God
+	[20929]  = "9951. Ahn'Qiraj#Zone|WARRIOR,PALADIN,HUNTER,ROGUE,SHAMAN", -- Carapace of the Old God
+	[20884]  = "9951. Ahn'Qiraj#Zone|WARRIOR,PALADIN,SHAMAN,MAGE,DRUID", -- Qiraji Magisterial Ring
+	[20888]  = "9951. Ahn'Qiraj#Zone|HUNTER,ROGUE,PRIEST,WARLOCK", -- Qiraji Ceremonial Ring
+	[20886]  = "9951. Ahn'Qiraj#Zone|WARRIOR,PALADIN,HUNTER,ROGUE,SHAMAN", -- Qiraji Spiked Hilt
+	[20890]  = "9951. Ahn'Qiraj#Zone|PRIEST,MAGE,WARLOCK,DRUID", -- Qiraji Ornate Hilt
+	[20889]  = "9951. Ahn'Qiraj#Zone|PALADIN,HUNTER,SHAMAN,WARLOCK,DRUID", -- Qiraji Regal Drape
+	[20885]  = "9951. Ahn'Qiraj#Zone|WARRIOR,ROGUE,PRIEST,MAGE", -- Qiraji Martial Drape
+	[21230]  = "9951. Ahn'Qiraj#Zone", -- Ancient Qiraji Artifact
 	-- -- Dire Maul (71)
-	[18258] = "9971. Dire Maul#Zone", -- Gordok Ogre Suit
-	[18240] = "9971. Dire Maul#Zone", -- Ogre Tannin
+	[18258]  = "9971. Dire Maul#Zone", -- Gordok Ogre Suit
+	[18240]  = "9971. Dire Maul#Zone", -- Ogre Tannin
 	-- -- Gnomeregan (79)
-	[9308] = "9979. Gnomeregan#Zone", -- Grime-Encrusted Object
+	[9308]   = "9979. Gnomeregan#Zone", -- Grime-Encrusted Object
 
 	-- Holidays
 	-- -- Darkmoon Faire (89)
@@ -858,14 +781,14 @@ local ZigiItems = {
 	-- -- Trial of Style (90)
 	[151134] = "9990. [ff7f3f]Trial of Style]#Zone", -- Trial of Style Token
 	-- -- Noblegarden (99)
-	[44791] = "9999. [ff7f3f]Noblegarden]#Zone", -- Noblegarden Chocolate
-	[44802] = "9999. [ff7f3f]Noblegarden]#Zone", -- Borrowed Egg Basket
+	[44791]  = "9999. [ff7f3f]Noblegarden]#Zone", -- Noblegarden Chocolate
+	[44802]  = "9999. [ff7f3f]Noblegarden]#Zone", -- Borrowed Egg Basket
 	-- -- Midsummer Fire Festival
-	[23247] = "9999. [ff7f3f]Midsummer Fire Festival]#Zone", -- Burning Blossom
+	[23247]  = "9999. [ff7f3f]Midsummer Fire Festival]#Zone", -- Burning Blossom
 	-- -- Brewfest
-	[37829] = "9999. [ff7f3f]Brewfest]#Zone", -- Brewfest Prize Token
-	[38280] = "9999. [ff7f3f]Brewfest]#Zone", -- Direbrew's Dire Brew (Alliance)
-	[38281] = "9999. [ff7f3f]Brewfest]#Zone", -- Direbrew's Dire Brew (Horde)
+	[37829]  = "9999. [ff7f3f]Brewfest]#Zone", -- Brewfest Prize Token
+	[38280]  = "9999. [ff7f3f]Brewfest]#Zone", -- Direbrew's Dire Brew (Alliance)
+	[38281]  = "9999. [ff7f3f]Brewfest]#Zone", -- Direbrew's Dire Brew (Horde)
 
 
 	--[[ ! Professions ! ]]--
@@ -922,57 +845,57 @@ local ZigiItems = {
 	[111556] = "0194. Draenor Cloth#Tradeskill", -- Hexweave Cloth
 	[111557] = "0194. Draenor Cloth#Tradeskill", -- Sumptuous Fur
 	-- -- Pandaria (95)
-	[82447] = "0195. Pandaria Cloth#Tradeskill", -- Imperial Silk
-	[98619] = "0195. Pandaria Cloth#Tradeskill", -- Celestial Cloth
-	[82441] = "0195. Pandaria Cloth#Tradeskill", -- Bolt of Windwool Cloth
-	[92960] = "0195. Pandaria Cloth#Tradeskill", -- Silkworm Cocoon
-	[72988] = "0195. Pandaria Cloth#Tradeskill", -- Windwool Cloth
+	[82447]  = "0195. Pandaria Cloth#Tradeskill", -- Imperial Silk
+	[98619]  = "0195. Pandaria Cloth#Tradeskill", -- Celestial Cloth
+	[82441]  = "0195. Pandaria Cloth#Tradeskill", -- Bolt of Windwool Cloth
+	[92960]  = "0195. Pandaria Cloth#Tradeskill", -- Silkworm Cocoon
+	[72988]  = "0195. Pandaria Cloth#Tradeskill", -- Windwool Cloth
 	-- -- Cataclysm (96)
-	[54440] = "0196. Cataclysm Cloth#Tradeskill", -- Dreamcloth
-	[53010] = "0196. Cataclysm Cloth#Tradeskill", -- Embersilk Cloth
-	[53643] = "0196. Cataclysm Cloth#Tradeskill", -- Bolt of Embersilk Cloth
+	[54440]  = "0196. Cataclysm Cloth#Tradeskill", -- Dreamcloth
+	[53010]  = "0196. Cataclysm Cloth#Tradeskill", -- Embersilk Cloth
+	[53643]  = "0196. Cataclysm Cloth#Tradeskill", -- Bolt of Embersilk Cloth
 	-- -- Northrend (97)
-	[41593] = "0197. Northrend Cloth#Tradeskill", -- Ebonweave
-	[41594] = "0197. Northrend Cloth#Tradeskill", -- Moonshroud
-	[41595] = "0197. Northrend Cloth#Tradeskill", -- Spellweave
-	[41511] = "0197. Northrend Cloth#Tradeskill", -- Bolt of Imbued Frostweave
-	[42253] = "0197. Northrend Cloth#Tradeskill", -- Iceweb Spider Silk
-	[33470] = "0197. Northrend Cloth#Tradeskill", -- Frostweave Cloth
-	[38426] = "0197. Northrend Cloth#Tradeskill", -- Eternium Thread
-	[41510] = "0197. Northrend Cloth#Tradeskill", -- Bolt of Frostweave
+	[41593]  = "0197. Northrend Cloth#Tradeskill", -- Ebonweave
+	[41594]  = "0197. Northrend Cloth#Tradeskill", -- Moonshroud
+	[41595]  = "0197. Northrend Cloth#Tradeskill", -- Spellweave
+	[41511]  = "0197. Northrend Cloth#Tradeskill", -- Bolt of Imbued Frostweave
+	[42253]  = "0197. Northrend Cloth#Tradeskill", -- Iceweb Spider Silk
+	[33470]  = "0197. Northrend Cloth#Tradeskill", -- Frostweave Cloth
+	[38426]  = "0197. Northrend Cloth#Tradeskill", -- Eternium Thread
+	[41510]  = "0197. Northrend Cloth#Tradeskill", -- Bolt of Frostweave
 	-- -- Outland (98)
-	[21882] = "0198. Outland Cloth#Tradeskill", -- Soul Essence
-	[21845] = "0198. Outland Cloth#Tradeskill", -- Primal Mooncloth
-	[24272] = "0198. Outland Cloth#Tradeskill", -- Shadowcloth
-	[24271] = "0198. Outland Cloth#Tradeskill", -- Spellcloth
-	[21844] = "0198. Outland Cloth#Tradeskill", -- Bolt of Soulcloth
-	[21842] = "0198. Outland Cloth#Tradeskill", -- Bolt of Imbued Netherweave
-	[21877] = "0198. Outland Cloth#Tradeskill", -- Netherweave Cloth
-	[21881] = "0198. Outland Cloth#Tradeskill", -- Netherweb Spider Silk
-	[21840] = "0198. Outland Cloth#Tradeskill", -- Bolt of Netherweave
+	[21882]  = "0198. Outland Cloth#Tradeskill", -- Soul Essence
+	[21845]  = "0198. Outland Cloth#Tradeskill", -- Primal Mooncloth
+	[24272]  = "0198. Outland Cloth#Tradeskill", -- Shadowcloth
+	[24271]  = "0198. Outland Cloth#Tradeskill", -- Spellcloth
+	[21844]  = "0198. Outland Cloth#Tradeskill", -- Bolt of Soulcloth
+	[21842]  = "0198. Outland Cloth#Tradeskill", -- Bolt of Imbued Netherweave
+	[21877]  = "0198. Outland Cloth#Tradeskill", -- Netherweave Cloth
+	[21881]  = "0198. Outland Cloth#Tradeskill", -- Netherweb Spider Silk
+	[21840]  = "0198. Outland Cloth#Tradeskill", -- Bolt of Netherweave
 	-- -- Cloth (99)
-	[14342] = "0199. Cloth#Tradeskill", -- Mooncloth
-	[14048] = "0199. Cloth#Tradeskill", -- Bolt of Runecloth
-	[14047] = "0199. Cloth#Tradeskill", -- Runecloth
-	[14256] = "0199. Cloth#Tradeskill", -- Felcloth
-	[14341] = "0199. Cloth#Tradeskill", -- Rune Thread
-	[14227] = "0199. Cloth#Tradeskill", -- Ironweb Spider Silk
-	[4339] = "0199. Cloth#Tradeskill", -- Bolt of Mageweave
-	[4338] = "0199. Cloth#Tradeskill", -- Mageweave Cloth
-	[10285] = "0199. Cloth#Tradeskill", -- Shadow Silk
-	[8343] = "0199. Cloth#Tradeskill", -- Heavy Silken Thread
-	[4305] = "0199. Cloth#Tradeskill", -- Bolt of Silk Cloth
-	[4337] = "0199. Cloth#Tradeskill", -- Thick Spider's Silk
-	[4306] = "0199. Cloth#Tradeskill", -- Silk Cloth
-	[4291] = "0199. Cloth#Tradeskill", -- Silken Thread
-	[2997] = "0199. Cloth#Tradeskill", -- Bolt of Woolen Cloth
-	[3182] = "0199. Cloth#Tradeskill", -- Spider's Silk
-	[2321] = "0199. Cloth#Tradeskill", -- Fine Thread
-	[2592] = "0199. Cloth#Tradeskill", -- Wool Cloth
-	[2996] = "0199. Cloth#Tradeskill", -- Bolt of Linen Cloth
-	[2589] = "0199. Cloth#Tradeskill", -- Linen Cloth
-	[2320] = "0199. Cloth#Tradeskill", -- Coarse Thread
-	[7072] = "0199. Cloth#Tradeskill", -- Naga Scale
+	[14342]  = "0199. Cloth#Tradeskill", -- Mooncloth
+	[14048]  = "0199. Cloth#Tradeskill", -- Bolt of Runecloth
+	[14047]  = "0199. Cloth#Tradeskill", -- Runecloth
+	[14256]  = "0199. Cloth#Tradeskill", -- Felcloth
+	[14341]  = "0199. Cloth#Tradeskill", -- Rune Thread
+	[14227]  = "0199. Cloth#Tradeskill", -- Ironweb Spider Silk
+	[4339]   = "0199. Cloth#Tradeskill", -- Bolt of Mageweave
+	[4338]   = "0199. Cloth#Tradeskill", -- Mageweave Cloth
+	[10285]  = "0199. Cloth#Tradeskill", -- Shadow Silk
+	[8343]   = "0199. Cloth#Tradeskill", -- Heavy Silken Thread
+	[4305]   = "0199. Cloth#Tradeskill", -- Bolt of Silk Cloth
+	[4337]   = "0199. Cloth#Tradeskill", -- Thick Spider's Silk
+	[4306]   = "0199. Cloth#Tradeskill", -- Silk Cloth
+	[4291]   = "0199. Cloth#Tradeskill", -- Silken Thread
+	[2997]   = "0199. Cloth#Tradeskill", -- Bolt of Woolen Cloth
+	[3182]   = "0199. Cloth#Tradeskill", -- Spider's Silk
+	[2321]   = "0199. Cloth#Tradeskill", -- Fine Thread
+	[2592]   = "0199. Cloth#Tradeskill", -- Wool Cloth
+	[2996]   = "0199. Cloth#Tradeskill", -- Bolt of Linen Cloth
+	[2589]   = "0199. Cloth#Tradeskill", -- Linen Cloth
+	[2320]   = "0199. Cloth#Tradeskill", -- Coarse Thread
+	[7072]   = "0199. Cloth#Tradeskill", -- Naga Scale
 
 	--! Leather (02)
 	-- -- Dragon Isles (90)
@@ -1054,79 +977,80 @@ local ZigiItems = {
 	[110609] = "0294. Draenor Leather#Tradeskill", -- Raw Beast Hide
 	[110611] = "0294. Draenor Leather#Tradeskill", -- Burnished Leather
 	-- -- Pandaria (95)
-	[72163] = "0295. Pandaria Leather#Tradeskill", -- Magnificent Hide
-	[98617] = "0295. Pandaria Leather#Tradeskill", -- Hardened Magnificent Hide
-	[79101] = "0295. Pandaria Leather#Tradeskill", -- Prismatic Scale
-	[72120] = "0295. Pandaria Leather#Tradeskill", -- Exotic Leather
-	[72162] = "0295. Pandaria Leather#Tradeskill", -- Sha-Touched Leather
+	[72163]  = "0295. Pandaria Leather#Tradeskill", -- Magnificent Hide
+	[98617]  = "0295. Pandaria Leather#Tradeskill", -- Hardened Magnificent Hide
+	[79101]  = "0295. Pandaria Leather#Tradeskill", -- Prismatic Scale
+	[72120]  = "0295. Pandaria Leather#Tradeskill", -- Exotic Leather
+	[72162]  = "0295. Pandaria Leather#Tradeskill", -- Sha-Touched Leather
 	-- -- Cataclysm (96)
-	[52976] = "0296. Cataclysm Leather#Tradeskill", -- Savage Leather
-	[52980] = "0296. Cataclysm Leather#Tradeskill", -- Pristine Hide
-	[56516] = "0296. Cataclysm Leather#Tradeskill", -- Heavy Savage Leather
-	[52979] = "0296. Cataclysm Leather#Tradeskill", -- Blackened Dragonscale
-	[52982] = "0296. Cataclysm Leather#Tradeskill", -- Deepsea Scale
+	[52976]  = "0296. Cataclysm Leather#Tradeskill", -- Savage Leather
+	[52980]  = "0296. Cataclysm Leather#Tradeskill", -- Pristine Hide
+	[56516]  = "0296. Cataclysm Leather#Tradeskill", -- Heavy Savage Leather
+	[52979]  = "0296. Cataclysm Leather#Tradeskill", -- Blackened Dragonscale
+	[52982]  = "0296. Cataclysm Leather#Tradeskill", -- Deepsea Scale
 	-- -- Northrend (97)
-	[38425] = "0297. Northrend Leather#Tradeskill", -- Heavy Borean Leather
-	[44128] = "0297. Northrend Leather#Tradeskill", -- Arctic Fur
-	[38557] = "0297. Northrend Leather#Tradeskill", -- Icy Dragonscale
-	[38561] = "0297. Northrend Leather#Tradeskill", -- Jormungar Scale
-	[33568] = "0297. Northrend Leather#Tradeskill", -- Borean Leather
-	[38558] = "0297. Northrend Leather#Tradeskill", -- Nerubian Chitin
+	[38425]  = "0297. Northrend Leather#Tradeskill", -- Heavy Borean Leather
+	[44128]  = "0297. Northrend Leather#Tradeskill", -- Arctic Fur
+	[38557]  = "0297. Northrend Leather#Tradeskill", -- Icy Dragonscale
+	[38561]  = "0297. Northrend Leather#Tradeskill", -- Jormungar Scale
+	[33568]  = "0297. Northrend Leather#Tradeskill", -- Borean Leather
+	[38558]  = "0297. Northrend Leather#Tradeskill", -- Nerubian Chitin
 	-- -- Outland (98)
-	[25707] = "0298. Outland Leather#Tradeskill", -- Fel Hide
-	[21887] = "0298. Outland Leather#Tradeskill", -- Knothide Leather
-	[25700] = "0298. Outland Leather#Tradeskill", -- Fel Scales
-	[29547] = "0298. Outland Leather#Tradeskill", -- Wind Scales
-	[25708] = "0298. Outland Leather#Tradeskill", -- Thick Clefthoof Leather
-	[29539] = "0298. Outland Leather#Tradeskill", -- Cobra Scales
-	[29548] = "0298. Outland Leather#Tradeskill", -- Nether Dragonscales
-	[25649] = "0298. Outland Leather#Tradeskill", -- Knothide Leather Scraps
-	[25699] = "0298. Outland Leather#Tradeskill", -- Crystal Infused Leather
-	[23793] = "0298. Outland Leather#Tradeskill", -- Heavy Knothide Leather
+	[25707]  = "0298. Outland Leather#Tradeskill", -- Fel Hide
+	[21887]  = "0298. Outland Leather#Tradeskill", -- Knothide Leather
+	[25700]  = "0298. Outland Leather#Tradeskill", -- Fel Scales
+	[29547]  = "0298. Outland Leather#Tradeskill", -- Wind Scales
+	[25708]  = "0298. Outland Leather#Tradeskill", -- Thick Clefthoof Leather
+	[29539]  = "0298. Outland Leather#Tradeskill", -- Cobra Scales
+	[29548]  = "0298. Outland Leather#Tradeskill", -- Nether Dragonscales
+	[25649]  = "0298. Outland Leather#Tradeskill", -- Knothide Leather Scraps
+	[25699]  = "0298. Outland Leather#Tradeskill", -- Crystal Infused Leather
+	[23793]  = "0298. Outland Leather#Tradeskill", -- Heavy Knothide Leather
 	-- -- Leather (99)
+	[12607]  = "0299. Leather#Tradeskill", -- Brilliant Chromatic Scale
 	[183955] = "0299. Leather#Tradeskill", -- Curing Salt
-	[17012] = "0299. Leather#Tradeskill", -- Core Leather
-	[15410] = "0299. Leather#Tradeskill", -- Scale of Onyxia
-	[15414] = "0299. Leather#Tradeskill", -- Red Dragonscale
-	[15416] = "0299. Leather#Tradeskill", -- Black Dragonscale
-	[12810] = "0299. Leather#Tradeskill", -- Enchanted Leather
-	[15408] = "0299. Leather#Tradeskill", -- Heavy Scorpid Scale
-	[15415] = "0299. Leather#Tradeskill", -- Blue Dragonscale
-	[15412] = "0299. Leather#Tradeskill", -- Green Dragonscale
-	[8165] = "0299. Leather#Tradeskill", -- Worn Dragonscale
-	[8154] = "0299. Leather#Tradeskill", -- Scorpid Scale
-	[8150] = "0299. Leather#Tradeskill", -- Deeprock Salt
-	[8172] = "0299. Leather#Tradeskill", -- Cured Thick Hide
-	[8167] = "0299. Leather#Tradeskill", -- Turtle Scale
-	[5785] = "0299. Leather#Tradeskill", -- Thick Murloc Scale
-	[4236] = "0299. Leather#Tradeskill", -- Cured Heavy Hide
-	[4461] = "0299. Leather#Tradeskill", -- Raptor Hide
-	[4233] = "0299. Leather#Tradeskill", -- Cured Medium Hide
-	[5784] = "0299. Leather#Tradeskill", -- Slimy Murloc Scale
-	[4289] = "0299. Leather#Tradeskill", -- Salt
-	[4231] = "0299. Leather#Tradeskill", -- Cured Light Hide
-	[2934] = "0299. Leather#Tradeskill", -- Ruined Leather Scraps
-	[8170] = "0299. Leather#Tradeskill", -- Rugged Leather
-	[2319] = "0299. Leather#Tradeskill", -- Medium Leather
-	[4234] = "0299. Leather#Tradeskill", -- Heavy Leather
-	[4304] = "0299. Leather#Tradeskill", -- Thick Leather
-	[2318] = "0299. Leather#Tradeskill", -- Light Leather
-	[15419] = "0299. Leather#Tradeskill", -- Warbear Leather
-	[4235] = "0299. Leather#Tradeskill", -- Heavy Hide
-	[4232] = "0299. Leather#Tradeskill", -- Medium Hide
-	[783] = "0299. Leather#Tradeskill", -- Light Hide
-	[15407] = "0299. Leather#Tradeskill", -- Cured Rugged Hide
-	[15417] = "0299. Leather#Tradeskill", -- Devilsaur Leather
-	[7392] = "0299. Leather#Tradeskill", -- Green Whelp Scale
-	[6471] = "0299. Leather#Tradeskill", -- Perfect Deviate Scale
-	[8171] = "0299. Leather#Tradeskill", -- Rugged Hide
-	[7286] = "0299. Leather#Tradeskill", -- Black Whelp Scale
-	[8169] = "0299. Leather#Tradeskill", -- Thick Hide
-	[6470] = "0299. Leather#Tradeskill", -- Deviate Scale
-	[5082] = "0299. Leather#Tradeskill", -- Thin Kodo Leather
-	[5635] = "0299. Leather#Tradeskill", -- Sharp Claw
-	[5637] = "0299. Leather#Tradeskill", -- Large Fang
-	[17056] = "0299. Leather#Tradeskill", -- Light Feather
+	[17012]  = "0299. Leather#Tradeskill", -- Core Leather
+	[15410]  = "0299. Leather#Tradeskill", -- Scale of Onyxia
+	[15414]  = "0299. Leather#Tradeskill", -- Red Dragonscale
+	[15416]  = "0299. Leather#Tradeskill", -- Black Dragonscale
+	[12810]  = "0299. Leather#Tradeskill", -- Enchanted Leather
+	[15408]  = "0299. Leather#Tradeskill", -- Heavy Scorpid Scale
+	[15415]  = "0299. Leather#Tradeskill", -- Blue Dragonscale
+	[15412]  = "0299. Leather#Tradeskill", -- Green Dragonscale
+	[8165]   = "0299. Leather#Tradeskill", -- Worn Dragonscale
+	[8154]   = "0299. Leather#Tradeskill", -- Scorpid Scale
+	[8150]   = "0299. Leather#Tradeskill", -- Deeprock Salt
+	[8172]   = "0299. Leather#Tradeskill", -- Cured Thick Hide
+	[8167]   = "0299. Leather#Tradeskill", -- Turtle Scale
+	[5785]   = "0299. Leather#Tradeskill", -- Thick Murloc Scale
+	[4236]   = "0299. Leather#Tradeskill", -- Cured Heavy Hide
+	[4461]   = "0299. Leather#Tradeskill", -- Raptor Hide
+	[4233]   = "0299. Leather#Tradeskill", -- Cured Medium Hide
+	[5784]   = "0299. Leather#Tradeskill", -- Slimy Murloc Scale
+	[4289]   = "0299. Leather#Tradeskill", -- Salt
+	[4231]   = "0299. Leather#Tradeskill", -- Cured Light Hide
+	[2934]   = "0299. Leather#Tradeskill", -- Ruined Leather Scraps
+	[8170]   = "0299. Leather#Tradeskill", -- Rugged Leather
+	[2319]   = "0299. Leather#Tradeskill", -- Medium Leather
+	[4234]   = "0299. Leather#Tradeskill", -- Heavy Leather
+	[4304]   = "0299. Leather#Tradeskill", -- Thick Leather
+	[2318]   = "0299. Leather#Tradeskill", -- Light Leather
+	[15419]  = "0299. Leather#Tradeskill", -- Warbear Leather
+	[4235]   = "0299. Leather#Tradeskill", -- Heavy Hide
+	[4232]   = "0299. Leather#Tradeskill", -- Medium Hide
+	[783]    = "0299. Leather#Tradeskill", -- Light Hide
+	[15407]  = "0299. Leather#Tradeskill", -- Cured Rugged Hide
+	[15417]  = "0299. Leather#Tradeskill", -- Devilsaur Leather
+	[7392]   = "0299. Leather#Tradeskill", -- Green Whelp Scale
+	[6471]   = "0299. Leather#Tradeskill", -- Perfect Deviate Scale
+	[8171]   = "0299. Leather#Tradeskill", -- Rugged Hide
+	[7286]   = "0299. Leather#Tradeskill", -- Black Whelp Scale
+	[8169]   = "0299. Leather#Tradeskill", -- Thick Hide
+	[6470]   = "0299. Leather#Tradeskill", -- Deviate Scale
+	[5082]   = "0299. Leather#Tradeskill", -- Thin Kodo Leather
+	[5635]   = "0299. Leather#Tradeskill", -- Sharp Claw
+	[5637]   = "0299. Leather#Tradeskill", -- Large Fang
+	[17056]  = "0299. Leather#Tradeskill", -- Light Feather
 
 	--! Metal & Stone (03)
 	-- -- Dragon Isles (90)
@@ -1781,46 +1705,52 @@ local ZigiItems = {
 	[137221] = "0693. Broken Isles Enchanting#Tradeskill", -- Enchanted Raven Sigil
 	-- -- Draenor (94)
 	[113588] = "0694. Draenor Enchanting#Tradeskill", -- Temporal Crystal
+	[115504] = "Openable|Item:115504:10|0694. Draenor Enchanting#Tradeskill", -- Fractured Temporal Crystal
 	[111245] = "0694. Draenor Enchanting#Tradeskill", -- Luminous Shard
+	[115502] = "Openable|Item:115502:10|0694. Draenor Enchanting#Tradeskill", -- Small Luminous Shard
 	[109693] = "0694. Draenor Enchanting#Tradeskill", -- Draenic Dust
 	-- -- Pandaria (95)
-	[74248] = "0695. Pandaria Enchanting#Tradeskill", -- Sha Crystal
-	[74247] = "0695. Pandaria Enchanting#Tradeskill", -- Ethereal Shard
-	[74250] = "0695. Pandaria Enchanting#Tradeskill", -- Mysterious Essence
-	[74249] = "0695. Pandaria Enchanting#Tradeskill", -- Spirit Dust
+	[74248]  = "0695. Pandaria Enchanting#Tradeskill", -- Sha Crystal
+	[105718] = "Openable|Item:105718:3|0695. Pandaria Enchanting#Tradeskill", -- Sha Crystal Fragment
+	[74247]  = "0695. Pandaria Enchanting#Tradeskill", -- Ethereal Shard
+	[74252]  = "Openable|Item:74252:3|0695. Pandaria Enchanting#Tradeskill", -- Small Ethereal Shard
+	[74250]  = "0695. Pandaria Enchanting#Tradeskill", -- Mysterious Essence
+	[74249]  = "0695. Pandaria Enchanting#Tradeskill", -- Spirit Dust
 	-- -- Cataclysm (96)
-	[52721] = "0696. Cataclysm Enchanting#Tradeskill", -- Heavenly Shard
-	[52722] = "0696. Cataclysm Enchanting#Tradeskill", -- Maelstrom Crystal
-	[52719] = "0696. Cataclysm Enchanting#Tradeskill", -- Greater Celestial Essence
-	[52555] = "0696. Cataclysm Enchanting#Tradeskill", -- Hypnotic Dust
-	[52718] = "0696. Cataclysm Enchanting#Tradeskill", -- Lesser Celestial Essence
+	[52721]  = "0696. Cataclysm Enchanting#Tradeskill", -- Heavenly Shard
+	[52720]  = "Openable|Item:52720:3|0696. Cataclysm Enchanting#Tradeskill", -- Small Heavenly Shard
+	[52722]  = "0696. Cataclysm Enchanting#Tradeskill", -- Maelstrom Crystal
+	[52719]  = "0696. Cataclysm Enchanting#Tradeskill", -- Greater Celestial Essence
+	[52555]  = "0696. Cataclysm Enchanting#Tradeskill", -- Hypnotic Dust
+	[52718]  = "0696. Cataclysm Enchanting#Tradeskill", -- Lesser Celestial Essence
 	-- -- Northrend (97)
-	[34052] = "0697. Northrend Enchanting#Tradeskill", -- Dream Shard
-	[34057] = "0697. Northrend Enchanting#Tradeskill", -- Abyss Crystal
-	[34055] = "0697. Northrend Enchanting#Tradeskill", -- Greater Cosmic Essence
-	[34054] = "0697. Northrend Enchanting#Tradeskill", -- Infinite Dust
-	[34056] = "0697. Northrend Enchanting#Tradeskill", -- Lesser Cosmic Essence
+	[34052]  = "0697. Northrend Enchanting#Tradeskill", -- Dream Shard
+	[34053]  = "Openable|Item:34053:3|0697. Northrend Enchanting#Tradeskill", -- Small Dream Shard
+	[34057]  = "0697. Northrend Enchanting#Tradeskill", -- Abyss Crystal
+	[34055]  = "0697. Northrend Enchanting#Tradeskill", -- Greater Cosmic Essence
+	[34054]  = "0697. Northrend Enchanting#Tradeskill", -- Infinite Dust
+	[34056]  = "0697. Northrend Enchanting#Tradeskill", -- Lesser Cosmic Essence
 	-- -- Outland (98)
-	[22449] = "0698. Outland Enchanting#Tradeskill", -- Large Prismatic Shard
-	[22450] = "0698. Outland Enchanting#Tradeskill", -- Void Crystal
-	[22446] = "0698. Outland Enchanting#Tradeskill", -- Greater Planar Essence
-	[22448] = "0698. Outland Enchanting#Tradeskill", -- Small Prismatic Shard
-	[22445] = "0698. Outland Enchanting#Tradeskill", -- Arcane Dust
-	[22447] = "0698. Outland Enchanting#Tradeskill", -- Lesser Planar Essence
+	[22449]  = "0698. Outland Enchanting#Tradeskill", -- Large Prismatic Shard
+	[22450]  = "0698. Outland Enchanting#Tradeskill", -- Void Crystal
+	[22446]  = "0698. Outland Enchanting#Tradeskill", -- Greater Planar Essence
+	[22448]  = "0698. Outland Enchanting#Tradeskill", -- Small Prismatic Shard
+	[22445]  = "0698. Outland Enchanting#Tradeskill", -- Arcane Dust
+	[22447]  = "0698. Outland Enchanting#Tradeskill", -- Lesser Planar Essence
 	-- -- Enchanting (99)
-	[38682] = "0699. Enchanting#Tradeskill", -- Enchanting Vellum
+	[38682]  = "0699. Enchanting#Tradeskill", -- Enchanting Vellum
 	[156930] = "0699. Enchanting#Tradeskill", -- Rich Illusion Dust
-	[10940] = "0699. Enchanting#Tradeskill", -- Strange Dust
-	[6217] = "0699. Enchanting#Tradeskill", -- Copper Rod
-	[10938] = "0699. Enchanting#Tradeskill", -- Lesser Magic Essence
-	[16203] = "0699. Enchanting#Tradeskill", -- Greater Eternal Essence
-	[14344] = "0699. Enchanting#Tradeskill", -- Large Brilliant Shard
-	[16204] = "0699. Enchanting#Tradeskill", -- Light Illusion Dust
-	[16202] = "0699. Enchanting#Tradeskill", -- Lesser Eternal Essence
-	[10939] = "0699. Enchanting#Tradeskill", -- Greater Magic Essence
-	[14343] = "0699. Enchanting#Tradeskill", -- Small Brilliant Shard
-	[4470] = "0699. Enchanting#Tradeskill", -- Simple Wood
-	[11291] = "0699. Enchanting#Tradeskill", -- Star Wood
+	[10940]  = "0699. Enchanting#Tradeskill", -- Strange Dust
+	[6217]   = "0699. Enchanting#Tradeskill", -- Copper Rod
+	[10938]  = "0699. Enchanting#Tradeskill", -- Lesser Magic Essence
+	[16203]  = "0699. Enchanting#Tradeskill", -- Greater Eternal Essence
+	[14344]  = "0699. Enchanting#Tradeskill", -- Large Brilliant Shard
+	[16204]  = "0699. Enchanting#Tradeskill", -- Light Illusion Dust
+	[16202]  = "0699. Enchanting#Tradeskill", -- Lesser Eternal Essence
+	[10939]  = "0699. Enchanting#Tradeskill", -- Greater Magic Essence
+	[14343]  = "0699. Enchanting#Tradeskill", -- Small Brilliant Shard
+	[4470]   = "0699. Enchanting#Tradeskill", -- Simple Wood
+	[11291]  = "0699. Enchanting#Tradeskill", -- Star Wood
 
 	--! Reagent (07)
 	-- -- Dragon Isles (90)
@@ -2240,6 +2170,7 @@ local ZigiItems = {
 	[129100] = "0993. Broken Isles Jewelcrafting#Tradeskill", -- Gem Chip
 	-- -- Draenor (94)
 	[115524] = "0994. Draenor Jewelcrafting#Tradeskill", -- Taladite Crystal
+	[127390] = "Openable|Item:52188|0994. Draenor Jewelcrafting#Tradeskill", -- Polished Crystal
 	-- -- Pandaria (95)
 	[76734] = "0995. Pandaria Jewelcrafting#Tradeskill", -- Serpent's Eye
 	[76132] = "0995. Pandaria Jewelcrafting#Tradeskill", -- Primal Diamond
@@ -2255,6 +2186,7 @@ local ZigiItems = {
 	[76134] = "0995. Pandaria Jewelcrafting#Tradeskill", -- Sunstone
 	[76137] = "0995. Pandaria Jewelcrafting#Tradeskill", -- Alexandrite
 	[76135] = "0995. Pandaria Jewelcrafting#Tradeskill", -- Roguestone
+	[90407] = "Openable|Item:90407:10|0995. Pandaria Jewelcrafting#Tradeskill", -- Sparkling Shard
 	-- -- Cataclysm (96)
 	[52303] = "0996. Cataclysm Jewelcrafting#Tradeskill", -- Shadowspirit Diamond
 	[71805] = "0996. Cataclysm Jewelcrafting#Tradeskill", -- Queen's Garnet
@@ -2708,6 +2640,7 @@ local ZigiItems = {
 	--[[ ! Equipment ! ]]--
 
 	--! Equipment Upgrades (97)
+	[205225] = "97. Equipment Upgrades#Equipment", -- Aspects' Token of Merit (Season 2)
 	[204843] = "97. Equipment Upgrades#Equipment", -- Draconic Mark of Mastery (Season 2)
 	[204276] = "97. Equipment Upgrades#Equipment", -- Untapped Forbidden Knowledge
 	[198046] = "97. Equipment Upgrades#Equipment", -- Concentrated Primal Infusion
@@ -6337,8 +6270,6 @@ local ZigiItems = {
 
 	-- Warlords of Draenor (94)
 	-- -- Lunarfall/Frostwall
-	[116913] = "94. Garrison#Sanctum", -- Peon's Mining Pick
-	[116916] = "94. Garrison#Sanctum", -- Gorepetal's Gentle Grasp
 	[118474] = "94. Garrison#Sanctum", -- Supreme Manual of Dance
 	[120311] = "94. Garrison#Sanctum", -- The Blademaster's Necklace
 	[118354] = "94. Garrison#Sanctum", -- Follower Retraining Certificate
@@ -6791,7 +6722,6 @@ local ZigiItems = {
 	[201159] = "Currency#Miscellaneous", -- Aloom's Token
 	[21100]  = "Currency#Miscellaneous", -- Coin of Ancestry
 	[202039] = "Currency#Miscellaneous", -- Essence of the Storm
-	[201836] = "Currency#Miscellaneous", -- Aspects' Token of Merit
 	[191784] = "Currency#Miscellaneous", -- Dragon Shard of Knowledge
 	[24245]  = "Currency#Miscellaneous", -- Glowcap
 	[198357] = "Currency#Miscellaneous", -- Rock Aegis
@@ -6799,6 +6729,7 @@ local ZigiItems = {
 	[199219] = "Currency#Miscellaneous", -- Element-Infused Blood
 
 	--! Reputation (02)
+	[35188]  = "02. Reputation#Miscellaneous", -- Nesingwary Lackey Ear
 	[128315] = "02. Reputation#Miscellaneous", -- Medallion of the Legion
 	[201411] = "02. Reputation#Miscellaneous", -- Ancient Vault Artifact
 	[200224] = "02. Reputation#Miscellaneous", -- Mark of Sargha
@@ -6940,6 +6871,8 @@ local ZigiItems = {
 	[172013] = "Toy#Miscellaneous", -- Celebration Firework
 	[204405] = "Toy#Miscellaneous", -- Stuffed Bear
 	-- Consumable
+	[205684] = "Toy#Miscellaneous", -- Forbidden Flounder
+	[204237] = "Toy#Miscellaneous", -- Clockwork Azshara
 	[205686] = "Toy#Miscellaneous", -- Clacking Claw
 	[199216] = "Toy#Miscellaneous", -- A Box of Rocks
 	[194733] = "Toy#Miscellaneous", -- Illusion Parchment: Aqua Torrent
@@ -7279,16 +7212,8 @@ local ZigiItems = {
 	[112177] = "Pieces", -- Nerubian Chitin Fragment
 	[112182] = "Pieces", -- Patch of Fel Hide
 	[112185] = "Pieces", -- Wind Scale Fragment
-	[33567] = "Pieces", -- Borean Leather Scraps
-	[52977] = "Pieces", -- Savage Leather Scraps
-	[105718] = "Pieces", -- Sha Crystal Fragment
-	[74252] = "Pieces", -- Small Ethereal Shard
-	[52720] = "Pieces", -- Small Heavenly Shard
-	[34053] = "Pieces", -- Small Dream Shard
-	[115504] = "Pieces", -- Fractured Temporal Crystal
-	[115502] = "Pieces", -- Small Luminous Shard
-	[90407] = "Pieces", -- Sparkling Shard
-	[127390] = "Pieces", -- Polished Crystal
+	[33567]  = "Pieces", -- Borean Leather Scraps
+	[52977]  = "Pieces", -- Savage Leather Scraps
 	-- -- Azerite Essence
 	[169694] = "Openable|Item:169694:9|Quest#Quest", -- Aqueous Reliquary
 	[174288] = "Openable|Item:174288:3|Quest#Quest", -- Breath of Everlasting Spirit
@@ -7309,6 +7234,10 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[208015] = "Openable", -- Stuffed Deviate Scale Pouch
+	[208028] = "Openable", -- Knot Thimblejack's Cache
+	[208006] = "Openable", -- Greater Paracausal Chest
+	[207594] = "Openable", -- Looter's Purse
 	[205367] = "Openable", -- Indebted Researcher's Gift
 	[205368] = "Openable", -- Thankful Researcher's Gift
 	[205369] = "Openable", -- Appreciative Researcher's Gift
@@ -8042,6 +7971,9 @@ local ZigiItems = {
 
 
 	--! Learnable (98)
+	-- -- Cosmetic
+	[205878] = "Learnable", -- Obsidian Aspectral Earthstone
+	[202047] = "Learnable", -- Gleaming Incarnate Thunderstone
 	-- -- Reputation
 	[205998] = "Learnable", -- Sign of Respect
 	[205992] = "Learnable", -- Regurgitated Half-Digested Fish
@@ -16454,6 +16386,7 @@ local ZigiItems = {
 	[170191] = "[9600ff]Cursed Item]#Junk", -- Skeletal Hand
 
 	--! Bag
+	[206003] = "Bag#Equipment", -- Horadric Haversack (36)
 	[174969] = "Bag#Equipment", -- Alpaca Saddlebag (36)
 	[194018] = "Bag#Equipment", -- Azureweave Expedition Pack (34)
 	[202194] = "Bag#Equipment", -- Misty Satchel (34)
