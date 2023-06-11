@@ -3913,7 +3913,11 @@ local ZigiItems = {
 	[132243] = "9999. Legacy Equipment#Equipment|DEMONHUNTER|?", -- Fel-Etched Glaive
 	[128956] = "9999. Legacy Equipment#Equipment|DEMONHUNTER|?", -- Fel-Etched Glaive
 	-- -- Armor (99)
+	[15138]  = "9999. Legacy Equipment#Equipment", -- Onyxia Scale Cloak
+	[146666] = "9999. Legacy Equipment#Equipment|MAGE,PRIEST,WARLOCK|?", -- Celumbra, the Night's Dichotomy
+	[146669] = "9999. Legacy Equipment#Equipment|DEMONHUNTER,DRUID,MONK,ROGUE|?", -- The Sentinel's Eternal Refuge
 	[146668] = "9999. Legacy Equipment#Equipment|EVOKER,HUNTER,SHAMAN|?", -- Vigilance Perch
+	[146667] = "9999. Legacy Equipment#Equipment|DEATHKNIGHT,PALADIN,WARRIOR|?", -- Rethu's Incessant Courage
 
 
 	-- -- -- Fangs of the Father (9698)
@@ -6582,6 +6586,9 @@ local ZigiItems = {
 	[166750] = "Account Bound", -- Draught of Ten Lands
 	[166751] = "Account Bound", -- Draught of Ten Lands
 	-- Reputation
+	[205985] = "Account Bound", -- Loamm Niffen Insignia (500)
+	[205342] = "Account Bound", -- Loamm Niffen Insignia (250)
+	[205365] = "Account Bound", -- Loamm Niffen Insignia (50)
 	[201254] = "Account Bound", -- Medal of Honor (Alliance)
 	[201255] = "Account Bound", -- Medal of Honor (Horde)
 	[200443] = "Account Bound", -- Dragon Isles Artifact
@@ -7234,6 +7241,11 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[205226] = "Openable", -- Cavern Racer's Purse
+	[205288] = "Openable", -- Buried Niffen Collection
+	[205968] = "Openable", -- Overflowing Loammian Supply Pack
+	[205965] = "Openable", -- Large Loammian Supply Pack
+	[205964] = "Openable", -- Small Loammian Supply Pack
 	[208015] = "Openable", -- Stuffed Deviate Scale Pouch
 	[208028] = "Openable", -- Knot Thimblejack's Cache
 	[208006] = "Openable", -- Greater Paracausal Chest
@@ -7975,6 +7987,7 @@ local ZigiItems = {
 	[205878] = "Learnable", -- Obsidian Aspectral Earthstone
 	[202047] = "Learnable", -- Gleaming Incarnate Thunderstone
 	-- -- Reputation
+	[205254] = "Learnable", -- Honorary Explorer's Compass
 	[205998] = "Learnable", -- Sign of Respect
 	[205992] = "Learnable", -- Regurgitated Half-Digested Fish
 	[205251] = "Learnable", -- Champion's Rock Bar
@@ -16657,8 +16670,247 @@ local ZigiItems = {
 	[37606]  = "Junk", -- Penny Pouch
 	[187407] = "Junk", -- Satchel of Security
 
+	-- Legion Legendary
+	[132445] = "Junk", -- Al'maiesh, the Cord of Hope
+	[132409] = "Junk", -- Anund's Seared Shackles
+	[133977] = "Junk", -- Belo'vir's Final Stand
+	[151809] = "Junk", -- Contained Infernal Core
+	[132442] = "Junk", -- Cord of Infinity
+	[133800] = "Junk", -- Cord of Maiev, Priestess of the Moon
+	[132863] = "Junk", -- Darckli's Dragonfire Diadem
+	[132447] = "Junk", -- Entrancing Trousers of An'juna
+	[132861] = "Junk", -- Estel, Dejahna's Inspiration
+	[132456] = "Junk", -- Feretory of Souls
+	[144274] = "Junk", -- Gravity Spiral
+	[151814] = "Junk", -- Heart of the Void
+	[132394] = "Junk", -- Hood of Eternal Disdain
+	[144260] = "Junk", -- Ice Time
+	[151786] = "Junk", -- Inner Hallation
+	[144244] = "Junk", -- Kam Xi'raff
+	[132374] = "Junk", -- Kazzak's Final Curse
+	[132454] = "Junk", -- Koralon's Burning Touch
+	[132411] = "Junk", -- Lady Vashj's Grasp
+	[144369] = "Junk", -- Lessons of Space-Time
+	[132407] = "Junk", -- Magistrike Restraints
+	[138140] = "Junk", -- Magtheridon's Banished Bracers
+	[132864] = "Junk", -- Mangaza's Madness
+	[151808] = "Junk", -- Mantle of the First Kirin Tor
+	[132406] = "Junk", -- Marquee Bindings of the Sun King
+	[132437] = "Junk", -- Mother Shahraz's Seduction
+	[132450] = "Junk", -- Muze's Unwavering Will
+	[132451] = "Junk", -- Mystic Kilt of the Rune Master
+	[132455] = "Junk", -- Norgannon's Foresight
+	[132357] = "Junk", -- Pillars of the Dark Portal
+	[132457] = "Junk", -- Power Cord of Lethtendris
+	[144355] = "Junk", -- Pyrotex Ignition Cloth
+	[144247] = "Junk", -- Rammal's Ulterior Motive
+	[132393] = "Junk", -- Recurrent Ritual
+	[132413] = "Junk", -- Rhonin's Assaulting Armwraps
+	[151810] = "Junk", -- Shattered Fragments of Sindragosa
+	[132379] = "Junk", -- Sin'dorei Spite
+	[132436] = "Junk", -- Skjoldr, Sanctuary of Ivagont
+	[132381] = "Junk", -- Streten's Sleepless Shackles
+	[151787] = "Junk", -- The Alabaster Lady
+	[151821] = "Junk", -- The Master Harvester
+	[144385] = "Junk", -- Wakener's Loyalty
+	[132461] = "Junk", -- Xalan the Feared's Clench
+	[133970] = "Junk", -- Zann'esu Journey
+	[133971] = "Junk", -- Zenk'aram, Iridi's Anadem
+	[137014] = "Junk", -- Achor, the Eternal Hunger
+	[137024] = "Junk", -- Ailuro Pouncers
+	[137072] = "Junk", -- Aman'Thul's Wisdom
+	[144277] = "Junk", -- Anvil-Hardened Wristwraps
+	[151801] = "Junk", -- Behemoth Headdress
+	[151783] = "Junk", -- Chameleon Song
+	[133976] = "Junk", -- Cinidaria, the Symbiote
+	[144279] = "Junk", -- Delusions of Grandeur
+	[137100] = "Junk", -- Denial of the Half-Giants
+	[137097] = "Junk", -- Drinking Horn Cover
+	[137030] = "Junk", -- Duskwalker's Footpads
+	[137095] = "Junk", -- Edraith, Bonds of Aglaya
+	[137028] = "Junk", -- Ei'thas, Lunar Glides of Eramas
+	[137015] = "Junk", -- Ekowraith, Creator of Worlds
+	[137067] = "Junk", -- Elize's Everlasting Encasement
+	[137026] = "Junk", -- Essence of Infusion
+	[144354] = "Junk", -- Fiery Red Maimers
+	[137027] = "Junk", -- Firestone Walkers
+	[137063] = "Junk", -- Fundamental Observation
+	[137079] = "Junk", -- Gai Plin's Soothing Sash
+	[137099] = "Junk", -- Greenskin's Waterlogged Wristcuffs
+	[137057] = "Junk", -- Hidden Master's Forbidden Touch
+	[137029] = "Junk", -- Katsuo's Eclipse
+	[138949] = "Junk", -- Kirel Narak
+	[144295] = "Junk", -- Lady and the Child
+	[137068] = "Junk", -- Leggings of The Black Flame
+	[137022] = "Junk", -- Loramus Thalipedes' Sacrifice
+	[137056] = "Junk", -- Luffa Wrappings
+	[144236] = "Junk", -- Mantle of the Master Assassin
+	[137090] = "Junk", -- Mo'arg Bionic Stabilizers
+	[144432] = "Junk", -- Oakheart's Puny Quods
+	[151799] = "Junk", -- Oblivion's Embrace
+	[137092] = "Junk", -- Oneth's Intuition
+	[138879] = "Junk", -- Ovyd's Winter Wrap
+	[137096] = "Junk", -- Petrichor Lagniappe
+	[137023] = "Junk", -- Promise of Elune, the Moon Goddess
+	[137061] = "Junk", -- Raddon's Cascading Eyes
+	[137071] = "Junk", -- Runemaster's Pauldrons
+	[137016] = "Junk", -- Sal'salabim's Lost Tunic
+	[137032] = "Junk", -- Shadow Satyr's Walk
+	[144340] = "Junk", -- Shelter of Rin
+	[141321] = "Junk", -- Shivarran Symmetry
+	[137025] = "Junk", -- Skysec's Hold
+	[144292] = "Junk", -- Spirit of the Darkness Flame
+	[151788] = "Junk", -- Stormstout's Last Gasp
+	[137078] = "Junk", -- The Dark Titan's Advice
+	[137091] = "Junk", -- The Defiler's Lost Vambraces
+	[137062] = "Junk", -- The Emerald Dreamcatcher
+	[144239] = "Junk", -- The Emperor's Capacitor
+	[151815] = "Junk", -- The Empty Crown
+	[151818] = "Junk", -- The First of the Dead
+	[137094] = "Junk", -- The Wildshaper's Clutch
+	[151811] = "Junk", -- The Wind Blows
+	[137031] = "Junk", -- Thraxi's Tricksy Treads
+	[137073] = "Junk", -- Unison Spaulders
+	[137069] = "Junk", -- Will of Valeera
+	[144242] = "Junk", -- X'oni's Caress
+	[137098] = "Junk", -- Zoldyck Family Training Shackles
+	[137084] = "Junk", -- Akainu's Absolute Justice
+	[137102] = "Junk", -- Al'Akir's Acrimony
+	[144361] = "Junk", -- Butcher's Bone Apron
+	[137101] = "Junk", -- Call of the Wild
+	[137074] = "Junk", -- Echoes of the Great Sundering
+	[137036] = "Junk", -- Elemental Rebalancers
+	[137616] = "Junk", -- Emalon's Charged Core
+	[151785] = "Junk", -- Fire in the Deep
+	[137082] = "Junk", -- Helbrine, Rope of the Mist Marauder
+	[137085] = "Junk", -- Intact Nazjatar Molting
+	[141353] = "Junk", -- Magnetized Blasting Cap Launcher
+	[144303] = "Junk", -- MKII Gyroscopic Stabilizer
+	[137034] = "Junk", -- Nesingwary's Trapping Treads
+	[137104] = "Junk", -- Nobundo's Redemption
+	[151805] = "Junk", -- Parsel's Tongue
+	[137058] = "Junk", -- Praetorian's Tidecallers
+	[137083] = "Junk", -- Pristine Proto-Scale Girdle
+	[137227] = "Junk", -- Qa'pla, Eredun War Order
+	[137080] = "Junk", -- Roar of the Seven Lions
+	[132466] = "Junk", -- Roots of Shaladrassil
+	[151819] = "Junk", -- Smoldering Heart
+	[138117] = "Junk", -- Spiritual Journey
+	[137103] = "Junk", -- Storm Tempests
+	[137035] = "Junk", -- The Deceiver's Blood Pact
+	[144326] = "Junk", -- The Mantle of Command
+	[137064] = "Junk", -- The Shadow Hunter's Voodoo Mask
+	[137033] = "Junk", -- Ullr's Feather Snowshoes
+	[143732] = "Junk", -- Uncertain Reminder
+	[137081] = "Junk", -- War Belt of the Sentinel Army
+	[140846] = "Junk", -- Aegisjalmur, the Armguards of Awe
+	[132443] = "Junk", -- Aggramar's Stride
+	[151822] = "Junk", -- Ararat's Bloodmirror
+	[137060] = "Junk", -- Archavon's Heavy Hand
+	[144358] = "Junk", -- Ashes to Dust
+	[137017] = "Junk", -- Breastplate of the Golden Val'kyr
+	[137088] = "Junk", -- Ceann-Ar Charger
+	[137086] = "Junk", -- Chain of Thrayn
+	[151796] = "Junk", -- Cold Heart
+	[144293] = "Junk", -- Consort's Cold Core
+	[144280] = "Junk", -- Death March
+	[137018] = "Junk", -- Destiny Driver
+	[132441] = "Junk", -- Draugr, Girdle of the Everlasting King
+	[137065] = "Junk", -- Justice Gaze
+	[137108] = "Junk", -- Kakushan's Stormscale Gauntlets
+	[132366] = "Junk", -- Koltira's Newfound Will
+	[137107] = "Junk", -- Mannoroth's Bloodletting Manacles
+	[137087] = "Junk", -- Naj'entus's Vertebrae
+	[137076] = "Junk", -- Obsidian Stone Spaulders
+	[132459] = "Junk", -- Perseverance of the Ebon Martyr
+	[151812] = "Junk", -- Pillars of Inmost Light
+	[132453] = "Junk", -- Rattlegore Bone Legplates
+	[144275] = "Junk", -- Saruan's Resolve
+	[151813] = "Junk", -- Scarlet Inquisitor's Expurgation
+	[132367] = "Junk", -- Service of Gorefiend
+	[132365] = "Junk", -- Shackles of Bryndaor
+	[144281] = "Junk", -- Skullflower's Haemostasis
+	[151795] = "Junk", -- Soulflayer's Corruption
+	[137075] = "Junk", -- Tak'theritrix's Shoulderpads
+	[151823] = "Junk", -- The Great Storm's Eye
+	[132448] = "Junk", -- The Instructor's Fourth Lesson
+	[151782] = "Junk", -- The Topless Tower
+	[137089] = "Junk", -- Thundergod's Vigor
+	[143728] = "Junk", -- Timeless Stratagem
+	[132458] = "Junk", -- Toravon's Whiteout Bindings
+	[137070] = "Junk", -- Tyelca, Ferren Marcus's Stature
+	[137059] = "Junk", -- Tyr's Hand of Faith
+	[137105] = "Junk", -- Uther's Guard
+	[151824] = "Junk", -- Valarjar Berserkers
+	[137077] = "Junk", -- Weight of the Earth
+	[132460] = "Junk", -- Alythess's Pyrogenics
+	[137038] = "Junk", -- Anger of the Half-Giants
+	[144249] = "Junk", -- Archimonde's Hatred Reborn
+	[137052] = "Junk", -- Ayala's Stone Heart
+	[137040] = "Junk", -- Chatoyant Signet
+	[137041] = "Junk", -- Dual Determination
+	[137045] = "Junk", -- Eye of Collidus the Warp-Watcher
+	[137050] = "Junk", -- Eye of the Twisting Nether
+	[137051] = "Junk", -- Focuser of Jonat, the Elder
+	[138854] = "Junk", -- Fragment of the Betrayer's Prison
+	[137043] = "Junk", -- Frizzo's Fingertrap
+	[137047] = "Junk", -- Heathcliff's Immortality
+	[137046] = "Junk", -- Ilterendi, Crown Jewel of Silvermoon
+	[137039] = "Junk", -- Impeccable Fel Essence
+	[137049] = "Junk", -- Insignia of Ravenholdt
+	[152626] = "Junk", -- Insignia of the Grand Army
+	[137044] = "Junk", -- Jewel of the Lost Abbey
+	[144259] = "Junk", -- Kil'jaeden's Burning Wish
+	[133974] = "Junk", -- Lana'thel's Lament
+	[137048] = "Junk", -- Liadrin's Fury Unleashed
+	[137220] = "Junk", -- March of the Legion
+	[137276] = "Junk", -- N'ero, Band of Promises
+	[132449] = "Junk", -- Phyrix's Embrace
+	[132444] = "Junk", -- Prydaz, Xavaric's Magnum Opus
+	[132378] = "Junk", -- Sacrolash's Dark Strike
+	[137223] = "Junk", -- Seal of Necrofantasia
+	[132452] = "Junk", -- Sephuz's Secret
+	[132410] = "Junk", -- Shard of the Exodar
+	[151636] = "Junk", -- Soul of the Archdruid
+	[151642] = "Junk", -- Soul of the Archmage
+	[151650] = "Junk", -- Soul of the Battlelord
+	[151640] = "Junk", -- Soul of the Deathlord
+	[151647] = "Junk", -- Soul of the Farseer
+	[151643] = "Junk", -- Soul of the Grandmaster
+	[151646] = "Junk", -- Soul of the High Priest
+	[151644] = "Junk", -- Soul of the Highlord
+	[151641] = "Junk", -- Soul of the Huntmaster
+	[151649] = "Junk", -- Soul of the Netherlord
+	[150936] = "Junk", -- Soul of the Shadowblade
+	[151639] = "Junk", -- Soul of the Slayer
+	[137042] = "Junk", -- Tearstone of Elune
+	[137382] = "Junk", -- The Apex Predator's Claw
+	[133973] = "Junk", -- The Twins' Painful Touch
+	[137054] = "Junk", -- The Walls Fell
+	[137037] = "Junk", -- Uvanimor, the Unbeautiful
+	[144258] = "Junk", -- Velen's Future Sight
+	[132369] = "Junk", -- Wilfred's Sigil of Superior Summoning
+	[137055] = "Junk", -- Zevrim's Hunger
+	[132376] = "Junk", -- Acherus Drapes
+	[151803] = "Junk", -- Celerity of the Windrunners
+	[137019] = "Junk", -- Cenedril, Reflector of Hatred
+	[151798] = "Junk", -- Chaos Theory
+	[137066] = "Junk", -- Cloak of Fel Flames
+	[151784] = "Junk", -- Doorway to Nowhere
+	[151802] = "Junk", -- Fury of Nature
+	[137053] = "Junk", -- Kazzalax, Fujieda's Fury
+	[144273] = "Junk", -- Maraad's Dying Breath
+	[132375] = "Junk", -- Odr, Shawl of the Ymirjar
+	[151800] = "Junk", -- Radiant Moonlight
+	[144364] = "Junk", -- Reap and Sow
+	[151817] = "Junk", -- The Curse of Restlessness
+	[137021] = "Junk", -- The Dreadlord's Deceit
+	[151807] = "Junk", -- Unseen Predator's Cloak
+	[137020] = "Junk", -- Whisper of the Nathrezim
+	[137109] = "Junk", -- X'anshi, Shroud of Archbishop Benedictus
+	[144438] = "Junk", -- Zeks Exterminatus
+
 	-- Trash
-	[199202] = "Junk", -- Attendant's Token of Merit (Season 4)
 	[11733]  = "Junk", -- Libram of Constitution
 	[18333]  = "Junk", -- Libram of Focus
 	[18334]  = "Junk", -- Libram of Protection
@@ -17320,14 +17572,46 @@ function Zigi:CheckItem(id, bag, slot, bypass)
 				return "99. |cff00ccffAccount Bound|r", "Unbound"
 			elseif itemEquipLoc == "INVTYPE_PROFESSION_TOOL" or itemEquipLoc == "INVTYPE_PROFESSION_GEAR" then
 				return "Profession Equipment", "Equipment"
-			elseif itemEquipLoc == "INVTYPE_TABARD" then
+			elseif itemEquipLoc == "INVTYPE_TABARD" then -- Tabard
 				return "Tabard", "Equipment"
-			elseif itemEquipLoc == "INVTYPE_BODY" then
+			elseif itemEquipLoc == "INVTYPE_BODY" then -- Shirt
 				return "Shirt", "Equipment"
 			elseif quality == 0 or quality == 1 then
 				return "Junk", "Junk" -- Soulbind grey or white
 			elseif classID == 4 and subclassID == 5 then -- Cosmetic
 				return "|cffff80ffCosmetic|r", "Container"
+			elseif itemEquipLoc == "INVTYPE_TRINKET" then -- Trinket
+				-- Classify the trinket as junk if it has a primary stat this class cannot use
+				local stats = GetItemStats(link) or {}
+				local wrong = false
+
+				if (class == "DEATHKNIGHT" or class == "WARRIOR") and not stats["ITEM_MOD_STRENGTH_SHORT"] then
+					if stats["ITEM_MOD_AGILITY_SHORT"] or stats["ITEM_MOD_INTELLECT_SHORT"] then
+						wrong = true
+					end
+				elseif (class == "DEMONHUNTER" or class == "HUNTER" or class == "ROGUE") and not stats["ITEM_MOD_AGILITY_SHORT"] then
+					if stats["ITEM_MOD_INTELLECT_SHORT"] or stats["ITEM_MOD_STRENGTH_SHORT"] then
+						wrong = true
+					end
+				elseif (class == "DRUID" or class == "MONK" or class == "SHAMAN") and not stats["ITEM_MOD_AGILITY_SHORT"] and not stats["ITEM_MOD_INTELLECT_SHORT"] then
+					if stats["ITEM_MOD_STRENGTH_SHORT"] then
+						wrong = true
+					end
+				elseif (class == "EVOKER" or class == "MAGE" or class == "PRIEST" or class == "WARLOCK") and not stats["ITEM_MOD_INTELLECT_SHORT"] then
+					if stats["ITEM_MOD_AGILITY_SHORT"] or stats["ITEM_MOD_STRENGTH_SHORT"] then
+						wrong = true
+					end
+				elseif class == "PALADIN" and not stats["ITEM_MOD_INTELLECT_SHORT"] and not stats["ITEM_MOD_STRENGTH_SHORT"] then
+					if stats["ITEM_MOD_AGILITY_SHORT"] then
+						wrong = true
+					end
+				end
+
+				if wrong and (profession1 == "Enchanting" or profession2 == "Enchanting") then
+					return "0. Obsolete Equipment", "Junk"
+				elseif wrong then
+					return "Junk", "Junk"
+				end
 			elseif classID == 4 then -- Armor
 				if ClassArmor[class][subclassID] or subclassID == 0 or itemEquipLoc == "INVTYPE_CLOAK" then -- 0 = Jewellry
 					return false -- Correct armor type
