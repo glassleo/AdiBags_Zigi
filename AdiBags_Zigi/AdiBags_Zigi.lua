@@ -123,7 +123,6 @@ local ZigiItems = {
 	[141013] = "Stuff#Junk", -- Scroll of Town Portal: Shala'nir
 	[138448] = "Stuff#Junk", -- Emblem of Margoss
 	[103678] = "Stuff#Junk", -- Time-Lost Artifact
-	[110560] = "Stuff#Junk", -- Garrison Hearthstone
 	[118662] = "Stuff#Junk", -- Bladespire Relic
 	[118663] = "Stuff#Junk", -- Relic of Karabor
 	[118907] = "Stuff#Junk", -- Pit Fighter's Punching Ring (Alliance)
@@ -131,7 +130,6 @@ local ZigiItems = {
 	[128353] = "Stuff#Junk", -- Admiral's Compass
 	[139590] = "Stuff#Junk", -- Scroll of Teleport: Ravenholdt
 	[181163] = "Stuff#Junk", -- Scroll of Teleport: Theater of Pain
-	[140192] = "Stuff#Junk", -- Dalaran Hearthstone
 	[141605] = "Stuff#Junk", -- Flight Master's Whistle
 	[142469] = "Stuff#Junk", -- Violet Seal of the Grand Magus
 	[144341] = "Stuff#Junk", -- Rechargeable Reaves Battery
@@ -2649,6 +2647,7 @@ local ZigiItems = {
 	--[[ ! Equipment ! ]]--
 
 	--! Equipment Upgrades (97)
+	[207030] = "97. Equipment Upgrades#Equipment", -- Dilated Time Capsule
 	[205999] = "97. Equipment Upgrades#Equipment", -- Volcanic Sculptor (Season 2)
 	[205225] = "97. Equipment Upgrades#Equipment", -- Aspects' Token of Merit (Season 2)
 	[204843] = "97. Equipment Upgrades#Equipment", -- Draconic Mark of Mastery (Season 2)
@@ -6735,7 +6734,6 @@ local ZigiItems = {
 	[128659] = "Currency#Miscellaneous", -- Merry Supplies
 	[128658] = "Currency#Miscellaneous", -- Spooky Supplies
 	[49927]  = "Currency#Miscellaneous", -- Love Token
-	[202184] = "Currency#Miscellaneous", -- Trophy of Strife
 	[103533] = "Currency#Miscellaneous", -- Vicious Saddle
 	[201159] = "Currency#Miscellaneous", -- Aloom's Token
 	[21100]  = "Currency#Miscellaneous", -- Coin of Ancestry
@@ -7252,6 +7250,9 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[207583] = "Openable", -- Box of Collapsed Reality
+	[207584] = "Openable", -- Box of Volatile Reality
+	[207582] = "Openable", -- Box of Tampered Reality
 	[204712] = "Openable", -- Brimming Loamm Niffen Supply Satchel
 	[204381] = "Openable", -- Brimming Valdrakken Accord Supply Pack
 	[204379] = "Openable", -- Brimming Iskaaran Supply Pack
@@ -8012,6 +8013,7 @@ local ZigiItems = {
 	[205878] = "Learnable", -- Obsidian Aspectral Earthstone
 	[202047] = "Learnable", -- Gleaming Incarnate Thunderstone
 	-- -- Reputation
+	[12844]  = "Learnable", -- Argent Dawn Valor Token
 	[205254] = "Learnable", -- Honorary Explorer's Compass
 	[205998] = "Learnable", -- Sign of Respect
 	[205992] = "Learnable", -- Regurgitated Half-Digested Fish
@@ -9239,6 +9241,8 @@ local ZigiItems = {
 	[68136]  = "Learnable", -- Guild Vault Voucher (8th Slot)
 	[62287]  = "Learnable", -- Guild Vault Voucher (8th Slot)
 	-- -- Toy
+	[110560] = "Learnable|Toy:110560", -- Garrison Hearthstone
+	[140192] = "Learnable|Toy:140192", -- Dalaran Hearthstone
 	[206565] = "Learnable|Toy:206565", -- Plagued Grain
 	[206195] = "Learnable|Toy:206195", -- Path of the Naaru
 	[206993] = "Learnable|Toy:206993", -- Investi-gator's Pocketwatch
