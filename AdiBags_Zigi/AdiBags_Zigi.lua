@@ -6596,6 +6596,8 @@ local ZigiItems = {
 	[166750] = "Account Bound", -- Draught of Ten Lands
 	[166751] = "Account Bound", -- Draught of Ten Lands
 	-- Reputation
+	[208951] = "Account Bound", -- Paracausal Cluster (1000)
+	[208952] = "Account Bound", -- Soridormi's Letter of Commendation (1000)
 	[205985] = "Account Bound", -- Loamm Niffen Insignia (500)
 	[205342] = "Account Bound", -- Loamm Niffen Insignia (250)
 	[205365] = "Account Bound", -- Loamm Niffen Insignia (50)
