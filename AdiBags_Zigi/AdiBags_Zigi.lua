@@ -116,6 +116,7 @@ local ZigiItems = {
 	--[[ ! Stuff ! ]]--
 
 	-- Teleport Item
+	[202046] = "Stuff#Junk", -- Lucky Tortollan Charm
 	--[141017] = "Stuff#Junk", -- Scroll of Town Portal: Lian'tril
 	--[141016] = "Stuff#Junk", -- Scroll of Town Portal: Faronaar
 	[141015] = "Stuff#Junk", -- Scroll of Town Portal: Kal'delar
@@ -176,6 +177,7 @@ local ZigiItems = {
 	[164733] = "Stuff#Junk|Tailoring", -- Synchronous Thread
 	[164766] = "Stuff#Junk|Enchanting", -- Iwen's Enchanting Rod
 	[23821]  = "Stuff#Junk", -- Zapthrottle Mote Extractor
+	[199414] = "Stuff#Junk", -- Zapthrottle Soul Inhaler
 	[49040]  = "Stuff#Junk", -- Jeeves
 	[67494]  = "Stuff#Junk|Herbalism,Mining,Skinning", -- Electrostatic Condenser
 	[85777]  = "Stuff#Junk|Mining|Account Bound", -- Ancient Pandaren Mining Pick
@@ -2666,17 +2668,17 @@ local ZigiItems = {
 	[198058] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix III
 	[198059] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix IV
 	[204673] = "97. Equipment Upgrades#Equipment", -- Titan Training Matrix V
+	[204697] = "97. Equipment Upgrades#Equipment", -- Enchanted Aspect's Shadowflame Crest
+	[204682] = "97. Equipment Upgrades#Equipment", -- Enchanted Wyrm's Shadowflame Crest
+	[204681] = "97. Equipment Upgrades#Equipment", -- Enchanted Whelpling's Shadowflame Crest
 	[204194] = "97. Equipment Upgrades#Equipment", -- Aspect's Shadowflame Crest
 	[204078] = "Openable|Item:204078:15|97. Equipment Upgrades#Equipment", -- Aspect's Shadowflame Crest Fragment
-	[204195] = "97. Equipment Upgrades#Equipment", -- Drake's Shadowflame Crest
-	[204076] = "Openable|Item:204076:15|97. Equipment Upgrades#Equipment", -- Drake's Shadowflame Crest Fragment
-	[204697] = "97. Equipment Upgrades#Equipment", -- Enchanted Aspect's Shadowflame Crest
-	[204681] = "97. Equipment Upgrades#Equipment", -- Enchanted Whelpling's Shadowflame Crest
-	[204682] = "97. Equipment Upgrades#Equipment", -- Enchanted Wyrm's Shadowflame Crest
-	[204193] = "97. Equipment Upgrades#Equipment", -- Whelpling's Shadowflame Crest
-	[204075] = "Openable|Item:204075:15|97. Equipment Upgrades#Equipment", -- Whelpling's Shadowflame Crest Fragment
 	[204196] = "97. Equipment Upgrades#Equipment", -- Wyrm's Shadowflame Crest
 	[204077] = "Openable|Item:204077:15|97. Equipment Upgrades#Equipment", -- Wyrm's Shadowflame Crest Fragment
+	[204195] = "97. Equipment Upgrades#Equipment", -- Drake's Shadowflame Crest
+	[204076] = "Openable|Item:204076:15|97. Equipment Upgrades#Equipment", -- Drake's Shadowflame Crest Fragment
+	[204193] = "97. Equipment Upgrades#Equipment", -- Whelpling's Shadowflame Crest
+	[204075] = "Openable|Item:204075:15|97. Equipment Upgrades#Equipment", -- Whelpling's Shadowflame Crest Fragment
 
 	--! BoA Token (98)
 	-- -- Mists of Pandaria - Timeless
@@ -3923,6 +3925,7 @@ local ZigiItems = {
 	[132243] = "9999. Legacy Equipment#Equipment|DEMONHUNTER|?", -- Fel-Etched Glaive
 	[128956] = "9999. Legacy Equipment#Equipment|DEMONHUNTER|?", -- Fel-Etched Glaive
 	-- -- Armor (99)
+	[203460] = "9999. Legacy Equipment#Equipment", -- Onyx Annulet
 	[15138]  = "9999. Legacy Equipment#Equipment", -- Onyxia Scale Cloak
 	[146666] = "9999. Legacy Equipment#Equipment|MAGE,PRIEST,WARLOCK|?", -- Celumbra, the Night's Dichotomy
 	[146669] = "9999. Legacy Equipment#Equipment|DEMONHUNTER,DRUID,MONK,ROGUE|?", -- The Sentinel's Eternal Refuge
@@ -7252,6 +7255,14 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[200936] = "Quest#Quest", -- Encaged Earthen Soul
+	[200932] = "Quest#Quest", -- Encaged Airy Soul
+	[200934] = "Quest#Quest", -- Encaged Frosty Soul
+	[200931] = "Quest#Quest", -- Encaged Fiery Soul
+	[201298] = "Openable", -- Docile Fiery Soul
+	[201299] = "Openable", -- Docile Frosty Soul
+	[201296] = "Openable", -- Docile Airy Soul
+	[201297] = "Openable", -- Docile Earthen Soul
 	[207583] = "Openable", -- Box of Collapsed Reality
 	[207584] = "Openable", -- Box of Volatile Reality
 	[207582] = "Openable", -- Box of Tampered Reality
@@ -8017,6 +8028,7 @@ local ZigiItems = {
 	-- -- Reputation
 	[12844]  = "Learnable", -- Argent Dawn Valor Token
 	[205254] = "Learnable", -- Honorary Explorer's Compass
+	[206006] = "Learnable", -- Earth-Warder's Thanks
 	[205998] = "Learnable", -- Sign of Respect
 	[205992] = "Learnable", -- Regurgitated Half-Digested Fish
 	[205251] = "Learnable", -- Champion's Rock Bar
@@ -16250,6 +16262,7 @@ local ZigiItems = {
 	[162294] = "Learnable|Recipe:Cooking:8:1", -- Recipe: Loa Loaf
 	[162285] = "Learnable|Recipe:Cooking:8:1", -- Recipe: Kul Tiramisu
 	-- Legion Cooking
+	[151653] = "Openable|Item:151653:10|Recipe#Recipe", -- Broken Isles Recipe Scrap
 	[133842] = "Learnable|Recipe:Cooking:7:1", -- Recipe: Azshari Salad
 	[133822] = "Learnable|Recipe:Cooking:7:1", -- Recipe: Azshari Salad
 	[133862] = "Learnable|Recipe:Cooking:7:1", -- Recipe: Azshari Salad
