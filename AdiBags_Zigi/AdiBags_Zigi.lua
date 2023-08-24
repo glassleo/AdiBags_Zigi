@@ -186,6 +186,7 @@ local ZigiItems = {
 	[201366] = "Stuff#Junk|Blacksmithing", -- Master's Hammer
 
 	-- Miscellaneous
+	[188152] = "Stuff#Junk", -- Gateway Control Shard
 	[113575] = "Stuff#Junk", -- Secretive Whistle
 	[127770] = "Stuff#Junk", -- Brazier of Awakening
 	[141652] = "Stuff#Junk", -- Mana Divining Stone
@@ -1200,24 +1201,8 @@ local ZigiItems = {
 	[2880] = "0399. Metal & Stone#Tradeskill", -- Weak Flux
 
 	--! Cooking (04)
-	[199105] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Ancheevy
-	[199212] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Clubfish
-	[199833] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Dragonhead Eel
-	[199101] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Dried Wyldermane Kelp
-	[199208] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Grungle
-	[199102] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Hunk o' Blubber
-	[199207] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Iceback Sculpin
-	[199213] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Lakkamuk Blenny
-	[199205] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Manasucker
-	[199103] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Nappa's Famous Tea
-	[199100] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Peppersmelt
-	[199104] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Piping-Hot Orca Milk
-	[199834] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Pulpy Seagrass
-	[199063] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Salted Fish Scraps
-	[199832] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Smoked Seaviper
-	[199106] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Tiny Leviathan Bone
-	[199835] = "049098. Tuskarr Feast Reagent#Tradeskill", -- Torga's Braid
 	-- -- Dragon Isles (90)
+	[194691] = "049099. Dragon Isles Cooking#Tradeskill", -- Artisanal Berry Juice
 	[17202]  = "049099. Dragon Isles Cooking#Tradeskill", -- Snowball
 	[197765] = "049099. Dragon Isles Cooking#Tradeskill", -- Impossibly Sharp Cutting Knife
 	[194967] = "049099. Dragon Isles Cooking#Tradeskill", -- Aileron Seamoth
@@ -6582,6 +6567,7 @@ local ZigiItems = {
 	-- Sort by priority
 
 	--! Account Bound
+	[206270] = "Account Bound", -- Volcanic Equipment Chest
 	-- Currency
 	[202196] = "Account Bound", -- Zskera Vault Key
 	[204727] = "Account Bound", -- Coveted Bauble
@@ -7255,6 +7241,14 @@ local ZigiItems = {
 
 	--! Openable (99)
 	-- -- Container
+	[210063] = "Openable", -- Invader's Satchel of Helpful Goods
+	[210062] = "Openable", -- Ironbound Satchel of Helpful Goods
+	[142052] = "Openable", -- Redemption of the Fallen
+	[23862]  = "Openable", -- Redemption of the Fallen
+	[142073] = "Openable", -- Wrath of the Titans
+	[23865]  = "Openable", -- Wrath of the Titans
+	[142051] = "Openable", -- Torment of the Worgen
+	[23864]  = "Openable", -- Torment of the Worgen
 	[200936] = "Quest#Quest", -- Encaged Earthen Soul
 	[200932] = "Quest#Quest", -- Encaged Airy Soul
 	[200934] = "Quest#Quest", -- Encaged Frosty Soul
@@ -8078,6 +8072,7 @@ local ZigiItems = {
 	[205211] = "Learnable|Recipe:Alchemy:10:25", -- Nutrient Diluted Protofluid
 	[205213] = "Learnable|Recipe:Alchemy:10:25", -- Suspicious Mold
 	[205429] = "Learnable|Recipe:Alchemy:10:25", -- Bartered Alchemy Notes
+	[205440] = "Learnable|Recipe:Alchemy:10:25", -- Bartered Alchemy Journal
 	[205353] = "Learnable|Recipe:Alchemy:10:25", -- Niffen Notebook of Alchemy Knowledge
 	-- -- -- Blacksmithing
 	[198454] = "Learnable|Quest:74109&Recipe:Blacksmithing:10:25|Recipe#Recipe", -- Draconic Treatise on Blacksmithing
@@ -8103,6 +8098,7 @@ local ZigiItems = {
 	[205987] = "Learnable|Recipe:Blacksmithing:10:25", -- Brimstone Rescue Ring
 	[205988] = "Learnable|Recipe:Blacksmithing:10:25", -- Zaqali Elder Spear
 	[205428] = "Learnable|Recipe:Blacksmithing:10:25", -- Bartered Blacksmithing Notes
+	[205439] = "Learnable|Recipe:Blacksmithing:10:25", -- Bartered Blacksmithing Journal
 	[205352] = "Learnable|Recipe:Blacksmithing:10:25", -- Niffen Notebook of Blacksmithing Knowledge
 	-- -- -- Enchanting
 	[194702] = "Learnable|Quest:74110&Recipe:Enchanting:10:25|Recipe#Recipe", -- Draconic Treatise on Enchanting
@@ -8127,6 +8123,7 @@ local ZigiItems = {
 	[205001] = "Learnable|Recipe:Enchanting:10:25", -- Resonating Arcane Crystal
 	[204999] = "Learnable|Recipe:Enchanting:10:25", -- Shimmering Aqueous Orb
 	[205427] = "Learnable|Recipe:Enchanting:10:25", -- Bartered Enchanting Notes
+	[205438] = "Learnable|Recipe:Enchanting:10:25", -- Bartered Enchanting Journal
 	[205351] = "Learnable|Recipe:Enchanting:10:25", -- Niffen Notebook of Enchanting Knowledge
 	-- -- -- Engineering
 	[198510] = "Learnable|Quest:74111&Recipe:Engineering:10:25|Recipe#Recipe", -- Draconic Treatise on Engineering
@@ -8155,6 +8152,7 @@ local ZigiItems = {
 	[204853] = "Learnable|Recipe:Engineering:10:25", -- Discarded Dracothyst Drill
 	[204850] = "Learnable|Recipe:Engineering:10:25", -- Handful of Khaz'gorite Bolts
 	[205425] = "Learnable|Recipe:Engineering:10:25", -- Bartered Engineering Notes
+	[205436] = "Learnable|Recipe:Engineering:10:25", -- Bartered Engineering Journal
 	[205349] = "Learnable|Recipe:Engineering:10:25", -- Niffen Notebook of Engineering Knowledge
 	-- -- -- Herbalism
 	[194704] = "Learnable|Quest:74107&Recipe:Herbalism:10:25|Recipe#Recipe", -- Draconic Treatise on Herbalism
@@ -8168,6 +8166,7 @@ local ZigiItems = {
 	[201276] = "Learnable|Recipe:Herbalism:10:25", -- Rare Herbalist's Notes
 	[201287] = "Learnable|Recipe:Herbalism:10:25", -- Ancient Herbalist's Notes
 	[205434] = "Learnable|Recipe:Herbalism:10:25", -- Bartered Herbalism Notes
+	[205445] = "Learnable|Recipe:Herbalism:10:25", -- Bartered Herbalism Journal
 	[205358] = "Learnable|Recipe:Herbalism:10:25", -- Niffen Notebook of Herbalism Knowledge
 	-- -- -- Inscription
 	[194699] = "Learnable|Quest:74105&Recipe:Inscription:10:25|Recipe#Recipe", -- Draconic Treatise on Inscription
@@ -8192,6 +8191,7 @@ local ZigiItems = {
 	[206035] = "Learnable|Recipe:Inscription:10:25", -- Ancient Research
 	[206031] = "Learnable|Recipe:Inscription:10:25", -- Intricate Zaqali Runes
 	[205430] = "Learnable|Recipe:Inscription:10:25", -- Bartered Inscription Notes
+	[205441] = "Learnable|Recipe:Inscription:10:25", -- Bartered Inscription Journal
 	[205354] = "Learnable|Recipe:Inscription:10:25", -- Niffen Notebook of Inscription Knowledge
 	-- -- -- Jewelcrafting
 	[194703] = "Learnable|Quest:74112&Recipe:Jewelcrafting:10:25|Recipe#Recipe", -- Draconic Treatise on Jewelcrafting
@@ -8217,6 +8217,7 @@ local ZigiItems = {
 	[205216] = "Learnable|Recipe:Jewelcrafting:10:25", -- Gently Jostled Jewels
 	[205214] = "Learnable|Recipe:Jewelcrafting:10:25", -- Snubbed Snail Shells
 	[205424] = "Learnable|Recipe:Jewelcrafting:10:25", -- Bartered Jewelcrafting Notes
+	[205435] = "Learnable|Recipe:Jewelcrafting:10:25", -- Bartered Jewelcrafting Journal
 	[205348] = "Learnable|Recipe:Jewelcrafting:10:25", -- Niffen Notebook of Jewelcrafting Knowledge
 	-- -- -- Leatherworking
 	[194700] = "Learnable|Quest:74113&Recipe:Leatherworking:10:25|Recipe#Recipe", -- Draconic Treatise on Leatherworking
@@ -8240,6 +8241,7 @@ local ZigiItems = {
 	[204987] = "Learnable|Recipe:Leatherworking:10:25", -- Lava-Forged Leatherworker's "Knife"
 	[204988] = "Learnable|Recipe:Leatherworking:10:25", -- Sulfur-Soaked Skins
 	[205426] = "Learnable|Recipe:Leatherworking:10:25", -- Bartered Leatherworking Notes
+	[205437] = "Learnable|Recipe:Leatherworking:10:25", -- Bartered Leatherworking Journal
 	[205350] = "Learnable|Recipe:Leatherworking:10:25", -- Niffen Notebook of Leatherworking Knowledge
 	-- -- -- Mining
 	[194708] = "Learnable|Quest:74106&Recipe:Mining:10:25|Recipe#Recipe", -- Draconic Treatise on Mining
@@ -8255,6 +8257,7 @@ local ZigiItems = {
 	[201716] = "Learnable|Recipe:Mining:10:25", -- Notebook of Crafting Knowledge
 	[201700] = "Learnable|Recipe:Mining:10:25", -- Notebook of Crafting Knowledge
 	[205432] = "Learnable|Recipe:Mining:10:25", -- Bartered Mining Notes
+	[205443] = "Learnable|Recipe:Mining:10:25", -- Bartered Mining Journal
 	[205356] = "Learnable|Recipe:Mining:10:25", -- Niffen Notebook of Mining Knowledge
 	-- -- -- Skinning
 	[201023] = "Learnable|Quest:74114&Recipe:Skinning:10:25|Recipe#Recipe", -- Draconic Treatise on Skinning
@@ -8268,6 +8271,7 @@ local ZigiItems = {
 	[201278] = "Learnable|Recipe:Skinning:10:25", -- Rare Skinner's Notes
 	[201289] = "Learnable|Recipe:Skinning:10:25", -- Ancient Skinner's Notes
 	[205433] = "Learnable|Recipe:Skinning:10:25", -- Bartered Skinning Notes
+	[205444] = "Learnable|Recipe:Skinning:10:25", -- Bartered Skinning Journal
 	[205357] = "Learnable|Recipe:Skinning:10:25", -- Niffen Notebook of Skinning Knowledge
 	-- -- -- Tailoring
 	[194698] = "Learnable|Quest:74115&Recipe:Tailoring:10:25|Recipe#Recipe", -- Draconic Treatise on Tailoring
@@ -8293,6 +8297,7 @@ local ZigiItems = {
 	[206030] = "Learnable|Recipe:Tailoring:10:25", -- Exquisitely Embroidered Banner
 	[206025] = "Learnable|Recipe:Tailoring:10:25", -- Used Medical Wrap Kit
 	[205431] = "Learnable|Recipe:Tailoring:10:25", -- Bartered Tailoring Notes
+	[205442] = "Learnable|Recipe:Tailoring:10:25", -- Bartered Tailoring Journal
 	[205355] = "Learnable|Recipe:Tailoring:10:25", -- Niffen Notebook of Tailoring Knowledge
 	-- -- Grand Hunt Companion Customization
 	[194088] = "Learnable", -- Ohuna Companion Color: Dark
@@ -9341,7 +9346,7 @@ local ZigiItems = {
 	[46843]  = "Learnable|Toy:46843", -- Argent Crusader's Banner
 	[200707] = "Learnable|Toy:200707", -- Armoire of Endless Cloaks
 	[64456]  = "Learnable|Toy:64456", -- Arrival of the Naaru
-	[197719] = "Learnable|Toy:197719", -- Artisan's Sign
+	[197719] = "Learnable|Toy:197719|Unbound", -- Artisan's Sign
 	[198474] = "Learnable|Toy:198474", -- Artist's Easel
 	[104329] = "Learnable|Toy:104329", -- Ash-Covered Horn
 	[184410] = "Learnable|Toy:184410", -- Aspirant's Stretcher
@@ -16573,6 +16578,33 @@ local ZigiItems = {
 
 	-- Quest Item
 	[2894]   = "Quest#Quest|Alliance&Quest:384",
+	[199105] = "Quest#Quest", -- Ancheevy
+	[199212] = "Quest#Quest", -- Clubfish
+	[199833] = "Quest#Quest", -- Dragonhead Eel
+	[199101] = "Quest#Quest", -- Dried Wyldermane Kelp
+	[199208] = "Quest#Quest", -- Grungle
+	[199102] = "Quest#Quest", -- Hunk o' Blubber
+	[199207] = "Quest#Quest", -- Iceback Sculpin
+	[199213] = "Quest#Quest", -- Lakkamuk Blenny
+	[199205] = "Quest#Quest", -- Manasucker
+	[199103] = "Quest#Quest", -- Nappa's Famous Tea
+	[199100] = "Quest#Quest", -- Peppersmelt
+	[199104] = "Quest#Quest", -- Piping-Hot Orca Milk
+	[199834] = "Quest#Quest", -- Pulpy Seagrass
+	[199063] = "Quest#Quest", -- Salted Fish Scraps
+	[199832] = "Quest#Quest", -- Smoked Seaviper
+	[199106] = "Quest#Quest", -- Tiny Leviathan Bone
+	[199835] = "Quest#Quest", -- Torga's Braid
+
+	-- Nasz'uro, the Unbound Legacy
+	[204832] = "Quest#Quest", -- Reclaimed Gauntlet Chassis
+	[204854] = "Quest#Quest", -- Immaculate Coalescing Dracothyst
+	[204856] = "Quest#Quest", -- Inspired Order Recalibrator
+	[204274] = "Quest#Quest", -- Ancient Memories
+	[205257] = "[ff8000]Nasz'uro, the Unbound Legacy]#Quest", -- Temporal Vestigial
+	[205258] = "[ff8000]Nasz'uro, the Unbound Legacy]#Quest", -- Everburning Shadowflame
+	[204857] = "[ff8000]Nasz'uro, the Unbound Legacy]#Quest", -- Ancient Elementium Fragment
+	[205260] = "[ff8000]Nasz'uro, the Unbound Legacy]#Quest", -- Fleeting Glowspores
 
 	-- Cursed Item
 	[170472] = "[9600ff]Cursed Item]#Junk", -- Encrusted Coin
